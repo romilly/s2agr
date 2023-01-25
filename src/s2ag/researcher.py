@@ -14,6 +14,4 @@ class Researcher:
         self.retriever = retriever
 
     def get_paper(self, pid):
-        d = self.retriever.get_paper_json(pid)
-        return Paper(d)
-
+        return Paper(self.retriever.get_paper_json(pid))
