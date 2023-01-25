@@ -1,6 +1,7 @@
 import unittest
 
-from s2ag.librarian import Librarian, Researcher, MockRetriever
+from s2ag.librarian import Librarian, Researcher
+from test.s2ag.helpers.mock_retriever import MockRetriever
 
 
 class S2AGTestCase(unittest.TestCase):

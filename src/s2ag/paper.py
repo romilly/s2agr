@@ -8,6 +8,8 @@ def snake(name: str) -> str:
 
 
 class Paper:
+    paper_id: str
+    title: str
     def __init__(self, jason_dictionary: dict):
         self.jason_dictionary = jason_dictionary
         for key in self.jason_dictionary.keys():
