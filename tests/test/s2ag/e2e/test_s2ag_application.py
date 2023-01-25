@@ -11,6 +11,7 @@ test_vcr = vcr.VCR(
     path_transformer=vcr.VCR.ensure_suffix('.yaml')
 )
 
+
 class S2AGTestCase(unittest.TestCase):
 
     @test_vcr.use_cassette
