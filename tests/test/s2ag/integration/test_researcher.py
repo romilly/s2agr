@@ -1,19 +1,7 @@
 import unittest
 
-import requests
-
 from s2ag.researcher import Researcher, Retriever
-
-
-class WebRetriever(Retriever):
-    def get_paper_json(self, pid) -> dict:
-        url = self.paper_url_for(pid)
-        response = requests.get(url)
-        return response.json()
-
-    @staticmethod
-    def paper_url_for(pid):
-        return f"https://api.semanticscholar.org/graph/v1/paper/{pid}"
+from s2ag.retriever import WebRetriever
 
 
 class ResearcherTestCase(unittest.TestCase):

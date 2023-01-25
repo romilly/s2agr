@@ -1,6 +1,6 @@
 import json
 
-from s2ag.researcher import Retriever
+from s2ag.retriever import Retriever
 
 
 class MockRetriever(Retriever):

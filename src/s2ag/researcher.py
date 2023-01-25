@@ -1,12 +1,5 @@
-from abc import abstractmethod, ABC
-
 from s2ag.paper import Paper
-
-
-class Retriever(ABC):
-    @abstractmethod
-    def get_paper_json(self, pid) -> dict:
-        pass
+from s2ag.retriever import Retriever
 
 
 class Researcher:
