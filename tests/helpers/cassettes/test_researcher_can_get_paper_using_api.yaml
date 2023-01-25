@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=title,abstract
+  response:
+    body:
+      string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "title": "Construction
+        of the Literature Graph in Semantic Scholar", "abstract": "We describe a deployed
+        scalable system for organizing published scientific literature into a heterogeneous
+        graph to facilitate algorithmic manipulation and discovery. The resulting
+        literature graph consists of more than 280M nodes, representing papers, authors,
+        entities and various interactions between them (e.g., authorships, citations,
+        entity mentions). We reduce literature graph construction into familiar NLP
+        tasks (e.g., entity extraction and linking), point out research challenges
+        due to differences from standard formulations of these tasks, and report empirical
+        results for each task. The methods described in this paper are used to enable
+        semantic features in www.semanticscholar.org."}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '838'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 25 Jan 2023 12:19:18 GMT
+      Via:
+      - 1.1 a25f829e86f504a329e71fa3f4d21484.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - koyP8DgcRUvKlj3nrtvMysw9u6wlDbLD67Muw1-pwYaa0cOCSLOfkg==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - fTGrEF8xvHcF8Yw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '838'
+      x-amzn-Remapped-Date:
+      - Wed, 25 Jan 2023 12:19:18 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - b1a6ceca-b5f7-48e2-b1cb-3b45d26395b7
+    status:
+      code: 200
+      message: OK
+version: 1
