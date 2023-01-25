@@ -11,20 +11,58 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=title,abstract
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
   response:
     body:
-      string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "title": "Construction
-        of the Literature Graph in Semantic Scholar", "abstract": "We describe a deployed
-        scalable system for organizing published scientific literature into a heterogeneous
-        graph to facilitate algorithmic manipulation and discovery. The resulting
-        literature graph consists of more than 280M nodes, representing papers, authors,
-        entities and various interactions between them (e.g., authorships, citations,
-        entity mentions). We reduce literature graph construction into familiar NLP
-        tasks (e.g., entity extraction and linking), point out research challenges
-        due to differences from standard formulations of these tasks, and report empirical
-        results for each task. The methods described in this paper are used to enable
-        semantic features in www.semanticscholar.org."}
+      string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds":
+        {"DBLP": "conf/naacl/AmmarGBBCDDEFHK18", "MAG": "2952867657", "ACL": "N18-3011",
+        "ArXiv": "1805.02262", "DOI": "10.18653/v1/N18-3011", "CorpusId": 19170988},
+        "publicationVenue": {"id": "01103732-3808-4930-b8e4-7e9e68d5c68d", "name":
+        "North American Chapter of the Association for Computational Linguistics",
+        "type": "conference", "alternate_names": ["North Am Chapter Assoc Comput Linguistics",
+        "NAACL"], "url": "https://www.aclweb.org/portal/naacl"}, "url": "https://www.semanticscholar.org/paper/649def34f8be52c8b66281af98ae884c09aef38b",
+        "title": "Construction of the Literature Graph in Semantic Scholar", "abstract":
+        "We describe a deployed scalable system for organizing published scientific
+        literature into a heterogeneous graph to facilitate algorithmic manipulation
+        and discovery. The resulting literature graph consists of more than 280M nodes,
+        representing papers, authors, entities and various interactions between them
+        (e.g., authorships, citations, entity mentions). We reduce literature graph
+        construction into familiar NLP tasks (e.g., entity extraction and linking),
+        point out research challenges due to differences from standard formulations
+        of these tasks, and report empirical results for each task. The methods described
+        in this paper are used to enable semantic features in www.semanticscholar.org.",
+        "venue": "North American Chapter of the Association for Computational Linguistics",
+        "year": 2018, "referenceCount": 27, "citationCount": 286, "influentialCitationCount":
+        32, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
+        "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Computer
+        Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle",
+        "Conference"], "publicationDate": "2018-05-06", "journal": {"pages": "84-91"},
+        "citationStyles": {"bibtex": "@[''JournalArticle'', ''Conference'']{Ammar2018ConstructionOT,\n
+        author = {Waleed Ammar and Dirk Groeneveld and Chandra Bhagavatula and Iz
+        Beltagy and Miles Crawford and Doug Downey and Jason Dunkelberger and Ahmed
+        Elgohary and Sergey Feldman and Vu A. Ha and Rodney Michael Kinney and Sebastian
+        Kohlmeier and Kyle Lo and Tyler C. Murray and Hsu-Han Ooi and Matthew E. Peters
+        and Joanna L. Power and Sam Skjonsberg and Lucy Lu Wang and Christopher Wilhelm
+        and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North
+        American Chapter of the Association for Computational Linguistics},\n pages
+        = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n
+        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "name": "Waleed
+        Ammar"}, {"authorId": "3458736", "name": "Dirk Groeneveld"}, {"authorId":
+        "1857797", "name": "Chandra Bhagavatula"}, {"authorId": "46181066", "name":
+        "Iz Beltagy"}, {"authorId": "46230609", "name": "Miles Crawford"}, {"authorId":
+        "145612610", "name": "Doug Downey"}, {"authorId": "38092776", "name": "Jason
+        Dunkelberger"}, {"authorId": "143718836", "name": "Ahmed Elgohary"}, {"authorId":
+        "46411828", "name": "Sergey Feldman"}, {"authorId": "4480314", "name": "Vu
+        A. Ha"}, {"authorId": "143967880", "name": "Rodney Michael Kinney"}, {"authorId":
+        "41018147", "name": "Sebastian Kohlmeier"}, {"authorId": "46258841", "name":
+        "Kyle Lo"}, {"authorId": "144240185", "name": "Tyler C. Murray"}, {"authorId":
+        "46256862", "name": "Hsu-Han Ooi"}, {"authorId": "39139825", "name": "Matthew
+        E. Peters"}, {"authorId": "39561369", "name": "Joanna L. Power"}, {"authorId":
+        "46181683", "name": "Sam Skjonsberg"}, {"authorId": "31860505", "name": "Lucy
+        Lu Wang"}, {"authorId": "46212260", "name": "Christopher Wilhelm"}, {"authorId":
+        "2112339497", "name": "Zheng Yuan"}, {"authorId": "15292561", "name": "Madeleine
+        van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}]}
 
         '
     headers:
@@ -33,31 +71,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '838'
+      - '3939'
       Content-Type:
       - application/json
       Date:
-      - Wed, 25 Jan 2023 12:18:38 GMT
+      - Wed, 25 Jan 2023 15:28:06 GMT
       Via:
-      - 1.1 4cdca468105142eb097ff10e9a208190.cloudfront.net (CloudFront)
+      - 1.1 94bbde231de97266ba4561ecfe3eb74c.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - HOKGblcvP1CX1LKonHcAin7xylQNvmSJDsr_wjBWgyR4P2iELDLWXQ==
+      - yqJyJkrj-pM8LzJ7ohP-VFtMocJssj4z8bJNTUVJ6pmvK5VSGTjeTw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fTGkzF49PHcFbYA=
+      - fTiVDFsBvHcFdtQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '838'
+      - '3939'
       x-amzn-Remapped-Date:
-      - Wed, 25 Jan 2023 12:18:38 GMT
+      - Wed, 25 Jan 2023 15:28:06 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 068ef2cc-2bdb-481e-ba39-5b73b98a5abc
+      - f1e1a0ce-da47-4ac4-8724-38eb0a3406e7
     status:
       code: 200
       message: OK
