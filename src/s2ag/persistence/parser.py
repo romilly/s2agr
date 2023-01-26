@@ -8,7 +8,7 @@ import dotenv
 CONNECTION_RE = re.compile('postgres://([^:]*):([^@]*)@([^/]*)/([^?]*)\?')
 
 
-def get_connection(env_variable_name: str, env_file_name: PathLike):
+def get_connection_string(env_variable_name: str, env_file_name: PathLike):
     parsed = parse(dotenv.dotenv_values(env_file_name)[env_variable_name])
     if parsed is not None:
         user, password, host, dbname = parsed
