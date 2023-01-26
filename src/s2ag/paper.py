@@ -28,7 +28,9 @@ PAPER_FIELDS = ','.join([
         'publicationDate',
         'journal',
         'citationStyles',
-        'authors'
+        'authors',
+        'tldr',
+        'embedding'
         ])
 
 
@@ -52,6 +54,8 @@ class Paper:
     publication_date: datetime
     citationStyles: Any
     authors: Any
+    tldr: str
+    embedding: Any
 
     def __init__(self, jason_dictionary: dict):
         self.jason_dictionary = jason_dictionary
