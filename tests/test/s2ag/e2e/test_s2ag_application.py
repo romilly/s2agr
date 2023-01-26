@@ -24,6 +24,9 @@ class S2AGTestCase(unittest.TestCase):
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")
         assert_that(paper.abstract, starts_with("We describe"))
 
+    # def test_librarian_retrieves_known_paper_from_database(self):
+    #     self.fail('not yet implemented')
+
 
 if __name__ == '__main__':
     unittest.main()
