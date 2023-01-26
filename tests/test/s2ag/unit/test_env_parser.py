@@ -8,12 +8,7 @@ from s2ag.persistence.parser import parse
 class EnvParsingTestCase(unittest.TestCase):
     def test_parses_dbmate_environment_variable(self):
         env = "postgres://fred:secret_pw@127.0.0.1/test_db?sslmode=disable"
-        expected = {
-            'dbname': 'test_db',
-            'user': 'fred',
-            'host': '127.0.0.1',
-           'password': 'secret_pw'
-        }
+        expected = ('fred', 'secret_pw', '127.0.0.1', 'test_db')
         assert_that(parse(env), equal_to(expected))  # add assertion here
 
 
