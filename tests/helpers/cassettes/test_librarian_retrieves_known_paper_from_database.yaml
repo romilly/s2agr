@@ -11,184 +11,100 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/6da2905bef6b50736660028ce5d11db3206095c1?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,citations
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,citations
   response:
     body:
-      string: '{"paperId": "6da2905bef6b50736660028ce5d11db3206095c1", "externalIds":
-        {"MAG": "1904621031", "DOI": "10.1073/pnas.1510103112", "CorpusId": 19374620,
-        "PubMed": "26150492"}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/6da2905bef6b50736660028ce5d11db3206095c1",
-        "title": "What the fly\u2019s nose tells the fly\u2019s brain", "abstract":
-        "Significance This work is significant for three reasons. First, a new way
-        the brain represents information is identified, one in which the information
-        present in a large population of neurons can be gotten from a small subset
-        of any neurons rather that from a subset of certain specific neurons. Second,
-        the nature of the combinatorial code used to specify odor identity is identified,
-        and this same type of code may be used in other contexts. Third, the way fly
-        olfaction works can potentially provide a model for understanding the function
-        of important vertebrate brain regions that appear to share the same neural
-        circuit architecture. The fly olfactory system has a three-layer architecture:
-        The fly\u2019s olfactory receptor neurons send odor information to the first
-        layer (the encoder) where this information is formatted as combinatorial odor
-        code, one which is maximally informative, with the most informative neurons
-        firing fastest. This first layer then sends the encoded odor information to
-        the second layer (decoder), which consists of about 2,000 neurons that receive
-        the odor information and \u201cbreak\u201d the code. For each odor, the amplitude
-        of the synaptic odor input to the 2,000 second-layer neurons is approximately
-        normally distributed across the population, which means that only a very small
-        fraction of neurons receive a large input. Each odor, however, activates its
-        own population of large-input neurons and so a small subset of the 2,000 neurons
-        serves as a unique tag for the odor. Strong inhibition prevents most of the
-        second-stage neurons from firing spikes, and therefore spikes from only the
-        small population of large-input neurons is relayed to the third stage. This
-        selected population provides the third stage (the user) with an odor label
-        that can be used to direct behavior based on what odor is present.", "venue":
-        "Proceedings of the National Academy of Sciences", "year": 2015, "referenceCount":
-        34, "citationCount": 79, "influentialCitationCount": 2, "isOpenAccess": true,
-        "openAccessPdf": {"url": "https://www.pnas.org/content/pnas/112/30/9460.full.pdf",
-        "status": "BRONZE"}, "fieldsOfStudy": ["Biology", "Medicine"], "s2FieldsOfStudy":
+      string: '{"paperId": "e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a", "externalIds":
+        {"MAG": "3016997274", "DOI": "10.1016/j.cub.2022.06.031", "CorpusId": 216071346,
+        "PubMed": "35797998"}, "publicationVenue": {"id": "9469269e-53d7-4955-b1a5-17a75bee7634",
+        "name": "Current Biology", "type": "journal", "alternate_names": ["Curr Biology"],
+        "issn": "0960-9822", "url": "http://www.current-biology.com/", "alternate_urls":
+        ["http://www.sciencedirect.com/science/journal/09609822"]}, "url": "https://www.semanticscholar.org/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a",
+        "title": "Structured sampling of olfactory input by the fly mushroom body",
+        "abstract": null, "venue": "Current Biology", "year": 2020, "referenceCount":
+        154, "citationCount": 31, "influentialCitationCount": 3, "isOpenAccess": true,
+        "openAccessPdf": {"url": "http://www.cell.com/article/S0960982222009903/pdf",
+        "status": "GREEN"}, "fieldsOfStudy": ["Biology", "Medicine"], "s2FieldsOfStudy":
         [{"category": "Biology", "source": "external"}, {"category": "Medicine", "source":
-        "external"}, {"category": "Biology", "source": "s2-fos-model"}, {"category":
-        "Computer Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle"],
-        "publicationDate": "2015-07-06", "journal": {"name": "Proceedings of the National
-        Academy of Sciences", "pages": "9460 - 9465", "volume": "112"}, "citationStyles":
-        {"bibtex": "@[''JournalArticle'']{Stevens2015WhatTF,\n author = {C. Stevens},\n
-        booktitle = {Proceedings of the National Academy of Sciences},\n journal =
-        {Proceedings of the National Academy of Sciences},\n pages = {9460 - 9465},\n
-        title = {What the fly\u2019s nose tells the fly\u2019s brain},\n volume =
-        {112},\n year = {2015}\n}\n"}, "authors": [{"authorId": "13024153", "name":
-        "C. Stevens"}], "citations": [{"paperId": "c98a58a8d242f4a5cc971759c52879ef6c7c4d42",
-        "title": "Cerebellum as a kernel machine: A novel perspective on expansion
-        recoding in granule cell layer"}, {"paperId": "6c32d89c783891ba23860a8999e8150812c99b73",
-        "title": "Drosophila olfaction: past, present and future"}, {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57",
-        "title": "Structured cerebellar connectivity supports resilient pattern separation"},
-        {"paperId": "5d06ad748e2502a85af763487f431cfd6750f1ac", "title": "High-throughput
-        sequencing of single neuron projections reveals spatial organization in the
-        olfactory cortex"}, {"paperId": "b0961ec1f1b9f9acda862b4d8fba7bb8382ca2e2",
-        "title": "Input-timing-dependent plasticity at incoming synapses of the mushroom
-        body facilitates olfactory learning in Drosophila\n"}, {"paperId": "062de529b091acf2d965a7c697715529b4ff9c88",
+        "external"}, {"category": "Biology", "source": "s2-fos-model"}], "publicationTypes":
+        ["JournalArticle"], "publicationDate": "2020-04-18", "journal": {"name": "Current
+        Biology", "pages": "3334-3349.e6", "volume": "32"}, "citationStyles": {"bibtex":
+        "@[''JournalArticle'']{Zheng2020StructuredSO,\n author = {Z. Zheng and Feng
+        Li and Corey B. Fisher and I. Ali and Nadiya Sharifi and Steven A. Calle-Schuler
+        and Joseph Hsu and Najla Masoodpanah and L. Kmecova and Tom Kazimiers and
+        E. Perlman and Matthew Nichols and Peter H. Li and Viren Jain and D. Bock},\n
+        booktitle = {Current Biology},\n journal = {Current Biology},\n pages = {3334-3349.e6},\n
+        title = {Structured sampling of olfactory input by the fly mushroom body},\n
+        volume = {32},\n year = {2020}\n}\n"}, "authors": [{"authorId": "2115546389",
+        "name": "Z. Zheng"}, {"authorId": "2146311675", "name": "Feng Li"}, {"authorId":
+        "41094461", "name": "Corey B. Fisher"}, {"authorId": "47203047", "name": "I.
+        Ali"}, {"authorId": "51104497", "name": "Nadiya Sharifi"}, {"authorId": "1404327942",
+        "name": "Steven A. Calle-Schuler"}, {"authorId": "2072740448", "name": "Joseph
+        Hsu"}, {"authorId": "1649754303", "name": "Najla Masoodpanah"}, {"authorId":
+        "46354442", "name": "L. Kmecova"}, {"authorId": "6930811", "name": "Tom Kazimiers"},
+        {"authorId": "2083123459", "name": "E. Perlman"}, {"authorId": "2056731754",
+        "name": "Matthew Nichols"}, {"authorId": "1410187169", "name": "Peter H. Li"},
+        {"authorId": "35086944", "name": "Viren Jain"}, {"authorId": "35571193", "name":
+        "D. Bock"}], "citations": [{"paperId": "6c32d89c783891ba23860a8999e8150812c99b73",
+        "title": "Drosophila olfaction: past, present and future"}, {"paperId": "bd04c9a4e66dbb8ad2217c6f7ddce1fad1157919",
+        "title": "The cellular architecture of memory modules in Drosophila supports
+        stochastic input integration"}, {"paperId": "b60e981fd5268a290dbf4e7d8346036396ecaf7d",
+        "title": "Meta-Learning the Inductive Biases of Simple Neural Circuits"},
+        {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57", "title": "Structured
+        cerebellar connectivity supports resilient pattern separation"}, {"paperId":
+        "7234495241b9d7393fb27182686eb065985fd647", "title": "Multi-Layered Maps of
+        Neuropil with Segmentation-Guided Contrastive Learning"}, {"paperId": "5d06ad748e2502a85af763487f431cfd6750f1ac",
+        "title": "High-throughput sequencing of single neuron projections reveals
+        spatial organization in the olfactory cortex"}, {"paperId": "062de529b091acf2d965a7c697715529b4ff9c88",
         "title": "Olfactory responses of Drosophila are encoded in the organization
-        of projection neurons"}, {"paperId": "8494229a8422e684d89d72a80d1f4e8ff75c286d",
-        "title": "Bioinspired random projections for robust, sparse classification"},
-        {"paperId": "d4eeff4390b0547435dfbd59cdb82d83624472e0", "title": "A neural
-        theory for counting memories"}, {"paperId": "c4f99c1f578c5feb66c260f2bb53c33108758ea5",
-        "title": "A feedback control principle common to several biological and engineered
-        systems"}, {"paperId": "4da49c540254bae7d4eaacd33527bdffbc590d02", "title":
-        "Where are the cores in this thing? \u2026and what are they computing? (with
-        apologies to Larry Abbott)"}, {"paperId": "33df6a1c1bed2a5a6a1a13fd1069b052a0f77d3f",
-        "title": "Attractor and integrator networks in the brain"}, {"paperId": "94feba0a2ab56dac2ccb540ff461644be6c8dbb1",
-        "title": "Binary Random Projections with Controllable Sparsity Patterns"},
-        {"paperId": "e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a", "title": "Structured
-        sampling of olfactory input by the fly mushroom body"}, {"paperId": "a32a2b3fbb77bb9ea31d081896907e55d7c11f06",
-        "title": "Redundancy and dependency in brain activities"}, {"paperId": "b87946d2f517809fa96d80f5e2d8a2ffe83cc03c",
-        "title": "The Functional Logic of Odor Information Processing in the Drosophila
-        Antennal Lobe"}, {"paperId": "8648a09611db310d6040ffa0788e6c86d66038fa", "title":
+        of projection neurons"}, {"paperId": "5e9de283947be7872688f88280edc2271c720e51",
+        "title": "Central organization of a high-dimensional odor space"}, {"paperId":
+        "1cd72757ee075e80c3cab9b0fbe2db732616b474", "title": "Mushroom body input
+        connections form independently of sensory activity in Drosophila melanogaster\n"},
+        {"paperId": "eaa1ad1f740fee4a03079af7764f8807bff9b6bf", "title": "Neural network
+        organization for courtship-song feature detection in Drosophila"}, {"paperId":
+        "a843d5608b4c8adb601c7b9814a167440acc2955", "title": "The anterior paired
+        lateral neuron normalizes odour-evoked activity in the Drosophila mushroom
+        body calyx."}, {"paperId": "8648a09611db310d6040ffa0788e6c86d66038fa", "title":
         "Structured connectivity in the cerebellum enables noise-resilient pattern
-        separation"}, {"paperId": "8b840ccad7a0c20d113ffba0cf3976f639fbcf4c", "title":
-        "Genealogical relationships of mushroom bodies, hemiellipsoid bodies, and
-        their afferent pathways in the brains of Pancrustacea: Recent progress and
-        open questions."}, {"paperId": "c0308eae57ce156b8a5bfac34e11dbba9b60a984",
-        "title": "Top-down feedback enables flexible coding strategies in olfactory
-        cortex"}, {"paperId": "1080ec27c251dd37d0eab12dfba45460079b49c2", "title":
-        "Algorithmic insights on continual learning from fruit flies"}, {"paperId":
-        "277cb14663998a4a26724f42d5372ebeaec3403a", "title": "Wiring logic of the
-        early rodent olfactory system revealed by high-throughput sequencing of single
-        neuron projections"}, {"paperId": "cf432fec8af0e5da8fc901b5364ef99aaba514d0",
+        separation"}, {"paperId": "c5536ef56db86a7f89d6b9d0eb3db894481c3372", "title":
+        "Local olfactory interneurons provide the basis for neurochemical regionalization
+        of olfactory glomeruli in crustaceans"}, {"paperId": "45485ccd24784a5217c16b3d5e44c6950aac94fb",
+        "title": "The anterior paired lateral neuron normalizes odour-evoked activity
+        at the mushroom body calyx"}, {"paperId": "8b840ccad7a0c20d113ffba0cf3976f639fbcf4c",
+        "title": "Genealogical relationships of mushroom bodies, hemiellipsoid bodies,
+        and their afferent pathways in the brains of Pancrustacea: Recent progress
+        and open questions."}, {"paperId": "277cb14663998a4a26724f42d5372ebeaec3403a",
+        "title": "Wiring logic of the early rodent olfactory system revealed by high-throughput
+        sequencing of single neuron projections"}, {"paperId": "cf432fec8af0e5da8fc901b5364ef99aaba514d0",
         "title": "The relationship between birth timing, circuit wiring, and physiological
         response properties of cerebellar granule cells"}, {"paperId": "16ab00313c9c4acba0d3ff643648d64993bad614",
         "title": "Connectivity patterns that shape olfactory representation in a mushroom
-        body network model"}, {"paperId": "1d6a03d2f0964f6b3c85e70cb32fa446c2562dfb",
-        "title": "The physical basis of memory"}, {"paperId": "ec1949eb86f710161d0ed0e86295329f71dc1e6c",
-        "title": "Nonlinear convergence boosts information coding in circuits with
-        parallel outputs"}, {"paperId": "593b7b3dcaf9062ad6cb0e40fe2cdd411a8a6ee9",
-        "title": "What the odor is not: Estimation by elimination."}, {"paperId":
-        "1e61fc3be517cbbf24641aac026c257fafc811b2", "title": "The connectome of the
-        adult Drosophila mushroom body provides insights into function"}, {"paperId":
-        "9c30c9d49d1325e86604a90e69eeea08a0d079d4", "title": "The connectome of the
-        adult Drosophila mushroom body: implications for function"}, {"paperId": "e731c97430438fb816e6506270a1673e5a3aba7f",
-        "title": "Synthesis of Conserved Odor Object Representations in a Random,
-        Divergent-Convergent Network"}, {"paperId": "42439931984ee7a5b3631339e48fdcb56305d490",
-        "title": "Modelling Learning and Memory in Drosophila to Understand Intellectual
-        Disabilities"}, {"paperId": "9f5f9276d6f33023436159c8ca3102ebed5c4787", "title":
-        "Large-scale Image Retrieval with Sparse Binary Projections"}, {"paperId":
-        "693b028852e73dce1baa7677154ebe3b00936133", "title": "A Correspondence Between
-        Normalization Strategies in Artificial and Biological Neural Networks"}, {"paperId":
-        "c3371781f165434ff33b33006ac22663b2c85626", "title": "Habituation as a neural
-        algorithm for online odor discrimination"}, {"paperId": "880217b51bf149ee6612950826e66cd0de6b44d5",
-        "title": "Where meanings arise and how: Building on Shannon''s foundations"},
-        {"paperId": "85ab16854285cadba3327a69bf9b528b05d060b9", "title": "The Drosophila
-        Mushroom Body: From Architecture to Algorithm in a Learning Circuit."}, {"paperId":
-        "0557b9dff7a8aef7a12d0ef0d6993b4983021f1a", "title": "Chemical sensor systems
-        based on 2D and thin film materials"}, {"paperId": "9fadabe716057f5f375438bd2c7337f3540c3a12",
-        "title": "Modeling Winner-Take-All Competition in Sparse Binary Projections"},
-        {"paperId": "9cb0b522c69788590e038e58c8bf7694655e30ae", "title": "Robust parallel
-        decision-making in neural circuits with nonlinear inhibition"}, {"paperId":
-        "eb90ff9827a748f1072c426e4a7b4c2879d69f58", "title": "Nonlinear convergence
-        preserves information"}, {"paperId": "6ce388cfa0ab389898a472a08ad8e0f389ae131a",
-        "title": "Flexible connectivity under physiological constraints"}, {"paperId":
-        "bb00143500ca400c5b8135f2a4dc6560c76b2fdb", "title": "Flexible neural connectivity
-        under constraints on total connection strength"}, {"paperId": "a95a6418ca9b6a997e5afdf0a526a1e7af68e3ac",
-        "title": "What the odor is not: Estimation by elimination"}, {"paperId": "40056f4452c5182a8e80eb2642070dfa151e39f9",
-        "title": "Modular structure of human olfactory receptor codes reflects the
-        bases of odor perception"}, {"paperId": "311a4303ddf2549b8585e2aa8e4cca9d0a613af5",
-        "title": "Encoding = ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?"}, {"paperId": "c4e09171a4c35f2d686412cf3b3de036c5c3ad99",
-        "title": "Improving Similarity Search with High-dimensional Locality-sensitive
-        Hashing"}, {"paperId": "4ef87dcf4bde5e1a1560717bd5eea05a3c50f3e9", "title":
-        "A neural data structure for novelty detection"}, {"paperId": "17d8e05ec29b67467d426b6e3ffb7bcbb63cfeb2",
-        "title": "The distributed circuit within the piriform cortex makes odor discrimination
-        robust"}, {"paperId": "e17b1a06c1953b580f5d923b28620dc4546cb4d6", "title":
-        "A Molecular Basis of Olfaction: Odorant\u2011Specific\u00a0Electric-Field
-        Emission"}, {"paperId": "4bb9803e914d86fdde6a76adc42610bb1ccf17d2", "title":
-        "Deep(er) Learning"}, {"paperId": "402a31c00def73c168fcecafc17ab4b7dc8cbbbe",
-        "title": "Corrigendum: Calcium in Kenyon Cell Somata as a Substrate for an
-        Olfactory Sensory Memory in Drosophila"}, {"paperId": "315dd677200a9fff674494859c23af4999461799",
-        "title": "Making Memories. On the fly."}, {"paperId": "c0f6d9ee9f0d580a08339a05233549c085a7a3a3",
-        "title": "Ged\u00e4chtnismechanismen in Drosophila"}, {"paperId": "713f01a81df4419cded0d83180437e5015d6dd69",
-        "title": "Calcium in Kenyon Cell Somata as a Substrate for an Olfactory Sensory
-        Memory in Drosophila"}, {"paperId": "3e4519b6cb01a89c8ec14d1d156c02c2b686eb31",
-        "title": "Context-dependent environmental adaptation of olfactory receptor
-        abundances"}, {"paperId": "a7f73746f0a05c85a948bb37aded56c0e8b8cf5c", "title":
-        "Implications for human odor sensing revealed from the statistics of odorant-receptor
-        interactions"}, {"paperId": "5eab8868eccae84e88811d66189c2e0d81fdc1dc", "title":
-        "Implications for human odor sensing revealed from the statistics of the odorant-receptor
-        interactions"}, {"paperId": "07e008a17d145a5367f217ed64cc76862737ac63", "title":
-        "Adaptation of olfactory receptor abundances for efficient coding"}, {"paperId":
-        "78dfd4b29030a88f89d3f7236adda67d7a6659d0", "title": "Conserved features of
-        the primate face code"}, {"paperId": "229cf8ddb9b5dbdf3b8bb60c9fbcf83759347810",
-        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila
-        melanogaster"}, {"paperId": "ed6191b2500c1f2e2778a3e0b5e2c47855e1769f", "title":
-        "How fast is neural winner-take-all when deciding between many options?"},
-        {"paperId": "00af4504cd311dd35e3df261b34fa49d5f182daa", "title": "Learning
-        from connectomics on the fly."}, {"paperId": "011d99c2f92a467e05167dd7f1eca904dd25be85",
-        "title": "Invariances in a combinatorial olfactory receptor code"}, {"paperId":
-        "620af242e36739c70e8a9ce6bcbf73b6bb3d463b", "title": "A clustering neural
-        network model of insect olfaction"}, {"paperId": "da5d837b722093ce7cf0ba117793245a1f8803c8",
-        "title": "Vibrational Detection of Odorant Functional Groups by Drosophila
-        melanogaster"}, {"paperId": "81f2088459fe65e4882d227ab11836c54f3fc790", "title":
-        "A neural algorithm for a fundamental computing problem"}, {"paperId": "9f0b42fb56c38960e872251d4e7c5af2fb19067b",
-        "title": "Disorder and the Neural Representation of Complex Odors"}, {"paperId":
-        "37b5cfa6dbe926da822a022d9a5e691870e161d3", "title": "Olfactory receptor neurons
-        use gain control and complementary kinetics to encode intermittent odorant
-        stimuli"}, {"paperId": "22deb34f0d8fe696ffb1c846234fd5945332d401", "title":
-        "Environmental adaptation of olfactory receptor distributions"}, {"paperId":
-        "c1f2b782bef5ad61d74fc3bee4bf13c0afdaffe4", "title": "A quantitative description
-        of the mouse piriform cortex"}, {"paperId": "1b951458781bbafefc35918083b360c9b83f3471",
-        "title": "The evolution of lossy compression"}, {"paperId": "2606a0c681fe83101b9abf65f48afd1793ab78db",
-        "title": "Invariances in a combinatorial olfactory receptor code 1 2"}, {"paperId":
-        "e07d8117f04390d197da4be843fd64ff4422faf6", "title": "Optimal Adaptation Principles
-        In Neural Systems"}, {"paperId": "6bd28b2b7f85a5a3c39f1c74bcd31dcda9a6c13b",
-        "title": "Normalized Neural Representations of Complex Odors"}, {"paperId":
-        "ae578a969efe304499062872102b1130b54858de", "title": "A statistical property
-        of fly odor responses is conserved across odors"}, {"paperId": "5d3ccefec7ddc5e4b11fa9b1bd6d2e57ef39d48b",
-        "title": "What is memory? The present state of the engram"}, {"paperId": "4b22f2f0251f4cec6a1cab2c463386117a791433",
-        "title": "Memory-Relevant Mushroom Body Output Synapses Are Cholinergic"},
-        {"paperId": "2c2e0790b63539285951769d8182a047d3a63a27", "title": "A Robust
-        Feedforward Model of the Olfactory System"}, {"paperId": "74cc0675b5358502de020e37fbcf1c278c1279d3",
-        "title": "Receptor arrays optimized for natural odor statistics"}, {"paperId":
-        "7cbf3839bfaeb17942b7ab281b67b56ff3b58a24", "title": "Olfactory learning skews
-        mushroom body output pathways to steer behavioral choice in Drosophila"},
-        {"paperId": "273e9e7a167153feb78603eb51b27e7857602795", "title": "Olfactory
-        responses of Drosophila 1 are encoded in the organization of 2 projection
-        neurons 3"}]}
+        body network model"}, {"paperId": "da6ce9df076a7fe81b6119ea05164a6917b59f56",
+        "title": "Compensatory variability in network parameters enhances memory performance
+        in the Drosophila mushroom body"}, {"paperId": "65d77663124f850bc5a87efb286cffd2e31ba8c1",
+        "title": "Can a Fruit Fly Learn Word Embeddings?"}, {"paperId": "5b3e09e4706b1344e368b04b50928ac6c9b8615d",
+        "title": "Untangling the wires: development of sparse, distributed connectivity
+        in the mushroom body calyx"}, {"paperId": "641ee65c532f9de8fc0ceb4796d9038abc4640d4",
+        "title": "Information flow, cell types and stereotypy in a full olfactory
+        connectome"}, {"paperId": "1e61fc3be517cbbf24641aac026c257fafc811b2", "title":
+        "The connectome of the adult Drosophila mushroom body provides insights into
+        function"}, {"paperId": "3149671f907078eac6835a05a99da756c493a15b", "title":
+        "FlyWire: Online community for whole-brain connectomics"}, {"paperId": "9c30c9d49d1325e86604a90e69eeea08a0d079d4",
+        "title": "The connectome of the adult Drosophila mushroom body: implications
+        for function"}, {"paperId": "e731c97430438fb816e6506270a1673e5a3aba7f", "title":
+        "Synthesis of Conserved Odor Object Representations in a Random, Divergent-Convergent
+        Network"}, {"paperId": "6e0b45b624112390eebf614b9679f88e05b338fb", "title":
+        "Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory
+        and Hygrosensory Neurons in the Adult Drosophila Brain"}, {"paperId": "184f3223e760445fbce4683b311113f985ee7334",
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons
+        in the Fly Brain"}, {"paperId": "23653a9f071d20bac22948f1dd1ebd0564b09507",
+        "title": "Automated Reconstruction of a Serial-Section EM Drosophila Brain
+        with Flood-Filling Networks and Local Realignment"}, {"paperId": "273e9e7a167153feb78603eb51b27e7857602795",
+        "title": "Olfactory responses of Drosophila 1 are encoded in the organization
+        of 2 projection neurons 3"}, {"paperId": "0345334de13a87f167927cdb0aeb9427bf4e6941",
+        "title": "The anterior paired lateral neuron 1 normalizes odour-evoked activity
+        in 2 the Drosophila mushroom body 3 calyx 4"}]}
 
         '
     headers:
@@ -197,31 +113,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '14438'
+      - '7574'
       Content-Type:
       - application/json
       Date:
-      - Fri, 27 Jan 2023 10:11:00 GMT
+      - Fri, 27 Jan 2023 10:19:49 GMT
       Via:
-      - 1.1 2457df698fa0a181e812d5fc68158bf2.cloudfront.net (CloudFront)
+      - 1.1 800675e91c111e7a276d8d8cb01627b8.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - VTrVCj8DKieXe0o9r3E15tWNgmrHH_hCaFRXLP7g2OzytktfO9kUEQ==
+      - -afUKWqywQ218uX_8mlQ6xgr1UJ1BfyQHs0aCiSzlp2vZf6hR3b6wQ==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fZZwNFkHPHcFyJw=
+      - fZbC8G3PPHcFyOg=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '14438'
+      - '7574'
       x-amzn-Remapped-Date:
-      - Fri, 27 Jan 2023 10:11:00 GMT
+      - Fri, 27 Jan 2023 10:19:49 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 0de84b46-a277-4e0e-a648-4714718bd770
+      - 2d1c80e5-8c8a-4bab-a984-9567bae3cb05
     status:
       code: 200
       message: OK
@@ -289,8 +205,9 @@ interactions:
         Lu Wang"}, {"authorId": "46212260", "name": "Christopher Wilhelm"}, {"authorId":
         "2112339497", "name": "Zheng Yuan"}, {"authorId": "15292561", "name": "Madeleine
         van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}], "citations":
-        [{"paperId": "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1", "title": "The Semantic
-        Scholar Open Data Platform"}, {"paperId": "1712eaa82a2e3d081538a17e06416330fac0a0d8",
+        [{"paperId": "1a37f43db8108af003bc9af181460ddaacf9e815", "title": "Convolutional
+        Learning on Simplicial Complexes"}, {"paperId": "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1",
+        "title": "The Semantic Scholar Open Data Platform"}, {"paperId": "1712eaa82a2e3d081538a17e06416330fac0a0d8",
         "title": "Energy Efficient Semantic Communication over Wireless Networks with
         Rate Splitting"}, {"paperId": "b74aec118f2b62ae05b04f1b66ab79c2e5b873c0",
         "title": "MRT: Tracing the Evolution of Scientific Publications"}, {"paperId":
@@ -811,31 +728,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '46755'
+      - '46871'
       Content-Type:
       - application/json
       Date:
-      - Fri, 27 Jan 2023 10:11:01 GMT
+      - Fri, 27 Jan 2023 10:19:51 GMT
       Via:
-      - 1.1 95e5e67fa5d157cb509d06500fad3cc4.cloudfront.net (CloudFront)
+      - 1.1 fbf20877e73563def3c2e6d94c9533e0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - hrseM6SH3-KeQ3ns3ihif945xKX67tr772Lk4bojFiUgvXSlyePjqw==
+      - AtvIjNZslsHBkzx3AiKTEBo9Bwm8JxyXdSFtbJWY3DavEqx7xRSkfg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fZZwUEsvvHcFnvA=
+      - fZbDIHDYPHcFRyQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '46755'
+      - '46871'
       x-amzn-Remapped-Date:
-      - Fri, 27 Jan 2023 10:11:01 GMT
+      - Fri, 27 Jan 2023 10:19:51 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 39bfdc2c-d8e8-4aed-8b0d-5606f53694c8
+      - cea7486a-f851-48f6-84e9-b0354384d07e
     status:
       code: 200
       message: OK

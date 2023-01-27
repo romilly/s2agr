@@ -20,7 +20,7 @@ class S2AGCachingTestCase(DatabaseTest):
         requester = WebRequester()
         catalogue = DatabaseCatalogue(test_connection())
         librarian = Librarian(Researcher(requester), catalogue)
-        fly_paper_id = '6da2905bef6b50736660028ce5d11db3206095c1'
+        fly_paper_id = 'e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a' # small set of citations
         self.check_total_row_count('paper', 0)
         librarian.get_paper(fly_paper_id)
         self.check_total_row_count('paper', 1)
