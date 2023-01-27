@@ -8,6 +8,7 @@ CC_RE = pattern = re.compile(r'(?<!^)(?=[A-Z])')
 def snake(name: str) -> str:
     return CC_RE.sub('_', name).lower()
 
+
 PAPER_FIELDS = ','.join([
         'paperId',
         'externalIds',
@@ -29,8 +30,10 @@ PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
-        'tldr',
-        'embedding'
+        'citations', # by default, get
+        # 'citations.year'
+        # 'tldr',
+        # 'embedding'
         ])
 
 
@@ -54,8 +57,8 @@ class Paper:
     publication_date: datetime
     citationStyles: Any
     authors: Any
-    tldr: str
-    embedding: Any
+    # tldr: str
+    # embedding: Any
 
     def __init__(self, jason_dictionary: dict):
         self.jason_dictionary = jason_dictionary

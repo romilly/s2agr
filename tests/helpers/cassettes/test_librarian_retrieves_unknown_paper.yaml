@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,tldr,embedding
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,citations
   response:
     body:
       string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds":
@@ -36,205 +36,9 @@ interactions:
         32, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
         "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
         [{"category": "Computer Science", "source": "external"}, {"category": "Computer
-        Science", "source": "s2-fos-model"}], "embedding": {"model": "specter@v0.1.1",
-        "vector": [-8.82082748413086, -2.6610865592956543, 0.8936576843261719, 0.26382559537887573,
-        1.513496994972229, -1.0313653945922852, 0.7256110906600952, 2.080476999282837,
-        0.8230894804000854, 4.205087661743164, -0.9822302460670471, -0.03232526779174805,
-        -2.4075639247894287, -0.9867752194404602, -1.921100378036499, 0.7259652018547058,
-        -0.7707503437995911, -3.645012140274048, 3.874178647994995, 1.7716397047042847,
-        3.568206787109375, 0.44507932662963867, -4.567941188812256, -6.441675662994385,
-        2.8164267539978027, -5.735928535461426, 4.397401332855225, 1.8640488386154175,
-        -2.0923988819122314, -2.627096176147461, -0.7487516403198242, -2.0460338592529297,
-        4.951084613800049, 0.1367805004119873, 0.11137333512306213, -4.1136651039123535,
-        -2.594398021697998, 3.030726671218872, 0.3192863166332245, 0.5330687761306763,
-        2.1357359886169434, -5.069549560546875, 3.3368606567382812, 3.4393889904022217,
-        -0.4198175370693207, -1.4004586935043335, -0.5914772748947144, 2.3206048011779785,
-        0.7648448348045349, -1.597121000289917, -0.385739803314209, -3.156200885772705,
-        2.498971462249756, 0.8303604125976562, 2.0128214359283447, -3.782414197921753,
-        2.528552770614624, 2.332465410232544, 2.5369043350219727, -5.0995683670043945,
-        -1.626462459564209, 7.199328422546387, -1.2566406726837158, 0.41538551449775696,
-        3.7755417823791504, 1.261708378791809, -7.584755897521973, 4.0944390296936035,
-        1.5449888706207275, -4.304090976715088, -0.32924726605415344, -2.4089677333831787,
-        1.7628121376037598, -0.09815728664398193, -0.6447533965110779, 0.45084691047668457,
-        1.3999435901641846, -3.6956005096435547, -2.3098721504211426, 0.3901975452899933,
-        1.029798984527588, -2.0560712814331055, -0.5374155044555664, 4.123762607574463,
-        3.3944759368896484, -1.5951069593429565, 2.828338623046875, 0.5641002058982849,
-        0.22941206395626068, -0.47985130548477173, 1.9426360130310059, 2.0136306285858154,
-        1.179512619972229, 4.003891944885254, -0.33438336849212646, -1.1228828430175781,
-        -1.2929275035858154, 1.5840518474578857, 1.3768726587295532, -0.4870491623878479,
-        2.6818037033081055, 2.0074918270111084, 2.363792896270752, -1.722172737121582,
-        5.0640130043029785, -3.042407274246216, 3.3051280975341797, 0.8497027158737183,
-        -0.07694533467292786, 1.968888521194458, -1.099830150604248, -0.5580379366874695,
-        0.7135522961616516, -2.482787847518921, -1.3170889616012573, -5.876715660095215,
-        -0.6423283815383911, -1.3246173858642578, -3.658334255218506, 1.5349525213241577,
-        -0.7668131589889526, 0.7902154922485352, -3.750441551208496, 2.065319299697876,
-        0.018029093742370605, -3.6421332359313965, -0.37890782952308655, -2.2164065837860107,
-        -0.08748644590377808, -3.86814022064209, 0.695722222328186, 4.275792121887207,
-        3.413512945175171, 0.7553334832191467, -1.4113353490829468, 0.6299422979354858,
-        -2.747424364089966, 3.451552152633667, -3.1597602367401123, -0.7350130081176758,
-        -1.1627154350280762, 5.0071563720703125, -0.8610213398933411, -0.9394667148590088,
-        -5.773488998413086, 5.3121795654296875, 3.149068832397461, 1.1553789377212524,
-        -0.6007860898971558, 3.3248229026794434, 2.350024461746216, -3.4872894287109375,
-        -0.8592612743377686, 3.839386463165283, -1.9614695310592651, 2.8497214317321777,
-        -2.9465718269348145, 3.018148899078369, -0.16511030495166779, -0.09398387372493744,
-        3.38796329498291, 0.2834477722644806, -3.7649965286254883, 0.698212206363678,
-        1.2958242893218994, 0.10116651654243469, -5.703367233276367, 4.123208045959473,
-        -2.971092462539673, 4.6502861976623535, 0.606526255607605, -2.1402676105499268,
-        1.6209194660186768, -0.5743860006332397, -2.4197378158569336, -1.5533453226089478,
-        -4.110861778259277, -3.6292262077331543, -1.4521592855453491, 0.3719058930873871,
-        -0.9718815088272095, -0.3786925971508026, -5.524031639099121, 0.33255061507225037,
-        -4.376255035400391, 2.3065083026885986, -0.19468218088150024, -2.940129041671753,
-        -1.9395620822906494, -1.6664588451385498, -1.8545734882354736, -3.5772130489349365,
-        3.8606462478637695, 3.4952049255371094, 2.122180461883545, 5.525038719177246,
-        5.132749557495117, 0.6683793067932129, -1.7433147430419922, 2.5299510955810547,
-        -0.0620303750038147, 3.5391602516174316, 0.09924519062042236, 2.936466932296753,
-        1.0871052742004395, 2.5235912799835205, 0.608716607093811, 6.6861748695373535,
-        -0.050266146659851074, -0.5016537308692932, 0.4177108108997345, 1.5648516416549683,
-        0.6080945730209351, 4.140994071960449, 0.10780242085456848, -2.273747682571411,
-        -3.999650478363037, -1.93492591381073, -1.493424654006958, 1.0952887535095215,
-        -1.7703802585601807, -2.4324464797973633, 0.40698888897895813, -5.188541889190674,
-        3.841076374053955, -3.7766754627227783, -1.2854382991790771, 3.185441017150879,
-        1.1935969591140747, 0.5826236605644226, -1.2215397357940674, -4.865927219390869,
-        -4.633474349975586, -1.167330026626587, 1.1627209186553955, -0.22295856475830078,
-        -4.211874961853027, 0.2428896427154541, -3.6107473373413086, -3.2735652923583984,
-        2.875898599624634, 3.7175393104553223, 3.0179100036621094, 4.034282684326172,
-        1.1873879432678223, 3.092750310897827, -2.482966423034668, 1.3855974674224854,
-        2.2576937675476074, 0.9120624661445618, -0.7953076362609863, -0.09212826937437057,
-        -0.04562532901763916, -0.2452099323272705, 0.672014594078064, 0.9832779169082642,
-        0.8954272270202637, -3.2224671840667725, 1.957357406616211, 5.284664630889893,
-        -2.002985954284668, -2.471601724624634, -1.7302770614624023, -2.873502254486084,
-        1.1295723915100098, -1.5491256713867188, -5.707137584686279, 2.8530421257019043,
-        -0.2643877863883972, 0.8024728298187256, 1.0461363792419434, 0.9237658977508545,
-        -1.3014153242111206, -2.9224014282226562, -1.1175177097320557, -2.6533708572387695,
-        0.2044965922832489, -2.072725772857666, 0.5080446600914001, 1.5947340726852417,
-        1.2278187274932861, -1.609885573387146, 0.6639143228530884, 0.2469625025987625,
-        -0.07805928587913513, -2.111103057861328, -3.578428030014038, -1.3685001134872437,
-        1.9612454175949097, 0.2562447786331177, -0.5922466516494751, 3.855717182159424,
-        -2.6805360317230225, -1.3309810161590576, -0.14805418252944946, 2.4503719806671143,
-        2.4964418411254883, 2.916283130645752, -2.560709238052368, -1.4271776676177979,
-        -1.4742952585220337, 3.7387516498565674, 1.9097418785095215, 0.1607094407081604,
-        2.6281399726867676, 1.1268069744110107, -1.959589958190918, -0.7029924392700195,
-        2.689059257507324, -1.5686848163604736, 0.9398348331451416, -1.9787335395812988,
-        1.4679707288742065, -4.820215225219727, 2.633965492248535, 1.2595349550247192,
-        -1.4709419012069702, 5.015800476074219, -3.533895969390869, 2.4313130378723145,
-        1.6752971410751343, 2.812577486038208, -2.6067190170288086, -2.1874210834503174,
-        -4.936158657073975, 6.20560884475708, -1.5726691484451294, 2.5791800022125244,
-        -3.656064987182617, 4.833833694458008, -1.8970681428909302, 4.775002956390381,
-        2.08392333984375, -0.3414423167705536, -2.7202396392822266, -3.513397693634033,
-        1.5294971466064453, -0.7259325981140137, 1.961181402206421, 3.8482847213745117,
-        2.6189215183258057, 3.7842366695404053, 0.08039587736129761, 1.8728827238082886,
-        -2.581357479095459, -1.6711056232452393, 0.8974134922027588, -2.8805346488952637,
-        -2.9208199977874756, 4.3835577964782715, -2.446713924407959, -0.17174774408340454,
-        5.355374813079834, -1.575836420059204, 0.5388461947441101, 3.286109209060669,
-        1.7535617351531982, 0.7574344873428345, -2.349799871444702, -3.7714366912841797,
-        2.6155600547790527, -0.4974636435508728, 2.1626436710357666, 5.7223920822143555,
-        4.005527973175049, -1.1396621465682983, 7.944160461425781, -2.660799264907837,
-        -1.3134095668792725, -3.9956204891204834, -9.434564590454102, -5.767303466796875,
-        -4.990682601928711, 0.2799413800239563, -3.237804412841797, -2.9255075454711914,
-        -3.1861748695373535, -2.861666202545166, 5.03348970413208, 2.3157730102539062,
-        -3.8089358806610107, -0.24117285013198853, -5.186347007751465, 1.066924810409546,
-        1.9648782014846802, 1.238943338394165, -0.6590574979782104, 4.292763710021973,
-        -1.5347460508346558, 1.5626903772354126, -0.3241578936576843, 1.9453656673431396,
-        3.856898307800293, -0.47141915559768677, -2.7094573974609375, 0.47523799538612366,
-        3.272409677505493, 0.10762891173362732, 2.2162556648254395, 0.8326456546783447,
-        0.47202202677726746, -7.1059770584106445, 4.218060493469238, 3.896106719970703,
-        -3.5459229946136475, 5.298534393310547, 1.8571503162384033, -0.986137866973877,
-        -5.885499477386475, -3.5143141746520996, -5.025787830352783, -1.6249220371246338,
-        3.757392168045044, -5.282137393951416, 2.4075257778167725, 1.906000018119812,
-        -2.4602890014648438, -1.1592689752578735, -4.02043342590332, -1.1879253387451172,
-        1.5408613681793213, 1.454640507698059, 7.608460426330566, -3.239082098007202,
-        1.7990007400512695, 2.4204137325286865, -1.888704538345337, 3.2249915599823,
-        3.242872953414917, 4.830099582672119, 2.1452765464782715, 6.881599426269531,
-        2.2579007148742676, -4.861010551452637, 2.528012990951538, 1.491978645324707,
-        5.3004841804504395, 1.4966914653778076, 4.28740930557251, -2.170856475830078,
-        0.06783469766378403, -2.7655692100524902, 0.6727364659309387, -1.0660390853881836,
-        3.466733455657959, 0.530046284198761, 2.991767644882202, -2.9452333450317383,
-        -1.0527138710021973, -2.8662476539611816, 1.9816136360168457, 1.3402495384216309,
-        -2.19728946685791, -0.00503438338637352, -1.6173782348632812, -1.5154337882995605,
-        -1.398492693901062, 4.60127067565918, -3.6189303398132324, 1.2732025384902954,
-        -5.424232482910156, 4.763565540313721, -0.8359209895133972, 4.297383785247803,
-        2.88529372215271, -2.295916795730591, 1.1955653429031372, -0.5658209323883057,
-        -4.234613418579102, 5.87252140045166, 2.4539308547973633, 2.1682753562927246,
-        -2.175701856613159, -0.5272976160049438, -1.3904378414154053, -0.6558912992477417,
-        2.151852607727051, 2.6267266273498535, 6.1862077713012695, -2.236616611480713,
-        -2.46718168258667, 1.6054731607437134, 1.236859917640686, -4.016797065734863,
-        2.564441442489624, 2.9593474864959717, 1.8453437089920044, 0.8548566102981567,
-        0.6815851330757141, 1.6342124938964844, 2.0484790802001953, 5.161302089691162,
-        2.0103867053985596, -2.2268259525299072, -0.324008584022522, -4.525731086730957,
-        -5.899938583374023, -1.57381272315979, 2.753848075866699, 1.4437190294265747,
-        2.5572738647460938, -4.031088829040527, 1.4342057704925537, -3.0169248580932617,
-        -2.3864011764526367, 3.8081140518188477, 3.15205717086792, -1.2462984323501587,
-        3.350985050201416, 3.932457447052002, -0.3616705536842346, -1.6752489805221558,
-        -2.0513782501220703, -0.7278816103935242, -3.8056182861328125, -1.077030062675476,
-        3.3998231887817383, 0.3705006539821625, 3.6883020401000977, -0.20162513852119446,
-        0.3596533238887787, -3.7134628295898438, -1.9852213859558105, 1.4022072553634644,
-        1.5042661428451538, -0.9216997623443604, -0.766638994216919, -0.9795191287994385,
-        3.40193510055542, 5.399808883666992, 1.1797339916229248, 0.17057597637176514,
-        -1.6337227821350098, -2.417093276977539, -1.1497867107391357, -2.319566249847412,
-        2.289945363998413, 6.71909236907959, -0.9108301401138306, -0.011780805885791779,
-        -1.4741638898849487, 0.1411837786436081, -0.7666654586791992, 1.072249412536621,
-        2.915128469467163, 5.379716873168945, -2.604185104370117, -1.1876413822174072,
-        0.5678701400756836, 2.952575206756592, 3.58003830909729, -0.7299574613571167,
-        3.713240385055542, 2.386962890625, -2.247404098510742, -4.430778503417969,
-        -2.4630932807922363, -1.3351783752441406, 4.594967842102051, 1.2018078565597534,
-        2.9924888610839844, -0.630717933177948, 2.6290090084075928, -3.2401227951049805,
-        2.9851884841918945, 0.5099890828132629, -0.32211846113204956, 2.7706260681152344,
-        0.8954097032546997, -0.04436314105987549, -4.248575210571289, -4.576909065246582,
-        3.488842487335205, 0.5832319259643555, 2.8054537773132324, -1.4832326173782349,
-        0.28761956095695496, 2.8485336303710938, -1.296849012374878, -0.6779845356941223,
-        -3.2111666202545166, 1.9787689447402954, -1.5465495586395264, -4.7340474128723145,
-        0.11345571279525757, -0.14084027707576752, 1.9810600280761719, -1.6290788650512695,
-        -2.043548583984375, -2.949659824371338, 0.9230931401252747, -0.07091890275478363,
-        0.9788657426834106, -1.612915277481079, -0.19579987227916718, -6.65704345703125,
-        -1.3438419103622437, -3.763821601867676, 1.2558623552322388, 2.140481472015381,
-        -0.6798375844955444, 2.390300750732422, 4.744471549987793, 4.469935417175293,
-        -3.9686341285705566, -1.778070092201233, 3.8076817989349365, 0.5489823222160339,
-        1.1142582893371582, -3.220423698425293, -0.8057819604873657, -3.0291314125061035,
-        10.149873733520508, -3.0511834621429443, 1.263113260269165, -4.1305060386657715,
-        -3.896047592163086, -4.279664993286133, -0.8047889471054077, -0.12870952486991882,
-        2.5159802436828613, 3.704922676086426, -2.0867600440979004, -3.4006495475769043,
-        -1.885886788368225, -3.297698497772217, 1.2235376834869385, -1.4368454217910767,
-        2.007518768310547, 0.30317431688308716, -3.131901502609253, -1.4268234968185425,
-        3.5213465690612793, -1.0129806995391846, 0.7158693671226501, -4.522485256195068,
-        -4.235111713409424, 2.054044723510742, 3.979306697845459, 1.3788737058639526,
-        1.7657277584075928, -1.0772475004196167, 1.0076931715011597, 6.627652645111084,
-        -2.396228790283203, -0.7493685483932495, 0.03169824182987213, 0.7719594240188599,
-        -0.9826122522354126, -2.9704136848449707, -0.14799341559410095, -5.19771671295166,
-        0.9957502484321594, 2.7101709842681885, -2.450211524963379, 3.224669933319092,
-        -2.9445900917053223, -1.992325782775879, 2.857076406478882, -0.43477949500083923,
-        -6.4996185302734375, 5.825007915496826, -3.0607876777648926, -0.7532831430435181,
-        -5.731386661529541, 2.1117076873779297, 0.7012711763381958, -0.4407273530960083,
-        -2.835089921951294, -2.6022825241088867, -0.48043811321258545, 0.5714886784553528,
-        1.2276394367218018, 1.9414036273956299, 6.570715427398682, -0.9756608605384827,
-        -2.3062329292297363, 3.374922275543213, -2.6608853340148926, 3.6467506885528564,
-        -1.402575969696045, -1.3301022052764893, -0.47859400510787964, 1.4427119493484497,
-        -0.49938851594924927, -4.236391544342041, 0.777758002281189, -0.9009902477264404,
-        1.817657232284546, -3.8171029090881348, -1.202553153038025, 3.825739622116089,
-        -3.5488178730010986, -3.9272449016571045, -2.9504148960113525, 0.16043853759765625,
-        1.6629605293273926, -1.1063730716705322, 1.1721901893615723, 0.8794270157814026,
-        -2.1830575466156006, 1.2237869501113892, -4.064148426055908, -0.9820485711097717,
-        5.156486988067627, 3.1930830478668213, 2.727524757385254, -4.5054497718811035,
-        -2.9361350536346436, 0.3134649097919464, 0.7734969854354858, -1.2302123308181763,
-        1.815080165863037, 3.712904453277588, -1.9375901222229004, -0.7238602042198181,
-        -5.060826301574707, 0.13670963048934937, -2.1631834506988525, -2.660275459289551,
-        -3.534555435180664, 0.12559731304645538, 1.3645493984222412, 0.8591627478599548,
-        3.1643340587615967, 0.5393146872520447, 0.766787052154541, -3.0512771606445312,
-        1.2689402103424072, -0.3294597864151001, 0.29757222533226013, 3.023794651031494,
-        3.6919238567352295, 0.6245505809783936, -0.004425600171089172, -4.051902770996094,
-        -0.8448878526687622, 0.03290879726409912, 3.0217368602752686, -2.1936895847320557,
-        -2.591491937637329, -2.7961978912353516, 2.9690139293670654, 1.8845709562301636,
-        2.0488815307617188, -0.3929055333137512, 3.2013416290283203, -0.02199321985244751,
-        0.6550448536872864, 0.40371033549308777, 0.9349490404129028, 2.9326210021972656,
-        -0.9087234735488892, 1.6680347919464111, -1.7342610359191895, 5.191349506378174,
-        0.8320249915122986, 0.632623553276062, -4.146793842315674, -1.180707573890686,
-        3.647608757019043, 2.951371669769287, 3.1728854179382324, 1.2579790353775024,
-        -2.1136271953582764, -0.9828354716300964, -3.1169707775115967, 2.203051805496216]},
-        "tldr": {"model": "tldr@v2.0.0", "text": "This paper reduces literature graph
-        construction into familiar NLP tasks, point out research challenges due to
-        differences from standard formulations of these tasks, and report empirical
-        results for each task."}, "publicationTypes": ["JournalArticle", "Conference"],
-        "publicationDate": "2018-05-06", "journal": {"pages": "84-91"}, "citationStyles":
-        {"bibtex": "@[''JournalArticle'', ''Conference'']{Ammar2018ConstructionOT,\n
+        Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle",
+        "Conference"], "publicationDate": "2018-05-06", "journal": {"pages": "84-91"},
+        "citationStyles": {"bibtex": "@[''JournalArticle'', ''Conference'']{Ammar2018ConstructionOT,\n
         author = {Waleed Ammar and Dirk Groeneveld and Chandra Bhagavatula and Iz
         Beltagy and Miles Crawford and Doug Downey and Jason Dunkelberger and Ahmed
         Elgohary and Sergey Feldman and Vu A. Ha and Rodney Michael Kinney and Sebastian
@@ -258,7 +62,521 @@ interactions:
         "46181683", "name": "Sam Skjonsberg"}, {"authorId": "31860505", "name": "Lucy
         Lu Wang"}, {"authorId": "46212260", "name": "Christopher Wilhelm"}, {"authorId":
         "2112339497", "name": "Zheng Yuan"}, {"authorId": "15292561", "name": "Madeleine
-        van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}]}
+        van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}], "citations":
+        [{"paperId": "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1", "title": "The Semantic
+        Scholar Open Data Platform"}, {"paperId": "1712eaa82a2e3d081538a17e06416330fac0a0d8",
+        "title": "Energy Efficient Semantic Communication over Wireless Networks with
+        Rate Splitting"}, {"paperId": "b74aec118f2b62ae05b04f1b66ab79c2e5b873c0",
+        "title": "MRT: Tracing the Evolution of Scientific Publications"}, {"paperId":
+        "f445f8a0ce442fe7db90dfb8226272189e649a2c", "title": "Logic Mill - A Knowledge
+        Navigation System"}, {"paperId": "cfcfe9fd697e98ad2508b4bf95dad16390f66938",
+        "title": "Chaining and the temporal dynamics of scientists\u2019 publishing
+        behaviour"}, {"paperId": "958bb3831589246fe5b6b58cf99e3b65c58d027f", "title":
+        "Multi-modal Molecule Structure-text Model for Text-based Retrieval and Editing"},
+        {"paperId": "b6fba18ca329347c330262edb71f56bde08c29e1", "title": "The National
+        Library of Medicine indexer assignment dataset: A new large\u2010scale dataset
+        for reviewer assignment research"}, {"paperId": "25b77db5bfca92029532ca70ee659fdf88db8484",
+        "title": "SMAuC - The Scientific Multi-Authorship Corpus"}, {"paperId": "7e0fda71cc2e561385c0a2e29f5a81654a11157f",
+        "title": "VarMAE: Pre-training of Variational Masked Autoencoder for Domain-adaptive
+        Language Understanding"}, {"paperId": "4a236906f5bed6385c7b3bf3f10a0099e41d4566",
+        "title": "Semantic-Native Communication: A Simplicial Complex Perspective"},
+        {"paperId": "97394fd6876dd10a0bdf233beb8216f16e074bee", "title": "Visual Exploration
+        of Literature with Argo Scholar"}, {"paperId": "42b2fd8a0ab69281022de528c591c665f5f2ad3b",
+        "title": "A Multi-Domain Benchmark for Personalized Search Evaluation"}, {"paperId":
+        "e92b2ada3a8112426946f3acd8991dbc74d4b311", "title": "KnowledgeShovel: An
+        AI-in-the-Loop Document Annotation System for Scientific Knowledge Base Construction"},
+        {"paperId": "7a71bc2accc8423b69d136d82a2bc584b74e80a3", "title": "Communities
+        as Vague Operators: Epistemological Questions for a Critical Heuristics of
+        Community Detection Algorithms"}, {"paperId": "00f4e66a3eb2fa02063d83da1e5afe19242a282e",
+        "title": "Clustering Semantic Predicates in the Open Research Knowledge Graph"},
+        {"paperId": "1b2139b38e6a9ded0c161a6bbed39a5cf09c03f0", "title": "A Dataset
+        of Alt Texts from HCI Publications: Analyses and Uses Towards Producing More
+        Descriptive Alt Texts of Data Visualizations in Scientific Papers"}, {"paperId":
+        "dfbe1fcd18742d71d2807506120aab24485491c8", "title": "Constructing marine
+        expert management knowledge graph based on Trellisnet-CRF"}, {"paperId": "c05a9797e5ead09d0885efa9f1b464d319f80709",
+        "title": "Drug-Drug Interaction Extraction from Biomedical Text using Relation
+        BioBERT with BLSTM"}, {"paperId": "33b7a611db06806a9e1d22ce5bb8bbeb2604b5f3",
+        "title": "What evidence exists on the impact of sustainability initiatives
+        on smallholder engagement in sustainable palm oil practices in Southeast Asia:
+        a systematic map protocol"}, {"paperId": "c1e0f6d36328cbdd03b7a8f111a518b8e3525e0f",
+        "title": "A Knowledge Graph Approach towards Re-structuring of Scientific
+        Articles"}, {"paperId": "2a49efd0657c7ace5a4e22ce9c484c94aab8a4b7", "title":
+        "Performance Optimization for Semantic Communications: An Attention-Based
+        Reinforcement Learning Approach"}, {"paperId": "da2d3efdd74b1be17f5914461f9a1a6747a43fac",
+        "title": "Scholarly knowledge graphs through structuring scholarly communication:
+        a review"}, {"paperId": "f339ab25cc1e784baa76896623dde732171b5634", "title":
+        "API Deprecation: A Systematic Mapping Study"}, {"paperId": "06418696aa6a8438b1920edf516d576a9d9b7baa",
+        "title": "The decentralized evolution of decentralization across fields: from
+        Governance to Blockchain"}, {"paperId": "4f451ba06c4c9effd6c4ac0bae222495501a6200",
+        "title": "Innovations in Neural Data-to-text Generation"}, {"paperId": "22568312b44961be20c453bfcbef53a78d7020be",
+        "title": "Themes in Academic Literature: Prejudice and Social Justice"}, {"paperId":
+        "782876a0eb86ea73808bb9e1423a34fa4dca28ef", "title": "Extractive Search for
+        Analysis of Biomedical Texts"}, {"paperId": "6c7abf617c0591be96a09776092271c72f49ff2f",
+        "title": "Complementary artificial intelligence designed to augment human
+        discovery"}, {"paperId": "6ffc29d76c8c31988b5563ac08942bcf28de7bf3", "title":
+        "Institutional Collaboration Recommendation: An expertise-based framework
+        using NLP and Network Analysis"}, {"paperId": "a4d581724fb604d13719b73f87a0457f007a43a4",
+        "title": "Generating a Structured Summary of Numerous Academic Papers: Dataset
+        and Method"}, {"paperId": "4a497123488f5790548406bd10384ae7b89c4315", "title":
+        "Dynamic Spanning Trees for Connectivity Queries on Fully-dynamic Undirected
+        Graphs"}, {"paperId": "b222b76c91ce699852a1cdf16670de1bf10afdb3", "title":
+        "Groundwater Rise and Associated Flooding in Coastal Settlements Due To Sea\u2010Level
+        Rise: A Review of Processes and Methods"}, {"paperId": "3347bb7b0b95f1ebec61997983ce94d6896e8ea2",
+        "title": "Research Topic Flows in Co-Authorship Networks"}, {"paperId": "192041215f6a1573fbbbbe323ee4275157fb6a3d",
+        "title": "A Scoping Review of Species Distribution Modeling Methods for Tick
+        Vectors"}, {"paperId": "686d9ee744fa013cc21cdd86acd864c936e9e456", "title":
+        "Large Language Models are Zero-Shot Clinical Information Extractors"}, {"paperId":
+        "844e2bc8c85ae33c69e8307ea0c0fba4f15be07b", "title": "Overview of STEM Science
+        as Process, Method, Material, and Data Named Entities"}, {"paperId": "6cb77f85207c680ac442275138d2458a8505256b",
+        "title": "ScholarBERT: Bigger is Not Always Better"}, {"paperId": "f3aea1550dd58193eb14c1e1d485b90f4c8d130c",
+        "title": "SchenQL: A query language for bibliographic data with aggregations
+        and domain-specific functions"}, {"paperId": "cb3192a6c28230190b7fdb7081e1ae94f059a736",
+        "title": "Scim: Intelligent Skimming Support for Scientific Papers"}, {"paperId":
+        "88b8569f4c5ea548e8eac6cb68896251e85ca879", "title": "OpenAlex: A fully-open
+        index of scholarly works, authors, venues, institutions, and concepts"}, {"paperId":
+        "607d657df1523b537308dc8936cb7472c07ec8f4", "title": "Medical Coding with
+        Biomedical Transformer Ensembles and Zero/Few-shot Learning"}, {"paperId":
+        "c27c09cad5885ce508a12b5eac186e6a2b1d33fa", "title": "Further divided gender
+        gaps in research productivity and collaboration during the COVID-19 pandemic:
+        Evidence from coronavirus-related literature"}, {"paperId": "7ecb5b8c5456a4a6b1129527b1d96d2997d3ee5b",
+        "title": "Mapping Research Trajectories"}, {"paperId": "56d1907288cbccf3dd502c0ebf071f124066f7b9",
+        "title": "Dynamic Gaussian Embedding of Authors"}, {"paperId": "eabccc3e2c6c17daea60e089ff6b42819a3d186c",
+        "title": "GraphCite: Citation Intent Classification in Scientific Publications
+        via Graph Embeddings"}, {"paperId": "3f2974192bae78d3ea9144279f24fa4da13d6e8a",
+        "title": "From Books to Knowledge Graphs"}, {"paperId": "6d8b9829512f66a1fb92326dc4f6e2b314363625",
+        "title": "S2AMP: A High-Coverage Dataset of Scholarly Mentorship Inferred
+        from Publications"}, {"paperId": "5d1b955e38073fc13c82ba46801e300dc1a70a9b",
+        "title": "BioAct: Biomedical Knowledge Base Construction using Active Learning"},
+        {"paperId": "0db5207510819b9956849eb84bfe8703f8f3688d", "title": "BioBART:
+        Pretraining and Evaluation of A Biomedical Generative Language Model"}, {"paperId":
+        "b5aa72becfb20fae00a15a8169e0a4d873cf6013", "title": "Validation of scientific
+        topic models using graph analysis and corpus metadata"}, {"paperId": "bf0ba3559ecfa02175a15217d3b61afe10f09de7",
+        "title": "An empirical study of the design choices for local citation recommendation
+        systems"}, {"paperId": "f11512e1213e756a4ed319e11fb4518b9fa17ccb", "title":
+        "The evolution of scientific literature as metastable knowledge states"},
+        {"paperId": "f2df1a1c2c157bf53233a6648deb5135746fec43", "title": "Assessment
+        of contextualised representations in detecting outcome phrases in clinical
+        trials"}, {"paperId": "8dc1e4bac2d0403ba4bec7bcb8abb7534c53ab1f", "title":
+        "Automatic Related Work Generation: A Meta Study"}, {"paperId": "59c4df0f1dd75db4a5e25f4fb860040244949089",
+        "title": "Improving the robustness and accuracy of biomedical language models
+        through adversarial training"}, {"paperId": "17d7fd18123e12efbb9c255c8b986a5e84578b07",
+        "title": "Time Waits for No One! Analysis and Challenges of Temporal Misalignment"},
+        {"paperId": "1346d703959399ba404f251290d0352f0631d242", "title": "Cross-lingual
+        citations in English papers: a large-scale analysis of prevalence, usage,
+        and impact"}, {"paperId": "4bfa4a1a29376f287992c2f02582110750a904bb", "title":
+        "Investigation of improving the pre-training and fine-tuning of BERT model
+        for biomedical relation extraction"}, {"paperId": "3ea8767b852253e2636b6e57925be7fcc1d739df",
+        "title": "Systematic Inequalities in Language Technology Performance across
+        the World\u2019s Languages"}, {"paperId": "96b8611c3e8d887362df292522debe2c3cfa1def",
+        "title": "Masader: Metadata Sourcing for Arabic Text and Speech Data Resources"},
+        {"paperId": "b146be9e80c66a6e062a1525693311fac65ae19e", "title": "MatSciBERT:
+        A materials domain language model for text mining and information extraction"},
+        {"paperId": "86bca4f379e5e626430193f6bc5731be027d043d", "title": "LG4AV: Combining
+        Language Models and Graph Neural Networks for Author Verification"}, {"paperId":
+        "61e06615f6cee5ed1ba7d22b801925b69a45653b", "title": "The Values Encoded in
+        Machine Learning Research"}, {"paperId": "f95620883ce631dcca296d6301ab094555a9b1c4",
+        "title": "VILA: Improving Structured Content Extraction from Scientific PDFs
+        Using Visual Layout Groups"}, {"paperId": "dbcfccf5de3b80117085e1e1f25d9d297ed24dd7",
+        "title": "OAG-BERT: Towards a Unified Backbone Language Model for Academic
+        Knowledge Services"}, {"paperId": "a155b53e05976d7d8801eeeb1a74dfd82639d543",
+        "title": "Analysing the requirements for an Open Research Knowledge Graph:
+        use cases, quality requirements, and construction strategies"}, {"paperId":
+        "e877fcfdddaeddd46f7f1afd70eb2e1c7a4bdfae", "title": "Longitudinal Citation
+        Prediction using Temporal Graph Neural Networks"}, {"paperId": "95f4666c569ca863fa4ff2ab1447eaad7664b98b",
+        "title": "REDI: Towards knowledge graph-powered scholarly information management
+        and research networking"}, {"paperId": "a0f3de926b682a53705f833ae273395678e80231",
+        "title": "What use can and should ACL researchers make of the Cambridge Grammar
+        of the English Language?"}, {"paperId": "94bcb719c1e656b2308f0aeafe24ba82390ff631",
+        "title": "NLPSharedTasks: A Corpus of Shared Task Overview Papers in Natural
+        Language Processing Domains"}, {"paperId": "464b1322ee1e91752f2c6c280058bbc0406f614a",
+        "title": "Open Research Online Trans4E: Link Prediction on Scholarly Knowledge
+        Graphs"}, {"paperId": "dd9e10ce452aaae707835a97b5dcd1decae1825f", "title":
+        "Benchmark for Research Theme Classification of Scholarly Documents"}, {"paperId":
+        "c649eb00d0ab538ce2ad6f738832e57cb316cb6b", "title": "Abstractive Approaches
+        To Multidocument Summarization Of Medical Literature Reviews"}, {"paperId":
+        "f416d4abeee8fb5b3fcd12fb13912b5e879b16ea", "title": "Exploring the limits
+        of a base BART for multi-document summarization in the medical domain"}, {"paperId":
+        "6181dc0cfe0cb4e91c15900a99488267fe856df0", "title": "Multi-objective Representation
+        Learning for Scientific Document Retrieval"}, {"paperId": "9843d4771366606368bc7e01065763af86f0c1aa",
+        "title": "Overview of the Third Workshop on Scholarly Document Processing"},
+        {"paperId": "9ed3652b3351fff5e7a36a8f12cf3fcc9c30d823", "title": "CitRet:
+        A Hybrid Model for Cited Text Span Retrieval"}, {"paperId": "adf0ddcb8f924771db30bfba326b56d2633dbf46",
+        "title": "Open Research Online The AIDA Dashboard: a Web Application for Assessing
+        and Comparing Scienti\ufb01c Conferences"}, {"paperId": "2444de29193576f5c2b3444df81ce177dcbf14ba",
+        "title": "Investigating Natural Language Interactions in Communities"}, {"paperId":
+        "b0fd71fa6be58f995aead66fa002a7ed3733f089", "title": "Going Beyond the Paradigm
+        of Knowledge Graph Embedding Models"}, {"paperId": "6b40adbd16948d7aa6d92571b27aa510ef8ed462",
+        "title": "ProcessBERT: A Pre-trained Language Model for Judging Equivalence
+        of Variable Definitions in Process Models*"}, {"paperId": "1e88bbd27896449115841393040fbbe77a486477",
+        "title": "Leveraging Knowledge Graph Technologies to Assess Journals and Conferences
+        at Springer Nature"}, {"paperId": "9b05db2352c046b3b29bd9bf258cda8895d96d31",
+        "title": "ConfliBERT: A Pre-trained Language Model for Political Conflict
+        and Violence"}, {"paperId": "e6f4006f8bc9867cbc33b0765e7831147ce5162e", "title":
+        "Cross-Domain Detection of GPT-2-Generated Technical Text"}, {"paperId": "0df8db983bb491dca3dfd0deba6a7a74b23e08ad",
+        "title": "A Programming Interface for Creating Data According to the SPAR
+        Ontologies and the OpenCitations Data Model"}, {"paperId": "d1ca07561b24afe8b1bd18dd1c239dbbbd221964",
+        "title": "Scim: Intelligent Faceted Highlights for Interactive, Multi-Pass
+        Skimming of Scientific Papers"}, {"paperId": "b55a065d747be3954f930ab3a7370ea23b6a39b7",
+        "title": "The AIDA Dashboard: a Web Application for Assessing and Comparing
+        Scientific Conferences"}, {"paperId": "33059ea93b05ca18d1e9b0612901d22305c80910",
+        "title": "Pipeline for retrieval of COVID-19 immune signatures"}, {"paperId":
+        "d7b9197e5cfff70f7797993ab6ad249ae9512b8c", "title": "Cross-lingual citations
+        in English papers: a large-scale analysis of prevalence, usage, and impact"},
+        {"paperId": "f6150ecb06e4abab36c4bb030dc914b576ee4170", "title": "Building
+        an Accessible, Usable, Scalable, and Sustainable Service for Scholarly Big
+        Data"}, {"paperId": "90d1c18f33ca7e8c44cff2c115f0ddf7faa94907", "title": "Search
+        results diversification for effective fair ranking in academic search"}, {"paperId":
+        "886a5ca5b6aeae63cef6e4eed468d9338c35fbcb", "title": "Grappling with the scale
+        of born-digital government publications: Toward pipelines for processing and
+        searching millions of PDFs"}, {"paperId": "12476eb0e9ea7cb313776228ccbf7657a1765887",
+        "title": "Performance Optimization for Semantic Communications: An Attention-based
+        Learning Approach"}, {"paperId": "1980f7230a4c1871cedc856ce836b8d1f62d10e8",
+        "title": "CoBERT: Scientific Collaboration Prediction via Sequential Recommendation"},
+        {"paperId": "8306606fd04eddcdd527b03c728901ab632a084b", "title": "Triple Classification
+        for Scholarly Knowledge Graph Completion"}, {"paperId": "b820e740cce5af181a47aa3f3e111447e21c3e24",
+        "title": "x-index: Identifying core competency and thematic research strengths
+        of institutions using an NLP and network based ranking framework"}, {"paperId":
+        "0905b384bc98e40c5a9ca20027f5fab3fbc455b4", "title": "New trends in scientific
+        knowledge graphs and research impact assessment"}, {"paperId": "67dcf28decf748534e1c0d22315d2d3aae54d7d4",
+        "title": "AIDA: A knowledge graph about research dynamics in academia and
+        industry"}, {"paperId": "ee7cc3bf1f963f9eda26f43d5dc8265f6535f004", "title":
+        "Evaluating BERT-based scientific relation classifiers for scholarly knowledge
+        graph construction on digital library collections"}, {"paperId": "2f886811cf7cde2f0d9a19d821f46146f24e6e4a",
+        "title": "Analysis of Language Embeddings for Classification of Unstructured
+        Pathology Reports"}, {"paperId": "cf84b177667efdb167dc944b39cafa1c7978c2b7",
+        "title": "The Mont Blanc of Twitter: Identifying Hierarchies of Outstanding
+        Peaks in Social Networks"}, {"paperId": "582616fe83a85f095a16778c28297723e25b0ea7",
+        "title": "SciA11y: Converting Scientific Papers to Accessible HTML"}, {"paperId":
+        "fdea5396e8a945692a3449d9aae4dc7136cbd2a7", "title": "Modelling trend life
+        cycles in scientific research using the Logistic and Gompertz equations"},
+        {"paperId": "fbd10a298b4bee915f99224342bf0088cceb015d", "title": "Efficient
+        Self-Supervised Metric Information Retrieval: A Bibliography Based Method
+        Applied to COVID Literature"}, {"paperId": "5cc3379090fefad86d2d3e874364ba7babbcbca4",
+        "title": "Towards Explainable Scientific Venue Recommendations"}, {"paperId":
+        "de9d0eb23b53034604bae487c127f4785ef779f5", "title": "Using BERT to identify
+        drug-target interactions from whole PubMed"}, {"paperId": "6fbcb1b9dddff9641cb764f9f6c3ebfa516ce976",
+        "title": "Pattern-based Acquisition of Scientific Entities from Scholarly
+        Article Titles"}, {"paperId": "d30e218ba0980d76cfd83e04739591e17f3933fe",
+        "title": "Estimating Graph Dimension with Cross-validated Eigenvalues"}, {"paperId":
+        "beabb3d31625fbbdba7e720d4d5baa6aac5d7b16", "title": "Ambalytics: A Scalable
+        and Distributed System Architecture Concept for Bibliometric Network Analyses"},
+        {"paperId": "bf37e581f9d2447bf732b8502c8aff5141a88f06", "title": "ESRA: Explainable
+        Scientific Research Assistant"}, {"paperId": "14857af0e19e2ccf9321de65d8950d5bc7c4dbbb",
+        "title": "Analysing the requirements for an Open Research Knowledge Graph:
+        use cases, quality requirements, and construction strategies"}, {"paperId":
+        "0bee172e0d361aaed77f9677f59df944675f99b7", "title": "Hierarchical Attention
+        Transformer Networks for Long Document Classification"}, {"paperId": "3ad0a7051db98a083aa3b9e962769ecf2cde4d44",
+        "title": "Leveraging Domain Agnostic and Specific Knowledge for Acronym Disambiguation"},
+        {"paperId": "23c8ff06cc2dbd01388f60779583a0ebdae2fb14", "title": "TweetPap:
+        A Dataset to Study the Social Media Discourse of Scientific Papers"}, {"paperId":
+        "d4e4a545160d8a6eba5338463168f51e8cbe411e", "title": "Linguistically Informed
+        Masking for Representation Learning in the Patent Domain"}, {"paperId": "d385a1b2db39a87f32095beee907fbcb67fb0b9f",
+        "title": "Graphsurge"}, {"paperId": "d2a3b3646a3d4cf1eccabbb8b980533e0836a3f5",
+        "title": "Meta-research on COVID-19: An overview of the early trends"}, {"paperId":
+        "87e367d76e5c63c834bf77b4f6ea8bce6cdb5553", "title": "End-to-End NLP Knowledge
+        Graph Construction"}, {"paperId": "f70d4f4dd51b43444d0d612e54711bef0fb4fa14",
+        "title": "Trans4E: Link Prediction on Scholarly Knowledge Graphs"}, {"paperId":
+        "69285c9040c1356272752499b7e1e53ef25ac008", "title": "Beyond Paragraphs: NLP
+        for Long Sequences"}, {"paperId": "8c19883bc33282985af977fd3f3cc4b6ac5b15d3",
+        "title": "Determining the Credibility of Science Communication"}, {"paperId":
+        "90614889fe7dcd3c56849e94a7dbf455d11c1834", "title": "An Explanatory Query-Based
+        Framework for Exploring Academic Expertise"}, {"paperId": "91ad9c6345723717b9cf77727482195834620060",
+        "title": "CiteWorth: Cite-Worthiness Detection for Improved Scientific Document
+        Understanding"}, {"paperId": "97dc4d4620c2b2d12d6b07a4127f3fddcf126b94", "title":
+        "Learning to Classify Morals and Conventions: Artificial Intelligence in Terms
+        of the Economics of Convention"}, {"paperId": "f9f19505a45a76c39e394cccea050d20e425de17",
+        "title": "A Measure of Research Taste"}, {"paperId": "c4358134954d8e62939c3a8b9ba8e953d951f73b",
+        "title": "Including Signed Languages in Natural Language Processing"}, {"paperId":
+        "a83902f8b3aadfda633968a840ca1738bedef837", "title": "Modeling Graph Structure
+        via Relative Position for Text Generation from Knowledge Graphs"}, {"paperId":
+        "4fb435fe5c3c84721e07653bafda3caadf2ebffb", "title": "A survey of domains
+        in workflow scheduling in computing infrastructures: Community and keyword
+        analysis, emerging trends, and taxonomies"}, {"paperId": "3d59ad3f87f80bb3382ec91bb9ec636515547ab1",
+        "title": "What Makes a Scientific Paper be Accepted for Publication?"}, {"paperId":
+        "1b78ca26e161bc824e75cf5b3d582a3561a1a16e", "title": "Crowdsourcing Scholarly
+        Discourse Annotations"}, {"paperId": "d25121da56c9050137800c69520111b30201d1ed",
+        "title": "MS\u02c62: Multi-Document Summarization of Medical Studies"}, {"paperId":
+        "c15854c9cb2df5e58380b3aefbdd2b0bc55ebca4", "title": "On the Impact of Knowledge-based
+        Linguistic Annotations in the Quality of Scientific Embeddings"}, {"paperId":
+        "88d3229660f8f67e0bfd9689b0cf9ef08ad92106", "title": "Paragraph-level Simplification
+        of Medical Texts"}, {"paperId": "d331de3b6bebb0f9af1fddf1b730ec057a7026d4",
+        "title": "Relational World Knowledge Representation in Contextual Language
+        Models: A Review"}, {"paperId": "76e31cac217d8af2dc91b6dbe5265c8066fffa46",
+        "title": "Accelerating science with human versus alien artificial intelligences"},
+        {"paperId": "54a516aedb5668a67070f70a9f895c8d7391a86d", "title": "Topic-aware
+        Neural Linguistic Steganography Based on Knowledge Graphs"}, {"paperId": "10247d86d6b9ea3218d73b1e64ea7ed4b1121752",
+        "title": "Improving University Faculty Evaluations via multi-view Knowledge
+        Graph"}, {"paperId": "879eaab2275a364549809560b42f0fef357ebbce", "title":
+        "BERT: A Review of Applications in Natural Language Processing and Understanding"},
+        {"paperId": "9fd46013a7188a76da0d610fc54d8879200cce17", "title": "Proximity
+        dimensions and the emergence of collaboration: a HypTrails study on German
+        AI research"}, {"paperId": "c3b19870cbd320ad554498139e474644768576b6", "title":
+        "A bibliometric analysis of citation diversity in accessibility and HCI research"},
+        {"paperId": "50068fbea4d1cafcf4c99873ab272c701c08dfcb", "title": "OAG-BERT:
+        Pre-train Heterogeneous Entity-augmented Academic Language Models"}, {"paperId":
+        "04eb972bda6e775d5a15ee49541afca3e3cc93db", "title": "Boosting Low-Resource
+        Biomedical QA via Entity-Aware Masking Strategies"}, {"paperId": "69b184f62c97513b03deed96a1443f79b34af0d7",
+        "title": "Making Paper Reviewing Robust to Bid Manipulation Attacks"}, {"paperId":
+        "5ea19f443aa86001147caf5b874c75e2d407a246", "title": "Classifying Scientific
+        Publications with BERT - Is Self-Attention a Feature Selection Method?"},
+        {"paperId": "dd4fce116399fc3becba6ede2afbe48958b32506", "title": "Deep dynamic
+        neural networks for temporal language modeling in author communities"}, {"paperId":
+        "2d7d78b95c48b09359fd86ab0108328d69101719", "title": "Searching relevant papers
+        for software engineering secondary studies: Semantic Scholar coverage and
+        identification role"}, {"paperId": "e4f0fac0f64945b5b2d91d45541b5b2ebbf993c5",
+        "title": "Automatization and self-maintenance of the O-GlcNAcome catalog:
+        a smart scientific database"}, {"paperId": "f8d11695f7f9d7325b9043f3b39fc623eeff9d4d",
+        "title": "Self-Supervised Learning for Visual Summary Identification in Scientific
+        Publications"}, {"paperId": "c562d4c311a603ea768b9f002b4fccda617e4543", "title":
+        "Using drug descriptions and molecular structures for drug\u2013drug interaction
+        extraction from literature"}, {"paperId": "2c3211e0fc4a02a05e4874c9daf36fd2c75456d7",
+        "title": "Topic space trajectories"}, {"paperId": "03dc6ccb0b04d5eb6439c33c185bdd1fe892b76e",
+        "title": "Machine Knowledge: Creation and Curation of Comprehensive Knowledge
+        Bases"}, {"paperId": "19af8292ff3cc10aad6f190490f0d34691658179", "title":
+        "Investigating Pretrained Language Models for Graph-to-Text Generation"},
+        {"paperId": "097bd00d48281dfb987cc2277b34f7706c2aa0ef", "title": "Graphsurge:
+        Graph Analytics on View Collections Using Differential Computation"}, {"paperId":
+        "15e1af8533cd810e976d36845b53f5f54744608a", "title": "Multilevel Graph-Based
+        Decision Making in Big Scholarly Data: An Approach to Identify Expert Reviewer,
+        Finding Quality Impact Factor, Ranking Journals and Researchers"}, {"paperId":
+        "fb3dc58cb17c54b997e6301cbde7773f77427833", "title": "Parameter-Efficient
+        Domain Knowledge Integration from Multiple Sources for Biomedical Pre-trained
+        Language Models"}, {"paperId": "2a3bfb2fe1e2065de6ac0b66b28b0dcdb5d233e3",
+        "title": "Geography of eco-innovations vis-a\u0300-vis geography of sustainability
+        transitions: Two sides of the same coin?"}, {"paperId": "77994c9c7ec19a07173b88fb45a8900b6616dd03",
+        "title": "TADPOLE: Task ADapted Pre-Training via AnOmaLy DEtection"}, {"paperId":
+        "5456edaf6daf86cde1b38a8dbbee9ccae12070f9", "title": "Generative Adversarial
+        Networks based on Mixed-Attentions for Citation Intent Classification in Scientific
+        Publications"}, {"paperId": "44e34bddc5f0bf794b40271f958159970ff973ef", "title":
+        "Generalized Supervised Attention for Text Generation"}, {"paperId": "959927c3bdc254d0c02583d47f35654d53c4d6ef",
+        "title": "Taming Pre-trained Language Models with N-gram Representations for
+        Low-Resource Domain Adaptation"}, {"paperId": "20c8536a38acfa10c7af21063e3f7725632d2879",
+        "title": "Improving On-line Scientific Resource Profiling by Exploiting Resource
+        Citation Information in the Literature"}, {"paperId": "6407b8cc05e839d59ea0b7a7eceb61ee3e5fc46f",
+        "title": "Incorporating Visual Layout Structures for Scientific Text Classification"},
+        {"paperId": "ee6564e2e0f47c6ac131b093f057ca75907958c9", "title": "BioELECTRA:Pretrained
+        Biomedical text Encoder using Discriminators"}, {"paperId": "56fbb4152b4535230827eb2bd23c618045855c26",
+        "title": "Improving the Accessibility of Scientific Documents: Current State,
+        User Needs, and a System Solution to Enhance Scientific PDF Accessibility
+        for Blind and Low Vision Users"}, {"paperId": "8147e139813920cc42acfff9f07165ec40c3c03b",
+        "title": "Under optimistic projection models , gender parity is forecast to
+        be reached after 2100"}, {"paperId": "f03f38647a616a3471183f587f2b3684a9a3057f",
+        "title": "Using Transfer Learning for Detecting Drug Mentions in Tweets"},
+        {"paperId": "dcaf764feb4bfe9ce5a51546af2ba9d91cb1e912", "title": "Discovery
+        of Research Trends in Computer Science Education on Ethics Using Topic Modeling"},
+        {"paperId": "cf479ea1cba51b7083702a918001fbc667bdff1c", "title": "Mining Author
+        Identifiers for PubMed by Linking to Open Bibliographic Databases"}, {"paperId":
+        "3fd81526f7160d2dba1d943ef7a0862bb7fa0531", "title": "Open4Business(O4B):
+        An Open Access Dataset for Summarizing Business Documents"}, {"paperId": "ce1715982ba4ae45ed235e11142238485b0db9fe",
+        "title": "Analysis and Evaluation of COVID-19 Web Applications for Health
+        Professionals: Challenges and Opportunities"}, {"paperId": "0f5843cd34c3d12a07769cee510a007d94dd44c1",
+        "title": "University of Washington at TREC 2020 Fairness Ranking Track"},
+        {"paperId": "2f014ed269c77bdf1286bb540278199fb45adea1", "title": "Tab2Know:
+        Building a Knowledge Base from Tables in Scientific Papers"}, {"paperId":
+        "823fe97a65f34abbc60f33179751b808ce60919f", "title": "Where to Submit? Helping
+        Researchers to Choose the Right Venue"}, {"paperId": "76ad0d37bd3845431b3ca9d07f8db74c82752298",
+        "title": "Pretrained Language Models for Biomedical and Clinical Tasks: Understanding
+        and Extending the State-of-the-Art"}, {"paperId": "59da4f7d85967d922b5d674779ffcee06f186c73",
+        "title": "Investigation of BERT Model on Biomedical Relation Extraction Based
+        on Revised Fine-tuning Mechanism"}, {"paperId": "42044639a2fe3d53daed715a4dd4bc4536361058",
+        "title": "A New Neural Search and Insights Platform for Navigating and Organizing
+        AI Research"}, {"paperId": "fc5f304e56b1724dfd6b09845b1edf4efe592341", "title":
+        "Biomedical Question Answering: A Survey of Methods and Datasets"}, {"paperId":
+        "0285f5112a3bcc4c8f8d6ec1732e921495aed067", "title": "Multimodal Knowledge
+        Graph for Deep Learning Papers and Code"}, {"paperId": "8af3de56807c32172b06982cf785c9c8b14d117a",
+        "title": "TweetBERT: A Pretrained Language Representation Model for Twitter
+        Text Analysis"}, {"paperId": "9c3c76a0f0c289fa814038ce44fee39a7fba7be7", "title":
+        "Effective distributed representations for academic expert search"}, {"paperId":
+        "b9ece2558147a1ec16be1257f5b3b84b34e2d608", "title": "Improving Access to
+        Scientific Literature with Knowledge Graphs"}, {"paperId": "32f84107d956e24dbe02a9b80d38239237ff1096",
+        "title": "ReviewRobot: Explainable Paper Review Generation based on Knowledge
+        Synthesis"}, {"paperId": "e663f431579bdde874795c4e0ae6b58249de695f", "title":
+        "PARADE: A New Dataset for Paraphrase Identification Requiring Computer Science
+        Domain Knowledge"}, {"paperId": "3b2664a15b46e95eecb9573f21c36892037b0264",
+        "title": "Infusing Disease Knowledge into BERT for Health Question Answering,
+        Medical Inference and Disease Name Recognition"}, {"paperId": "284fd250280c07b64a1a1c69abf098f02d632e8a",
+        "title": "Simplicial Neural Networks"}, {"paperId": "2e747fb6aec192e89ac8b3fc98f56f4a55f8bb71",
+        "title": "A narrowing of AI research?"}, {"paperId": "4532329a2dcb3fa3f4c623906166a049eca830a4",
+        "title": "Open Information Extraction for Knowledge Graph Construction"},
+        {"paperId": "0f897cad22f8485a0ac0c3f34b5130eed0eb4fc9", "title": "An Improved
+        Mask Approach Based on Pointer Network for Domain Adaptation of BERT"}, {"paperId":
+        "f945c65983d746aa66482e86e338a2388bdeff76", "title": "Using Graphlet Spectrograms
+        for Temporal Pattern Analysis of Virus-Research Collaboration Networks"},
+        {"paperId": "b336492cc1a8de095a57fe0684f142816f32d045", "title": "A Black-Box
+        Fork-Join Latency Prediction Model for Data-Intensive Applications"}, {"paperId":
+        "0e7233e912acd3cb7890c67a6a4640280f9f966e", "title": "Integrating Knowledge
+        Graphs for Analysing Academia and Industry Dynamics"}, {"paperId": "2e5b7cc1eaef2f22e3e52778f8444ab7c76e16d1",
+        "title": "Author Contributed Representation for Scholarly Network"}, {"paperId":
+        "b0dddc7f5cdce8783bd4a5080feaf41caa27068d", "title": "Elsevier OA CC-By Corpus"},
+        {"paperId": "cc1e9e8d298384337625949171847ff8401044cc", "title": "ADBIS, TPDL
+        and EDA 2020 Common Workshops and Doctoral Consortium: International Workshops:
+        DOING, MADEISD, SKG, BBIGAP, SIMPDA, AIMinScience 2020 and Doctoral Consortium,
+        Lyon, France, August 25\u201327, 2020, Proceedings"}, {"paperId": "25df3ad90556815045b9497a8e794ec58f1f8cc9",
+        "title": "Visualising Large Document Collections by Jointly Modeling Text
+        and Network Structure"}, {"paperId": "3f04900ff0b01b2912625967407cc53188212893",
+        "title": "A Micro Perspective of Research Dynamics Through \u201cCitations
+        of Citations\u201d Topic Analysis"}, {"paperId": "e39a0dfe48da9a51defb80fb4b839418e2981b8d",
+        "title": "COVID-19 Knowledge Graph: Accelerating Information Retrieval and
+        Discovery for Scientific Literature"}, {"paperId": "2d62dea4e7d97b5cb69174504371503b57c93bf1",
+        "title": "NLPContributions: An Annotation Scheme for Machine Reading of Scholarly
+        Contributions in Natural Language Processing Literature"}, {"paperId": "856b12bc3b99db662e93def08e49db73c1df5e79",
+        "title": "Modeling Graph Structure via Relative Position for Better Text Generation
+        from Knowledge Graphs"}, {"paperId": "82af9bb84594d4fce17a5fb88888f8bdade0cd58",
+        "title": "High-Precision Extraction of Emerging Concepts from Scientific Literature"},
+        {"paperId": "33f894591e5e7d2d0de996905cfcae2eb05d360f", "title": "Constructing
+        and evaluating automated literature review systems"}, {"paperId": "e8b8ef7629a16435945b40cb01b15cf1e537adcf",
+        "title": "Constructing and evaluating automated literature review systems"},
+        {"paperId": "1fb1c749be01442d669b98b41cb2aadb58671f58", "title": "ReviewerNet:
+        A visualization platform for the selection of academic reviewers"}, {"paperId":
+        "36e087d57302c2c7138fae2394876db244f06864", "title": "The OpenCitations Data
+        Model"}, {"paperId": "0df9d9ab06e8418dc23967f81a44629273765ccf", "title":
+        "Requirements Analysis for an Open Research Knowledge Graph"}, {"paperId":
+        "10853ea84c7d4aeda17a4002370ff56048fd7e61", "title": "Building a PubMed knowledge
+        graph"}, {"paperId": "751f5b6b7a34fec42191e527c76e81589516685f", "title":
+        "Cited text span identification for scientific summarisation using pre-trained
+        encoders"}, {"paperId": "5b928047a634f26d7a1871d173058a6fe578fa60", "title":
+        "Cited text span identification for scientific summarisation using pre-trained
+        encoders"}, {"paperId": "97e05d10a4530984d54cbd86b36574d70afbdced", "title":
+        "Embedding-Based Recommendations on Scholarly Knowledge Graphs"}, {"paperId":
+        "17d63c3b79872832dd28dba7412a437b17730b2b", "title": "A Survey and Annotated
+        Bibliography of Workflow Scheduling in Computing Infrastructures: Community,
+        Keyword, and Article Reviews - Extended Technical Report"}, {"paperId": "a3e4ceb42cbcd2c807d53aff90a8cb1f5ee3f031",
+        "title": "SPECTER: Document-level Representation Learning using Citation-informed
+        Transformers"}, {"paperId": "57dc1eec85b7c0490ce00d4f02c660b7c0b06f05", "title":
+        "Improving Scholarly Knowledge Representation: Evaluating BERT-based Models
+        for Scientific Relation Classification"}, {"paperId": "1c2f8d2a68bcc6c9d6c79a26e4c6f70be445660d",
+        "title": "SciWING\u2013 A Software Toolkit for Scientific Document Processing"},
+        {"paperId": "271a21ae3caa4bc4f246acb3a01a6d56453d77c2", "title": "TRENDNERT:
+        A Benchmark for Trend and Downtrend Detection in a Scientific Domain"}, {"paperId":
+        "021e2ed2adba030f5d02e60722ffcd4674f02653", "title": "Evaluating the Calibration
+        of Knowledge Graph Embeddings for Trustworthy Link Prediction"}, {"paperId":
+        "bbd158ee7f7026ecf18750a0b265b3c01cbc0e6c", "title": "Improving the Utility
+        of Knowledge Graph Embeddings with Calibration"}, {"paperId": "76cfdaa82cd4c074cb4a1c7f49ade8573ae054ab",
+        "title": "Explanation-Based Tuning of Opaque Machine Learners with Application
+        to Paper Recommendation"}, {"paperId": "87cb930ac1d07b0f759627b3a50cfa08a3d51892",
+        "title": "LIMEADE: From AI Explanations to Advice Taking"}, {"paperId": "d2cba7d6a820931120ca7f1b06df566d06b0a793",
+        "title": "LIMEADE: From AI Explanations to Advice Taking"}, {"paperId": "4559600f2ba644d41a7580362d3fcfd5c363b814",
+        "title": "The STEM-ECR Dataset: Grounding Scientific Entity References in
+        STEM Scholarly Content to Authoritative Encyclopedic and Lexicographic Sources"},
+        {"paperId": "92d58d5a303be4587785489c7ecd3490950ccbe0", "title": "GASP! Generating
+        Abstracts of Scientific Papers from Abstracts of Cited Papers"}, {"paperId":
+        "6d129c35f032cc6480a8f774a1f3dd45a96c4724", "title": "Characterizing the Dynamics
+        of Academic Affiliations: A Network Science Approach"}, {"paperId": "5f2440c0b18a8e0d5b0a994087e752c19f82bbc7",
+        "title": "Aspect-Based Academic Search Using Domain-Specific KB"}, {"paperId":
+        "3d733e63d44bddd235a41e47cf0718ff5e70b8e1", "title": "Navigation-based candidate
+        expansion and pretrained language models for citation recommendation"}, {"paperId":
+        "3c6978ed377ace2b921748f40b0d7431ebbfeb7c", "title": "Domain-Independent Extraction
+        of Scientific Concepts from Research Articles"}, {"paperId": "f216bc6460be4477674656e0a9682c1e9d3b2157",
+        "title": "Hydro-graph: A knowledge graph for hydrogen research trends and
+        relations"}, {"paperId": "bb6adeeb3a21479cc45490a5c2ff6d8dd5e77603", "title":
+        "Knowledge-based Biomedical Data Science 2019"}, {"paperId": "c9d24ac34cb9d3cc015f926a2a77b4571162311c",
+        "title": "The Workflow Trace Archive: Open-Access Data From Public and Private
+        Computing Infrastructures"}, {"paperId": "50fe89d2109f1f186e5e91aa8a7853d92a85daee",
+        "title": "Evaluating Pretrained Transformer Models for Citation Recommendation"},
+        {"paperId": "1955c6821a5dd94baaa3fe96f4e50c071f6fa87e", "title": "ScholarLensViz:
+        A Visualization Framework for Transparency in Semantic User Profiles"}, {"paperId":
+        "3faccd2f58466e1767957dda6faa6c29b393cef4", "title": "The Semantic Web: 17th
+        International Conference, ESWC 2020, Heraklion, Crete, Greece, May 31\u2013June
+        4, 2020, Proceedings"}, {"paperId": "8e3a0f13c8a15c083e12d8dd7b04a7c20a824f7e",
+        "title": "PRETRAINED LANGUAGE MODELS FOR CITATION RECOMMENDATION"}, {"paperId":
+        "ed6fd27098368d64534d27082743d7c3622f522e", "title": "19-Chen Xiaoli.indd"},
+        {"paperId": "5c5751d45e298cea054f32b392c12c61027d2fe7", "title": "S2ORC: The
+        Semantic Scholar Open Research Corpus"}, {"paperId": "0a1d68fd1aeff6dabda9a15668fba8f3c0fd94b4",
+        "title": "UvA-DARE (Digital Academic The OpenCitations Data Model"}, {"paperId":
+        "f91ac07cc5716c25304ebe4385ec3b41b67f57b9", "title": "University of Glasgow
+        Terrier Team at the TREC 2020 Fair Ranking Track"}, {"paperId": "738349f595421b70f80a8d8fed7f70e55fa5f475",
+        "title": "The University of Maryland at the TREC 2020 Fair Ranking Track"},
+        {"paperId": "9519b72e2bf6906af33b431a0ea58a8c1e4c48b1", "title": "Graph To
+        Coherent Text: Passage Generation from Knowledge Graphs by Exploiting Edge
+        Representations in Sentential Contexts"}, {"paperId": "5f68c2fc47408d10013c36664495b1a489087053",
+        "title": "Digital Libraries at Times of Massive Societal Transition: 22nd
+        International Conference on Asia-Pacific Digital Libraries, ICADL 2020, Kyoto,
+        Japan, November 30 \u2013 December 1, 2020, Proceedings"}, {"paperId": "4d515133e301691863dc81e5c73046b2eab0f3f7",
+        "title": "PreFace: Faceted Retrieval of Prerequisites Using Domain-Specific
+        Knowledge Bases"}, {"paperId": "d05ebd2299bc8007edf9422eb2f7b4466e3cf4f4",
+        "title": "Database and Expert Systems Applications: DEXA 2020 International
+        Workshops BIOKDD, IWCFS and MLKgraphs, Bratislava, Slovakia, September 14\u201317,
+        2020, Proceedings"}, {"paperId": "a997d6e253f08a3e589432c611d6d2a3097d7629",
+        "title": "Research Exchange-A Collaborative Paper Annotation Tool"}, {"paperId":
+        "1dd19753c01476612db6f668967ded7b859deb83", "title": "A Practical Guide to
+        Hybrid Natural Language Processing: Combining Neural Models and Knowledge
+        Graphs for NLP"}, {"paperId": "cdede45f350038a46bac239d6ff8c548ac2945ee",
+        "title": "Self-supervised context-aware COVID-19 document exploration through
+        atlas grounding"}, {"paperId": "7737b2f4f956e2517087a4be04cd9e1af70961ea",
+        "title": "Large-scale semantic exploration of scientific literature using
+        topic-based hashing algorithms"}, {"paperId": "2f105cb440bc5cf7260071f407c39bbde89dd265",
+        "title": "Exploratory Search for Scientific Articles"}, {"paperId": "d230862f33946a3572ff7df78bfc0aaa726cd787",
+        "title": "GORC: A large contextual citation graph of academic papers"}, {"paperId":
+        "0542eafef8abab8e4d0ec467d2e163da7e609130", "title": "Epistemic stance and
+        the construction of knowledge in science writing: A diachronic corpus study"},
+        {"paperId": "558adccd5dc482be3a17169ba1a921ea4b74101d", "title": "Fine-Grained
+        Object Detection over Scientific Document Images with Region Embeddings"},
+        {"paperId": "5d058aadc2e938f421d0acae6dcdad3be35bc8fd", "title": "Conflict
+        and Cooperation: AI Research and Development in terms of the Economy of Conventions"},
+        {"paperId": "e822040837cdb5831e6dfcc25aeb5bd5bd23c9a9", "title": "Look, Read
+        and Enrich - Learning from Scientific Figures and their Captions"}, {"paperId":
+        "515ae2953e7312dc410b94f561a4296f8e1cbdc0", "title": "Learning Dynamic Author
+        Representations with Temporal Language Models"}, {"paperId": "a550ad9d7f47b65f7788287a23717a4f7c5b75c7",
+        "title": "Pretrained Language Models for Sequential Sentence Classification"},
+        {"paperId": "c5db7a49d55f8b542daae60f3d14546115b1498b", "title": "Sentence-Level
+        Content Planning and Style Specification for Neural Text Generation"}, {"paperId":
+        "dcd627cf71af44b1a140d5b3e7503cb3251bee58", "title": "Sieg at MEDIQA 2019:
+        Multi-task Neural Ensemble for Biomedical Inference and Entailment"}, {"paperId":
+        "115617d09807325bd18c42deedd6cab435f90563", "title": "Identification of Tasks,
+        Datasets, Evaluation Metrics, and Numeric Scores for Scientific Leaderboards
+        Construction"}, {"paperId": "066abf7409baf051b1c70cf3464c80040a8021c7", "title":
+        "On Applying Metamorphic Testing: An Empirical Study on Academic Search Engines"},
+        {"paperId": "2f586042d52af9fd9986d8e087665a96187aa8e7", "title": "Venue Analytics:
+        A Simple Alternative to Citation-Based Metrics"}, {"paperId": "781402fae3a7a44b90855eeba8e96a872347fd4b",
+        "title": "Soft Marginal TransE for Scholarly Knowledge Graph Completion"},
+        {"paperId": "dd246382988ec1607297bde5f4f4cea75a3f9f6d", "title": "CorFish:
+        Coordinating Emphasis Across Multiple Views Using Spatial Distortion"}, {"paperId":
+        "cb15c1c51e8a7da42d5b2ebac955bf1cd9dd4022", "title": "Text Generation from
+        Knowledge Graphs with Graph Transformers"}, {"paperId": "87078d95bee341a1767034d9432fb34937ecf65a",
+        "title": "SciBERT: Pretrained Contextualized Embeddings for Scientific Text"},
+        {"paperId": "827c34613ea75eb817c1d9a945ecb673bb566d85", "title": "ReviewerNet:
+        Visualizing Citation and Authorship Relations for Finding Reviewers"}, {"paperId":
+        "156d217b0a911af97fa1b5a71dc909ccef7a8028", "title": "SciBERT: A Pretrained
+        Language Model for Scientific Text"}, {"paperId": "de28ec1d7bd38c8fc4e8ac59b6133800818b4e29",
+        "title": "ScispaCy: Fast and Robust Models for Biomedical Natural Language
+        Processing"}, {"paperId": "0cc1befaf72ca96c2a5034d004132da1b7bbc58b", "title":
+        "GrapAL: Connecting the Dots in Scientific Literature"}, {"paperId": "4c6dfe48b8b136e6bb44c92e1fa006d3d7bf71ed",
+        "title": "GrapAL: Querying Semantic Scholar''s Literature Graph"}, {"paperId":
+        "733f32fe7d7e0b53fb7e9d35dbc6f47b96ebff37", "title": "Open Research Knowledge
+        Graph: Next Generation Infrastructure for Semantic Scholarly Knowledge"},
+        {"paperId": "a97a18b630032b42c1a1c19db64f3fbf09a1c30b", "title": "Open Research
+        Knowledge Graph: Towards Machine Actionability in Scholarly Communication"},
+        {"paperId": "dee6eaa08574ad6c480c03d58dab37a788b5ee3f", "title": "Exploring
+        the Importance of Entities in Semantic Ranking"}, {"paperId": "7f2667e5f5c327381e20ee4c88b6a0ec89d7857a",
+        "title": "Growing Attributed Networks through Local Processes"}, {"paperId":
+        "103c127a86e6ef2df41430cffddcfe260505bfaf", "title": "Systematic analysis
+        of testing-related publications concerning comparability and reproducibility"},
+        {"paperId": "18c8348008226d8a5438734da35ad76e3c3f640c", "title": "Story Generation
+        from Knowledge Graphs"}, {"paperId": "89ce63af706dcbda6c4c8ae3012d66d00bfced18",
+        "title": "University of Glasgow Terrier Team and Naver Labs Europe at TREC
+        2019 Fair Ranking Track"}, {"paperId": "58f1e659b9dedeb7704e736aebaf6f6e245559fe",
+        "title": "Fair ranking in academic search - Notebook for the TREC 2019 Fair
+        Ranking Track"}, {"paperId": "e0aaff524db88a3b89d2a736aa297081f13af0c8", "title":
+        "A Visualization Tool for Scholarly Data"}, {"paperId": "9bbe5de594c53275e3123417c5636243677649ae",
+        "title": "Learning Embeddings from Scientific Corpora using Lexical, Grammatical
+        and Semantic Information"}, {"paperId": null, "title": "OutputNeighbor Attention
+        Maps ClassificationInput Document Neighbor Target Neighbor Resnet-50 Backbone
+        Embeddings Attention LayerGenerate Proposals"}, {"paperId": "d95c203e194a29825e0cd635abd87d1030e776f9",
+        "title": "Scalable, Semi-Supervised Extraction of Structured Information from
+        Scientific Literature"}, {"paperId": "7ff0d6253469c02245c1bd321e97a96813b612d4",
+        "title": "NaCTeM-UoM @ CL-SciSumm 2019"}, {"paperId": "3bd8093a09fc99562662ce40b24f20e7f1536754",
+        "title": "DOES THE INFORMATION-SEEKING BEHAVIOR OF SCIENTISTS CORRESPOND TO
+        EXPLORATORY SEARCH ?"}, {"paperId": "b21b927c251c415b601b6d7f785a42cc5c292635",
+        "title": "Multi-Task Identification of Entities, Relations, and Coreference
+        for Scientific Knowledge Graph Construction"}, {"paperId": "d449ec41cd3222f9f8b325adfacc8f4b9e7b95d3",
+        "title": "Ontology alignment in the biomedical domain using entity definitions
+        and context"}, {"paperId": "0b32918213f6d18c1bc83585a14cfbc6b9039a16", "title":
+        "\u0418\u0421\u0421\u041b\u0415\u0414\u041e\u0412\u0410\u0422\u0415\u041b\u042c\u0421\u041a\u0418\u0419
+        \u041f\u041e\u0418\u0421\u041a \u041d\u0410\u0423\u0427\u041d\u042b\u0425
+        \u0421\u0422\u0410\u0422\u0415\u0419"}, {"paperId": "2fcbe1e3692b4f5faad41926b781f802f0c1be12",
+        "title": "Detecting the Landscapes and Hotspots of Scientometrics : A Full-Text
+        Citation Analysis based on Semantic Technology"}, {"paperId": "88761dffd173cd0e75e88c02d68f866f8cc43c14",
+        "title": "Knowledge-based biomedical Data Science"}]}
 
         '
     headers:
@@ -267,31 +585,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '19755'
+      - '46755'
       Content-Type:
       - application/json
       Date:
-      - Thu, 26 Jan 2023 16:33:18 GMT
+      - Fri, 27 Jan 2023 09:58:42 GMT
       Via:
-      - 1.1 337d4beb8520ff499cc09f2bcaee5e52.cloudfront.net (CloudFront)
+      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - muREEV_rYSB1Z63UhZUcdLFNmu9jem1swI2uaI_UCKxI3ah3X0lHug==
+      - QYLel5oI_jbZ_2xJLmEf-6Z1IW-I8Ke4R8QwGJq0TeUOS2M46yjO4g==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fW-0TFXyvHcFk-g=
+      - fZX84FVbvHcFwUQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '19755'
+      - '46755'
       x-amzn-Remapped-Date:
-      - Thu, 26 Jan 2023 16:33:18 GMT
+      - Fri, 27 Jan 2023 09:58:42 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 9cd91f17-daf4-487f-881e-02f3c0d3a2fa
+      - d9e6d8d9-b2d5-42ec-9dca-f286d91b242f
     status:
       code: 200
       message: OK
