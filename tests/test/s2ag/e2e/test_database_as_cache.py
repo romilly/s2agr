@@ -22,12 +22,12 @@ class S2AGCachingTestCase(DatabaseTest):
         librarian = Librarian(Researcher(requester), catalogue)
         fly_paper_id = '6da2905bef6b50736660028ce5d11db3206095c1'
         self.check_total_row_count('paper', 0)
-        paper = librarian.get_paper(fly_paper_id)
+        librarian.get_paper(fly_paper_id)
         self.check_total_row_count('paper', 1)
         s2ag_paper_id = '649def34f8be52c8b66281af98ae884c09aef38b'
-        paper = librarian.get_paper(s2ag_paper_id)
+        librarian.get_paper(s2ag_paper_id)
         self.check_total_row_count('paper', 2)
-        paper = librarian.get_paper(fly_paper_id)
+        librarian.get_paper(fly_paper_id)
         self.check_total_row_count('paper', 2)
 
 
