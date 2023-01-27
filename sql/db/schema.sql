@@ -14,6 +14,17 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- Name: citation; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.citation (
+    citing_id character varying NOT NULL,
+    cited_id character varying NOT NULL,
+    is_influential boolean
+);
+
+
+--
 -- Name: paper; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -42,6 +53,14 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: citation citation_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.citation
+    ADD CONSTRAINT citation_pk PRIMARY KEY (citing_id, cited_id);
+
+
+--
 -- Name: paper paper_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55,6 +74,20 @@ ALTER TABLE ONLY public.paper
 
 ALTER TABLE ONLY public.schema_migrations
     ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- Name: cited_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX cited_index ON public.citation USING btree (cited_id);
+
+
+--
+-- Name: citing_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX citing_index ON public.citation USING btree (citing_id);
 
 
 --
@@ -72,6 +105,13 @@ CREATE UNIQUE INDEX paper_paper_uindex ON public.paper USING btree (paper_id);
 
 
 --
+-- Name: pk_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX pk_index ON public.citation USING btree (citing_id, cited_id);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
@@ -82,4 +122,6 @@ CREATE UNIQUE INDEX paper_paper_uindex ON public.paper USING btree (paper_id);
 
 INSERT INTO public.schema_migrations (version) VALUES
     ('20230126104607'),
-    ('20230127121805');
+    ('20230127121805'),
+    ('20230127171102'),
+    ('20230127172342');

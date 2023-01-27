@@ -14,16 +14,18 @@ def test_connection():
 
 class DatabaseCatalogue(Catalogue):
 
+
     INSERT_SQL = "INSERT into paper(paper_id, s2ag_json_text, title, pub_year)" \
                  " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
     COUNT_SQL = "select count(paper_id) from paper where paper_id = '%s'"
     SELECT_SQL = "select s2ag_json_text from paper where paper_id = '%s'"
     PAPER_IDS_SQL = "select paper_id from paper"
+    INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id)" \
+                          " VALUES(%s, %s) ON CONFLICT DO NOTHING"
 
     def __init__(self, connection=None):
         self.connection = connection
         self.cursor = self.connection.cursor()
-
 
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
@@ -35,6 +37,11 @@ class DatabaseCatalogue(Catalogue):
                     paper.title,
                     paper.year,
                     )
+
+    def write_citation(self, cited_id, citing_id):
+        with self.connection.cursor() as cursor:
+            cursor.execute(self.INSERT_CITATION_SQL, (cited_id, citing_id))
+            self.connection.commit()
 
     def _write(self, paper_id : str,
                paper_json_text : str,

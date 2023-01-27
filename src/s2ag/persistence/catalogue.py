@@ -17,6 +17,10 @@ class Catalogue(ABC):
     def write_paper(self, paper: Paper):
         pass
 
+    @abstractmethod
+    def write_citation(self, cited_id, citing_id):
+        pass
+
     # @abstractmethod
     # def keys(self) -> List[str]:
     #     pass
@@ -29,7 +33,11 @@ class Catalogue(ABC):
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
 
+
 class NullCatalogue(Catalogue):
+    def write_citation(self, cited_id, citing_id):
+        pass
+
     def read_paper(self, paper_id: str) -> Paper:
         pass
 
