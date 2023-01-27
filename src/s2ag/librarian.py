@@ -9,7 +9,13 @@ class Librarian:
         self.catalogue = catalogue
 
     def get_paper(self, pid) -> Paper:
-        if not self.catalogue.knows(pid):
-            paper = self.researcher.get_paper(pid)
-            self.catalogue.write_paper(paper)
-        return self.catalogue.read_paper(pid)
+        try:
+            if not self.catalogue.knows(pid):
+                paper = self.researcher.get_paper(pid)
+                self.catalogue.write_paper(paper)
+            else:
+                paper = self.catalogue.read_paper(pid)
+            return paper
+        except:
+            print('Problems with %s' % pid)
+

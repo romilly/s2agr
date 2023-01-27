@@ -81,4 +81,5 @@ CREATE UNIQUE INDEX paper_paper_uindex ON public.paper USING btree (paper_id);
 --
 
 INSERT INTO public.schema_migrations (version) VALUES
-    ('20230126104607');
+    ('20230126104607'),
+    ('20230127121805');

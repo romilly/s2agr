@@ -18,6 +18,7 @@ class DatabaseCatalogue(Catalogue):
                  " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
     COUNT_SQL = "select count(paper_id) from paper where paper_id = '%s'"
     SELECT_SQL = "select s2ag_json_text from paper where paper_id = '%s'"
+    PAPER_IDS_SQL = "select paper_id from paper"
 
     def __init__(self, connection=None):
         self.connection = connection
@@ -60,3 +61,8 @@ class DatabaseCatalogue(Catalogue):
 
     def read_paper(self, paper_id: str) -> Paper :
         return Paper(self.read_json(paper_id))
+
+    def paper_ids(self):
+        self.cursor.execute(self.PAPER_IDS_SQL)
+        data = self.cursor.fetchall()
+        return [row[0] for row in data]
