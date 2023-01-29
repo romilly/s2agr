@@ -4,17 +4,12 @@ import unittest
 from hamcrest import assert_that, equal_to, contains_exactly
 
 from s2ag.paper import Paper
-
-
-def read(filename):
-    with open(filename) as f:
-        return f.read()
+from test.s2ag.helpers import samples
 
 
 class PaperCitationsTestCase(unittest.TestCase):
     def test_paper_knows_citating_ids(self):
-        jd = json.loads(read('test/s2ag/data/samples/sample_02.json'))
-        paper = Paper(jd)
+        paper = samples.sample_02()
         citing_ids = paper.citing_ids()
         assert_that(citing_ids, contains_exactly(
             '9088b5478fc706f368d2d1fd5661aba9384d782b',
