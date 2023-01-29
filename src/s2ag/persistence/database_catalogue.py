@@ -2,6 +2,7 @@ import json
 
 from psycopg2._psycopg import connection
 
+from s2ag.citation import Citation
 from s2ag.paper import Paper
 from s2ag.persistence.catalogue import Catalogue
 from s2ag.persistence.parser import get_connection_string
@@ -14,14 +15,13 @@ def test_connection():
 
 class DatabaseCatalogue(Catalogue):
 
-
     INSERT_SQL = "INSERT into paper(paper_id, s2ag_json_text, title, pub_year)" \
                  " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
     COUNT_SQL = "select count(paper_id) from paper where paper_id = '%s'"
     SELECT_SQL = "select s2ag_json_text from paper where paper_id = '%s'"
     PAPER_IDS_SQL = "select paper_id from paper"
-    INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id)" \
-                          " VALUES(%s, %s) ON CONFLICT DO NOTHING"
+    INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id, is_influential)" \
+                          " VALUES(%s, %s, %s) ON CONFLICT DO NOTHING"
 
     def __init__(self, connection=None):
         self.connection = connection
@@ -38,9 +38,9 @@ class DatabaseCatalogue(Catalogue):
                     paper.year,
                     )
 
-    def write_citation(self, cited_id, citing_id):
+    def write_citation(self, citation: Citation):
         with self.connection.cursor() as cursor:
-            cursor.execute(self.INSERT_CITATION_SQL, (cited_id, citing_id))
+            cursor.execute(self.INSERT_CITATION_SQL, (citation.cited_id, citation.citing_id, citation.is_influential))
             self.connection.commit()
 
     def _write(self, paper_id : str,

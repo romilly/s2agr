@@ -26,7 +26,7 @@ class Researcher:
         url = self.citations_url_for(pid)
         paginator = Paginator(self.requester, url, CITATION_FIELDS)
         citations = paginator.contents()
-        return list(Citation(pid, citation) for citation in citations)
+        return list(Citation.create_from(pid, citation) for citation in citations)
 
 
     def citations_url_for(self, pid) -> str:

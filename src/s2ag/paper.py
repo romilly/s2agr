@@ -2,6 +2,8 @@ import re
 from datetime import datetime
 from typing import Any, List, Generator
 
+from s2ag.citation import Citation
+
 CC_RE = pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
 
@@ -68,3 +70,6 @@ class Paper:
 
     def citing_ids(self) -> Generator[str, None, None]:
         return [citation['paperId'] for citation in self.citations]
+
+    def get_citation_entries(self):
+        return [Citation(self.paper_id, citation) for citation in self.citations]

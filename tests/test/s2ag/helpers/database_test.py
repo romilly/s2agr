@@ -12,7 +12,7 @@ from s2ag.persistence.database_catalogue import test_connection, DatabaseCatalog
 class DatabaseTest(TestCase):
     connection: connection
     cursor: cursor
-    TABLES = ['paper']
+    TABLES = ['paper', 'citation']
 
     @classmethod
     def setUpClass(cls):

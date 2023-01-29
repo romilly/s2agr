@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from s2ag.citation import Citation
 from s2ag.paper import Paper
 
 
@@ -18,7 +19,7 @@ class Catalogue(ABC):
         pass
 
     @abstractmethod
-    def write_citation(self, cited_id, citing_id):
+    def write_citation(self, citation: Citation):
         pass
 
     # @abstractmethod
@@ -35,7 +36,7 @@ class Catalogue(ABC):
 
 
 class NullCatalogue(Catalogue):
-    def write_citation(self, cited_id, citing_id):
+    def write_citation(self, citation):
         pass
 
     def read_paper(self, paper_id: str) -> Paper:
