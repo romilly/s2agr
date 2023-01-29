@@ -1,6 +1,6 @@
 import re
 from datetime import datetime
-from typing import Any
+from typing import Any, List, Generator
 
 CC_RE = pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
@@ -30,7 +30,7 @@ PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
-        'citations', # by default, get
+        'citations', # by default, get paperId and title
         # 'citations.year'
         # 'tldr',
         # 'embedding'
@@ -57,6 +57,7 @@ class Paper:
     publication_date: datetime
     citationStyles: Any
     authors: Any
+    citations: List[dict]
     # tldr: str
     # embedding: Any
 
@@ -64,3 +65,6 @@ class Paper:
         self.jason_dictionary = jason_dictionary
         for key in self.jason_dictionary.keys():
             self.__setattr__(snake(key), self.jason_dictionary[key])
+
+    def citing_ids(self) -> Generator[str, None, None]:
+        return [citation['paperId'] for citation in self.citations]

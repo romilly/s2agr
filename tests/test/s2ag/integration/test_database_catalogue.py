@@ -1,11 +1,18 @@
 import unittest
 
+import vcr
+
 from s2ag.requester import WebRequester
 from s2ag.researcher import Researcher
 from test.s2ag.helpers.database_test import DatabaseTest
 
+test_vcr = vcr.VCR(
+    cassette_library_dir='helpers/cassettes',
+    path_transformer=vcr.VCR.ensure_suffix('.yaml')
+)
 
 class DatabaseCatalogueTestCase(DatabaseTest):
+    @test_vcr.use_cassette
     def test_something(self):
         researcher = Researcher(WebRequester())
         self.check_total_row_count('paper', 0)
