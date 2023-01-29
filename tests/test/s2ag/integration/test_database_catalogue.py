@@ -11,6 +11,7 @@ test_vcr = vcr.VCR(
     path_transformer=vcr.VCR.ensure_suffix('.yaml')
 )
 
+
 class DatabaseCatalogueTestCase(DatabaseTest):
     @test_vcr.use_cassette
     def test_something(self):
