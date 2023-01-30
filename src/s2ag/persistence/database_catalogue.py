@@ -12,6 +12,10 @@ def test_connection():
     return connection(
         get_connection_string('TEST_DB', '/home/romilly/git/active/s2ag/sql/.env'))
 
+def local_production_connection():
+    return connection(
+        get_connection_string('LOCAL_PROD_DB', '/home/romilly/git/active/s2ag/sql/.env'))
+
 
 class DatabaseCatalogue(Catalogue):
 

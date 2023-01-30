@@ -3,8 +3,7 @@ import unittest
 
 import vcr
 
-from s2ag.paper import Paper
-from s2ag.requester import WebRequester
+from s2ag.requester import ThrottledRequester
 from s2ag.researcher import Researcher
 from test.s2ag.helpers import samples
 from test.s2ag.helpers.database_test import DatabaseTest
@@ -19,7 +18,7 @@ class DatabaseCatalogueTestCase(DatabaseTest):
     @test_vcr.use_cassette
     def test_catalogue_writes_paper(self):
         self.check_total_row_count('paper', 0)
-        researcher = Researcher(WebRequester())
+        researcher = Researcher(ThrottledRequester(delay=0.001))
         paper_id = '649def34f8be52c8b66281af98ae884c09aef38b'
         paper = researcher.get_paper(paper_id)
         self.catalogue.write_paper(paper)
