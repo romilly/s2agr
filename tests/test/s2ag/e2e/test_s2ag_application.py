@@ -3,6 +3,7 @@ import unittest
 import vcr
 from hamcrest import assert_that, starts_with
 
+from s2ag.builder import Builder
 from s2ag.librarian import Librarian, Researcher
 from s2ag.persistence.database_catalogue import DatabaseCatalogue, test_connection
 from s2ag.requester import ThrottledRequester
@@ -17,10 +18,8 @@ class S2AGTestCase(unittest.TestCase):
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_paper(self):
-        requester = ThrottledRequester(delay=0.001)
+        librarian = Builder().build_for_test()
         pid = '649def34f8be52c8b66281af98ae884c09aef38b'
-        catalogue = DatabaseCatalogue(test_connection())
-        librarian = Librarian(Researcher(requester), catalogue)
         paper = librarian.get_paper(pid)
         self.assertEqual(paper.paper_id, pid)
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")

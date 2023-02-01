@@ -2,6 +2,7 @@ import unittest
 
 import vcr
 
+from s2ag.builder import Builder
 from s2ag.librarian import Librarian, Researcher
 from s2ag.persistence.database_catalogue import DatabaseCatalogue, test_connection
 from s2ag.requester import ThrottledRequester
@@ -17,9 +18,7 @@ class S2AGCachingTestCase(DatabaseTest):
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_known_paper_from_database(self):
-        requester = ThrottledRequester(delay=0.001)
-        catalogue = DatabaseCatalogue(test_connection())
-        librarian = Librarian(Researcher(requester), catalogue)
+        librarian = Builder().build_for_test()
         fly_paper_id = 'e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a' # small set of citations
         self.check_total_row_count('paper', 0)
         librarian.get_paper(fly_paper_id)

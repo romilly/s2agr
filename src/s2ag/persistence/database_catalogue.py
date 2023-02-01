@@ -1,6 +1,6 @@
 import json
 
-from psycopg2._psycopg import connection
+import psycopg2
 
 from s2ag.citation import Citation
 from s2ag.paper import Paper
@@ -9,11 +9,12 @@ from s2ag.persistence.parser import get_connection_string
 
 
 def test_connection():
-    return connection(
+    return psycopg2.connect(
         get_connection_string('TEST_DB', '/home/romilly/git/active/s2ag/sql/.env'))
 
+
 def local_production_connection():
-    return connection(
+    return psycopg2.connect(
         get_connection_string('LOCAL_PROD_DB', '/home/romilly/git/active/s2ag/sql/.env'))
 
 
