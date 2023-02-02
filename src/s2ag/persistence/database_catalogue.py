@@ -1,5 +1,6 @@
 import json
-
+import os
+import pathlib
 import psycopg2
 
 from s2ag.citation import Citation
@@ -7,23 +8,23 @@ from s2ag.paper import Paper
 from s2ag.persistence.catalogue import Catalogue
 from s2ag.persistence.parser import get_connection_string
 
-
+env_loc = os.path.join(pathlib.Path(__file__).parent.resolve(), '.env')
 def test_connection():
     return psycopg2.connect(
-        get_connection_string('TEST_DB', '/home/romilly/git/active/s2ag/sql/.env'))
+        get_connection_string('TEST_DB', env_loc))
 
 
 def local_production_connection():
     return psycopg2.connect(
-        get_connection_string('LOCAL_PROD_DB', '/home/romilly/git/active/s2ag/sql/.env'))
+        get_connection_string('LOCAL_PROD_DB', env_loc))
 
 
 class DatabaseCatalogue(Catalogue):
 
     INSERT_SQL = "INSERT into paper(paper_id, s2ag_json_text, title, pub_year)" \
                  " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
-    COUNT_SQL = "select count(paper_id) from paper where paper_id = '%s'"
-    SELECT_SQL = "select s2ag_json_text from paper where paper_id = '%s'"
+    COUNT_SQL = "select count(paper_id) from paper where paper_id = (%s)"
+    SELECT_SQL = "select s2ag_json_text from paper where paper_id = (%s)"
     PAPER_IDS_SQL = "select paper_id from paper"
     INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id, is_influential)" \
                           " VALUES(%s, %s, %s) ON CONFLICT DO NOTHING"
@@ -59,12 +60,12 @@ class DatabaseCatalogue(Catalogue):
             self.connection.commit()
 
     def read_json(self, paper_id : str):
-        self.cursor.execute(self.SELECT_SQL % paper_id)
+        self.cursor.execute(self.SELECT_SQL, (paper_id,))
         data = self.cursor.fetchone()
         return data[0]
 
     def knows(self, paper_id : str):
-        self.cursor.execute(self.COUNT_SQL % paper_id)
+        self.cursor.execute(self.COUNT_SQL, (paper_id,))
         data = self.cursor.fetchone()
         return data[0] == 1
 
