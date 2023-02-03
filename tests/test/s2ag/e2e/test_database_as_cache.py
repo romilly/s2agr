@@ -18,7 +18,7 @@ class S2AGCachingTestCase(DatabaseTest):
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_known_paper_from_database(self):
-        librarian = Builder().build_for_test()
+        librarian = Builder().build()
         fly_paper_id = 'e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a' # small set of citations
         self.check_total_row_count('paper', 0)
         librarian.get_paper(fly_paper_id)

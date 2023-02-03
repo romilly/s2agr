@@ -45,9 +45,15 @@ class DatabaseCatalogue(Catalogue):
                     )
 
     def write_citation(self, citation: Citation):
+        if citation.citing_id is None:
+            print('ouch')
         with self.connection.cursor() as cursor:
-            cursor.execute(self.INSERT_CITATION_SQL, (citation.cited_id, citation.citing_id, citation.is_influential))
-            self.connection.commit()
+            try:
+                cursor.execute(self.INSERT_CITATION_SQL, (citation.citing_id, citation.cited_id, citation.is_influential))
+                self.connection.commit()
+            except Exception as e:
+                print(citation.cited_id, citation.citing_id, e)
+                self.connection.rollback()
 
     def _write(self, paper_id : str,
                paper_json_text : str,

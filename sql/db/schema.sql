@@ -122,6 +122,4 @@ CREATE UNIQUE INDEX pk_index ON public.citation USING btree (citing_id, cited_id
 
 INSERT INTO public.schema_migrations (version) VALUES
     ('20230126104607'),
-    ('20230127121805'),
-    ('20230127171102'),
-    ('20230127172342');
+    ('20230127171102');

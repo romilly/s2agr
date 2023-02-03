@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from typing import List
 
 from s2ag.citation import Citation
 from s2ag.paper import Paper

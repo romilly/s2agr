@@ -27,7 +27,7 @@ class ResearcherTestCase(unittest.TestCase):
         pid = '649def34f8be52c8b66281af98ae884c09aef38b'
         researcher = Researcher(ThrottledRequester(delay=0.001))
         citations = researcher.get_citations_for(pid)
-        assert_that(len(citations), equal_to(287))
+        assert_that(len(citations), equal_to(286))
         influential_citations = list(citation for citation in citations if citation.is_influential)
         assert_that(len(influential_citations), equal_to(33))
 

@@ -43,5 +43,3 @@ class Builder:
         self.monitor = monitor
         return self
 
-    def build_for_test(self) -> Librarian:
-        return self.build()

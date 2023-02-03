@@ -21,3 +21,11 @@ class MockMonitor(Monitor):
 
     def exception(self, message, exception):
         self.exceptions.append([message, exception])
+
+
+class PrintingMonitor(Monitor):
+    def info(self, message):
+        print(message)
+
+    def exception(self, message, exception):
+        print(message, exception)
