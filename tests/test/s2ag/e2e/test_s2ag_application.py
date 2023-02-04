@@ -18,7 +18,6 @@ class S2AGTestCase(DatabaseTest):
         self.librarian = Builder().build()
         self.pid = '649def34f8be52c8b66281af98ae884c09aef38b'
 
-
     @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_paper(self):
         paper = self.librarian.get_paper(self.pid)
