@@ -5,7 +5,7 @@ import requests
 from s2ag.citation import CITATION_FIELDS, Citation
 from s2ag.monitor import Monitor, MockMonitor
 from s2ag.paginator import Paginator
-from s2ag.paper import Paper, PAPER_FIELDS
+from s2ag.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2ag.requester import Requester
 
 
@@ -25,12 +25,15 @@ class Researcher:
         return Paper(self.get_paper_json(pid))
 
     def get_paper_json(self, pid: str) -> dict:
-        url = self.paper_url_for(pid)
-        return self.requester.get(url)
+        return self.requester.get(self.paper_url_for(pid))
 
     @staticmethod
     def paper_url_for(pid: str) -> str:
         return f"https://api.semanticscholar.org/graph/v1/paper/{pid}?fields={PAPER_FIELDS}"
+
+    @staticmethod
+    def author_url_for(pid: str) -> str:
+        return f"https://api.semanticscholar.org/graph/v1/author/{pid}?fields={AUTHOR_FIELDS}"
 
     def get_citations_for(self, pid: str) -> Set[Citation]:
         url = citations_url_for(pid)
@@ -57,3 +60,9 @@ class Researcher:
             else:
                 references.add(Citation.create_reference_from(pid, json_reference))
         return references
+
+    def get_author(self, aid):
+        return Author(self.get_author_json(aid))
+
+    def get_author_json(self, aid):
+        return self.requester.get(self.author_url_for(aid))

@@ -11,6 +11,13 @@ def snake(name: str) -> str:
     return CC_RE.sub('_', name).lower()
 
 
+class JsonEntity:
+    def __init__(self, jason_dictionary: dict):
+        self.jason_dictionary = jason_dictionary
+        for key in self.jason_dictionary.keys():
+            self.__setattr__(snake(key), self.jason_dictionary[key])
+
+
 PAPER_FIELDS = ','.join([
         'paperId',
         'externalIds',
@@ -32,13 +39,10 @@ PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
-        # 'citations.year'
-        # 'tldr',
-        # 'embedding'
         ])
 
 
-class Paper:
+class Paper(JsonEntity):
     paper_id: str
     title: str
     externalIds: Any
@@ -59,11 +63,30 @@ class Paper:
     citationStyles: Any
     authors: Any
     citations: List[dict]
-    # tldr: str
-    # embedding: Any
 
-    def __init__(self, jason_dictionary: dict):
-        self.jason_dictionary = jason_dictionary
-        for key in self.jason_dictionary.keys():
-            self.__setattr__(snake(key), self.jason_dictionary[key])
 
+AUTHOR_FIELDS = ','.join([
+    'authorId',
+    'externalIds',
+    'url',
+    'name',
+    'aliases',
+    'affiliations',
+    'homepage',
+    'paperCount',
+    'citationCount',
+    'hIndex'
+])
+
+
+class Author(JsonEntity):
+    author_id: str
+    external_ids: Any
+    url: str
+    name: str
+    aliases: Any
+    affiliations: List[str]
+    homepage: str
+    paper_count: int
+    citation_count: int
+    h_index: int

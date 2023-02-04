@@ -6,13 +6,13 @@ from psycopg2.sql import SQL, Identifier
 
 from psycopg2.extensions import connection, cursor
 
-from s2ag.persistence.database_catalogue import test_connection, DatabaseCatalogue
+from s2ag.persistence.database_catalogue import test_connection, DatabaseCatalogue, count_rows
 
 
 class DatabaseTest(TestCase):
     connection: connection
     cursor: cursor
-    TABLES = ['paper', 'citation']
+    TABLES = ['paper', 'citation', 'author']
 
     @classmethod
     def setUpClass(cls):
@@ -42,12 +42,8 @@ class DatabaseTest(TestCase):
         self.connection.commit()
 
     def check_row_count(self, table, id_col, value, expected_count):
-        s = SQL("select count(*) from {table} where {field} = %s").format(table=Identifier(table), field=Identifier(id_col))
-        self.cursor.execute(
-            s,
-            (value,))
-        rs = self.cursor.fetchall()
-        assert_that(rs[0][0], equal_to(expected_count))
+        count = count_rows(self.cursor, id_col, table, value)
+        assert_that(count, equal_to(expected_count))
 
     def check_total_row_count(self, table, expected_count):
         self.cursor.execute(

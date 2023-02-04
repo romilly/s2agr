@@ -14,6 +14,20 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- Name: author; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.author (
+    author_id character varying NOT NULL,
+    s2ag_json_text jsonb NOT NULL,
+    created timestamp without time zone DEFAULT now() NOT NULL,
+    updated timestamp without time zone DEFAULT now() NOT NULL,
+    author_name character varying,
+    notes character varying
+);
+
+
+--
 -- Name: citation; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -53,6 +67,14 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: author author_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.author
+    ADD CONSTRAINT author_pk PRIMARY KEY (author_id);
+
+
+--
 -- Name: citation citation_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -74,6 +96,13 @@ ALTER TABLE ONLY public.paper
 
 ALTER TABLE ONLY public.schema_migrations
     ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- Name: author_uindex; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX author_uindex ON public.author USING btree (author_id);
 
 
 --
@@ -122,4 +151,5 @@ CREATE UNIQUE INDEX pk_index ON public.citation USING btree (citing_id, cited_id
 
 INSERT INTO public.schema_migrations (version) VALUES
     ('20230126104607'),
-    ('20230127171102');
+    ('20230127171102'),
+    ('20230204140418');

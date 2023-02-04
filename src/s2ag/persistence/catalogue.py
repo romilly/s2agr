@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 from s2ag.citation import Citation
-from s2ag.paper import Paper
+from s2ag.entities import Paper
 
 
 class Catalogue(ABC):
@@ -10,7 +10,7 @@ class Catalogue(ABC):
         pass
 
     @abstractmethod
-    def knows(self, id):
+    def knows(self, item_id: str, table: str, id_col: str):
         pass
 
     @abstractmethod
@@ -21,10 +21,6 @@ class Catalogue(ABC):
     def write_citation(self, citation: Citation):
         pass
 
-    # @abstractmethod
-    # def keys(self) -> List[str]:
-    #     pass
-
     @abstractmethod
     def close(self):
         pass
@@ -33,15 +29,35 @@ class Catalogue(ABC):
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
 
+    def knows_paper(self, paper_id: str):
+        return self.knows(paper_id, 'paper', 'paper_id')
+
+    def knows_author(self, author_id: str):
+        return self.knows(author_id, 'author', 'author_id')
+
+    @abstractmethod
+    def read_author(self, aid):
+        pass
+
+    @abstractmethod
+    def write_author(self, author):
+        pass
+
 
 class NullCatalogue(Catalogue):
+    def write_author(self, author):
+        pass
+
+    def read_author(self, aid):
+        pass
+
     def write_citation(self, citation):
         pass
 
     def read_paper(self, paper_id: str) -> Paper:
         pass
 
-    def knows(self, id):
+    def knows(self, item_id: str, table: str, id_col: str):
         pass
 
     def write_paper(self, paper: Paper):
