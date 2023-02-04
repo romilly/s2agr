@@ -10,20 +10,31 @@ class Monitor(ABC):
     def exception(self, message, exception):
         pass
 
+    @abstractmethod
+    def warn(self, message):
+        pass
+
 
 class MockMonitor(Monitor):
     def __init__(self):
-        self.messages = []
+        self.infos = []
+        self.warnings = []
         self.exceptions = []
 
     def info(self, message):
-        self.messages.append(message)
+        self.infos.append(message)
+
+    def warn(self, message):
+        self.warnings.append(message)
 
     def exception(self, message, exception):
         self.exceptions.append([message, exception])
 
 
 class PrintingMonitor(Monitor):
+    def warn(self, message):
+        print(message)
+
     def info(self, message):
         print(message)
 
