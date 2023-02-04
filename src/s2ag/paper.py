@@ -32,7 +32,6 @@ PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
-        'citations', # by default, get paperId and title
         # 'citations.year'
         # 'tldr',
         # 'embedding'
@@ -68,8 +67,3 @@ class Paper:
         for key in self.jason_dictionary.keys():
             self.__setattr__(snake(key), self.jason_dictionary[key])
 
-    def citing_ids(self) -> Generator[str, None, None]:
-        return [citation['paperId'] for citation in self.citations]
-
-    def get_citation_entries(self):
-        return [Citation(self.paper_id, citation) for citation in self.citations]

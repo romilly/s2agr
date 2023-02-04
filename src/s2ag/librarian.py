@@ -27,6 +27,9 @@ class Librarian:
                 citations = self.researcher.get_citations_for(pid)
                 for citation in citations:
                     self.catalogue.write_citation(citation)
+                references = self.researcher.get_references_for(pid)
+                for reference in references:
+                    self.catalogue.write_citation(reference)
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % pid, e)

@@ -4,7 +4,6 @@ import vcr
 from hamcrest import assert_that, starts_with
 
 from s2ag.builder import Builder
-from s2ag.monitor import PrintingMonitor
 from test.s2ag.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(
@@ -27,11 +26,7 @@ class S2AGTestCase(DatabaseTest):
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")
         assert_that(paper.abstract, starts_with("We describe"))
         self.check_row_count('citation','cited_id',self.pid, 288)
-
-
-
-
-
+        self.check_row_count('citation','citing_id',self.pid, 27)
 
 
 if __name__ == '__main__':
