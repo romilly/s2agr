@@ -23,14 +23,10 @@ class Librarian:
             else:
                 self.monitor.info('downloading paper %s' % pid)
                 paper = self.researcher.get_paper(pid)
-                print('paper: ', paper)
                 self.catalogue.write_paper(paper)
                 citations = self.researcher.get_citations_for(pid)
                 for citation in citations:
-                    if citation.cited_id is None:
-                        print('ouch')
                     self.catalogue.write_citation(citation)
-                print(paper, len(citations))
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % pid, e)

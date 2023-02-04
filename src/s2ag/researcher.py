@@ -13,8 +13,6 @@ def citations_url_for(pid) -> str:
     return f"https://api.semanticscholar.org/graph/v1/paper/{pid}/citations"
 
 
-
-
 class Researcher:
     def __init__(self, requester: Requester, monitor: Monitor = MockMonitor()):
         self.requester = requester

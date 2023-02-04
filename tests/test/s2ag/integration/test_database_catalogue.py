@@ -26,11 +26,21 @@ class DatabaseCatalogueTestCase(DatabaseTest):
 
     def test_catalogue_writes_citations(self):
         self.check_total_row_count('citation', 0)
+        self.write_sample_citations()
+        self.check_total_row_count('citation', 3)
+
+    def write_sample_citations(self):
         paper = samples.sample_02()
         citations = paper.get_citation_entries()
         for citation in citations:
             self.catalogue.write_citation(citation)
+
+    def test_catalogue_ignores_duplicated_citations(self):
+        self.write_sample_citations()
         self.check_total_row_count('citation', 3)
+        self.write_sample_citations()
+        self.check_total_row_count('citation', 3)
+
 
 
 if __name__ == '__main__':

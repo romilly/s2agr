@@ -16,7 +16,7 @@ test_vcr = vcr.VCR(
 class S2AGTestCase(DatabaseTest):
     def setUp(self) -> None:
         DatabaseTest.setUp(self)
-        self.librarian = Builder().with_monitor(PrintingMonitor()).build()
+        self.librarian = Builder().build()
         self.pid = '649def34f8be52c8b66281af98ae884c09aef38b'
 
 

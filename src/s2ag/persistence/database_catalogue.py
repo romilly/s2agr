@@ -45,8 +45,6 @@ class DatabaseCatalogue(Catalogue):
                     )
 
     def write_citation(self, citation: Citation):
-        if citation.citing_id is None:
-            print('ouch')
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute(self.INSERT_CITATION_SQL, (citation.citing_id, citation.cited_id, citation.is_influential))
