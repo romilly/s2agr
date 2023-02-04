@@ -1,7 +1,5 @@
 from typing import Set
 
-import requests
-
 from s2ag.citation import CITATION_FIELDS, Citation
 from s2ag.monitor import Monitor, MockMonitor
 from s2ag.paginator import Paginator
@@ -11,6 +9,7 @@ from s2ag.requester import Requester
 
 def citations_url_for(pid) -> str:
     return f"https://api.semanticscholar.org/graph/v1/paper/{pid}/citations"
+
 
 def references_url_for(pid) -> str:
     return f"https://api.semanticscholar.org/graph/v1/paper/{pid}/references"
@@ -42,7 +41,7 @@ class Researcher:
         citations = set()
         for json_citation in json_citations:
             if json_citation['citingPaper']['paperId'] is None:
-                title = json_citation['citingPaper'].get('title', '*unkown*')
+                title = json_citation['citingPaper'].get('title', '*unknown*')
                 self.monitor.warn(f'citation citing {pid} titled {title} has no id')
             else:
                 citations.add(Citation.create_citation_from(pid, json_citation))
@@ -55,7 +54,7 @@ class Researcher:
         references = set()
         for json_reference in json_references:
             if json_reference['citedPaper']['paperId'] is None:
-                title = json_reference['citedPaper'].get('title', '*unkown*')
+                title = json_reference['citedPaper'].get('title', '*unknown*')
                 self.monitor.warn(f'reference in {pid} titled {title} has no id')
             else:
                 references.add(Citation.create_reference_from(pid, json_reference))

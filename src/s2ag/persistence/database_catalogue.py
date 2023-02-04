@@ -23,6 +23,7 @@ def local_production_connection():
 
 
 def count_rows(cursor, id_col, table, value):
+    # noinspection SyntaxError
     s = SQL("select count(*) from {table} where {field} = %s").format(
         table=Identifier(table),
         field=Identifier(id_col))
@@ -99,6 +100,7 @@ class DatabaseCatalogue(Catalogue):
             self.connection.commit()
 
     def read_json(self, table: str, id_col: str, item_id: str):
+        # noinspection SyntaxError
         s = SQL("select s2ag_json_text from {table} where {field} = %s").format(
             table=Identifier(table),
             field=Identifier(id_col))
