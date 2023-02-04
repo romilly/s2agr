@@ -42,7 +42,7 @@ class Researcher:
         for json_citation in json_citations:
             if json_citation['citingPaper']['paperId'] is None:
                 title = json_citation['citingPaper'].get('title', '*unknown*')
-                self.monitor.warn(f'citation citing {pid} titled {title} has no id')
+                self.monitor.warning(f'citation citing {pid} titled {title} has no id')
             else:
                 citations.add(Citation.create_citation_from(pid, json_citation))
         return citations
@@ -55,7 +55,7 @@ class Researcher:
         for json_reference in json_references:
             if json_reference['citedPaper']['paperId'] is None:
                 title = json_reference['citedPaper'].get('title', '*unknown*')
-                self.monitor.warn(f'reference in {pid} titled {title} has no id')
+                self.monitor.warning(f'reference in {pid} titled {title} has no id')
             else:
                 references.add(Citation.create_reference_from(pid, json_reference))
         return references
