@@ -1,1 +1,80 @@
-{"url": "https://www.semanticscholar.org/paper/d23508ee81467dff9435d42d1d4633e178e59992", "year": 2021, "title": "Molecular and neural mechanisms regulating sexual motivation of virgin female Drosophila", "venue": "Cellular and Molecular Life Sciences", "authors": [{"name": "H. Ishimoto", "authorId": "48446534"}, {"name": "A. Kamikouchi", "authorId": "5683768"}], "journal": {"name": "Cellular and Molecular Life Sciences", "pages": "4805 - 4819", "volume": "78"}, "paperId": "d23508ee81467dff9435d42d1d4633e178e59992", "abstract": null, "citations": [{"title": "Endocrine cybernetics: neuropeptides as molecular switches in behavioural decisions", "paperId": "9088b5478fc706f368d2d1fd5661aba9384d782b"}, {"title": "Interorgan communication through peripherally derived peptide hormones in Drosophila", "paperId": "1dd4b9b27250e20172260db7fbb4392ff5fec872"}, {"title": "Sound production in Drosophila melanogaster: Behaviour and neurobiology", "paperId": "1ff4ab59f46afb6ad6c79f9c25852e5da09a1125"}], "externalIds": {"DOI": "10.1007/s00018-021-03820-y", "PubMed": "33837450", "CorpusId": 233201568}, "isOpenAccess": false, "citationCount": 3, "fieldsOfStudy": ["Medicine"], "openAccessPdf": null, "citationStyles": {"bibtex": "@['Review', 'JournalArticle']{Ishimoto2021MolecularAN,\n author = {H. Ishimoto and A. Kamikouchi},\n booktitle = {Cellular and Molecular Life Sciences},\n journal = {Cellular and Molecular Life Sciences},\n pages = {4805 - 4819},\n title = {Molecular and neural mechanisms regulating sexual motivation of virgin female Drosophila},\n volume = {78},\n year = {2021}\n}\n"}, "referenceCount": 157, "publicationDate": "2021-04-10", "s2FieldsOfStudy": [{"source": "external", "category": "Medicine"}, {"source": "s2-fos-model", "category": "Biology"}, {"source": "s2-fos-model", "category": "Psychology"}], "publicationTypes": ["Review", "JournalArticle"], "publicationVenue": null, "influentialCitationCount": 0}
+{
+  "paperId": "d23508ee81467dff9435d42d1d4633e178e59992",
+  "externalIds": {
+    "DOI": "10.1007/s00018-021-03820-y",
+    "CorpusId": 233201568,
+    "PubMed": "33837450"
+  },
+  "publicationVenue": null,
+  "url": "https://www.semanticscholar.org/paper/d23508ee81467dff9435d42d1d4633e178e59992",
+  "title": "Molecular and neural mechanisms regulating sexual motivation of virgin female Drosophila",
+  "abstract": null,
+  "venue": "Cellular and Molecular Life Sciences",
+  "year": 2021,
+  "referenceCount": 157,
+  "citationCount": 3,
+  "influentialCitationCount": 0,
+  "isOpenAccess": false,
+  "openAccessPdf": null,
+  "fieldsOfStudy": [
+    "Medicine"
+  ],
+  "s2FieldsOfStudy": [
+    {
+      "category": "Medicine",
+      "source": "external"
+    },
+    {
+      "category": "Biology",
+      "source": "s2-fos-model"
+    },
+    {
+      "category": "Psychology",
+      "source": "s2-fos-model"
+    }
+  ],
+  "publicationTypes": [
+    "Review",
+    "JournalArticle"
+  ],
+  "publicationDate": "2021-04-10",
+  "journal": {
+    "name": "Cellular and Molecular Life Sciences",
+    "pages": "4805 - 4819",
+    "volume": "78"
+  },
+  "citationStyles": {
+    "bibtex": "@['Review', 'JournalArticle']{Ishimoto2021MolecularAN,\n author = {H. Ishimoto and A. Kamikouchi},\n booktitle = {Cellular and Molecular Life Sciences},\n journal = {Cellular and Molecular Life Sciences},\n pages = {4805 - 4819},\n title = {Molecular and neural mechanisms regulating sexual motivation of virgin female Drosophila},\n volume = {78},\n year = {2021}\n}\n"
+  },
+  "authors": [
+    {
+      "authorId": "48446534",
+      "url": "https://www.semanticscholar.org/author/48446534",
+      "name": "H. Ishimoto",
+      "aliases": [
+        "H Ishimoto",
+        "H. Ishimoto",
+        "Hiroshi Ishimoto"
+      ],
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 43,
+      "citationCount": 1608,
+      "hIndex": 23
+    },
+    {
+      "authorId": "5683768",
+      "url": "https://www.semanticscholar.org/author/5683768",
+      "name": "A. Kamikouchi",
+      "aliases": [
+        "A Kamikouchi",
+        "Azusa Kamikouchi"
+      ],
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 68,
+      "citationCount": 3129,
+      "hIndex": 22
+    }
+  ]
+}

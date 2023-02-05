@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
   response:
     body:
       string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds":
@@ -47,22 +47,84 @@ interactions:
         and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North
         American Chapter of the Association for Computational Linguistics},\n pages
         = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n
-        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "name": "Waleed
-        Ammar"}, {"authorId": "3458736", "name": "Dirk Groeneveld"}, {"authorId":
-        "1857797", "name": "Chandra Bhagavatula"}, {"authorId": "46181066", "name":
-        "Iz Beltagy"}, {"authorId": "46230609", "name": "Miles Crawford"}, {"authorId":
-        "145612610", "name": "Doug Downey"}, {"authorId": "38092776", "name": "Jason
-        Dunkelberger"}, {"authorId": "143718836", "name": "Ahmed Elgohary"}, {"authorId":
-        "46411828", "name": "Sergey Feldman"}, {"authorId": "4480314", "name": "Vu
-        A. Ha"}, {"authorId": "143967880", "name": "Rodney Michael Kinney"}, {"authorId":
-        "41018147", "name": "Sebastian Kohlmeier"}, {"authorId": "46258841", "name":
-        "Kyle Lo"}, {"authorId": "144240185", "name": "Tyler C. Murray"}, {"authorId":
-        "46256862", "name": "Hsu-Han Ooi"}, {"authorId": "39139825", "name": "Matthew
-        E. Peters"}, {"authorId": "39561369", "name": "Joanna L. Power"}, {"authorId":
-        "46181683", "name": "Sam Skjonsberg"}, {"authorId": "31860505", "name": "Lucy
-        Lu Wang"}, {"authorId": "46212260", "name": "Christopher Wilhelm"}, {"authorId":
-        "2112339497", "name": "Zheng Yuan"}, {"authorId": "15292561", "name": "Madeleine
-        van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}]}
+        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "url": "https://www.semanticscholar.org/author/145585097",
+        "name": "Waleed Ammar", "aliases": ["W Ashor Ammar", "W. Ammar", "Waleed A
+        Ammar", "Walid Ammar"], "affiliations": ["Google"], "homepage": null, "paperCount":
+        59, "citationCount": 3237, "hIndex": 23}, {"authorId": "3458736", "url": "https://www.semanticscholar.org/author/3458736",
+        "name": "Dirk Groeneveld", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 7, "citationCount": 481, "hIndex": 6}, {"authorId": "1857797",
+        "url": "https://www.semanticscholar.org/author/1857797", "name": "Chandra
+        Bhagavatula", "aliases": ["Chandra Sekhar Bhagavatula"], "affiliations": ["Allen
+        Institute for Artificial Intelligence"], "homepage": "https://www.chandrab.page/",
+        "paperCount": 55, "citationCount": 3935, "hIndex": 26}, {"authorId": "46181066",
+        "url": "https://www.semanticscholar.org/author/46181066", "name": "Iz Beltagy",
+        "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute for Artificial
+        Intelligence (AI2)"], "homepage": null, "paperCount": 48, "citationCount":
+        5730, "hIndex": 22}, {"authorId": "46230609", "url": "https://www.semanticscholar.org/author/46230609",
+        "name": "Miles Crawford", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 3, "citationCount": 287, "hIndex": 1}, {"authorId": "145612610",
+        "url": "https://www.semanticscholar.org/author/145612610", "name": "Doug Downey",
+        "aliases": ["Dagney Downey", "D Downey", "Doug C Downey", "Douglas C Downey",
+        "Douglas C. Downey"], "affiliations": ["Allen Institute for Artificial Intelligence",
+        "Northwestern University"], "homepage": "http://users.cs.northwestern.edu/~ddowney/",
+        "paperCount": 103, "citationCount": 7205, "hIndex": 30}, {"authorId": "38092776",
+        "url": "https://www.semanticscholar.org/author/38092776", "name": "Jason Dunkelberger",
+        "aliases": null, "affiliations": [], "homepage": "https://dirkraft.github.io",
+        "paperCount": 1, "citationCount": 287, "hIndex": 1}, {"authorId": "143718836",
+        "url": "https://www.semanticscholar.org/author/143718836", "name": "Ahmed
+        Elgohary", "aliases": ["Ahmed Fouad Elgohary"], "affiliations": ["Microsoft"],
+        "homepage": "http://cs.umd.edu/~elgohary", "paperCount": 29, "citationCount":
+        2565, "hIndex": 15}, {"authorId": "46411828", "url": "https://www.semanticscholar.org/author/46411828",
+        "name": "Sergey Feldman", "aliases": null, "affiliations": ["Allen Institute
+        for Artificial Intelligence", "Alongside.care"], "homepage": "https://www.data-cowboys.com/",
+        "paperCount": 25, "citationCount": 880, "hIndex": 12}, {"authorId": "4480314",
+        "url": "https://www.semanticscholar.org/author/4480314", "name": "Vu A. Ha",
+        "aliases": ["Vu Ha"], "affiliations": ["The Allen Institute for Artificial
+        Intelligence"], "homepage": "https://vha14.com", "paperCount": 21, "citationCount":
+        890, "hIndex": 11}, {"authorId": "143967880", "url": "https://www.semanticscholar.org/author/143967880",
+        "name": "Rodney Michael Kinney", "aliases": ["R. Kinney", "R. M. Kinney",
+        "Rodney Kinney"], "affiliations": ["Allen Institute for AI"], "homepage":
+        null, "paperCount": 14, "citationCount": 1187, "hIndex": 7}, {"authorId":
+        "41018147", "url": "https://www.semanticscholar.org/author/41018147", "name":
+        "Sebastian Kohlmeier", "aliases": null, "affiliations": ["Allen Institute
+        for AI", "Semantic Scholar"], "homepage": "www.semanticscholar.org", "paperCount":
+        7, "citationCount": 1029, "hIndex": 6}, {"authorId": "46258841", "url": "https://www.semanticscholar.org/author/46258841",
+        "name": "Kyle Lo", "aliases": null, "affiliations": ["Allen Institute for
+        Artificial Intelligence"], "homepage": null, "paperCount": 55, "citationCount":
+        4813, "hIndex": 20}, {"authorId": "144240185", "url": "https://www.semanticscholar.org/author/144240185",
+        "name": "Tyler C. Murray", "aliases": ["Tyler Murray"], "affiliations": ["Allen
+        Institute for Artificial Intelligence"], "homepage": "https://allenai.org",
+        "paperCount": 1, "citationCount": 287, "hIndex": 1}, {"authorId": "46256862",
+        "url": "https://www.semanticscholar.org/author/46256862", "name": "Hsu-Han
+        Ooi", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        1, "citationCount": 287, "hIndex": 1}, {"authorId": "39139825", "url": "https://www.semanticscholar.org/author/39139825",
+        "name": "Matthew E. Peters", "aliases": ["M. Peters", "Matthew E Peters",
+        "Matthew Peters"], "affiliations": ["Allen Institute for Artificial Intelligence"],
+        "homepage": null, "paperCount": 67, "citationCount": 16030, "hIndex": 26},
+        {"authorId": "39561369", "url": "https://www.semanticscholar.org/author/39561369",
+        "name": "Joanna L. Power", "aliases": ["J L Power", "Joanna Power"], "affiliations":
+        [], "homepage": "https://linkedin.com/in/jpower", "paperCount": 6, "citationCount":
+        393, "hIndex": 5}, {"authorId": "46181683", "url": "https://www.semanticscholar.org/author/46181683",
+        "name": "Sam Skjonsberg", "aliases": null, "affiliations": ["Allen Institute
+        for Artificial Intelligence"], "homepage": "https://codeviking.net", "paperCount":
+        6, "citationCount": 331, "hIndex": 4}, {"authorId": "31860505", "url": "https://www.semanticscholar.org/author/31860505",
+        "name": "Lucy Lu Wang", "aliases": ["Lucy Lu Wang", "Lucy L. Wang"], "affiliations":
+        ["University of Washington", "Allen Institute for AI"], "homepage": "https://llwang.net/",
+        "paperCount": 60, "citationCount": 2020, "hIndex": 19}, {"authorId": "46212260",
+        "url": "https://www.semanticscholar.org/author/46212260", "name": "Christopher
+        Wilhelm", "aliases": ["C Wilhelm", "C. Wilhelm", "Chris Wilhelm", "Claus Wilhelm"],
+        "affiliations": ["Allen Institute for Artificial Intelligence"], "homepage":
+        null, "paperCount": 15, "citationCount": 1060, "hIndex": 5}, {"authorId":
+        "2112339497", "url": "https://www.semanticscholar.org/author/2112339497",
+        "name": "Zheng Yuan", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 4, "citationCount": 306, "hIndex": 3}, {"authorId": "15292561",
+        "url": "https://www.semanticscholar.org/author/15292561", "name": "Madeleine
+        van Zuylen", "aliases": ["Madeleine Van Zuylen"], "affiliations": ["Allen
+        Institute for AI", "University of Notre Dame"], "homepage": null, "paperCount":
+        13, "citationCount": 938, "hIndex": 10}, {"authorId": "1741101", "url": "https://www.semanticscholar.org/author/1741101",
+        "name": "Oren Etzioni", "aliases": ["O Et-zioni", "Oren Etzioni"], "affiliations":
+        [], "homepage": null, "paperCount": 274, "citationCount": 34605, "hIndex":
+        86}]}
 
         '
     headers:
@@ -71,31 +133,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '3939'
+      - '9192'
       Content-Type:
       - application/json
       Date:
-      - Sat, 04 Feb 2023 11:07:51 GMT
+      - Sun, 05 Feb 2023 11:09:33 GMT
       Via:
-      - 1.1 a332ecb068a370997b5e7bc811ff54ea.cloudfront.net (CloudFront)
+      - 1.1 95e5e67fa5d157cb509d06500fad3cc4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - rXoHFri8v4venbc40NfUGYerjizUSiJ-WACMZ9lnoSOrA5RwcA_ayg==
+      - hIPMJotVTOV7AQSbAepneKmDcOBX2Luw4UqBcxdCcKuCNIdBK0Z9Ow==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fz5lPHpnvHcFyKQ=
+      - f3MxDHynPHcFybQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '3939'
+      - '9192'
       x-amzn-Remapped-Date:
-      - Sat, 04 Feb 2023 11:07:51 GMT
+      - Sun, 05 Feb 2023 11:09:33 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - b00321aa-40e4-4ae0-a63b-245a65c64172
+      - b8207546-9370-487b-bc4f-d5a16ea291e4
     status:
       code: 200
       message: OK
@@ -202,7 +264,7 @@ interactions:
         "192041215f6a1573fbbbbe323ee4275157fb6a3d", "title": "A Scoping Review of
         Species Distribution Modeling Methods for Tick Vectors"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "686d9ee744fa013cc21cdd86acd864c936e9e456",
-        "title": "Large Language Models are Zero-Shot Clinical Information Extractors"}},
+        "title": "Large language models are few-shot clinical information extractors"}},
         {"isInfluential": true, "citingPaper": {"paperId": "844e2bc8c85ae33c69e8307ea0c0fba4f15be07b",
         "title": "Overview of STEM Science as Process, Method, Material, and Data
         Named Entities"}}, {"isInfluential": false, "citingPaper": {"paperId": "6cb77f85207c680ac442275138d2458a8505256b",
@@ -781,31 +843,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '55030'
+      - '55029'
       Content-Type:
       - application/json
       Date:
-      - Sat, 04 Feb 2023 11:07:52 GMT
+      - Sun, 05 Feb 2023 11:09:34 GMT
       Via:
-      - 1.1 b02c5108645d71e94b66c369c35c449a.cloudfront.net (CloudFront)
+      - 1.1 1b8fbe8b282c39df77f9bf1f187cc284.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - EgFP4yazUZbp3Cr-uZPFheA4Rnp75nRlRencGD2CoQeR2xU2JfC-HQ==
+      - u_Pe8fZ_xnM9t-uS6eRI4E9GRSOhK5t2N6ZfPf9syES5gbq1icHC7g==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fz5lTH97PHcFToA=
+      - f3MxQEFCvHcFQ1Q=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '55030'
+      - '55029'
       x-amzn-Remapped-Date:
-      - Sat, 04 Feb 2023 11:07:52 GMT
+      - Sun, 05 Feb 2023 11:09:34 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - a16b55a8-bef0-4435-ac0e-3ebdcb70ff62
+      - 9de17e98-7e4a-4ae3-abd8-fbedee65b354
     status:
       code: 200
       message: OK
@@ -894,27 +956,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 04 Feb 2023 11:07:53 GMT
+      - Sun, 05 Feb 2023 11:09:35 GMT
       Via:
-      - 1.1 bf4a364e1dd23fe6634f1bf013457c5c.cloudfront.net (CloudFront)
+      - 1.1 b02c5108645d71e94b66c369c35c449a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - rAvC3YEjYHTC2CzDd4UJzT8aDmDurLoKQqSIRSsIzGJ0Gl4MJhiuig==
+      - Mpff2571exEHlvPdVK8RXO-c4iLLhLPh-YuMlsnRiIL8JlM4rqO5VA==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fz5leHaQvHcF29A=
+      - f3MxaF9YPHcFa-A=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '4701'
       x-amzn-Remapped-Date:
-      - Sat, 04 Feb 2023 11:07:53 GMT
+      - Sun, 05 Feb 2023 11:09:35 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - b1782420-df5d-4d06-bbc8-296fe97a29fa
+      - 0e98c89b-425e-41ab-b4ac-2a2ad8f3e682
     status:
       code: 200
       message: OK

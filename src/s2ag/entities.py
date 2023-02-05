@@ -39,6 +39,15 @@ PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
+        'authors.authorId',
+        'authors.url',
+        'authors.name',
+        'authors.aliases',
+        'authors.affiliations',
+        'authors.homepage',
+        'authors.paperCount',
+        'authors.citationCount',
+        'authors.hIndex'
         ])
 
 

@@ -1,7 +1,7 @@
 import psycopg2
 
 from s2ag.monitor import Monitor
-from s2ag.entities import Paper
+from s2ag.entities import Paper, Author
 from s2ag.persistence.catalogue import Catalogue
 from s2ag.requester import ThrottledRequesterException
 from s2ag.researcher import Researcher
@@ -30,6 +30,10 @@ class Librarian:
                 references = self.researcher.get_references_for(pid)
                 for reference in references:
                     self.catalogue.write_citation(reference)
+                authors = (Author(ajd) for ajd in paper.authors)
+                for author in authors:
+                    self.catalogue.write_author(author)
+
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % pid, e)

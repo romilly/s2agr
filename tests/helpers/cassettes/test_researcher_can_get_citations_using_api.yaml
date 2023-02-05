@@ -102,7 +102,7 @@ interactions:
         "192041215f6a1573fbbbbe323ee4275157fb6a3d", "title": "A Scoping Review of
         Species Distribution Modeling Methods for Tick Vectors"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "686d9ee744fa013cc21cdd86acd864c936e9e456",
-        "title": "Large Language Models are Zero-Shot Clinical Information Extractors"}},
+        "title": "Large language models are few-shot clinical information extractors"}},
         {"isInfluential": true, "citingPaper": {"paperId": "844e2bc8c85ae33c69e8307ea0c0fba4f15be07b",
         "title": "Overview of STEM Science as Process, Method, Material, and Data
         Named Entities"}}, {"isInfluential": false, "citingPaper": {"paperId": "6cb77f85207c680ac442275138d2458a8505256b",
@@ -681,31 +681,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '55030'
+      - '55029'
       Content-Type:
       - application/json
       Date:
-      - Sat, 04 Feb 2023 11:07:54 GMT
+      - Sun, 05 Feb 2023 11:09:36 GMT
       Via:
-      - 1.1 7d4502925a4a466598af9dc0cff9e994.cloudfront.net (CloudFront)
+      - 1.1 40cca5ba9d58d2863aa64808c5af6212.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - ishvm8yD1WyE55SVbhmqxUJI4Hp9yV1l-I2dI8v2ptc6tpn3wAjyEQ==
+      - WaJ1bWzAv-a84VaVrFkCsW8oX2RT_IJxZ7Vx1oDKtpdnfy5qMgQ8cA==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - fz5lmHXEPHcFdxQ=
+      - f3MxjFvcPHcFRAw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '55030'
+      - '55029'
       x-amzn-Remapped-Date:
-      - Sat, 04 Feb 2023 11:07:54 GMT
+      - Sun, 05 Feb 2023 11:09:36 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - f15b0db9-cea1-4441-9777-813685409b66
+      - 724ea4a6-a0f0-449d-9ec0-5e56e71885d1
     status:
       code: 200
       message: OK
