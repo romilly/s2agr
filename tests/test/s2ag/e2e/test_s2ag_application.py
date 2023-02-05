@@ -27,6 +27,7 @@ class S2AGTestCase(DatabaseTest):
         assert_that(paper.abstract, starts_with("We describe"))
         self.check_row_count('citation','cited_id',self.pid, 288)
         self.check_row_count('citation','citing_id',self.pid, 27)
+        # self.check_row_count('wrote','citing_id',self.pid, 27)
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_author(self):

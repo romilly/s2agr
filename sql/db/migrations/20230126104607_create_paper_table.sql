@@ -16,8 +16,6 @@ create table if not exists paper
     notes              varchar
 );
 
-alter table paper
-    owner to romilly;
 
 create index paper_key_paper_index
     on paper (key_paper);

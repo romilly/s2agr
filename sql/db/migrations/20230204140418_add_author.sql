@@ -11,9 +11,6 @@ create table if not exists author
     notes              varchar
 );
 
-alter table author
-    owner to romilly;
-
 create unique index if not exists author_uindex
     on author (author_id);
 

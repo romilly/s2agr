@@ -8,9 +8,6 @@ create table if not exists citation
         primary key (citing_id, cited_id)
 );
 
-alter table citation
-    owner to romilly;
-
 create index if not exists cited_index
     on citation (cited_id);
 

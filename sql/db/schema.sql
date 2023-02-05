@@ -67,6 +67,16 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: wrote; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.wrote (
+    author_id character varying NOT NULL,
+    paper_id character varying NOT NULL
+);
+
+
+--
 -- Name: author author_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -96,6 +106,14 @@ ALTER TABLE ONLY public.paper
 
 ALTER TABLE ONLY public.schema_migrations
     ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
+
+
+--
+-- Name: wrote wrote_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.wrote
+    ADD CONSTRAINT wrote_pk PRIMARY KEY (author_id, paper_id);
 
 
 --
@@ -141,6 +159,43 @@ CREATE UNIQUE INDEX pk_index ON public.citation USING btree (citing_id, cited_id
 
 
 --
+-- Name: wrote_author_id_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX wrote_author_id_index ON public.wrote USING btree (author_id);
+
+
+--
+-- Name: wrote_paper_id_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX wrote_paper_id_index ON public.wrote USING btree (paper_id);
+
+
+--
+-- Name: wrote_uindex; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX wrote_uindex ON public.wrote USING btree (author_id, paper_id);
+
+
+--
+-- Name: wrote wrote_author_author_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.wrote
+    ADD CONSTRAINT wrote_author_author_id_fk FOREIGN KEY (author_id) REFERENCES public.author(author_id);
+
+
+--
+-- Name: wrote wrote_paper_paper_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.wrote
+    ADD CONSTRAINT wrote_paper_paper_id_fk FOREIGN KEY (paper_id) REFERENCES public.paper(paper_id);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
@@ -152,4 +207,5 @@ CREATE UNIQUE INDEX pk_index ON public.citation USING btree (citing_id, cited_id
 INSERT INTO public.schema_migrations (version) VALUES
     ('20230126104607'),
     ('20230127171102'),
-    ('20230204140418');
+    ('20230204140418'),
+    ('20230204165119');

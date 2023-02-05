@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+import logging
 
 
 class Monitor(ABC):
@@ -11,7 +12,7 @@ class Monitor(ABC):
         pass
 
     @abstractmethod
-    def warn(self, message):
+    def warning(self, message):
         pass
 
 
@@ -24,7 +25,7 @@ class MockMonitor(Monitor):
     def info(self, message):
         self.infos.append(message)
 
-    def warn(self, message):
+    def warning(self, message):
         self.warnings.append(message)
 
     def exception(self, message, exception):
@@ -32,7 +33,7 @@ class MockMonitor(Monitor):
 
 
 class PrintingMonitor(Monitor):
-    def warn(self, message):
+    def warning(self, message):
         print(message)
 
     def info(self, message):
@@ -40,3 +41,19 @@ class PrintingMonitor(Monitor):
 
     def exception(self, message, exception):
         print(message, exception)
+
+
+class LoggingMonitor(Monitor):
+    def __init__(self):
+        import logging
+        logging.basicConfig(filename='production.log', encoding='utf-8', level=logging.INFO)
+
+    def exception(self, message, exception):
+        logging.exception(message, exception)
+
+    def warning(self, message):
+        logging.warning(message)
+
+    def info(self, message):
+        logging.info(message)
+
