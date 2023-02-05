@@ -12,6 +12,10 @@ from s2ag.persistence.parser import get_connection_string
 env_loc = os.path.join(pathlib.Path(__file__).parent.resolve(), '.env')
 
 
+class DatabaseCatalogueException(Exception):
+    pass
+
+
 def test_connection():
     return psycopg2.connect(
         get_connection_string('TEST_DB', env_loc))
@@ -34,22 +38,21 @@ def count_rows(cursor, id_col, table, value):
 
 
 class DatabaseCatalogue(Catalogue):
-
-
     INSERT_PAPER_SQL = "INSERT into paper(paper_id, s2ag_json_text, title, pub_year)" \
-                 " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
+                       " VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING"
     INSERT_AUTHOR_SQL = "INSERT into author(author_id, s2ag_json_text, author_name)" \
-                       " VALUES (%s, %s, %s) ON CONFLICT DO NOTHING"
+                        " VALUES (%s, %s, %s) ON CONFLICT DO NOTHING"
     COUNT_SQL = "select count(paper_id) from paper where paper_id = (%s)"
     SELECT_SQL = "select s2ag_json_text from paper where paper_id = (%s)"
     PAPER_IDS_SQL = "select paper_id from paper"
     INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id, is_influential)" \
                           " VALUES(%s, %s, %s) ON CONFLICT DO NOTHING"
+    INSERT_WROTE_SQL = "INSERT into wrote(paper_id, author_id) VALUES(%s, %s)" \
+                       "ON CONFLICT DO NOTHING"
 
     def __init__(self, connection=None):
         self.connection = connection
         self.cursor = self.connection.cursor()
-
 
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
@@ -68,7 +71,15 @@ class DatabaseCatalogue(Catalogue):
                            author.name
                            )
 
-
+    def write_wrote(self, paper_id, author_id):
+        with self.connection.cursor() as cursor:
+            try:
+                cursor.execute(self.INSERT_WROTE_SQL,
+                               (paper_id, author_id))
+                self.connection.commit()
+            except Exception as e:
+                self.connection.rollback()
+                raise DatabaseCatalogueException from e
 
     def write_citation(self, citation: Citation):
         with self.connection.cursor() as cursor:
@@ -77,8 +88,8 @@ class DatabaseCatalogue(Catalogue):
                                (citation.citing_id, citation.cited_id, citation.is_influential))
                 self.connection.commit()
             except Exception as e:
-                print(citation.cited_id, citation.citing_id, e)
                 self.connection.rollback()
+                raise DatabaseCatalogueException from e
 
     def _write_paper(self, paper_id: str,
                      paper_json_text: str,

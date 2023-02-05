@@ -7,6 +7,9 @@ from s2ag.requester import ThrottledRequesterException
 from s2ag.researcher import Researcher
 
 
+
+
+
 class Librarian:
     def __init__(self, 
                  researcher: Researcher,
@@ -33,11 +36,12 @@ class Librarian:
                 authors = (Author(ajd) for ajd in paper.authors)
                 for author in authors:
                     self.catalogue.write_author(author)
+                    self.catalogue.write_wrote(paper.paper_id, author.author_id)
 
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % pid, e)
-        except psycopg2.Error as e:
+        except DatabaseCatalogueException as e:
             self.monitor.exception('Database error handling paper %s' % pid, e)
 
     def get_author(self, aid):

@@ -43,8 +43,15 @@ class Catalogue(ABC):
     def write_author(self, author):
         pass
 
+    @abstractmethod
+    def write_wrote(self, paper_id, author_id):
+        pass
+
 
 class NullCatalogue(Catalogue):
+    def write_wrote(self, paper_id, author_id):
+        pass
+
     def write_author(self, author):
         pass
 
