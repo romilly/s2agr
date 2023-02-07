@@ -8,7 +8,8 @@ class UrlBuilder:
         query_part = self.get_query_string(query)
         return f'{self.BASE_URL}paper/search{query_part}'
 
-    def get_query_string(self, query: dict):
+    @staticmethod
+    def get_query_string(query: dict):
         if query is None or len(query) == 0:
             return ''
         return '?'+'&'.join(f'{key}={value}' for (key, value) in query.items())
