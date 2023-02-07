@@ -1,0 +1,20 @@
+from typing import Optional
+
+
+class UrlBuilder:
+    BASE_URL = 'https://api.semanticscholar.org/graph/v1/'
+
+    def for_search(self, query: dict):
+        query_part = self.get_query_string(query)
+        return f'{self.BASE_URL}paper/search{query_part}'
+
+    def get_query_string(self, query: dict):
+        if query is None or len(query) == 0:
+            return ''
+        return '?'+'&'.join(f'{key}={value}' for (key, value) in query.items())
+
+    def for_paper(self, paper_id: str, query: Optional[dict] = None):
+        query_part = self.get_query_string(query)
+        return f'{self.BASE_URL}paper/{paper_id}{query_part}'
+
+

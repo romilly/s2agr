@@ -1,8 +1,9 @@
 import unittest
 
 import vcr
-from hamcrest import assert_that, equal_to, contains_string, contains
+from hamcrest import assert_that, equal_to, contains_string, contains, greater_than
 
+from s2ag.queries import q
 from s2ag.requester import ThrottledRequester
 from s2ag.researcher import Researcher, Requester
 
@@ -41,6 +42,16 @@ class ResearcherTestCase(unittest.TestCase):
         assert_that(len(citations), equal_to(288))
         influential_citations = list(citation for citation in citations if citation.is_influential)
         assert_that(len(influential_citations), equal_to(33))
+
+# TODO: reinstate
+    # @test_vcr.use_cassette
+    # def test_can_get_papers_satisfying_query(self):
+    #     # TODO: move to setUp
+    #     researcher = Researcher(ThrottledRequester(delay=0.001))
+    #     query = q().keywords('temporal','knowledge','graph','embedding').between(2019,2020)
+    #     papers = researcher.query(query)
+    #     assert_that(len(papers), greater_than(1000))
+
 
 if __name__ == '__main__':
     unittest.main()
