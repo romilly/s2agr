@@ -2,25 +2,23 @@ import unittest
 
 from hamcrest import assert_that, contains_exactly, equal_to
 
-
-class QueryBuilder:
-    def __init__(self):
-        self._keywords = []
-
-    def keywords(self, *keywords: str):
-        self._keywords = keywords
-        return self
-
-    def parameters(self):
-        return {'query': '+'.join(self._keywords)}
-
-
-def q():
-    return QueryBuilder()
+import s2ag.queries
 
 
 class QueryBuilderTestCase(unittest.TestCase):
+    def setUp(self) -> None:
+        self.q = s2ag.queries.q()
+
     def test_builds_simple_query(self):
-        qb = q().keywords('cerebellar','cortex')
-        assert_that(qb.parameters(), equal_to({'query': 'cerebellar+cortex'}))
+        self.q.keywords('cerebellar', 'cortex')
+        assert_that(self.q.parameters(), equal_to({'query': 'cerebellar+cortex'}))
+
+    def test_builds_query_for_single_year(self):
+        self.q.in_year(2020)
+        assert_that(self.q.parameters(), equal_to({'year': '2020'}))
+
+    def test_builds_query_for_year_range(self):
+        self.q.between(2020, 2021)
+        assert_that(self.q.parameters(), equal_to({'year': '2020-2021'}))
+
 
