@@ -21,4 +21,10 @@ class QueryBuilderTestCase(unittest.TestCase):
         self.q.between(2020, 2021)
         assert_that(self.q.parameters(), equal_to({'year': '2020-2021'}))
 
+    def test_builds_query_before_year(self):
+        self.q.before(2021)
+        assert_that(self.q.parameters(), equal_to({'year': '-2021'}))
 
+    def test_builds_query_after_year(self):
+        self.q.after(2020)
+        assert_that(self.q.parameters(), equal_to({'year': '2020-'}))

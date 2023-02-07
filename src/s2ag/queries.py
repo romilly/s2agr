@@ -18,6 +18,14 @@ class QueryBuilder:
         self._parameters['year']  = f'{start_year}-{end_year}'
         return self
 
+    def before(self, end_year: int) -> 'QueryBuilder':
+        self._parameters['year']  = f'-{end_year}'
+        return self
+
+    def after(self, start_year) -> 'QueryBuilder':
+        self._parameters['year']  = f'{start_year}-'
+        return self
+
 
 def q() -> QueryBuilder:
     return QueryBuilder()
