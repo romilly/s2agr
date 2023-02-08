@@ -1,11 +1,13 @@
 from typing import Optional
 
+from s2ag.queries import QueryBuilder
+
 
 class UrlBuilder:
     BASE_URL = 'https://api.semanticscholar.org/graph/v1/'
 
-    def for_search(self, query: dict):
-        query_part = self.get_query_string(query)
+    def for_search(self, query: QueryBuilder):
+        query_part = self.get_query_string(query.parameters())
         return f'{self.BASE_URL}paper/search{query_part}'
 
     @staticmethod

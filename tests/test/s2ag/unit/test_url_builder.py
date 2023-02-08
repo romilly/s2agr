@@ -1,5 +1,6 @@
 import unittest
 
+from s2ag.queries import q
 from s2ag.urls import UrlBuilder
 
 
@@ -9,7 +10,7 @@ class UrlBuilderTestCase(unittest.TestCase):
         self.ub = UrlBuilder()
 
     def test_builds_url_for_search(self):
-        url = self.ub.for_search({'query': 'cerebellar+cortex'})
+        url = self.ub.for_search(q().with_keywords('cerebellar','cortex'))
         expected_url = 'https://api.semanticscholar.org/graph/v1/paper/search?query=cerebellar+cortex'
         self.assertEqual(expected_url, url)
 
