@@ -47,6 +47,9 @@ class UrlBuilderForSearch(UrlBuilder):
     def get_url_stem(self) -> str:
         return f'{self.BASE_URL}paper/search'
 
+    def with_keywords(self, *keywords):
+        return self.with_query(q().with_keywords(*keywords))
+
 
 class UrlBuilderForSinglePaper(UrlBuilder):
     def __init__(self, paper_id: str):

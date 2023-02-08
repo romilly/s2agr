@@ -7,7 +7,7 @@ from s2agr.urls import UrlBuilderForSearch, UrlBuilderForSinglePaper, q
 class UrlBuilderTestCase(unittest.TestCase):
 
     def test_builds_url_for_search(self):
-        actual_url = UrlBuilderForSearch().with_query(q().with_keywords('cerebellar','cortex')).get_url()
+        actual_url = UrlBuilderForSearch().with_keywords('cerebellar','cortex').get_url()
         expected_url = 'https://api.semanticscholar.org/graph/v1/paper/search?query=cerebellar+cortex'
         self.assertEqual(expected_url, actual_url)
 
