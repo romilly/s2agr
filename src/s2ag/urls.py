@@ -1,13 +1,13 @@
 from typing import Optional
 
-from s2ag.queries import QueryBuilder
+from s2ag.queries import Query
 
 
 class UrlBuilder:
     BASE_URL = 'https://api.semanticscholar.org/graph/v1/'
 
     def __init__(self):
-        self.query = QueryBuilder()
+        self.query = Query()
 
     def with_query(self, query):
         self.query = self.query | query
