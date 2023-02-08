@@ -71,10 +71,7 @@ class Researcher:
 
     def new_get_citations_for(self, pid: str):
         url = citations_url_for(pid)
-        # TODO: restore
-        # url_generator = UrlBuilder().for_citations_of(pid)
         paginator = Paginator(self.requester,
-                              CITATION_FIELDS,
                               url_builder=UrlBuilderForPaperCitations(pid).with_query(q().with_fields(*CITATION_FIELDS)))
         json_citations = paginator.new_contents()
         citations = set()

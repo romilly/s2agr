@@ -7,7 +7,7 @@ from s2ag.urls import UrlBuilder, UrlBuilderForSearch
 class Paginator:
 
     def __init__(self, requester,
-                 fields,
+                 fields = None,
                  url: Optional[str] = None,
                  url_builder: Optional[UrlBuilder] = None,
                  limit=1000) -> None:
