@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
 from s2ag.queries import q
-from s2ag.urls import UrlBuilder, UrlBuilderForSearch
+from s2ag.urls import UrlBuilder
 
 
 class Paginator:
