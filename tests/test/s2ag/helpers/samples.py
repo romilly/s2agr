@@ -9,5 +9,5 @@ def read(filename):
 
 
 def sample_02():
-    jd = json.loads(read('test/s2ag/data/samples/sample_02.json'))
+    jd = json.loads(read('test/s2agr/data/samples/sample_02.json'))
     return Paper(jd)
