@@ -47,6 +47,16 @@ class UrlBuilderForPaperCitations(UrlBuilder):
         return f'{self.BASE_URL}paper/{self.paper_id}/citations{string}'
 
 
+class UrlBuilderForPaperReferences(UrlBuilder):
+    def __init__(self, paper_id: str):
+        UrlBuilder.__init__(self)
+        self.paper_id = paper_id
+
+    def get_url(self):
+        string = self.get_query_string()
+        return f'{self.BASE_URL}paper/{self.paper_id}/references{string}'
+
+
 class UrlBuilderForAuthor(UrlBuilder):
     def __init__(self, author_id: str):
         UrlBuilder.__init__(self)

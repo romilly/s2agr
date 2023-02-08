@@ -3,6 +3,7 @@ import psycopg2
 from s2ag.monitor import Monitor
 from s2ag.entities import Paper, Author
 from s2ag.persistence.catalogue import Catalogue
+from s2ag.persistence.database_catalogue import DatabaseCatalogueException
 from s2ag.requester import ThrottledRequesterException
 from s2ag.researcher import Researcher
 

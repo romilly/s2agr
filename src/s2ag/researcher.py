@@ -1,12 +1,13 @@
 from typing import Set
 
 from s2ag.citation import CITATION_FIELDS, Citation
+from s2ag.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2ag.monitor import Monitor, MockMonitor
 from s2ag.paginator import Paginator
-from s2ag.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2ag.queries import q
 from s2ag.requester import Requester
-from s2ag.urls import UrlBuilder, UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations
+from s2ag.urls import UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations, \
+    UrlBuilderForPaperReferences
 
 
 def citations_url_for(pid) -> str:
@@ -37,22 +38,10 @@ class Researcher:
     def url_for_author(pid: str) -> str:
         return UrlBuilderForAuthor(pid).with_query(q().with_fields(AUTHOR_FIELDS)).get_url()
 
-    def get_citations_for(self, pid: str) -> Set[Citation]:
-        url = citations_url_for(pid)
-        paginator = Paginator(self.requester, CITATION_FIELDS, url)
-        json_citations = paginator.contents()
-        citations = set()
-        for json_citation in json_citations:
-            if json_citation['citingPaper']['paperId'] is None:
-                title = json_citation['citingPaper'].get('title', '*unknown*')
-                self.monitor.warning(f'citation citing {pid} titled {title} has no id')
-            else:
-                citations.add(Citation.create_citation_from(pid, json_citation))
-        return citations
-
     def get_references_for(self, pid: str) -> Set[Citation]:
         url = references_url_for(pid)
-        paginator = Paginator(self.requester, CITATION_FIELDS, url)
+        paginator = Paginator(self.requester,
+                              url_builder=UrlBuilderForPaperReferences(pid).with_query(q().with_fields(*CITATION_FIELDS)))
         json_references = paginator.contents()
         references = set()
         for json_reference in json_references:
@@ -69,11 +58,10 @@ class Researcher:
     def get_author_json(self, aid):
         return self.requester.get(self.url_for_author(aid))
 
-    def new_get_citations_for(self, pid: str):
-        url = citations_url_for(pid)
+    def get_citations_for(self, pid: str):
         paginator = Paginator(self.requester,
                               url_builder=UrlBuilderForPaperCitations(pid).with_query(q().with_fields(*CITATION_FIELDS)))
-        json_citations = paginator.new_contents()
+        json_citations = paginator.contents()
         citations = set()
         for json_citation in json_citations:
             if json_citation['citingPaper']['paperId'] is None:

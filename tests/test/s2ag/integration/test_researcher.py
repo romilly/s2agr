@@ -44,7 +44,7 @@ class ResearcherTestCase(unittest.TestCase):
     @test_vcr.use_cassette
     def test_researcher_can_get_citations_using_new_api(self):
         pid = '649def34f8be52c8b66281af98ae884c09aef38b'
-        citations = self.researcher.new_get_citations_for(pid)
+        citations = self.researcher.get_citations_for(pid)
         assert_that(len(citations), equal_to(289))
         influential_citations = list(citation for citation in citations if citation.is_influential)
         assert_that(len(influential_citations), equal_to(34))

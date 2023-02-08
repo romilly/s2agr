@@ -19,22 +19,22 @@ class Paginator:
         self._limit = limit
         self._offset = 0
 
-    def contents(self) -> Any:
-        while True:
-            items = self.get_next_page()
-            for item in items:
-                yield item
-            if self._offset < 0:
-                break
+    # def contents(self) -> Any:
+    #     while True:
+    #         items = self.get_next_page()
+    #         for item in items:
+    #             yield item
+    #         if self._offset < 0:
+    #             break
 
-    def get_next_page(self) -> list:
-        results = self.requester.get(
-                self._url,
-                self.parameters(),
-            )
-
-        self._offset = results['next'] if 'next' in results else -1
-        return [item for item in results['data']]
+    # def get_next_page(self) -> list:
+    #     results = self.requester.get(
+    #             self._url,
+    #             self.parameters(),
+    #         )
+    #
+    #     self._offset = results['next'] if 'next' in results else -1
+    #     return [item for item in results['data']]
 
     def parameters(self) -> str:
 
@@ -45,15 +45,15 @@ class Paginator:
         result += f'&limit={self._limit}'
         return result
 
-    def new_contents(self):
+    def contents(self):
         while True:
-            items = self.get_next_page_using_url_builder()
+            items = self.get_next_page()
             for item in items:
                 yield item
             if self._offset < 0:
                 break
 
-    def get_next_page_using_url_builder(self):
+    def get_next_page(self):
         self.url_builder = self.url_builder.with_query(q().in_range(self._offset, self._limit))
         results = self.requester.get(
             self.url_builder.get_url(),
