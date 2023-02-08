@@ -48,6 +48,7 @@ class Paginator:
 
     def get_next_page_using_url_builder(self):
         # TODO: fix so it does what the name says!
+        # url = self.url_generator().in_range(self._offset, self._limit)
         results = self.requester.get(
             self._url,
             self.parameters(),

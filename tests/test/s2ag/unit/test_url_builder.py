@@ -10,16 +10,16 @@ class UrlBuilderTestCase(unittest.TestCase):
         self.ub = UrlBuilder()
 
     def test_builds_url_for_search(self):
-        url = self.ub.for_search(q().with_keywords('cerebellar','cortex'))
+        url = self.ub.with_query(q().with_keywords('cerebellar','cortex')).for_search()
         expected_url = 'https://api.semanticscholar.org/graph/v1/paper/search?query=cerebellar+cortex'
         self.assertEqual(expected_url, url)
-
-
 
     def test_builds_url_for_paper(self):
         actual_url = self.ub.for_paper('649def34f8be52c8b66281af98ae884c09aef38b')
         expected_url = 'https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b'
         self.assertEqual(expected_url, actual_url)
+
+
 
 
 

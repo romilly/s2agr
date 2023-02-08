@@ -5,6 +5,10 @@ class QueryBuilder:
     def __init__(self, parameters: Optional[dict] = None):
         self._parameters = {} if parameters is None else parameters
 
+    def __or__(self, other: 'QueryBuilder'):
+        d = dict(self.parameters(), **other.parameters())
+        return QueryBuilder(d)
+
     def with_keywords(self, *keywords: str) -> 'QueryBuilder':
         self._parameters['query'] = '+'.join(keywords)
         return self.copy()

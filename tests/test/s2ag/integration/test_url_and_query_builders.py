@@ -8,7 +8,7 @@ class UrlAndQueryTestCase(unittest.TestCase):
     def test_builds_url_for_query_with_fields(self):
         ub = UrlBuilder()
         query = q().with_keywords('covid', 'vaccination').with_fields('url', 'abstract', 'authors')
-        actual_url = ub.for_search(query)
+        actual_url = ub.with_query(query).for_search()
         expected_url = 'https://api.semanticscholar.org/graph/v1/paper/search?query=covid+vaccination&fields=url,abstract,authors'
         self.assertEqual(expected_url, actual_url)
 
