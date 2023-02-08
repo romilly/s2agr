@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Optional
 
 
 class Paginator:
@@ -8,6 +8,7 @@ class Paginator:
                 requester,
                 url: str,
                 fields,
+                url_generator: Optional[callable] = None,
                 limit = 1000,
             ) -> None:
 
