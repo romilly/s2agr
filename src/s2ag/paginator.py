@@ -1,14 +1,16 @@
 from typing import Any, Optional
 
+from s2ag.queries import Query
+
 
 class Paginator:
 
-    def __init__(self, requester, fields, url: Optional[str] = None, url_generator: Optional[callable] = None, limit=1000) -> None:
+    def __init__(self, requester, fields, url: Optional[str] = None, query: Optional[Query] = None, limit=1000) -> None:
 
         self.requester = requester
         self._fields = fields
         self._url = url
-        self.url_generator = url_generator
+        self.query = query
         self._limit = limit
         self._offset = 0
 
