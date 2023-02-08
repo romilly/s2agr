@@ -3,8 +3,8 @@ import unittest
 import vcr
 from hamcrest import assert_that, starts_with
 
-from s2ag.builder import Builder
-from test.s2ag.helpers.database_test import DatabaseTest
+from s2agr.builder import Builder
+from test.s2agr.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',

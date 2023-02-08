@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from s2ag.queries import Query
+from s2agr.queries import Query
 
 
 class UrlBuilder(ABC):

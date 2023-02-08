@@ -1,12 +1,12 @@
 from typing import Set
 
-from s2ag.citation import CITATION_FIELDS, Citation
-from s2ag.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
-from s2ag.monitor import Monitor, MockMonitor
-from s2ag.paginator import Paginator
-from s2ag.queries import q
-from s2ag.requester import Requester
-from s2ag.urls import UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations, \
+from s2agr.citation import CITATION_FIELDS, Citation
+from s2agr.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
+from s2agr.monitor import Monitor, MockMonitor
+from s2agr.paginator import Paginator
+from s2agr.queries import q
+from s2agr.requester import Requester
+from s2agr.urls import UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations, \
     UrlBuilderForPaperReferences
 
 

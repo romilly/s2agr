@@ -3,9 +3,9 @@ import unittest
 import vcr
 from hamcrest import assert_that, equal_to, contains_string, contains, greater_than
 
-from s2ag.queries import q
-from s2ag.requester import ThrottledRequester
-from s2ag.researcher import Researcher, Requester
+from s2agr.queries import q
+from s2agr.requester import ThrottledRequester
+from s2agr.researcher import Researcher, Requester
 
 
 test_vcr = vcr.VCR(

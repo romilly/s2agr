@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
-from s2ag.citation import Citation
-from s2ag.entities import Paper
+from s2agr.citation import Citation
+from s2agr.entities import Paper
 
 
 class Catalogue(ABC):

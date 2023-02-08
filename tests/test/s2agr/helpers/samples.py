@@ -1,6 +1,6 @@
 import json
 
-from s2ag.entities import Paper
+from s2agr.entities import Paper
 
 
 def read(filename):

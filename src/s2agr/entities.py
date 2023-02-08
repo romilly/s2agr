@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 from typing import Any, List, Generator
 
-from s2ag.citation import Citation
+from s2agr.citation import Citation
 
 CC_RE = pattern = re.compile(r'(?<!^)(?=[A-Z])')
 

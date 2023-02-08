@@ -3,11 +3,11 @@ import unittest
 
 import vcr
 
-from s2ag.citation import Citation
-from s2ag.requester import ThrottledRequester
-from s2ag.researcher import Researcher
-from test.s2ag.helpers import samples
-from test.s2ag.helpers.database_test import DatabaseTest
+from s2agr.citation import Citation
+from s2agr.requester import ThrottledRequester
+from s2agr.researcher import Researcher
+from test.s2agr.helpers import samples
+from test.s2agr.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',

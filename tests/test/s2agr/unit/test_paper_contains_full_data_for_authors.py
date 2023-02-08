@@ -2,8 +2,8 @@ import unittest
 
 from hamcrest import assert_that, equal_to
 
-from s2ag.entities import Paper, Author
-from test.s2ag.helpers.samples import sample_02
+from s2agr.entities import Paper, Author
+from test.s2agr.helpers.samples import sample_02
 
 
 class PaperTestCase(unittest.TestCase):

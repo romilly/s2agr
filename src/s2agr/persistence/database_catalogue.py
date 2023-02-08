@@ -4,10 +4,10 @@ import pathlib
 import psycopg2
 from psycopg2.sql import SQL, Identifier
 
-from s2ag.citation import Citation
-from s2ag.entities import Paper, Author
-from s2ag.persistence.catalogue import Catalogue
-from s2ag.persistence.parser import get_connection_string
+from s2agr.citation import Citation
+from s2agr.entities import Paper, Author
+from s2agr.persistence.catalogue import Catalogue
+from s2agr.persistence.parser import get_connection_string
 
 env_loc = os.path.join(pathlib.Path(__file__).parent.resolve(), '.env')
 

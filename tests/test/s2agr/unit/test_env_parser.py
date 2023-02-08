@@ -2,7 +2,7 @@ import unittest
 
 from hamcrest import assert_that, equal_to
 
-from s2ag.persistence.parser import parse
+from s2agr.persistence.parser import parse
 
 
 class EnvParsingTestCase(unittest.TestCase):

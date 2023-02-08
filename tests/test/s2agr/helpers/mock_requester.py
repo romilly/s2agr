@@ -1,7 +1,7 @@
 import json
 from typing import Optional
 
-from s2ag.requester import Requester
+from s2agr.requester import Requester
 
 
 class MockRequester(Requester):

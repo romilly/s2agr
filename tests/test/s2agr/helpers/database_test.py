@@ -6,7 +6,7 @@ from psycopg2.sql import SQL, Identifier
 
 from psycopg2.extensions import connection, cursor
 
-from s2ag.persistence.database_catalogue import test_connection, DatabaseCatalogue, count_rows
+from s2agr.persistence.database_catalogue import test_connection, DatabaseCatalogue, count_rows
 
 
 class DatabaseTest(TestCase):

@@ -1,9 +1,9 @@
-from s2ag.librarian import Librarian
-from s2ag.monitor import MockMonitor, Monitor
-from s2ag.persistence.catalogue import Catalogue
-from s2ag.persistence.database_catalogue import test_connection, DatabaseCatalogue
-from s2ag.requester import ThrottledRequester, Requester
-from s2ag.researcher import Researcher
+from s2agr.librarian import Librarian
+from s2agr.monitor import MockMonitor, Monitor
+from s2agr.persistence.catalogue import Catalogue
+from s2agr.persistence.database_catalogue import test_connection, DatabaseCatalogue
+from s2agr.requester import ThrottledRequester, Requester
+from s2agr.researcher import Researcher
 
 
 class Builder:
