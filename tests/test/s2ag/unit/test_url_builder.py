@@ -6,8 +6,6 @@ from s2ag.urls import UrlBuilder, UrlBuilderForSearch, UrlBuilderForSinglePaper
 
 # TODO: add more examples
 class UrlBuilderTestCase(unittest.TestCase):
-    def setUp(self) -> None:
-        self.ub = UrlBuilder()
 
     def test_builds_url_for_search(self):
         actual_url = UrlBuilderForSearch().with_query(q().with_keywords('cerebellar','cortex')).get_url()

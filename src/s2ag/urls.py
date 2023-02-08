@@ -1,9 +1,9 @@
-from typing import Optional
+from abc import ABC, abstractmethod
 
 from s2ag.queries import Query
 
 
-class UrlBuilder:
+class UrlBuilder(ABC):
     BASE_URL = 'https://api.semanticscholar.org/graph/v1/'
 
     def __init__(self):
@@ -21,7 +21,9 @@ class UrlBuilder:
     #     query_part = self.get_query_string()
     #     return f'{self.BASE_URL}paper/{paper_id}/citations{query_part}'
 
-# TODO: replace method calls by sub-classes
+    @abstractmethod
+    def get_url(self):
+        pass
 
 
 class UrlBuilderForSearch(UrlBuilder):
