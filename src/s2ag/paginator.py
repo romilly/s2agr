@@ -15,6 +15,7 @@ class Paginator:
         self.requester = requester
         self._url = url
         self._fields = fields
+        self.url_generator = url_generator
         self._limit = limit
         self._offset = 0
 
