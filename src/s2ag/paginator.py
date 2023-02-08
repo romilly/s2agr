@@ -44,3 +44,11 @@ class Paginator:
         result += f'&offset={self._offset}'
         result += f'&limit={self._limit}'
         return result
+
+    def new_contents(self):
+        while True:
+            items = self.get_next_page()
+            for item in items:
+                yield item
+            if self._offset < 0:
+                break

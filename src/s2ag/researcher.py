@@ -65,3 +65,16 @@ class Researcher:
 
     def get_author_json(self, aid):
         return self.requester.get(self.author_url_for(aid))
+
+    def new_get_citations_for(self, pid):
+        url = citations_url_for(pid)
+        paginator = Paginator(self.requester, url, CITATION_FIELDS)
+        json_citations = paginator.new_contents()
+        citations = set()
+        for json_citation in json_citations:
+            if json_citation['citingPaper']['paperId'] is None:
+                title = json_citation['citingPaper'].get('title', '*unknown*')
+                self.monitor.warning(f'citation citing {pid} titled {title} has no id')
+            else:
+                citations.add(Citation.create_citation_from(pid, json_citation))
+        return citations
