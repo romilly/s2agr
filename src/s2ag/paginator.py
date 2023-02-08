@@ -3,18 +3,11 @@ from typing import Any, Optional
 
 class Paginator:
 
-    def __init__(
-                self,
-                requester,
-                url: str,
-                fields,
-                url_generator: Optional[callable] = None,
-                limit = 1000,
-            ) -> None:
+    def __init__(self, requester, fields, url: Optional[str] = None, url_generator: Optional[callable] = None, limit=1000) -> None:
 
         self.requester = requester
-        self._url = url
         self._fields = fields
+        self._url = url
         self.url_generator = url_generator
         self._limit = limit
         self._offset = 0
@@ -47,8 +40,18 @@ class Paginator:
 
     def new_contents(self):
         while True:
-            items = self.get_next_page()
+            items = self.get_next_page_using_url_builder()
             for item in items:
                 yield item
             if self._offset < 0:
                 break
+
+    def get_next_page_using_url_builder(self):
+        # TODO: fix so it does what the name says!
+        results = self.requester.get(
+            self._url,
+            self.parameters(),
+        )
+
+        self._offset = results['next'] if 'next' in results else -1
+        return [item for item in results['data']]

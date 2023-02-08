@@ -36,7 +36,7 @@ class Researcher:
 
     def get_citations_for(self, pid: str) -> Set[Citation]:
         url = citations_url_for(pid)
-        paginator = Paginator(self.requester, url, CITATION_FIELDS)
+        paginator = Paginator(self.requester, CITATION_FIELDS, url)
         json_citations = paginator.contents()
         citations = set()
         for json_citation in json_citations:
@@ -49,7 +49,7 @@ class Researcher:
 
     def get_references_for(self, pid: str) -> Set[Citation]:
         url = references_url_for(pid)
-        paginator = Paginator(self.requester, url, CITATION_FIELDS)
+        paginator = Paginator(self.requester, CITATION_FIELDS, url)
         json_references = paginator.contents()
         references = set()
         for json_reference in json_references:
@@ -68,7 +68,7 @@ class Researcher:
 
     def new_get_citations_for(self, pid):
         url = citations_url_for(pid)
-        paginator = Paginator(self.requester, url, CITATION_FIELDS)
+        paginator = Paginator(self.requester, CITATION_FIELDS, url)
         json_citations = paginator.new_contents()
         citations = set()
         for json_citation in json_citations:

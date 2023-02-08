@@ -2,6 +2,7 @@ import unittest
 
 from s2ag.urls import UrlBuilder
 
+
 # TODO: add more examples
 class UrlBuilderTestCase(unittest.TestCase):
     def setUp(self) -> None:
