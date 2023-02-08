@@ -1,3 +1,4 @@
+from typing import Optional
 from abc import ABC, abstractmethod
 
 
@@ -42,13 +43,16 @@ class UrlBuilder(ABC):
         """
         pass
 
+    def in_range(self, offset, limit):
+        return self.with_query(q().in_range(offset, limit))
+
+    def with_keywords(self, *keywords):
+        return self.with_query(q().with_keywords(*keywords))
+
 
 class UrlBuilderForSearch(UrlBuilder):
     def get_url_stem(self) -> str:
         return f'{self.BASE_URL}paper/search'
-
-    def with_keywords(self, *keywords):
-        return self.with_query(q().with_keywords(*keywords))
 
 
 class UrlBuilderForSinglePaper(UrlBuilder):
@@ -87,7 +91,6 @@ class UrlBuilderForAuthor(UrlBuilder):
         return f'{self.BASE_URL}author/{self.author_id}'
 
 
-from typing import Optional
 
 
 class Query:
