@@ -15,19 +15,18 @@ test_vcr = vcr.VCR(
 
 
 class ResearcherTestCase(unittest.TestCase):
-
+    def setUp(self) -> None:
+        self.researcher = Researcher(ThrottledRequester(delay=0.001))
 
     @test_vcr.use_cassette
     def test_researcher_can_get_paper_using_api(self):
         pid = '649def34f8be52c8b66281af98ae884c09aef38b'
-        researcher = Researcher(ThrottledRequester(delay=0.001))
-        paper = researcher.get_paper(pid)
+        paper = self.researcher.get_paper(pid)
         self.assertEqual(paper.paper_id, pid)
 
     @test_vcr.use_cassette
     def test_researcher_gets_all_author_data_from_paper(self):
-        researcher = Researcher(ThrottledRequester(delay=0.001))
-        paper = researcher.get_paper('d23508ee81467dff9435d42d1d4633e178e59992')
+        paper = self.researcher.get_paper('d23508ee81467dff9435d42d1d4633e178e59992')
         authors = paper.authors
         author = authors[0]
         assert_that('paperCount' in author.keys())
@@ -37,20 +36,17 @@ class ResearcherTestCase(unittest.TestCase):
     @test_vcr.use_cassette
     def test_researcher_can_get_citations_using_api(self):
         pid = '649def34f8be52c8b66281af98ae884c09aef38b'
-        researcher = Researcher(ThrottledRequester(delay=0.001))
-        citations = researcher.get_citations_for(pid)
+        citations = self.researcher.get_citations_for(pid)
         assert_that(len(citations), equal_to(288))
         influential_citations = list(citation for citation in citations if citation.is_influential)
         assert_that(len(influential_citations), equal_to(33))
 
-# TODO: reinstate
-    # @test_vcr.use_cassette
-    # def test_can_get_papers_satisfying_query(self):
-    #     # TODO: move to setUp
-    #     researcher = Researcher(ThrottledRequester(delay=0.001))
-    #     query = q().keywords('temporal','knowledge','graph','embedding').between(2019,2020)
-    #     papers = researcher.query(query)
-    #     assert_that(len(papers), greater_than(1000))
+# TODO: reinstate when Paginator fixed
+#     @test_vcr.use_cassette
+#     def test_can_get_papers_satisfying_query(self):
+#         query = q().keywords('temporal','knowledge','graph','embedding').between(2019,2020)
+#         papers = self.researcher.query(query)
+#         assert_that(len(papers), greater_than(1000))
 
 
 if __name__ == '__main__':
