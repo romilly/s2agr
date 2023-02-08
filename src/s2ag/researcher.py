@@ -6,7 +6,7 @@ from s2ag.paginator import Paginator
 from s2ag.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2ag.queries import q
 from s2ag.requester import Requester
-from s2ag.urls import UrlBuilder, UrlBuilderForSinglePaper, UrlBuilderForAuthor
+from s2ag.urls import UrlBuilder, UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations
 
 
 def citations_url_for(pid) -> str:
@@ -73,7 +73,9 @@ class Researcher:
         url = citations_url_for(pid)
         # TODO: restore
         # url_generator = UrlBuilder().for_citations_of(pid)
-        paginator = Paginator(self.requester, CITATION_FIELDS, url)
+        paginator = Paginator(self.requester,
+                              CITATION_FIELDS,
+                              url_builder=UrlBuilderForPaperCitations(pid).with_query(q().with_fields(*CITATION_FIELDS)))
         json_citations = paginator.new_contents()
         citations = set()
         for json_citation in json_citations:

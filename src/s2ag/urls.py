@@ -9,13 +9,14 @@ class UrlBuilder(ABC):
     def __init__(self):
         self.query = Query()
 
-    def with_query(self, query):
+    def with_query(self, query) -> 'UrlBuilder':
         self.query = self.query | query
         return self
 
     def get_query_string(self):
         items = self.query.parameters().items()
-        return '' if len(items) == 0 else '?'+'&'.join(f'{key}={value}' for (key, value) in items)
+        result = '' if len(items) == 0 else '?'+'&'.join(f'{key}={value}' for (key, value) in items)
+        return result
 
     @abstractmethod
     def get_url(self):
@@ -42,7 +43,8 @@ class UrlBuilderForPaperCitations(UrlBuilder):
         self.paper_id = paper_id
 
     def get_url(self):
-        return f'{self.BASE_URL}paper/{self.paper_id}/citations{self.get_query_string()}'
+        string = self.get_query_string()
+        return f'{self.BASE_URL}paper/{self.paper_id}/citations{string}'
 
 
 class UrlBuilderForAuthor(UrlBuilder):

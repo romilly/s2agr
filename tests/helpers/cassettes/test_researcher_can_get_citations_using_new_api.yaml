@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/citations?&fields=paperId,title,isInfluential&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": true, "citingPaper": {"paperId":
@@ -687,27 +687,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 08 Feb 2023 10:39:29 GMT
+      - Wed, 08 Feb 2023 14:10:43 GMT
       Via:
-      - 1.1 2457df698fa0a181e812d5fc68158bf2.cloudfront.net (CloudFront)
+      - 1.1 f870647c4e40dd9930d50e07df150c42.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - EEU6vr2A9h1o13Kx6L8sY3DGyY_AEkBMMC4oeyukZpqo_2K3Ew0o8w==
+      - Gkzxm4OrLblPvFSHrEPcfZLcpp5fdTFd_603K2iabq075DHDkU0Mbg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - ABBLSFh4vHcFVFQ=
+      - ABgHkHa8vHcFWiA=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '55227'
       x-amzn-Remapped-Date:
-      - Wed, 08 Feb 2023 10:39:29 GMT
+      - Wed, 08 Feb 2023 14:10:43 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - d8df19d1-08dd-485e-b7e4-9f2e688f9bf1
+      - 093df9f0-f87e-4b19-b19d-7c07cfcac4ca
     status:
       code: 200
       message: OK

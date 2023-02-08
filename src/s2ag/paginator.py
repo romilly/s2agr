@@ -1,16 +1,21 @@
 from typing import Any, Optional
 
-from s2ag.queries import Query
+from s2ag.queries import q
+from s2ag.urls import UrlBuilder, UrlBuilderForSearch
 
 
 class Paginator:
 
-    def __init__(self, requester, fields, url: Optional[str] = None, query: Optional[Query] = None, limit=1000) -> None:
+    def __init__(self, requester,
+                 fields,
+                 url: Optional[str] = None,
+                 url_builder: Optional[UrlBuilder] = None,
+                 limit=1000) -> None:
 
         self.requester = requester
         self._fields = fields
         self._url = url
-        self.query = query
+        self.url_builder = url_builder
         self._limit = limit
         self._offset = 0
 
@@ -49,11 +54,9 @@ class Paginator:
                 break
 
     def get_next_page_using_url_builder(self):
-        # TODO: fix so it does what the name says!
-        # url = self.url_generator().in_range(self._offset, self._limit)
+        self.url_builder = self.url_builder.with_query(q().in_range(self._offset, self._limit))
         results = self.requester.get(
-            self._url,
-            self.parameters(),
+            self.url_builder.get_url(),
         )
 
         self._offset = results['next'] if 'next' in results else -1
