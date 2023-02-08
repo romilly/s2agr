@@ -1,7 +1,7 @@
 import unittest
 
 from s2ag.queries import q
-from s2ag.urls import UrlBuilder, UrlBuilderForSearch, UrlBuilderForSinglePaper
+from s2ag.urls import UrlBuilderForSearch, UrlBuilderForSinglePaper
 
 
 # TODO: add more examples
