@@ -4,10 +4,10 @@ from s2agr.citation import CITATION_FIELDS, Citation
 from s2agr.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2agr.monitor import Monitor, MockMonitor
 from s2agr.paginator import Paginator
-from s2agr.queries import q
+
 from s2agr.requester import Requester
 from s2agr.urls import UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations, \
-    UrlBuilderForPaperReferences
+    UrlBuilderForPaperReferences, q
 
 
 def citations_url_for(pid) -> str:

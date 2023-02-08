@@ -1,12 +1,12 @@
 import unittest
 from hamcrest import assert_that, equal_to
 
-import s2agr.queries
+from s2agr.urls import q
 
 
 class QueryBuilderTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.query = s2agr.queries.q()
+        self.query = q()
 
     def test_builds_simple_query(self):
         q = self.query.with_keywords('cerebellar', 'cortex')

@@ -1,7 +1,6 @@
 import unittest
 
-from s2agr.queries import q
-from s2agr.urls import UrlBuilder, UrlBuilderForSearch
+from s2agr.urls import UrlBuilderForSearch, q
 
 
 class UrlAndQueryTestCase(unittest.TestCase):

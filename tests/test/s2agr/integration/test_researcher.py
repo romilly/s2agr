@@ -1,12 +1,10 @@
 import unittest
 
 import vcr
-from hamcrest import assert_that, equal_to, contains_string, contains, greater_than
+from hamcrest import assert_that, equal_to
 
-from s2agr.queries import q
 from s2agr.requester import ThrottledRequester
-from s2agr.researcher import Researcher, Requester
-
+from s2agr.researcher import Researcher
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
