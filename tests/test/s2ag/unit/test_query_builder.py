@@ -28,6 +28,11 @@ class QueryBuilderTestCase(unittest.TestCase):
         q = self.query.after(2020)
         assert_that(q.parameters(), equal_to({'year': '2020-'}))
 
-    def test_builds_query_with_fields(self):
+    def test_builds_query_with_offset_and_limit(self):
+        q = self.query.in_range(100, 20)
+        assert_that(q.parameters(), equal_to({'offset': '100', 'limit': '20'}))
+
+
+    def test_builds_query_with_fields_and_keywords(self):
         q = self.query.with_keywords('covid', 'vaccination').with_fields('url', 'abstract', 'authors')
         assert_that(q.parameters(), equal_to({'query': 'covid+vaccination', 'fields': 'url,abstract,authors'}))

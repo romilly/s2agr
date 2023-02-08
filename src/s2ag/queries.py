@@ -29,11 +29,17 @@ class QueryBuilder:
         self._parameters['fields'] = ','.join(fields)
         return self.copy()
 
+    def in_range(self, offset: int, limit: int):
+        self._parameters['offset'] = str(offset)
+        self._parameters['limit'] = str(limit)
+        return self.copy()
+
     def parameters(self) -> dict:
         return self._parameters
 
     def copy(self) -> 'QueryBuilder':
         return QueryBuilder(self.parameters().copy())
+
 
 
 def q() -> QueryBuilder:
