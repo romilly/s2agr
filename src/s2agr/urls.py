@@ -24,7 +24,7 @@ class UrlBuilder(ABC):
         """
         combines current query with another query
         """
-        self.query = self.query | another_query
+        self.query = self.query & another_query
         return self
 
     def get_query_string(self) -> str:
@@ -43,7 +43,7 @@ class UrlBuilder(ABC):
         """
         pass
 
-    def in_range(self, offset, limit):
+    def for_range(self, offset, limit):
         return self.with_query(q().in_range(offset, limit))
 
     def with_keywords(self, *keywords):
@@ -91,8 +91,6 @@ class UrlBuilderForAuthor(UrlBuilder):
         return f'{self.BASE_URL}author/{self.author_id}'
 
 
-
-
 class Query:
     """
     A query object for use with UrlBuilders.
@@ -107,9 +105,14 @@ class Query:
     def __init__(self, query_parameters: Optional[dict] = None):
         self._query_parameters = {} if query_parameters is None else query_parameters
 
-    def __or__(self, other: 'Query'):
+    def __and__(self, other: 'Query'):
         """
-        Create a new Query that combines this with another query.
+        Create a new Query that combines this with the constraints in another query.
+
+        If the two queries have conflicting constraints the second query takes precedence.
+        TODO: verify in a Unit Test!
+
+        Usage: q1 = q2 & q3
         """
         d = dict(self.parameters(), **other.parameters())
         return Query(d)

@@ -4,6 +4,8 @@ from typing import Optional
 
 import requests
 
+REQUEST_OK = 200
+
 
 class ThrottledRequesterException(Exception):
     pass
@@ -21,7 +23,9 @@ class Requester(ABC):
 
 
 class ThrottledRequester(Requester):
-    def __init__(self, delay=3.1):
+    STANDARD_THROTTLING_DELAY = 3.1
+
+    def __init__(self, delay=STANDARD_THROTTLING_DELAY):
         self.delay = delay
         self._last_request = time.monotonic()
 
@@ -45,6 +49,6 @@ class ThrottledRequester(Requester):
         if parameters is not None:
             url += '?' + parameters
         response = requests.post(url, json=ids)
-        if response.status_code != 200:
+        if response.status_code != REQUEST_OK:
             raise ThrottledRequesterException(response.reason)
         return response.json()
