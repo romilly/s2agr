@@ -6,8 +6,7 @@ from s2agr.monitor import Monitor, MockMonitor
 from s2agr.paginator import Paginator
 
 from s2agr.requester import Requester
-from s2agr.urls import UrlBuilderForSinglePaper, UrlBuilderForAuthor, UrlBuilderForPaperCitations, \
-    UrlBuilderForPaperReferences, q
+from s2agr.urls import *
 
 
 def citations_url_for(pid) -> str:
@@ -39,7 +38,6 @@ class Researcher:
         return UrlBuilderForAuthor(pid).with_query(q().with_fields(AUTHOR_FIELDS)).get_url()
 
     def get_references_for(self, pid: str) -> Set[Citation]:
-        url = references_url_for(pid)
         paginator = Paginator(self.requester,
                               url_builder=UrlBuilderForPaperReferences(pid).with_query(q().with_fields(*CITATION_FIELDS)))
         json_references = paginator.contents()

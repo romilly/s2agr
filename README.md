@@ -1,9 +1,14 @@
-# Semantic Scholar Academic Graph
+# Semantic Scholar Academic Graph Researcher
 
-Uses the new [API](https://api.semanticscholar.org/api-docs/graph).
+This is an independent Python application to enable access to, and local caching of,
+the [Semantic Scholar Academic Graph](https://www.semanticscholar.org/me/research) from AIAI.
 
-Can now create a paper in logseq.
+It uses the new [S2AG API](https://api.semanticscholar.org/api-docs/graph).
 
-Lots of functionality but no documentation, so not yet read for production.
+It can now create a page for paper in logseq format.
 
-I am sharing the code following the principles in Austin Kleon's excellent book [Show Your Work](https://amazon.co.uk/Show-Your-Work-Getting-Discovered/dp/076117897X/).
+Lots of functionality but no documentation, so not yet ready for production.
+
+I am sharing the code following the principles in Austin Kleon's excellent book
+[Show Your Work](https://amazon.co.uk/Show-Your-Work-Getting-Discovered/dp/076117897X/),
+and because I will refer to the code in a couple of planned blog posts.

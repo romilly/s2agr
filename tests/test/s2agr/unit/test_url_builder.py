@@ -1,6 +1,6 @@
 import unittest
 
-from s2agr.urls import UrlBuilderForSearch, UrlBuilderForSinglePaper, q
+from s2agr.urls import UrlBuilderForSearch, UrlBuilderForSinglePaper
 
 
 # TODO: add more examples

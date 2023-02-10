@@ -1,4 +1,3 @@
-import json
 import unittest
 
 import vcr
@@ -6,7 +5,6 @@ import vcr
 from s2agr.citation import Citation
 from s2agr.requester import ThrottledRequester
 from s2agr.researcher import Researcher
-from test.s2agr.helpers import samples
 from test.s2agr.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(

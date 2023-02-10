@@ -2,7 +2,7 @@ import unittest
 
 from hamcrest import assert_that, equal_to
 
-from s2agr.entities import Paper, Author
+from s2agr.entities import Author
 from test.s2agr.helpers.samples import sample_02
 
 
