@@ -9,14 +9,6 @@ from s2agr.requester import Requester
 from s2agr.urls import *
 
 
-def citations_url_for(pid) -> str:
-    return f"https://api.semanticscholar.org/graph/v1/paper/{pid}/citations"
-
-
-def references_url_for(pid) -> str:
-    return f"https://api.semanticscholar.org/graph/v1/paper/{pid}/references"
-
-
 class Researcher:
     def __init__(self, requester: Requester, monitor: Monitor = MockMonitor()):
         self.requester = requester
@@ -51,9 +43,9 @@ class Researcher:
         return references
 
     def get_author(self, aid):
-        return Author(self.get_author_json(aid))
+        return Author(self._get_author_json(aid))
 
-    def get_author_json(self, aid):
+    def _get_author_json(self, aid):
         return self.requester.get(self.url_for_author(aid))
 
     def get_citations_for(self, pid: str):
