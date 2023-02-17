@@ -1,0 +1,395 @@
+{
+  "paperId": "649def34f8be52c8b66281af98ae884c09aef38b",
+  "externalIds": {
+    "DBLP": "conf/naacl/AmmarGBBCDDEFHK18",
+    "MAG": "2952867657",
+    "ACL": "N18-3011",
+    "ArXiv": "1805.02262",
+    "DOI": "10.18653/v1/N18-3011",
+    "CorpusId": 19170988
+  },
+  "publicationVenue": {
+    "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+    "name": "North American Chapter of the Association for Computational Linguistics",
+    "type": "conference",
+    "alternate_names": [
+      "North Am Chapter Assoc Comput Linguistics",
+      "NAACL"
+    ],
+    "url": "https://www.aclweb.org/portal/naacl"
+  },
+  "url": "https://www.semanticscholar.org/paper/649def34f8be52c8b66281af98ae884c09aef38b",
+  "title": "Construction of the Literature Graph in Semantic Scholar",
+  "abstract": "We describe a deployed scalable system for organizing published scientific literature into a heterogeneous graph to facilitate algorithmic manipulation and discovery. The resulting literature graph consists of more than 280M nodes, representing papers, authors, entities and various interactions between them (e.g., authorships, citations, entity mentions). We reduce literature graph construction into familiar NLP tasks (e.g., entity extraction and linking), point out research challenges due to differences from standard formulations of these tasks, and report empirical results for each task. The methods described in this paper are used to enable semantic features in www.semanticscholar.org.",
+  "venue": "North American Chapter of the Association for Computational Linguistics",
+  "year": 2018,
+  "referenceCount": 27,
+  "citationCount": 292,
+  "influentialCitationCount": 34,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://www.aclweb.org/anthology/N18-3011.pdf",
+    "status": "HYBRID"
+  },
+  "fieldsOfStudy": [
+    "Computer Science"
+  ],
+  "s2FieldsOfStudy": [
+    {
+      "category": "Computer Science",
+      "source": "external"
+    },
+    {
+      "category": "Computer Science",
+      "source": "s2-fos-model"
+    }
+  ],
+  "publicationTypes": [
+    "JournalArticle",
+    "Conference"
+  ],
+  "publicationDate": "2018-05-06",
+  "journal": {
+    "pages": "84-91"
+  },
+  "citationStyles": {
+    "bibtex": "@['JournalArticle', 'Conference']{Ammar2018ConstructionOT,\n author = {Waleed Ammar and Dirk Groeneveld and Chandra Bhagavatula and Iz Beltagy and Miles Crawford and Doug Downey and Jason Dunkelberger and Ahmed Elgohary and Sergey Feldman and Vu A. Ha and Rodney Michael Kinney and Sebastian Kohlmeier and Kyle Lo and Tyler C. Murray and Hsu-Han Ooi and Matthew E. Peters and Joanna L. Power and Sam Skjonsberg and Lucy Lu Wang and Christopher Wilhelm and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North American Chapter of the Association for Computational Linguistics},\n pages = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n year = {2018}\n}\n"
+  },
+  "authors": [
+    {
+      "authorId": "145585097",
+      "url": "https://www.semanticscholar.org/author/145585097",
+      "name": "Waleed Ammar",
+      "aliases": [
+        "W Ashor Ammar",
+        "W. Ammar",
+        "Waleed A Ammar",
+        "Walid Ammar"
+      ],
+      "affiliations": [
+        "Google"
+      ],
+      "homepage": null,
+      "paperCount": 60,
+      "citationCount": 3257,
+      "hIndex": 23
+    },
+    {
+      "authorId": "3458736",
+      "url": "https://www.semanticscholar.org/author/3458736",
+      "name": "Dirk Groeneveld",
+      "aliases": null,
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 7,
+      "citationCount": 491,
+      "hIndex": 6
+    },
+    {
+      "authorId": "1857797",
+      "url": "https://www.semanticscholar.org/author/1857797",
+      "name": "Chandra Bhagavatula",
+      "aliases": [
+        "Chandra Sekhar Bhagavatula"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": "https://www.chandrab.page/",
+      "paperCount": 56,
+      "citationCount": 4057,
+      "hIndex": 27
+    },
+    {
+      "authorId": "46181066",
+      "url": "https://www.semanticscholar.org/author/46181066",
+      "name": "Iz Beltagy",
+      "aliases": [
+        "I. Beltagy"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence (AI2)"
+      ],
+      "homepage": null,
+      "paperCount": 48,
+      "citationCount": 5890,
+      "hIndex": 22
+    },
+    {
+      "authorId": "46230609",
+      "url": "https://www.semanticscholar.org/author/46230609",
+      "name": "Miles Crawford",
+      "aliases": null,
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 3,
+      "citationCount": 291,
+      "hIndex": 1
+    },
+    {
+      "authorId": "145612610",
+      "url": "https://www.semanticscholar.org/author/145612610",
+      "name": "Doug Downey",
+      "aliases": [
+        "Dagney Downey",
+        "D Downey",
+        "Doug C Downey",
+        "Douglas C Downey",
+        "Douglas C. Downey"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence",
+        "Northwestern University"
+      ],
+      "homepage": "http://users.cs.northwestern.edu/~ddowney/",
+      "paperCount": 103,
+      "citationCount": 7268,
+      "hIndex": 30
+    },
+    {
+      "authorId": "38092776",
+      "url": "https://www.semanticscholar.org/author/38092776",
+      "name": "Jason Dunkelberger",
+      "aliases": null,
+      "affiliations": [],
+      "homepage": "https://dirkraft.github.io",
+      "paperCount": 1,
+      "citationCount": 291,
+      "hIndex": 1
+    },
+    {
+      "authorId": "143718836",
+      "url": "https://www.semanticscholar.org/author/143718836",
+      "name": "Ahmed Elgohary",
+      "aliases": [
+        "Ahmed Fouad Elgohary"
+      ],
+      "affiliations": [
+        "Microsoft"
+      ],
+      "homepage": "http://cs.umd.edu/~elgohary",
+      "paperCount": 29,
+      "citationCount": 2595,
+      "hIndex": 15
+    },
+    {
+      "authorId": "46411828",
+      "url": "https://www.semanticscholar.org/author/46411828",
+      "name": "Sergey Feldman",
+      "aliases": null,
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence",
+        "Alongside.care"
+      ],
+      "homepage": "https://www.data-cowboys.com/",
+      "paperCount": 26,
+      "citationCount": 895,
+      "hIndex": 12
+    },
+    {
+      "authorId": "4480314",
+      "url": "https://www.semanticscholar.org/author/4480314",
+      "name": "Vu A. Ha",
+      "aliases": [
+        "Vu Ha"
+      ],
+      "affiliations": [
+        "The Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": "https://vha14.com",
+      "paperCount": 21,
+      "citationCount": 896,
+      "hIndex": 11
+    },
+    {
+      "authorId": "143967880",
+      "url": "https://www.semanticscholar.org/author/143967880",
+      "name": "Rodney Michael Kinney",
+      "aliases": [
+        "R. Kinney",
+        "R. M. Kinney",
+        "Rodney Kinney"
+      ],
+      "affiliations": [
+        "Allen Institute for AI"
+      ],
+      "homepage": null,
+      "paperCount": 14,
+      "citationCount": 1202,
+      "hIndex": 7
+    },
+    {
+      "authorId": "41018147",
+      "url": "https://www.semanticscholar.org/author/41018147",
+      "name": "Sebastian Kohlmeier",
+      "aliases": null,
+      "affiliations": [
+        "Allen Institute for AI",
+        "Semantic Scholar"
+      ],
+      "homepage": "www.semanticscholar.org",
+      "paperCount": 7,
+      "citationCount": 1039,
+      "hIndex": 6
+    },
+    {
+      "authorId": "46258841",
+      "url": "https://www.semanticscholar.org/author/46258841",
+      "name": "Kyle Lo",
+      "aliases": null,
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": null,
+      "paperCount": 56,
+      "citationCount": 4931,
+      "hIndex": 20
+    },
+    {
+      "authorId": "144240185",
+      "url": "https://www.semanticscholar.org/author/144240185",
+      "name": "Tyler C. Murray",
+      "aliases": [
+        "Tyler Murray"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": "https://allenai.org",
+      "paperCount": 1,
+      "citationCount": 291,
+      "hIndex": 1
+    },
+    {
+      "authorId": "46256862",
+      "url": "https://www.semanticscholar.org/author/46256862",
+      "name": "Hsu-Han Ooi",
+      "aliases": null,
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 1,
+      "citationCount": 291,
+      "hIndex": 1
+    },
+    {
+      "authorId": "39139825",
+      "url": "https://www.semanticscholar.org/author/39139825",
+      "name": "Matthew E. Peters",
+      "aliases": [
+        "M. Peters",
+        "Matthew E Peters",
+        "Matthew Peters"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": null,
+      "paperCount": 68,
+      "citationCount": 16216,
+      "hIndex": 28
+    },
+    {
+      "authorId": "39561369",
+      "url": "https://www.semanticscholar.org/author/39561369",
+      "name": "Joanna L. Power",
+      "aliases": [
+        "J L Power",
+        "Joanna Power"
+      ],
+      "affiliations": [],
+      "homepage": "https://linkedin.com/in/jpower",
+      "paperCount": 6,
+      "citationCount": 397,
+      "hIndex": 5
+    },
+    {
+      "authorId": "46181683",
+      "url": "https://www.semanticscholar.org/author/46181683",
+      "name": "Sam Skjonsberg",
+      "aliases": null,
+      "affiliations": [
+        "Allen Institute for AI"
+      ],
+      "homepage": "https://codeviking.net",
+      "paperCount": 6,
+      "citationCount": 335,
+      "hIndex": 4
+    },
+    {
+      "authorId": "31860505",
+      "url": "https://www.semanticscholar.org/author/31860505",
+      "name": "Lucy Lu Wang",
+      "aliases": [
+        "Lucy Lu Wang",
+        "Lucy L. Wang"
+      ],
+      "affiliations": [
+        "University of Washington",
+        "Allen Institute for AI"
+      ],
+      "homepage": "https://llwang.net/",
+      "paperCount": 60,
+      "citationCount": 2052,
+      "hIndex": 19
+    },
+    {
+      "authorId": "46212260",
+      "url": "https://www.semanticscholar.org/author/46212260",
+      "name": "Christopher Wilhelm",
+      "aliases": [
+        "C Wilhelm",
+        "C. Wilhelm",
+        "Chris Wilhelm",
+        "Claus Wilhelm"
+      ],
+      "affiliations": [
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "homepage": null,
+      "paperCount": 15,
+      "citationCount": 1070,
+      "hIndex": 5
+    },
+    {
+      "authorId": "2112339497",
+      "url": "https://www.semanticscholar.org/author/2112339497",
+      "name": "Zheng Yuan",
+      "aliases": null,
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 4,
+      "citationCount": 310,
+      "hIndex": 3
+    },
+    {
+      "authorId": "15292561",
+      "url": "https://www.semanticscholar.org/author/15292561",
+      "name": "Madeleine van Zuylen",
+      "aliases": [
+        "Madeleine Van Zuylen"
+      ],
+      "affiliations": [
+        "Allen Institute for AI",
+        "University of Notre Dame"
+      ],
+      "homepage": null,
+      "paperCount": 13,
+      "citationCount": 954,
+      "hIndex": 10
+    },
+    {
+      "authorId": "1741101",
+      "url": "https://www.semanticscholar.org/author/1741101",
+      "name": "Oren Etzioni",
+      "aliases": [
+        "O Et-zioni",
+        "Oren Etzioni"
+      ],
+      "affiliations": [],
+      "homepage": null,
+      "paperCount": 274,
+      "citationCount": 34675,
+      "hIndex": 86
+    }
+  ]
+}

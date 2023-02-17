@@ -61,7 +61,8 @@ class Paper(JsonEntity):
     citation_count: int
     influential_citation_count: int
     is_open_access: bool
-    open_access_pdf: str
+    open_access_pdf: dict
+    pdf_url: str
     fields_of_study: Any
     s2_fields_of_study: Any
     publication_venue: Any
@@ -70,6 +71,10 @@ class Paper(JsonEntity):
     citationStyles: Any
     authors: Any
     citations: List[dict]
+
+    def __init__(self, jason_dictionary: dict):
+        JsonEntity.__init__(self, jason_dictionary )
+        self.pdf_url = self.open_access_pdf['url'] if self.is_open_access else None
 
 
 AUTHOR_FIELDS = ','.join([

@@ -1,0 +1,70 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class BaseException
+class Exception
+class node31 as "abc.ABC"
+class node30 as "abc.ABCMeta"
+class object
+class node20 as "s2agr.builder.Builder"
+class node0 as "s2agr.citation.Citation"
+class node4 as "s2agr.entities.Author"
+class node7 as "s2agr.entities.JsonEntity"
+class node13 as "s2agr.entities.Paper"
+class node29 as "s2agr.librarian.Librarian"
+class node14 as "s2agr.monitor.LoggingMonitor"
+class node5 as "s2agr.monitor.MockMonitor"
+class node12 as "s2agr.monitor.Monitor"
+class node6 as "s2agr.monitor.PrintingMonitor"
+class node17 as "s2agr.paginator.Paginator"
+class node28 as "s2agr.persistence.catalogue.Catalogue"
+class node24 as "s2agr.persistence.catalogue.NullCatalogue"
+class node9 as "s2agr.persistence.database_catalogue.DatabaseCatalogue"
+class node19 as "s2agr.persistence.database_catalogue.DatabaseCatalogueException"
+class node10 as "s2agr.requester.Requester"
+class node8 as "s2agr.requester.ThrottledRequester"
+class node18 as "s2agr.requester.ThrottledRequesterException"
+class node27 as "s2agr.researcher.Researcher"
+class node3 as "s2agr.urls.Query"
+class node23 as "s2agr.urls.UrlBuilder"
+class node26 as "s2agr.urls.UrlBuilderForAuthor"
+class node2 as "s2agr.urls.UrlBuilderForPaperCitations"
+class node16 as "s2agr.urls.UrlBuilderForPaperReferences"
+class node22 as "s2agr.urls.UrlBuilderForSearch"
+class node1 as "s2agr.urls.UrlBuilderForSinglePaper"
+class node25 as "typing.Hashable"
+
+BaseException  ^-[#595959,plain]-  object        
+Exception      ^-[#595959,plain]-  BaseException 
+node31         ^-[#595959,plain]-  object        
+object         ^-[#595959,dashed]-  node25        
+node20         ^-[#595959,plain]-  object        
+node0          ^-[#595959,plain]-  object        
+node4          ^-[#595959,plain]-  node7         
+node7          ^-[#595959,plain]-  object        
+node13         ^-[#595959,plain]-  node7         
+node29         ^-[#595959,plain]-  object        
+node14         ^-[#595959,plain]-  node12        
+node5          ^-[#595959,plain]-  node12        
+node12         ^-[#595959,plain]-  node31        
+node6          ^-[#595959,plain]-  node12        
+node17         ^-[#595959,plain]-  object        
+node28         ^-[#595959,plain]-  node31        
+node24         ^-[#595959,plain]-  node28        
+node9          ^-[#595959,plain]-  node28        
+node19         ^-[#595959,plain]-  Exception     
+node10         ^-[#595959,plain]-  node31        
+node8          ^-[#595959,plain]-  node10        
+node18         ^-[#595959,plain]-  Exception     
+node27         ^-[#595959,plain]-  object        
+node3          ^-[#595959,plain]-  object        
+node23         ^-[#595959,plain]-  node31        
+node26         ^-[#595959,plain]-  node23        
+node2          ^-[#595959,plain]-  node23        
+node16         ^-[#595959,plain]-  node23        
+node22         ^-[#595959,plain]-  node23        
+node1          ^-[#595959,plain]-  node23        
+@enduml

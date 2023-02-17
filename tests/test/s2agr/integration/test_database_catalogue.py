@@ -22,6 +22,7 @@ class DatabaseCatalogueTestCase(DatabaseTest):
         paper = researcher.get_paper(paper_id)
         self.catalogue.write_paper(paper)
         self.check_total_row_count('paper', 1)
+        self.check_row_count('paper', 'pdf_url','https://www.aclweb.org/anthology/N18-3011.pdf',1)
 
     def test_catalogue_writes_citations(self):
         self.check_total_row_count('citation', 0)

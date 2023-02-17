@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/home/romilly/git/active/s2agr/src/s2agr</OriginalElement>
+  <nodes>
+    <node x="2657.968309859155" y="765.0">s2agr.citation.Citation</node>
+    <node x="3954.718309859155" y="1808.0">s2agr.urls.UrlBuilderForSinglePaper</node>
+    <node x="4544.718309859155" y="1808.0">s2agr.urls.UrlBuilderForPaperCitations</node>
+    <node x="1400.2007042253522" y="699.0">s2agr.urls.Query</node>
+    <node x="1713.75" y="1177.0">s2agr.entities.Author</node>
+    <node x="1499.7042253521126" y="1764.0">s2agr.monitor.MockMonitor</node>
+    <node x="2429.718309859155" y="1808.5">s2agr.monitor.PrintingMonitor</node>
+    <node x="1785.2007042253522" y="820.0">s2agr.entities.JsonEntity</node>
+    <node x="2710.718309859155" y="1764.0">s2agr.requester.ThrottledRequester</node>
+    <node x="-267.0" y="2171.0">abc.ABCMeta</node>
+    <node x="3098.718309859155" y="1588.0">s2agr.persistence.database_catalogue.DatabaseCatalogue</node>
+    <node x="2727.218309859155" y="1265.0">s2agr.requester.Requester</node>
+    <node x="1453.468309859155" y="89.0">object</node>
+    <node x="2155.218309859155" y="1254.0">s2agr.monitor.Monitor</node>
+    <node x="3278.718309859155" y="844.0">abc.ABC</node>
+    <node x="1924.75" y="1067.0">s2agr.entities.Paper</node>
+    <node x="2148.718309859155" y="1797.5">s2agr.monitor.LoggingMonitor</node>
+    <node x="96.20070422535218" y="1288.5">Exception</node>
+    <node x="5159.718309859155" y="1808.0">s2agr.urls.UrlBuilderForPaperReferences</node>
+    <node x="3393.718309859155" y="732.0">s2agr.paginator.Paginator</node>
+    <node x="-267.0" y="1843.0">s2agr.requester.ThrottledRequesterException</node>
+    <node x="127.0" y="1843.0">s2agr.persistence.database_catalogue.DatabaseCatalogueException</node>
+    <node x="665.2007042253522" y="721.0">s2agr.builder.Builder</node>
+    <node x="-26.799295774647817" y="743.0">BaseException</node>
+    <node x="4268.718309859155" y="1830.5">s2agr.urls.UrlBuilderForSearch</node>
+    <node x="4518.204225352112" y="1187.5">s2agr.urls.UrlBuilder</node>
+    <node x="3580.718309859155" y="1742.5">s2agr.persistence.catalogue.NullCatalogue</node>
+    <node x="1531.468309859155" y="-14.0">typing.Hashable</node>
+    <node x="4880.718309859155" y="1808.0">s2agr.urls.UrlBuilderForAuthor</node>
+    <node x="988.2007042253522" y="721.0">s2agr.researcher.Researcher</node>
+    <node x="3366.718309859155" y="1166.0">s2agr.persistence.catalogue.Catalogue</node>
+    <node x="347.2007042253522" y="776.0">s2agr.librarian.Librarian</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="object" target="typing.Hashable" relationship="REALIZATION">
+      <point x="0.0" y="-280.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="s2agr.monitor.LoggingMonitor" target="s2agr.monitor.Monitor" relationship="REALIZATION">
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilderForPaperReferences" target="s2agr.urls.UrlBuilder" relationship="REALIZATION">
+      <point x="0.0" y="-49.0" />
+      <point x="5325.718309859155" y="1563.0" />
+      <point x="4633.204225352112" y="1563.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="s2agr.researcher.Researcher" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-137.0" />
+      <point x="1184.2007042253522" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="BaseException" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-115.0" />
+      <point x="150.20070422535218" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.citation.Citation" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-93.0" />
+      <point x="2830.468309859155" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.persistence.database_catalogue.DatabaseCatalogue" target="s2agr.persistence.catalogue.Catalogue" relationship="REALIZATION">
+      <point x="0.0" y="-269.0" />
+      <point x="3329.718309859155" y="1563.0" />
+      <point x="3543.718309859155" y="1563.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilderForSinglePaper" target="s2agr.urls.UrlBuilder" relationship="REALIZATION">
+      <point x="0.0" y="-49.0" />
+      <point x="4101.718309859155" y="1563.0" />
+      <point x="4633.204225352112" y="1563.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="s2agr.entities.Author" target="s2agr.entities.JsonEntity" relationship="REALIZATION">
+      <point x="0.0" y="-125.5" />
+      <point x="1809.25" y="1042.0" />
+      <point x="1908.2007042253522" y="1042.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="s2agr.entities.Paper" target="s2agr.entities.JsonEntity" relationship="REALIZATION">
+      <point x="0.0" y="-235.5" />
+      <point x="2020.75" y="1042.0" />
+      <point x="1908.2007042253522" y="1042.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilderForAuthor" target="s2agr.urls.UrlBuilder" relationship="REALIZATION">
+      <point x="0.0" y="-49.0" />
+      <point x="5010.218309859155" y="1563.0" />
+      <point x="4633.204225352112" y="1563.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="s2agr.builder.Builder" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-137.0" />
+      <point x="816.7007042253522" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.monitor.Monitor" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-48.5" />
+      <point x="2279.218309859155" y="1042.0" />
+      <point x="3326.218309859155" y="1042.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilderForPaperCitations" target="s2agr.urls.UrlBuilder" relationship="REALIZATION">
+      <point x="0.0" y="-49.0" />
+      <point x="4702.718309859155" y="1563.0" />
+      <point x="4633.204225352112" y="1563.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="s2agr.paginator.Paginator" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-126.0" />
+      <point x="3582.218309859155" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.entities.JsonEntity" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="1908.2007042253522" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilderForSearch" target="s2agr.urls.UrlBuilder" relationship="REALIZATION">
+      <point x="0.0" y="-26.5" />
+      <point x="4396.718309859155" y="1563.0" />
+      <point x="4633.204225352112" y="1563.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="abc.ABC" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="3326.218309859155" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.monitor.MockMonitor" target="s2agr.monitor.Monitor" relationship="REALIZATION">
+      <point x="0.0" y="-93.0" />
+      <point x="1623.7042253521126" y="1563.0" />
+      <point x="2279.218309859155" y="1563.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="s2agr.monitor.PrintingMonitor" target="s2agr.monitor.Monitor" relationship="REALIZATION">
+      <point x="0.0" y="-48.5" />
+      <point x="2560.218309859155" y="1563.0" />
+      <point x="2279.218309859155" y="1563.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="s2agr.requester.ThrottledRequester" target="s2agr.requester.Requester" relationship="REALIZATION">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="s2agr.persistence.catalogue.Catalogue" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-136.5" />
+      <point x="3543.718309859155" y="1042.0" />
+      <point x="3326.218309859155" y="1042.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="s2agr.urls.UrlBuilder" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-115.0" />
+      <point x="4633.204225352112" y="1042.0" />
+      <point x="3326.218309859155" y="1042.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="s2agr.persistence.database_catalogue.DatabaseCatalogueException" target="Exception" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="394.0" y="1563.0" />
+      <point x="150.20070422535218" y="1563.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="s2agr.librarian.Librarian" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-82.0" />
+      <point x="496.2007042253522" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.urls.Query" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-159.0" />
+      <point x="1582.7007042253522" y="674.0" />
+      <point x="1607.968309859155" y="674.0" />
+      <point x="0.0" y="280.0" />
+    </edge>
+    <edge source="s2agr.requester.ThrottledRequesterException" target="Exception" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-80.0" y="1563.0" />
+      <point x="150.20070422535218" y="1563.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Exception" target="BaseException" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="s2agr.requester.Requester" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-37.5" />
+      <point x="2894.718309859155" y="1042.0" />
+      <point x="3326.218309859155" y="1042.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="s2agr.persistence.catalogue.NullCatalogue" target="s2agr.persistence.catalogue.Catalogue" relationship="REALIZATION">
+      <point x="0.0" y="-114.5" />
+      <point x="3757.718309859155" y="1563.0" />
+      <point x="3543.718309859155" y="1563.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.16040837515141027" showDependencies="false" x="2622.5000000000005" y="1102.500000000001" />
+  <SelectedNodes>
+    <node>typing.Hashable</node>
+  </SelectedNodes>
+  <Categories />
+</Diagram>
+
