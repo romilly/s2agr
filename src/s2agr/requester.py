@@ -36,7 +36,8 @@ class ThrottledRequester(Requester):
         response = requests.get(url)
         if response.status_code != 200:
             raise ThrottledRequesterException(response.reason)
-        return response.json()
+        result = response.json()
+        return result
 
     def throttle(self):
         gap = time.monotonic() - self._last_request

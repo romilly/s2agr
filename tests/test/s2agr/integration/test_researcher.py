@@ -1,10 +1,11 @@
 import unittest
 
 import vcr
-from hamcrest import assert_that, equal_to
+from hamcrest import assert_that, equal_to, greater_than
 
 from s2agr.requester import ThrottledRequester
 from s2agr.researcher import Researcher
+from s2agr.urls import q
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
@@ -47,12 +48,12 @@ class ResearcherTestCase(unittest.TestCase):
         influential_citations = list(citation for citation in citations if citation.is_influential)
         assert_that(len(influential_citations), equal_to(34))
 
-# TODO: reinstate when Paginator fixed
-#     @test_vcr.use_cassette
-#     def test_can_get_papers_satisfying_query(self):
-#         query = q().keywords('temporal','knowledge','graph','embedding').between(2019,2020)
-#         papers = self.researcher.query(query)
-#         assert_that(len(papers), greater_than(1000))
+    @test_vcr.use_cassette
+    def test_can_get_papers_satisfying_query(self):
+        query = q().with_keywords('temporal','knowledge','graph','embedding').between(2019,2020)
+        response = self.researcher.search(query)
+        papers = list(response)
+        assert_that(len(papers), greater_than(1000))
 
 
 if __name__ == '__main__':

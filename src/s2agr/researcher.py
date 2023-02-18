@@ -60,3 +60,10 @@ class Researcher:
             else:
                 citations.add(Citation.create_citation_from(pid, json_citation))
         return citations
+
+    def search(self, query):
+        paginator = Paginator(self.requester,
+                              url_builder=UrlBuilderForSearch().with_query(query.with_fields('paperId,title')), limit=100)
+        contents = paginator.contents()
+        return contents
+                    
