@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/d23508ee81467dff9435d42d1d4633e178e59992?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+    uri: https://api.semanticscholar.org/graph/v1/paper/d23508ee81467dff9435d42d1d4633e178e59992?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
   response:
     body:
       string: '{"paperId": "d23508ee81467dff9435d42d1d4633e178e59992", "externalIds":
@@ -31,12 +31,12 @@ interactions:
         = {Cellular and Molecular Life Sciences},\n pages = {4805 - 4819},\n title
         = {Molecular and neural mechanisms regulating sexual motivation of virgin
         female Drosophila},\n volume = {78},\n year = {2021}\n}\n"}, "authors": [{"authorId":
-        "48446534", "url": "https://www.semanticscholar.org/author/48446534", "name":
-        "H. Ishimoto", "aliases": ["H Ishimoto", "H. Ishimoto", "Hiroshi Ishimoto"],
-        "affiliations": [], "homepage": null, "paperCount": 43, "citationCount": 1608,
-        "hIndex": 23}, {"authorId": "5683768", "url": "https://www.semanticscholar.org/author/5683768",
+        "48446534", "externalIds": {}, "url": "https://www.semanticscholar.org/author/48446534",
+        "name": "H. Ishimoto", "aliases": ["H Ishimoto", "H. Ishimoto", "Hiroshi Ishimoto"],
+        "affiliations": [], "homepage": null, "paperCount": 43, "citationCount": 1613,
+        "hIndex": 23}, {"authorId": "5683768", "externalIds": {}, "url": "https://www.semanticscholar.org/author/5683768",
         "name": "A. Kamikouchi", "aliases": ["A Kamikouchi", "Azusa Kamikouchi"],
-        "affiliations": [], "homepage": null, "paperCount": 68, "citationCount": 3129,
+        "affiliations": [], "homepage": null, "paperCount": 68, "citationCount": 3137,
         "hIndex": 22}]}
 
         '
@@ -46,31 +46,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1888'
+      - '1926'
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 17:25:38 GMT
+      - Sat, 18 Feb 2023 08:53:33 GMT
       Via:
-      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
+      - 1.1 fbf20877e73563def3c2e6d94c9533e0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Jqu61PxxmCJx5pzHb-RlQmmoZYD-HD60wV4hVvnpw5uCxbu_FwYdTw==
+      - zM4JzbdaluR51coQ-vLYvf26WIPEMNXyo5m7yBo2NC8QOXZiGJLFjA==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f4D24FZRvHcFo7Q=
+      - AhvCJHzaPHcFviw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '1888'
+      - '1926'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 17:25:38 GMT
+      - Sat, 18 Feb 2023 08:53:33 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 28572c18-62be-4592-921d-dc830279d704
+      - 421ff570-0772-4109-a5fb-27770af86e51
     status:
       code: 200
       message: OK

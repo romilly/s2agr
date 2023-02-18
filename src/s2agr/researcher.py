@@ -1,7 +1,7 @@
 from typing import Set
 
 from s2agr.citation import CITATION_FIELDS, Citation
-from s2agr.entities import Paper, PAPER_FIELDS, Author, AUTHOR_FIELDS
+from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS
 from s2agr.monitor import Monitor, MockMonitor
 from s2agr.paginator import Paginator
 
@@ -23,7 +23,7 @@ class Researcher:
 
     @staticmethod
     def url_for_paper(pid: str) -> str:
-        return UrlBuilderForSinglePaper(pid).with_query(q().with_fields(PAPER_FIELDS)).get_url()
+        return UrlBuilderForSinglePaper(pid).with_query(q().with_fields(EXTENDED_PAPER_FIELDS)).get_url()
 
     @staticmethod
     def url_for_author(pid: str) -> str:

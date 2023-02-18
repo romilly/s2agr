@@ -16,7 +16,7 @@ class JsonEntity:
             self.__setattr__(snake(key), self.jason_dictionary[key])
 
 
-PAPER_FIELDS = ','.join([
+EXTENDED_PAPER_FIELDS = ','.join([
         'paperId',
         'externalIds',
         'url',
@@ -38,6 +38,7 @@ PAPER_FIELDS = ','.join([
         'citationStyles',
         'authors',
         'authors.authorId',
+        'authors.externalIds',
         'authors.url',
         'authors.name',
         'authors.aliases',

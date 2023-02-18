@@ -25,7 +25,7 @@ class S2AGTestCase(DatabaseTest):
         self.assertEqual(paper.paper_id, self.pid)
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")
         assert_that(paper.abstract, starts_with("We describe"))
-        self.check_row_count('citation','cited_id',self.pid, 288)
+        self.check_row_count('citation','cited_id',self.pid, 290)
         self.check_row_count('citation','citing_id',self.pid, 27)
         self.check_total_row_count('author',23)
         self.check_row_count('wrote','paper_id',self.pid, 23)

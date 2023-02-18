@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
   response:
     body:
       string: '{"paperId": "e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a", "externalIds":
@@ -22,7 +22,7 @@ interactions:
         ["http://www.sciencedirect.com/science/journal/09609822"]}, "url": "https://www.semanticscholar.org/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a",
         "title": "Structured sampling of olfactory input by the fly mushroom body",
         "abstract": null, "venue": "Current Biology", "year": 2020, "referenceCount":
-        154, "citationCount": 32, "influentialCitationCount": 3, "isOpenAccess": true,
+        154, "citationCount": 34, "influentialCitationCount": 3, "isOpenAccess": true,
         "openAccessPdf": {"url": "http://www.cell.com/article/S0960982222009903/pdf",
         "status": "GREEN"}, "fieldsOfStudy": ["Biology", "Medicine"], "s2FieldsOfStudy":
         [{"category": "Biology", "source": "external"}, {"category": "Medicine", "source":
@@ -31,54 +31,59 @@ interactions:
         Biology", "pages": "3334-3349.e6", "volume": "32"}, "citationStyles": {"bibtex":
         "@[''JournalArticle'']{Zheng2020StructuredSO,\n author = {Z. Zheng and Feng
         Li and Corey B. Fisher and I. Ali and Nadiya Sharifi and Steven A. Calle-Schuler
-        and Joseph Hsu and Najla Masoodpanah and L. Kmecova and Tom Kazimiers and
+        and Joseph Hsu and Najla Masoodpanah and Lucia Kmecova and Tom Kazimiers and
         E. Perlman and Matthew Nichols and Peter H. Li and Viren Jain and D. Bock},\n
         booktitle = {Current Biology},\n journal = {Current Biology},\n pages = {3334-3349.e6},\n
         title = {Structured sampling of olfactory input by the fly mushroom body},\n
         volume = {32},\n year = {2020}\n}\n"}, "authors": [{"authorId": "2115546389",
-        "url": "https://www.semanticscholar.org/author/2115546389", "name": "Z. Zheng",
-        "aliases": ["Z. Zheng", "Zhihao Zheng"], "affiliations": [], "homepage": null,
-        "paperCount": 9, "citationCount": 749, "hIndex": 5}, {"authorId": "2146311675",
-        "url": "https://www.semanticscholar.org/author/2146311675", "name": "Feng
-        Li", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        25, "citationCount": 1863, "hIndex": 15}, {"authorId": "41094461", "url":
-        "https://www.semanticscholar.org/author/41094461", "name": "Corey B. Fisher",
-        "aliases": ["Corey Fisher"], "affiliations": [], "homepage": null, "paperCount":
-        3, "citationCount": 654, "hIndex": 3}, {"authorId": "47203047", "url": "https://www.semanticscholar.org/author/47203047",
+        "externalIds": {"DBLP": ["Zhihao Zheng"]}, "url": "https://www.semanticscholar.org/author/2115546389",
+        "name": "Z. Zheng", "aliases": ["Z. Zheng", "Zhihao Zheng"], "affiliations":
+        [], "homepage": null, "paperCount": 9, "citationCount": 755, "hIndex": 5},
+        {"authorId": "2146311675", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2146311675",
+        "name": "Feng Li", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 25, "citationCount": 1887, "hIndex": 15}, {"authorId": "41094461",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/41094461",
+        "name": "Corey B. Fisher", "aliases": ["Corey Fisher"], "affiliations": [],
+        "homepage": null, "paperCount": 3, "citationCount": 658, "hIndex": 3}, {"authorId":
+        "47203047", "externalIds": {}, "url": "https://www.semanticscholar.org/author/47203047",
         "name": "I. Ali", "aliases": ["I Ali", "I. Ali", "Iqbal Ali", "Iqbal J. Ali"],
-        "affiliations": [], "homepage": null, "paperCount": 2, "citationCount": 591,
-        "hIndex": 2}, {"authorId": "51104497", "url": "https://www.semanticscholar.org/author/51104497",
+        "affiliations": [], "homepage": null, "paperCount": 2, "citationCount": 594,
+        "hIndex": 2}, {"authorId": "51104497", "externalIds": {}, "url": "https://www.semanticscholar.org/author/51104497",
         "name": "Nadiya Sharifi", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 4, "citationCount": 782, "hIndex": 4}, {"authorId": "1404327942",
-        "url": "https://www.semanticscholar.org/author/1404327942", "name": "Steven
-        A. Calle-Schuler", "aliases": ["Steven A Calle-schuler", "Steven Calle-schuler"],
-        "affiliations": [], "homepage": null, "paperCount": 6, "citationCount": 681,
-        "hIndex": 5}, {"authorId": "2072740448", "url": "https://www.semanticscholar.org/author/2072740448",
+        null, "paperCount": 4, "citationCount": 788, "hIndex": 4}, {"authorId": "1404327942",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/1404327942",
+        "name": "Steven A. Calle-Schuler", "aliases": ["Steven A Calle-schuler", "Steven
+        Calle-schuler"], "affiliations": [], "homepage": null, "paperCount": 6, "citationCount":
+        687, "hIndex": 5}, {"authorId": "2072740448", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2072740448",
         "name": "Joseph Hsu", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 3, "citationCount": 119, "hIndex": 3}, {"authorId": "1649754303",
-        "url": "https://www.semanticscholar.org/author/1649754303", "name": "Najla
-        Masoodpanah", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        1, "citationCount": 32, "hIndex": 1}, {"authorId": "46354442", "url": "https://www.semanticscholar.org/author/46354442",
-        "name": "L. Kmecova", "aliases": ["L Kme\u010dov\u00e1", "Lucia Kmecova"],
-        "affiliations": [], "homepage": null, "paperCount": 4, "citationCount": 641,
-        "hIndex": 3}, {"authorId": "6930811", "url": "https://www.semanticscholar.org/author/6930811",
+        "paperCount": 3, "citationCount": 121, "hIndex": 3}, {"authorId": "1649754303",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/1649754303",
+        "name": "Najla Masoodpanah", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 1, "citationCount": 32, "hIndex": 1}, {"authorId": "46354442",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/46354442",
+        "name": "Lucia Kmecova", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 4, "citationCount": 644, "hIndex": 3}, {"authorId": "6930811",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/6930811",
         "name": "Tom Kazimiers", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 8, "citationCount": 442, "hIndex": 4}, {"authorId": "2083123459",
-        "url": "https://www.semanticscholar.org/author/2083123459", "name": "E. Perlman",
-        "aliases": ["E. Perlman", "Eric S. Perlman", "Eric Perlman"], "affiliations":
-        [], "homepage": null, "paperCount": 28, "citationCount": 1386, "hIndex": 11},
-        {"authorId": "2056731754", "url": "https://www.semanticscholar.org/author/2056731754",
-        "name": "Matthew Nichols", "aliases": ["Matthew A Nichols"], "affiliations":
-        [], "homepage": null, "paperCount": 5, "citationCount": 704, "hIndex": 4},
-        {"authorId": "1410187169", "url": "https://www.semanticscholar.org/author/1410187169",
+        null, "paperCount": 8, "citationCount": 444, "hIndex": 4}, {"authorId": "2083123459",
+        "externalIds": {"DBLP": ["Eric A. Perlman"]}, "url": "https://www.semanticscholar.org/author/2083123459",
+        "name": "E. Perlman", "aliases": ["E. Perlman", "Eric A. Perlman", "Eric S.
+        Perlman", "Eric Perlman"], "affiliations": [], "homepage": null, "paperCount":
+        28, "citationCount": 1393, "hIndex": 11}, {"authorId": "2056731754", "externalIds":
+        {}, "url": "https://www.semanticscholar.org/author/2056731754", "name": "Matthew
+        Nichols", "aliases": ["Matthew A Nichols"], "affiliations": [], "homepage":
+        null, "paperCount": 5, "citationCount": 708, "hIndex": 4}, {"authorId": "1410187169",
+        "externalIds": {"DBLP": ["Peter Li"]}, "url": "https://www.semanticscholar.org/author/1410187169",
         "name": "Peter H. Li", "aliases": ["Peter H Li", "Peter Hawley Li", "Peter
         Li"], "affiliations": [], "homepage": null, "paperCount": 12, "citationCount":
-        1203, "hIndex": 10}, {"authorId": "35086944", "url": "https://www.semanticscholar.org/author/35086944",
-        "name": "Viren Jain", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 35, "citationCount": 4134, "hIndex": 21}, {"authorId": "35571193",
-        "url": "https://www.semanticscholar.org/author/35571193", "name": "D. Bock",
-        "aliases": ["D.d. Bock", "Davi Bock", "Davi D Bock", "Davi D. Bock"], "affiliations":
-        [], "homepage": null, "paperCount": 47, "citationCount": 3464, "hIndex": 25}]}
+        1220, "hIndex": 10}, {"authorId": "35086944", "externalIds": {"DBLP": ["Viren
+        Jain"]}, "url": "https://www.semanticscholar.org/author/35086944", "name":
+        "Viren Jain", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        34, "citationCount": 4117, "hIndex": 20}, {"authorId": "35571193", "externalIds":
+        {"DBLP": ["Davi Bock", "Davi D. Bock"]}, "url": "https://www.semanticscholar.org/author/35571193",
+        "name": "D. Bock", "aliases": ["D.d. Bock", "Davi Bock", "Davi D Bock", "Davi
+        D. Bock"], "affiliations": [], "homepage": null, "paperCount": 47, "citationCount":
+        3493, "hIndex": 26}]}
 
         '
     headers:
@@ -87,31 +92,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '5387'
+      - '5791'
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:27 GMT
+      - Sat, 18 Feb 2023 08:50:51 GMT
       Via:
-      - 1.1 1ba2a752fe59ed728a048663debd3cb4.cloudfront.net (CloudFront)
+      - 1.1 fbf20877e73563def3c2e6d94c9533e0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - FWq4F9JiNn-5_v-noikLJTk627vqrFUaUvWeIfVbxeEuhB85YF8Low==
+      - awGoStkcm1q8Uw1UxGslqD90ghJtHmPv71bENX5ol_6C7CPn2p9nJg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwKHVQvHcF7Zw=
+      - AhuoxHLNvHcFaOQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '5387'
+      - '5791'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:27 GMT
+      - Sat, 18 Feb 2023 08:50:51 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - aa8d43e5-0b0a-42d4-b372-d9cf8ec5cc35
+      - c6d3fdac-7a3c-4d40-91ca-18b47ff0bd2d
     status:
       code: 200
       message: OK
@@ -127,21 +132,24 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/citations?&fields=paperId,title,isInfluential&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
-        "0247a960c117ec432f8e52d8c96f3dd46bd742bd", "title": "Hacking brain development
-        to test models of sensory coding"}}, {"isInfluential": false, "citingPaper":
-        {"paperId": "6c32d89c783891ba23860a8999e8150812c99b73", "title": "Drosophila
-        olfaction: past, present and future"}}, {"isInfluential": true, "citingPaper":
-        {"paperId": "bd04c9a4e66dbb8ad2217c6f7ddce1fad1157919", "title": "The cellular
-        architecture of memory modules in Drosophila supports stochastic input integration"}},
-        {"isInfluential": false, "citingPaper": {"paperId": "b60e981fd5268a290dbf4e7d8346036396ecaf7d",
-        "title": "Meta-Learning the Inductive Biases of Simple Neural Circuits"}},
-        {"isInfluential": false, "citingPaper": {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57",
-        "title": "Structured cerebellar connectivity supports resilient pattern separation"}},
-        {"isInfluential": false, "citingPaper": {"paperId": "7234495241b9d7393fb27182686eb065985fd647",
+        "cf4a19335995bc91d8414ed71d1b3e306a949669", "title": "Evolution of connectivity
+        architecture in the Drosophila mushroom body"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "0247a960c117ec432f8e52d8c96f3dd46bd742bd", "title":
+        "Hacking brain development to test models of sensory coding"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "6c32d89c783891ba23860a8999e8150812c99b73",
+        "title": "Drosophila olfaction: past, present and future"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "bd04c9a4e66dbb8ad2217c6f7ddce1fad1157919",
+        "title": "The cellular architecture of memory modules in Drosophila supports
+        stochastic input integration"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "b60e981fd5268a290dbf4e7d8346036396ecaf7d", "title": "Meta-Learning the Inductive
+        Biases of Simple Neural Circuits"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57", "title": "Structured
+        cerebellar connectivity supports resilient pattern separation"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "7234495241b9d7393fb27182686eb065985fd647",
         "title": "Multi-Layered Maps of Neuropil with Segmentation-Guided Contrastive
         Learning"}}, {"isInfluential": false, "citingPaper": {"paperId": "5d06ad748e2502a85af763487f431cfd6750f1ac",
         "title": "High-throughput sequencing of single neuron projections reveals
@@ -158,9 +166,11 @@ interactions:
         "citingPaper": {"paperId": "a843d5608b4c8adb601c7b9814a167440acc2955", "title":
         "The anterior paired lateral neuron normalizes odour-evoked activity in the
         Drosophila mushroom body calyx."}}, {"isInfluential": false, "citingPaper":
-        {"paperId": "8648a09611db310d6040ffa0788e6c86d66038fa", "title": "Structured
-        connectivity in the cerebellum enables noise-resilient pattern separation"}},
-        {"isInfluential": false, "citingPaper": {"paperId": "c5536ef56db86a7f89d6b9d0eb3db894481c3372",
+        {"paperId": "7d1824c61645371a977706ce860a678e3741a53f", "title": "FlyWire:
+        online community for whole-brain connectomics"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "8648a09611db310d6040ffa0788e6c86d66038fa", "title":
+        "Structured connectivity in the cerebellum enables noise-resilient pattern
+        separation"}}, {"isInfluential": false, "citingPaper": {"paperId": "c5536ef56db86a7f89d6b9d0eb3db894481c3372",
         "title": "Local olfactory interneurons provide the basis for neurochemical
         regionalization of olfactory glomeruli in crustaceans"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "45485ccd24784a5217c16b3d5e44c6950aac94fb",
@@ -217,31 +227,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '6455'
+      - '6801'
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:28 GMT
+      - Sat, 18 Feb 2023 08:50:51 GMT
       Via:
-      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
+      - 1.1 a8f77777c0752dad31367fbd24424a90.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - aUKPc5al7SCUYz46kPJ3Fv8TLtPdssEwOgjRobDQuad4WZpJPWaeWA==
+      - BEbi0e2378LTmqWG7u7hR62t4dWKxP9GNf1vN-A6dSHXUOK7AWimJA==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwQF7VPHcF4PQ=
+      - Ahuo2EkzvHcFuLQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '6455'
+      - '6801'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:28 GMT
+      - Sat, 18 Feb 2023 08:50:51 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 655d44cf-a3f4-4ced-8942-25dafeb6db97
+      - e8935d5d-c85f-45b4-b2bd-782c2ce68605
     status:
       code: 200
       message: OK
@@ -257,7 +267,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/references?&fields=paperId,title,isInfluential&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/references?fields=paperId,title,isInfluential&offset=0&limit=1000
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
@@ -612,27 +622,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:28 GMT
+      - Sat, 18 Feb 2023 08:50:52 GMT
       Via:
-      - 1.1 51a5a952c28afbcc082d59f6a902bb36.cloudfront.net (CloudFront)
+      - 1.1 6a49fc180c17188af6d0e5ee90187854.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Dj72GlFLHhWnkbn6wn-aViI3VaZ4Nq2GbKDnZfMN6wl4_nBjeek2eQ==
+      - uVeHWi-fVA59ApHZ_kUb_MjbfV3uvr9e81jLB6atZzHHvB8R8BgNVw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwYHTgvHcFZXw=
+      - Ahuo8HtQvHcFVYw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '28335'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:28 GMT
+      - Sat, 18 Feb 2023 08:50:52 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 0d78cbdd-831e-490c-ba1c-83463fed4d09
+      - 2202d950-8bd2-44a9-9374-8cc91c814c85
     status:
       code: 200
       message: OK
@@ -648,7 +658,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
   response:
     body:
       string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds":
@@ -669,8 +679,8 @@ interactions:
         of these tasks, and report empirical results for each task. The methods described
         in this paper are used to enable semantic features in www.semanticscholar.org.",
         "venue": "North American Chapter of the Association for Computational Linguistics",
-        "year": 2018, "referenceCount": 27, "citationCount": 289, "influentialCitationCount":
-        33, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
+        "year": 2018, "referenceCount": 27, "citationCount": 292, "influentialCitationCount":
+        34, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
         "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
         [{"category": "Computer Science", "source": "external"}, {"category": "Computer
         Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle",
@@ -684,83 +694,98 @@ interactions:
         and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North
         American Chapter of the Association for Computational Linguistics},\n pages
         = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n
-        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "url": "https://www.semanticscholar.org/author/145585097",
+        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "externalIds":
+        {"DBLP": ["Waleed Ammar"]}, "url": "https://www.semanticscholar.org/author/145585097",
         "name": "Waleed Ammar", "aliases": ["W Ashor Ammar", "W. Ammar", "Waleed A
         Ammar", "Walid Ammar"], "affiliations": ["Google"], "homepage": null, "paperCount":
-        59, "citationCount": 3237, "hIndex": 23}, {"authorId": "3458736", "url": "https://www.semanticscholar.org/author/3458736",
+        60, "citationCount": 3257, "hIndex": 23}, {"authorId": "3458736", "externalIds":
+        {"DBLP": ["Dirk Groeneveld"]}, "url": "https://www.semanticscholar.org/author/3458736",
         "name": "Dirk Groeneveld", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 7, "citationCount": 481, "hIndex": 6}, {"authorId": "1857797",
+        null, "paperCount": 7, "citationCount": 491, "hIndex": 6}, {"authorId": "1857797",
+        "externalIds": {"DBLP": ["Chandra Bhagavatula", "Chandra Sekhar Bhagavatula"]},
         "url": "https://www.semanticscholar.org/author/1857797", "name": "Chandra
         Bhagavatula", "aliases": ["Chandra Sekhar Bhagavatula"], "affiliations": ["Allen
         Institute for Artificial Intelligence"], "homepage": "https://www.chandrab.page/",
-        "paperCount": 55, "citationCount": 3935, "hIndex": 26}, {"authorId": "46181066",
-        "url": "https://www.semanticscholar.org/author/46181066", "name": "Iz Beltagy",
-        "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute for Artificial
-        Intelligence (AI2)"], "homepage": null, "paperCount": 48, "citationCount":
-        5730, "hIndex": 22}, {"authorId": "46230609", "url": "https://www.semanticscholar.org/author/46230609",
-        "name": "Miles Crawford", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 3, "citationCount": 287, "hIndex": 1}, {"authorId": "145612610",
-        "url": "https://www.semanticscholar.org/author/145612610", "name": "Doug Downey",
-        "aliases": ["Dagney Downey", "D Downey", "Doug C Downey", "Douglas C Downey",
-        "Douglas C. Downey"], "affiliations": ["Allen Institute for Artificial Intelligence",
-        "Northwestern University"], "homepage": "http://users.cs.northwestern.edu/~ddowney/",
-        "paperCount": 103, "citationCount": 7205, "hIndex": 30}, {"authorId": "38092776",
-        "url": "https://www.semanticscholar.org/author/38092776", "name": "Jason Dunkelberger",
-        "aliases": null, "affiliations": [], "homepage": "https://dirkraft.github.io",
-        "paperCount": 1, "citationCount": 287, "hIndex": 1}, {"authorId": "143718836",
+        "paperCount": 56, "citationCount": 4057, "hIndex": 27}, {"authorId": "46181066",
+        "externalIds": {"DBLP": ["Islam Beltagy", "Iz Beltagy"]}, "url": "https://www.semanticscholar.org/author/46181066",
+        "name": "Iz Beltagy", "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute
+        for Artificial Intelligence (AI2)"], "homepage": null, "paperCount": 48, "citationCount":
+        5890, "hIndex": 22}, {"authorId": "46230609", "externalIds": {"DBLP": ["Miles
+        Crawford"]}, "url": "https://www.semanticscholar.org/author/46230609", "name":
+        "Miles Crawford", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        3, "citationCount": 291, "hIndex": 1}, {"authorId": "145612610", "externalIds":
+        {"DBLP": ["Doug Downey"]}, "url": "https://www.semanticscholar.org/author/145612610",
+        "name": "Doug Downey", "aliases": ["Dagney Downey", "D Downey", "Doug C Downey",
+        "Douglas C Downey", "Douglas C. Downey"], "affiliations": ["Allen Institute
+        for Artificial Intelligence", "Northwestern University"], "homepage": "http://users.cs.northwestern.edu/~ddowney/",
+        "paperCount": 103, "citationCount": 7268, "hIndex": 30}, {"authorId": "38092776",
+        "externalIds": {"DBLP": ["Jason Dunkelberger"]}, "url": "https://www.semanticscholar.org/author/38092776",
+        "name": "Jason Dunkelberger", "aliases": null, "affiliations": [], "homepage":
+        "https://dirkraft.github.io", "paperCount": 1, "citationCount": 291, "hIndex":
+        1}, {"authorId": "143718836", "externalIds": {"DBLP": ["Ahmed Elgohary"]},
         "url": "https://www.semanticscholar.org/author/143718836", "name": "Ahmed
         Elgohary", "aliases": ["Ahmed Fouad Elgohary"], "affiliations": ["Microsoft"],
         "homepage": "http://cs.umd.edu/~elgohary", "paperCount": 29, "citationCount":
-        2565, "hIndex": 15}, {"authorId": "46411828", "url": "https://www.semanticscholar.org/author/46411828",
+        2595, "hIndex": 15}, {"authorId": "46411828", "externalIds": {"DBLP": ["Sergey
+        Feldman"], "ORCID": "0000-0003-0386-0922"}, "url": "https://www.semanticscholar.org/author/46411828",
         "name": "Sergey Feldman", "aliases": null, "affiliations": ["Allen Institute
         for Artificial Intelligence", "Alongside.care"], "homepage": "https://www.data-cowboys.com/",
-        "paperCount": 25, "citationCount": 880, "hIndex": 12}, {"authorId": "4480314",
-        "url": "https://www.semanticscholar.org/author/4480314", "name": "Vu A. Ha",
-        "aliases": ["Vu Ha"], "affiliations": ["The Allen Institute for Artificial
-        Intelligence"], "homepage": "https://vha14.com", "paperCount": 21, "citationCount":
-        890, "hIndex": 11}, {"authorId": "143967880", "url": "https://www.semanticscholar.org/author/143967880",
+        "paperCount": 26, "citationCount": 895, "hIndex": 12}, {"authorId": "4480314",
+        "externalIds": {"DBLP": ["Vu A. Ha", "Vu Ha"]}, "url": "https://www.semanticscholar.org/author/4480314",
+        "name": "Vu A. Ha", "aliases": ["Vu Ha"], "affiliations": ["The Allen Institute
+        for Artificial Intelligence"], "homepage": "https://vha14.com", "paperCount":
+        21, "citationCount": 896, "hIndex": 11}, {"authorId": "143967880", "externalIds":
+        {"DBLP": ["Rodney Kinney"]}, "url": "https://www.semanticscholar.org/author/143967880",
         "name": "Rodney Michael Kinney", "aliases": ["R. Kinney", "R. M. Kinney",
         "Rodney Kinney"], "affiliations": ["Allen Institute for AI"], "homepage":
-        null, "paperCount": 14, "citationCount": 1187, "hIndex": 7}, {"authorId":
-        "41018147", "url": "https://www.semanticscholar.org/author/41018147", "name":
-        "Sebastian Kohlmeier", "aliases": null, "affiliations": ["Allen Institute
+        null, "paperCount": 14, "citationCount": 1202, "hIndex": 7}, {"authorId":
+        "41018147", "externalIds": {"DBLP": ["Sebastian Kohlmeier"]}, "url": "https://www.semanticscholar.org/author/41018147",
+        "name": "Sebastian Kohlmeier", "aliases": null, "affiliations": ["Allen Institute
         for AI", "Semantic Scholar"], "homepage": "www.semanticscholar.org", "paperCount":
-        7, "citationCount": 1029, "hIndex": 6}, {"authorId": "46258841", "url": "https://www.semanticscholar.org/author/46258841",
+        7, "citationCount": 1039, "hIndex": 6}, {"authorId": "46258841", "externalIds":
+        {"DBLP": ["Kyle Lo"]}, "url": "https://www.semanticscholar.org/author/46258841",
         "name": "Kyle Lo", "aliases": null, "affiliations": ["Allen Institute for
-        Artificial Intelligence"], "homepage": null, "paperCount": 55, "citationCount":
-        4813, "hIndex": 20}, {"authorId": "144240185", "url": "https://www.semanticscholar.org/author/144240185",
+        Artificial Intelligence"], "homepage": null, "paperCount": 56, "citationCount":
+        4931, "hIndex": 20}, {"authorId": "144240185", "externalIds": {"DBLP": ["Tyler
+        Murray"], "ORCID": "0000-0003-0043-7192"}, "url": "https://www.semanticscholar.org/author/144240185",
         "name": "Tyler C. Murray", "aliases": ["Tyler Murray"], "affiliations": ["Allen
         Institute for Artificial Intelligence"], "homepage": "https://allenai.org",
-        "paperCount": 1, "citationCount": 287, "hIndex": 1}, {"authorId": "46256862",
-        "url": "https://www.semanticscholar.org/author/46256862", "name": "Hsu-Han
-        Ooi", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        1, "citationCount": 287, "hIndex": 1}, {"authorId": "39139825", "url": "https://www.semanticscholar.org/author/39139825",
+        "paperCount": 1, "citationCount": 291, "hIndex": 1}, {"authorId": "46256862",
+        "externalIds": {"DBLP": ["Hsu-Han Ooi"]}, "url": "https://www.semanticscholar.org/author/46256862",
+        "name": "Hsu-Han Ooi", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 1, "citationCount": 291, "hIndex": 1}, {"authorId": "39139825",
+        "externalIds": {"DBLP": ["Matthew E. Peters"]}, "url": "https://www.semanticscholar.org/author/39139825",
         "name": "Matthew E. Peters", "aliases": ["M. Peters", "Matthew E Peters",
         "Matthew Peters"], "affiliations": ["Allen Institute for Artificial Intelligence"],
-        "homepage": null, "paperCount": 67, "citationCount": 16030, "hIndex": 26},
-        {"authorId": "39561369", "url": "https://www.semanticscholar.org/author/39561369",
-        "name": "Joanna L. Power", "aliases": ["J L Power", "Joanna Power"], "affiliations":
+        "homepage": null, "paperCount": 68, "citationCount": 16216, "hIndex": 28},
+        {"authorId": "39561369", "externalIds": {"DBLP": ["Joanna L. Power", "Joanna
+        Power"]}, "url": "https://www.semanticscholar.org/author/39561369", "name":
+        "Joanna L. Power", "aliases": ["J L Power", "Joanna Power"], "affiliations":
         [], "homepage": "https://linkedin.com/in/jpower", "paperCount": 6, "citationCount":
-        393, "hIndex": 5}, {"authorId": "46181683", "url": "https://www.semanticscholar.org/author/46181683",
-        "name": "Sam Skjonsberg", "aliases": null, "affiliations": ["Allen Institute
-        for Artificial Intelligence"], "homepage": "https://codeviking.net", "paperCount":
-        6, "citationCount": 331, "hIndex": 4}, {"authorId": "31860505", "url": "https://www.semanticscholar.org/author/31860505",
+        397, "hIndex": 5}, {"authorId": "46181683", "externalIds": {"DBLP": ["Sam
+        Skjonsberg"]}, "url": "https://www.semanticscholar.org/author/46181683", "name":
+        "Sam Skjonsberg", "aliases": null, "affiliations": ["Allen Institute for AI"],
+        "homepage": "https://codeviking.net", "paperCount": 6, "citationCount": 335,
+        "hIndex": 4}, {"authorId": "31860505", "externalIds": {"DBLP": ["Lucy L. Wang",
+        "Lucy Lu Wang"], "ORCID": "0000-0001-8752-6635"}, "url": "https://www.semanticscholar.org/author/31860505",
         "name": "Lucy Lu Wang", "aliases": ["Lucy Lu Wang", "Lucy L. Wang"], "affiliations":
         ["University of Washington", "Allen Institute for AI"], "homepage": "https://llwang.net/",
-        "paperCount": 60, "citationCount": 2020, "hIndex": 19}, {"authorId": "46212260",
-        "url": "https://www.semanticscholar.org/author/46212260", "name": "Christopher
-        Wilhelm", "aliases": ["C Wilhelm", "C. Wilhelm", "Chris Wilhelm", "Claus Wilhelm"],
-        "affiliations": ["Allen Institute for Artificial Intelligence"], "homepage":
-        null, "paperCount": 15, "citationCount": 1060, "hIndex": 5}, {"authorId":
-        "2112339497", "url": "https://www.semanticscholar.org/author/2112339497",
-        "name": "Zheng Yuan", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 4, "citationCount": 306, "hIndex": 3}, {"authorId": "15292561",
-        "url": "https://www.semanticscholar.org/author/15292561", "name": "Madeleine
-        van Zuylen", "aliases": ["Madeleine Van Zuylen"], "affiliations": ["Allen
-        Institute for AI", "University of Notre Dame"], "homepage": null, "paperCount":
-        13, "citationCount": 938, "hIndex": 10}, {"authorId": "1741101", "url": "https://www.semanticscholar.org/author/1741101",
+        "paperCount": 60, "citationCount": 2052, "hIndex": 19}, {"authorId": "46212260",
+        "externalIds": {"DBLP": ["Chris Wilhelm"]}, "url": "https://www.semanticscholar.org/author/46212260",
+        "name": "Christopher Wilhelm", "aliases": ["C Wilhelm", "C. Wilhelm", "Chris
+        Wilhelm", "Claus Wilhelm"], "affiliations": ["Allen Institute for Artificial
+        Intelligence"], "homepage": null, "paperCount": 15, "citationCount": 1070,
+        "hIndex": 5}, {"authorId": "2112339497", "externalIds": {"DBLP": ["Zheng Yuan"]},
+        "url": "https://www.semanticscholar.org/author/2112339497", "name": "Zheng
+        Yuan", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        4, "citationCount": 310, "hIndex": 3}, {"authorId": "15292561", "externalIds":
+        {"DBLP": ["Madeleine van Zuylen"]}, "url": "https://www.semanticscholar.org/author/15292561",
+        "name": "Madeleine van Zuylen", "aliases": ["Madeleine Van Zuylen"], "affiliations":
+        ["Allen Institute for AI", "University of Notre Dame"], "homepage": null,
+        "paperCount": 13, "citationCount": 954, "hIndex": 10}, {"authorId": "1741101",
+        "externalIds": {"DBLP": ["Oren Etzioni"]}, "url": "https://www.semanticscholar.org/author/1741101",
         "name": "Oren Etzioni", "aliases": ["O Et-zioni", "Oren Etzioni"], "affiliations":
-        [], "homepage": null, "paperCount": 274, "citationCount": 34605, "hIndex":
+        [], "homepage": null, "paperCount": 274, "citationCount": 34675, "hIndex":
         86}]}
 
         '
@@ -770,31 +795,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '9192'
+      - '10378'
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:29 GMT
+      - Sat, 18 Feb 2023 08:50:53 GMT
       Via:
-      - 1.1 1679d4f06b5f1d02b9d3d9343e40b5cc.cloudfront.net (CloudFront)
+      - 1.1 ffac2ff159127c5a76d86e0366cb430a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - ZjUpzVsS2YI0Lbeo72r7ph-SpbsoNP6_ofN_Q03Gjy6OaC4lfWOnug==
+      - SXSu-bOA9gwkn923uhhxcvRCipg_BRWDnyXZ6vLOl7H4qpvz8navKg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwhGiyPHcF5iw=
+      - AhupDGzqvHcF_sA=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '9192'
+      - '10378'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:29 GMT
+      - Sat, 18 Feb 2023 08:50:53 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 9d794de8-0412-4289-85d5-40d4f226a174
+      - ab7466fe-e8e3-4740-b697-2ab2d89b039f
     status:
       code: 200
       message: OK
@@ -810,17 +835,19 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/citations?&fields=paperId,title,isInfluential&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": true, "citingPaper": {"paperId":
-        "1a37f43db8108af003bc9af181460ddaacf9e815", "title": "Convolutional Learning
-        on Simplicial Complexes"}}, {"isInfluential": false, "citingPaper": {"paperId":
-        "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1", "title": "The Semantic Scholar
-        Open Data Platform"}}, {"isInfluential": false, "citingPaper": {"paperId":
-        "1712eaa82a2e3d081538a17e06416330fac0a0d8", "title": "Energy Efficient Semantic
-        Communication over Wireless Networks with Rate Splitting"}}, {"isInfluential":
-        false, "citingPaper": {"paperId": "b74aec118f2b62ae05b04f1b66ab79c2e5b873c0",
+        "e7dcdfb7734d59b97f825cce8b3105a2d9b14d10", "title": "The Effect of Metadata
+        on Scientific Literature Tagging: A Cross-Field Cross-Model Study"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "1a37f43db8108af003bc9af181460ddaacf9e815",
+        "title": "Convolutional Learning on Simplicial Complexes"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1",
+        "title": "The Semantic Scholar Open Data Platform"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "1712eaa82a2e3d081538a17e06416330fac0a0d8", "title":
+        "Energy Efficient Semantic Communication over Wireless Networks with Rate
+        Splitting"}}, {"isInfluential": false, "citingPaper": {"paperId": "b74aec118f2b62ae05b04f1b66ab79c2e5b873c0",
         "title": "MRT: Tracing the Evolution of Scientific Publications"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "f445f8a0ce442fe7db90dfb8226272189e649a2c",
         "title": "Logic Mill - A Knowledge Navigation System"}}, {"isInfluential":
@@ -835,7 +862,9 @@ interactions:
         {"isInfluential": false, "citingPaper": {"paperId": "b6fba18ca329347c330262edb71f56bde08c29e1",
         "title": "The National Library of Medicine indexer assignment dataset: A new
         large\u2010scale dataset for reviewer assignment research"}}, {"isInfluential":
-        false, "citingPaper": {"paperId": "25b77db5bfca92029532ca70ee659fdf88db8484",
+        false, "citingPaper": {"paperId": "94e99c02b61f2d8b727f08e08924146705a614df",
+        "title": "Understanding knowledge role transitions: A perspective of knowledge
+        codification"}}, {"isInfluential": false, "citingPaper": {"paperId": "25b77db5bfca92029532ca70ee659fdf88db8484",
         "title": "SMAuC - The Scientific Multi-Authorship Corpus"}}, {"isInfluential":
         true, "citingPaper": {"paperId": "7e0fda71cc2e561385c0a2e29f5a81654a11157f",
         "title": "VarMAE: Pre-training of Variational Masked Autoencoder for Domain-adaptive
@@ -1269,17 +1298,18 @@ interactions:
         of Citations\u201d Topic Analysis"}}, {"isInfluential": false, "citingPaper":
         {"paperId": "e39a0dfe48da9a51defb80fb4b839418e2981b8d", "title": "COVID-19
         Knowledge Graph: Accelerating Information Retrieval and Discovery for Scientific
-        Literature"}}, {"isInfluential": false, "citingPaper": {"paperId": "2d62dea4e7d97b5cb69174504371503b57c93bf1",
-        "title": "NLPContributions: An Annotation Scheme for Machine Reading of Scholarly
-        Contributions in Natural Language Processing Literature"}}, {"isInfluential":
-        false, "citingPaper": {"paperId": "856b12bc3b99db662e93def08e49db73c1df5e79",
-        "title": "Modeling Graph Structure via Relative Position for Better Text Generation
-        from Knowledge Graphs"}}, {"isInfluential": false, "citingPaper": {"paperId":
-        "82af9bb84594d4fce17a5fb88888f8bdade0cd58", "title": "High-Precision Extraction
-        of Emerging Concepts from Scientific Literature"}}, {"isInfluential": false,
-        "citingPaper": {"paperId": "33f894591e5e7d2d0de996905cfcae2eb05d360f", "title":
-        "Constructing and evaluating automated literature review systems"}}, {"isInfluential":
-        false, "citingPaper": {"paperId": "e8b8ef7629a16435945b40cb01b15cf1e537adcf",
+        Literature"}}, {"isInfluential": false, "citingPaper": {"paperId": "8969a2ed070181aed57d37d0682b938bd8623f45",
+        "title": "Building a PubMed knowledge graph"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2d62dea4e7d97b5cb69174504371503b57c93bf1", "title": "NLPContributions:
+        An Annotation Scheme for Machine Reading of Scholarly Contributions in Natural
+        Language Processing Literature"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "856b12bc3b99db662e93def08e49db73c1df5e79", "title": "Modeling
+        Graph Structure via Relative Position for Better Text Generation from Knowledge
+        Graphs"}}, {"isInfluential": false, "citingPaper": {"paperId": "82af9bb84594d4fce17a5fb88888f8bdade0cd58",
+        "title": "High-Precision Extraction of Emerging Concepts from Scientific Literature"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "33f894591e5e7d2d0de996905cfcae2eb05d360f",
+        "title": "Constructing and evaluating automated literature review systems"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "e8b8ef7629a16435945b40cb01b15cf1e537adcf",
         "title": "Constructing and evaluating automated literature review systems"}},
         {"isInfluential": false, "citingPaper": {"paperId": "1fb1c749be01442d669b98b41cb2aadb58671f58",
         "title": "ReviewerNet: A visualization platform for the selection of academic
@@ -1316,7 +1346,7 @@ interactions:
         "title": "Explanation-Based Tuning of Opaque Machine Learners with Application
         to Paper Recommendation"}}, {"isInfluential": false, "citingPaper": {"paperId":
         "87cb930ac1d07b0f759627b3a50cfa08a3d51892", "title": "LIMEADE: From AI Explanations
-        to Advice Taking"}}, {"isInfluential": false, "citingPaper": {"paperId": "d2cba7d6a820931120ca7f1b06df566d06b0a793",
+        to Advice Taking"}}, {"isInfluential": false, "citingPaper": {"paperId": "87cb930ac1d07b0f759627b3a50cfa08a3d51892",
         "title": "LIMEADE: From AI Explanations to Advice Taking"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "4559600f2ba644d41a7580362d3fcfd5c363b814",
         "title": "The STEM-ECR Dataset: Grounding Scientific Entity References in
@@ -1480,31 +1510,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '55029'
+      - '55563'
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:30 GMT
+      - Sat, 18 Feb 2023 08:50:53 GMT
       Via:
-      - 1.1 20859c946d4540573244991afc8ba6b0.cloudfront.net (CloudFront)
+      - 1.1 cbee94ab34ec9eb1b560ab196c643b20.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - IK4haj28HdSAyq06OK1aak9_qNTajtTz6LrXYgRTLQJ_knegUAV8kw==
+      - XdFrUYA5w4gmOTyBKicoGjlpWerx2UPx1W9v0bN0_6pZaOMyE7bNoA==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwoFU7PHcFhPg=
+      - AhupLHoRvHcF3aA=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '55029'
+      - '55563'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:30 GMT
+      - Sat, 18 Feb 2023 08:50:53 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - c2c99fc4-45a7-4f5b-965c-ec037009c8db
+      - 72a34a51-3e3a-43ea-a69a-237f2aaa71a8
     status:
       code: 200
       message: OK
@@ -1520,7 +1550,7 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/references?&fields=paperId,title,isInfluential&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/references?fields=paperId,title,isInfluential&offset=0&limit=1000
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
@@ -1593,27 +1623,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 05 Feb 2023 11:09:31 GMT
+      - Sat, 18 Feb 2023 08:50:55 GMT
       Via:
-      - 1.1 ce084a1179392e1921b98c60a4590284.cloudfront.net (CloudFront)
+      - 1.1 20859c946d4540573244991afc8ba6b0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - b3q7fndJhVq5djKdZtACAGM-9WpbtFVTKHV7JzzzL-jc_wrCZvqG3g==
+      - B3_zktELJda0IbrteqYXcQoH-wYjUXA-0jPgrF8Qrae33SXEJQiXkg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - f3MwzFq4PHcFxKg=
+      - AhupXHDcvHcFkdg=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '4701'
       x-amzn-Remapped-Date:
-      - Sun, 05 Feb 2023 11:09:31 GMT
+      - Sat, 18 Feb 2023 08:50:55 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - e5d62d78-733b-45ee-aa0d-8957fc379d89
+      - cd018476-58a6-4c48-ae1a-1cf74ffc0eb4
     status:
       code: 200
       message: OK
