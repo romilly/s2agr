@@ -1,7 +1,7 @@
 from typing import Set
 
 from s2agr.citation import CITATION_FIELDS, Citation
-from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS
+from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS, BASE_PAPER_FIELDS
 from s2agr.monitor import Monitor, MockMonitor
 from s2agr.paginator import Paginator
 
@@ -23,11 +23,11 @@ class Researcher:
 
     @staticmethod
     def url_for_paper(pid: str) -> str:
-        return UrlBuilderForSinglePaper(pid).with_query(q().with_fields(EXTENDED_PAPER_FIELDS)).get_url()
+        return UrlBuilderForSinglePaper(pid).with_query(q().with_fields(*EXTENDED_PAPER_FIELDS)).get_url()
 
     @staticmethod
     def url_for_author(pid: str) -> str:
-        return UrlBuilderForAuthor(pid).with_query(q().with_fields(AUTHOR_FIELDS)).get_url()
+        return UrlBuilderForAuthor(pid).with_query(q().with_fields(*AUTHOR_FIELDS)).get_url()
 
     def get_references_for(self, pid: str) -> Set[Citation]:
         paginator = Paginator(self.requester,
@@ -63,7 +63,7 @@ class Researcher:
 
     def search(self, query):
         paginator = Paginator(self.requester,
-                              url_builder=UrlBuilderForSearch().with_query(query.with_fields('paperId,title')), limit=100)
+                        url_builder=UrlBuilderForSearch().with_query(query.with_fields(*BASE_PAPER_FIELDS)), limit=100)
         contents = paginator.contents()
         return contents
                     

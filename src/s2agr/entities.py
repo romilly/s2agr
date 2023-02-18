@@ -4,19 +4,20 @@ from typing import Any, List
 
 CC_RE = pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
+AUTHOR_FIELDS = [
+    'authorId',
+    'externalIds',
+    'url',
+    'name',
+    'aliases',
+    'affiliations',
+    'homepage',
+    'paperCount',
+    'citationCount',
+    'hIndex'
+]
 
-def snake(name: str) -> str:
-    return CC_RE.sub('_', name).lower()
-
-
-class JsonEntity:
-    def __init__(self, jason_dictionary: dict):
-        self.jason_dictionary = jason_dictionary
-        for key in self.jason_dictionary.keys():
-            self.__setattr__(snake(key), self.jason_dictionary[key])
-
-
-EXTENDED_PAPER_FIELDS = ','.join([
+BASE_PAPER_FIELDS = [
         'paperId',
         'externalIds',
         'url',
@@ -37,17 +38,20 @@ EXTENDED_PAPER_FIELDS = ','.join([
         'journal',
         'citationStyles',
         'authors',
-        'authors.authorId',
-        'authors.externalIds',
-        'authors.url',
-        'authors.name',
-        'authors.aliases',
-        'authors.affiliations',
-        'authors.homepage',
-        'authors.paperCount',
-        'authors.citationCount',
-        'authors.hIndex'
-        ])
+        ]
+
+EXTENDED_PAPER_FIELDS = BASE_PAPER_FIELDS + [f'authors.{subfield}' for subfield in AUTHOR_FIELDS]
+
+
+def snake(name: str) -> str:
+    return CC_RE.sub('_', name).lower()
+
+
+class JsonEntity:
+    def __init__(self, jason_dictionary: dict):
+        self.jason_dictionary = jason_dictionary
+        for key in self.jason_dictionary.keys():
+            self.__setattr__(snake(key), self.jason_dictionary[key])
 
 
 class Paper(JsonEntity):
@@ -76,20 +80,6 @@ class Paper(JsonEntity):
     def __init__(self, jason_dictionary: dict):
         JsonEntity.__init__(self, jason_dictionary )
         self.pdf_url = self.open_access_pdf['url'] if self.is_open_access else None
-
-
-AUTHOR_FIELDS = ','.join([
-    'authorId',
-    'externalIds',
-    'url',
-    'name',
-    'aliases',
-    'affiliations',
-    'homepage',
-    'paperCount',
-    'citationCount',
-    'hIndex'
-])
 
 
 class Author(JsonEntity):

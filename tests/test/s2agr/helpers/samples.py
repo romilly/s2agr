@@ -12,6 +12,8 @@ def sample_01():
     jd = json.loads(read('test/s2agr/data/samples/sample_01.json'))
     return Paper(jd)
 
+def sample_01_id():
+    return sample_01().paper_id
 
 def sample_02():
     jd = json.loads(read('test/s2agr/data/samples/sample_02.json'))

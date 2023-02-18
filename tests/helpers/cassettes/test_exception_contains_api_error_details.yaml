@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=non-existent-field
+  response:
+    body:
+      string: '{"error":"Unrecognized or unsupported fields: [non-existent-field]"}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '69'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Feb 2023 10:19:14 GMT
+      Via:
+      - 1.1 337c92db4f8666e0ac53ab530546daa6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - tOOqvmXVRJ5z1dHWu_gCLJiBlemdDaq74R8m4kcSK8bVS0yfkAVoIg==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - Ah7lYFqlvHcFXaQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '69'
+      x-amzn-Remapped-Date:
+      - Sat, 18 Feb 2023 10:19:14 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 35244d5c-9507-4418-a0e9-23b137202e44
+    status:
+      code: 400
+      message: Bad Request
+version: 1

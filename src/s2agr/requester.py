@@ -31,9 +31,9 @@ class ThrottledRequester(Requester):
 
     def get(self, url: str, parameters: Optional[str] = None) -> dict:
         self.throttle()
-        if parameters is not None:
-            url += '?' + parameters
         response = requests.get(url)
+        if response.status_code == 400:
+            raise ThrottledRequesterException(response.json()['error'])
         if response.status_code != 200:
             raise ThrottledRequesterException(response.reason)
         result = response.json()
