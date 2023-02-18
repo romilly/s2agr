@@ -4,8 +4,9 @@ import vcr
 from hamcrest import assert_that, equal_to, greater_than
 
 from s2agr.requester import ThrottledRequester
-from s2agr.researcher import Researcher
+from s2agr.webresearcher import WebResearcher
 from s2agr.urls import q
+from test.s2agr.helpers.samples import sample_01_id, sample_02_id
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
@@ -15,7 +16,7 @@ test_vcr = vcr.VCR(
 
 class ResearcherTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.researcher = Researcher(ThrottledRequester(delay=0.001))
+        self.researcher = WebResearcher(ThrottledRequester(delay=0.001))
 
     @test_vcr.use_cassette
     def test_researcher_can_get_paper_using_api(self):
@@ -51,9 +52,14 @@ class ResearcherTestCase(unittest.TestCase):
     @test_vcr.use_cassette
     def test_can_get_papers_satisfying_query(self):
         query = q().with_keywords('temporal','knowledge','graph','embedding').between(2019,2020)
-        response = self.researcher.search(query)
+        response = self.researcher.search_by_keyword(query)
         papers = list(response)
         assert_that(len(papers), greater_than(1000))
+
+    @test_vcr.use_cassette
+    def test_can_retrieve_multiple_papers(self):
+        papers = self.researcher.get_papers(sample_01_id(), sample_02_id())
+        assert_that(len(list(papers)), equal_to(2))
 
 
 if __name__ == '__main__':

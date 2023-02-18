@@ -1,4 +1,4 @@
-# Semantic Scholar Academic Graph Researcher
+# Semantic Scholar Academic Graph WebResearcher
 
 This is an independently developed Python application to enable access to, and local caching of,
 the [Semantic Scholar Academic Graph](https://www.semanticscholar.org/me/research) from AIAI.

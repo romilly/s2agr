@@ -15,11 +15,11 @@ class ThrottledRequesterException(Exception):
 class Requester(ABC):
 
     @abstractmethod
-    def get(self, url: str, parameters: Optional[str] = None) -> dict:
+    def get(self, url: str) -> dict:
         pass
 
     @abstractmethod
-    def post(self, url: str, parameters, ids: dict) -> dict:
+    def post(self, url: str, ids: dict) -> dict:
         pass
 
 
@@ -30,7 +30,7 @@ class ThrottledRequester(Requester):
         self.delay = delay
         self._last_request = time.monotonic()
 
-    def get(self, url: str, parameters: Optional[str] = None) -> dict:
+    def get(self, url: str) -> dict:
         self.throttle()
         response = requests.get(url)
         if response.status_code == BAD_REQUEST:
@@ -46,10 +46,8 @@ class ThrottledRequester(Requester):
             time.sleep(self.delay - gap)
         self._last_request = time.monotonic()
 
-    def post(self, url: str, parameters,  ids: dict) -> dict:
+    def post(self, url: str,  ids: dict) -> dict:
         self.throttle()
-        if parameters is not None:
-            url += '?' + parameters
         response = requests.post(url, json=ids)
         if response.status_code != REQUEST_OK:
             raise ThrottledRequesterException(response.reason)

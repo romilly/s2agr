@@ -5,6 +5,7 @@ from hamcrest import assert_that, starts_with
 
 from s2agr.builder import Builder
 from test.s2agr.helpers.database_test import DatabaseTest
+from test.s2agr.helpers.samples import sample_01_id, sample_02_id
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
@@ -22,6 +23,7 @@ class S2AGTestCase(DatabaseTest):
     @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_paper(self):
         paper = self.librarian.get_paper(self.pid)
+        self.check_row_count('paper','paper_id',self.pid, 1)
         self.assertEqual(paper.paper_id, self.pid)
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")
         assert_that(paper.abstract, starts_with("We describe"))
@@ -38,9 +40,14 @@ class S2AGTestCase(DatabaseTest):
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_known_author(self):
-        author = self.librarian.get_author(self.aid)
+        self.librarian.get_author(self.aid)
         author = self.librarian.get_author(self.aid)
         self.assertEqual(author.author_id, self.aid)
+
+    @test_vcr.use_cassette
+    def test_librarian_retrieves_multiple_papers(self):
+        self.librarian.get_papers(sample_01_id(), sample_02_id())
+        self.check_total_row_count('paper', 2)
 
 
 if __name__ == '__main__':

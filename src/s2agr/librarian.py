@@ -5,15 +5,15 @@ from s2agr.entities import Paper, Author
 from s2agr.persistence.catalogue import Catalogue
 from s2agr.persistence.database_catalogue import DatabaseCatalogueException
 from s2agr.requester import ThrottledRequesterException
-from s2agr.researcher import Researcher
+from s2agr.webresearcher import WebResearcher
 
 
 
 
 
 class Librarian:
-    def __init__(self, 
-                 researcher: Researcher,
+    def __init__(self,
+                 researcher: WebResearcher,
                  catalogue: Catalogue,
                  monitor: Monitor):
         self.researcher = researcher
@@ -58,6 +58,17 @@ class Librarian:
             self.monitor.exception('Could not retrieve author %s' % aid, e)
         except psycopg2.Error as e:
             self.monitor.exception('Database error handling author %s' % aid, e)
+
+    def get_papers(self, *paper_ids):
+        new_pids = []
+        for pid in paper_ids:
+            if not self.catalogue.knows_paper(pid):
+                new_pids.append(pid)
+        new_papers = self.researcher.get_papers(*new_pids)
+        for paper in new_papers:
+            self.catalogue.write_paper(paper)
+        return (self.catalogue.read_paper(pid) for pid in paper_ids)
+
 
 
 

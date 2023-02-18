@@ -1,0 +1,124 @@
+interactions:
+- request:
+    body: '{"ids": ["649def34f8be52c8b66281af98ae884c09aef38b", "d23508ee81467dff9435d42d1d4633e178e59992"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '[{"paperId": "d23508ee81467dff9435d42d1d4633e178e59992", "externalIds":
+        {"DOI": "10.1007/s00018-021-03820-y", "CorpusId": 233201568, "PubMed": "33837450"},
+        "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/d23508ee81467dff9435d42d1d4633e178e59992",
+        "title": "Molecular and neural mechanisms regulating sexual motivation of
+        virgin female Drosophila", "abstract": null, "venue": "Cellular and Molecular
+        Life Sciences", "year": 2021, "referenceCount": 157, "citationCount": 3, "influentialCitationCount":
+        0, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Medicine"],
+        "s2FieldsOfStudy": [{"category": "Medicine", "source": "external"}, {"category":
+        "Biology", "source": "s2-fos-model"}, {"category": "Psychology", "source":
+        "s2-fos-model"}], "publicationTypes": ["Review", "JournalArticle"], "publicationDate":
+        "2021-04-10", "journal": {"name": "Cellular and Molecular Life Sciences",
+        "pages": "4805 - 4819", "volume": "78"}, "citationStyles": {"bibtex": "@[''Review'',
+        ''JournalArticle'']{Ishimoto2021MolecularAN,\n author = {H. Ishimoto and A.
+        Kamikouchi},\n booktitle = {Cellular and Molecular Life Sciences},\n journal
+        = {Cellular and Molecular Life Sciences},\n pages = {4805 - 4819},\n title
+        = {Molecular and neural mechanisms regulating sexual motivation of virgin
+        female Drosophila},\n volume = {78},\n year = {2021}\n}\n"}, "authors": [{"authorId":
+        "48446534", "name": "H. Ishimoto"}, {"authorId": "5683768", "name": "A. Kamikouchi"}]},
+        {"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds": {"DBLP":
+        "conf/naacl/AmmarGBBCDDEFHK18", "MAG": "2952867657", "ACL": "N18-3011", "ArXiv":
+        "1805.02262", "DOI": "10.18653/v1/N18-3011", "CorpusId": 19170988}, "publicationVenue":
+        {"id": "01103732-3808-4930-b8e4-7e9e68d5c68d", "name": "North American Chapter
+        of the Association for Computational Linguistics", "type": "conference", "alternate_names":
+        ["North Am Chapter Assoc Comput Linguistics", "NAACL"], "url": "https://www.aclweb.org/portal/naacl"},
+        "url": "https://www.semanticscholar.org/paper/649def34f8be52c8b66281af98ae884c09aef38b",
+        "title": "Construction of the Literature Graph in Semantic Scholar", "abstract":
+        "We describe a deployed scalable system for organizing published scientific
+        literature into a heterogeneous graph to facilitate algorithmic manipulation
+        and discovery. The resulting literature graph consists of more than 280M nodes,
+        representing papers, authors, entities and various interactions between them
+        (e.g., authorships, citations, entity mentions). We reduce literature graph
+        construction into familiar NLP tasks (e.g., entity extraction and linking),
+        point out research challenges due to differences from standard formulations
+        of these tasks, and report empirical results for each task. The methods described
+        in this paper are used to enable semantic features in www.semanticscholar.org.",
+        "venue": "North American Chapter of the Association for Computational Linguistics",
+        "year": 2018, "referenceCount": 27, "citationCount": 292, "influentialCitationCount":
+        34, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
+        "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Computer
+        Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle",
+        "Conference"], "publicationDate": "2018-05-06", "journal": {"pages": "84-91"},
+        "citationStyles": {"bibtex": "@[''JournalArticle'', ''Conference'']{Ammar2018ConstructionOT,\n
+        author = {Waleed Ammar and Dirk Groeneveld and Chandra Bhagavatula and Iz
+        Beltagy and Miles Crawford and Doug Downey and Jason Dunkelberger and Ahmed
+        Elgohary and Sergey Feldman and Vu A. Ha and Rodney Michael Kinney and Sebastian
+        Kohlmeier and Kyle Lo and Tyler C. Murray and Hsu-Han Ooi and Matthew E. Peters
+        and Joanna L. Power and Sam Skjonsberg and Lucy Lu Wang and Christopher Wilhelm
+        and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North
+        American Chapter of the Association for Computational Linguistics},\n pages
+        = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n
+        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "name": "Waleed
+        Ammar"}, {"authorId": "3458736", "name": "Dirk Groeneveld"}, {"authorId":
+        "1857797", "name": "Chandra Bhagavatula"}, {"authorId": "46181066", "name":
+        "Iz Beltagy"}, {"authorId": "46230609", "name": "Miles Crawford"}, {"authorId":
+        "145612610", "name": "Doug Downey"}, {"authorId": "38092776", "name": "Jason
+        Dunkelberger"}, {"authorId": "143718836", "name": "Ahmed Elgohary"}, {"authorId":
+        "46411828", "name": "Sergey Feldman"}, {"authorId": "4480314", "name": "Vu
+        A. Ha"}, {"authorId": "143967880", "name": "Rodney Michael Kinney"}, {"authorId":
+        "41018147", "name": "Sebastian Kohlmeier"}, {"authorId": "46258841", "name":
+        "Kyle Lo"}, {"authorId": "144240185", "name": "Tyler C. Murray"}, {"authorId":
+        "46256862", "name": "Hsu-Han Ooi"}, {"authorId": "39139825", "name": "Matthew
+        E. Peters"}, {"authorId": "39561369", "name": "Joanna L. Power"}, {"authorId":
+        "46181683", "name": "Sam Skjonsberg"}, {"authorId": "31860505", "name": "Lucy
+        Lu Wang"}, {"authorId": "46212260", "name": "Christopher Wilhelm"}, {"authorId":
+        "2112339497", "name": "Zheng Yuan"}, {"authorId": "15292561", "name": "Madeleine
+        van Zuylen"}, {"authorId": "1741101", "name": "Oren Etzioni"}]}]
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5418'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 18 Feb 2023 16:33:15 GMT
+      Via:
+      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 918na0KhNT9J92QI6SyM9Y8DfZVpott57wU2vImW_PtmxiysYAAxMw==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - AiyX0HvGPHcFYpA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '5418'
+      x-amzn-Remapped-Date:
+      - Sat, 18 Feb 2023 16:33:15 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 10fff7c0-ae1e-4c49-bc3c-c137d1172be2
+    status:
+      code: 200
+      message: OK
+version: 1

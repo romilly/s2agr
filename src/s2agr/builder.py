@@ -3,7 +3,7 @@ from s2agr.monitor import MockMonitor, Monitor
 from s2agr.persistence.catalogue import Catalogue
 from s2agr.persistence.database_catalogue import test_connection, DatabaseCatalogue
 from s2agr.requester import ThrottledRequester, Requester
-from s2agr.researcher import Researcher
+from s2agr.webresearcher import WebResearcher
 
 
 class Builder:
@@ -18,7 +18,7 @@ class Builder:
         if self.requester is None:
             self.requester = ThrottledRequester(delay=0.001)
         if self.researcher is None:
-            self.researcher = Researcher(self.requester)
+            self.researcher = WebResearcher(self.requester)
         if self.connection is None:
             self.connection = test_connection()
         if self.catalogue is None:
@@ -31,7 +31,7 @@ class Builder:
         self.requester = requester
         return self
 
-    def with_researcher(self, researcher: Researcher):
+    def with_researcher(self, researcher: WebResearcher):
         self.researcher = researcher
         return self
 

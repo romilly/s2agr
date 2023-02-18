@@ -1,5 +1,7 @@
 from typing import Set
 
+from abc import ABC, abstractmethod
+
 from s2agr.citation import CITATION_FIELDS, Citation
 from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS, BASE_PAPER_FIELDS
 from s2agr.monitor import Monitor, MockMonitor
@@ -9,15 +11,28 @@ from s2agr.requester import Requester
 from s2agr.urls import *
 
 
-class Researcher:
-    def __init__(self, requester: Requester, monitor: Monitor = MockMonitor()):
-        self.requester = requester
+class Researcher(ABC):
+    def __init__(self, monitor: Monitor = MockMonitor()):
         self.monitor = monitor
 
     def get_paper(self, pid) -> Paper:
-        return Paper(self.get_paper_json(pid))
+        return Paper(self._get_paper_json(pid))
 
-    def get_paper_json(self, pid: str) -> dict:
+    @abstractmethod
+    def _get_paper_json(self, pid):
+        pass
+
+    @abstractmethod
+    def get_papers(self, *paper_ids):
+        pass
+
+
+class WebResearcher(Researcher):
+    def __init__(self, requester: Requester, monitor: Monitor = MockMonitor()):
+        Researcher.__init__(self, monitor)
+        self.requester = requester
+
+    def _get_paper_json(self, pid: str) -> dict:
         return self.requester.get(
             self.url_for_paper(pid))
 
@@ -61,9 +76,13 @@ class Researcher:
                 citations.add(Citation.create_citation_from(pid, json_citation))
         return citations
 
-    def search(self, query):
+    def search_by_keyword(self, query):
         paginator = Paginator(self.requester,
                         url_builder=UrlBuilderForSearch().with_query(query.with_fields(*BASE_PAPER_FIELDS)), limit=100)
         contents = paginator.contents()
         return contents
-                    
+
+    def get_papers(self, *paper_ids):
+        url_for_papers = UrlBuilderForPapers().with_query(q().with_fields(*BASE_PAPER_FIELDS)).get_url()
+        contents = self.requester.post(url_for_papers, {'ids' : list(paper_ids)})
+        return (Paper(paper_json) for paper_json in contents)

@@ -27,7 +27,7 @@ class node19 as "s2agr.persistence.database_catalogue.DatabaseCatalogueException
 class node10 as "s2agr.requester.Requester"
 class node8 as "s2agr.requester.ThrottledRequester"
 class node18 as "s2agr.requester.ThrottledRequesterException"
-class node27 as "s2agr.researcher.Researcher"
+class node27 as "s2agr.researcher.WebResearcher"
 class node3 as "s2agr.urls.Query"
 class node23 as "s2agr.urls.UrlBuilder"
 class node26 as "s2agr.urls.UrlBuilderForAuthor"

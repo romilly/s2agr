@@ -4,7 +4,7 @@ import vcr
 
 from s2agr.citation import Citation
 from s2agr.requester import ThrottledRequester
-from s2agr.researcher import Researcher
+from s2agr.webresearcher import WebResearcher
 from test.s2agr.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(
@@ -17,7 +17,7 @@ class DatabaseCatalogueTestCase(DatabaseTest):
     @test_vcr.use_cassette
     def test_catalogue_writes_paper(self):
         self.check_total_row_count('paper', 0)
-        researcher = Researcher(ThrottledRequester(delay=0.001))
+        researcher = WebResearcher(ThrottledRequester(delay=0.001))
         paper_id = '649def34f8be52c8b66281af98ae884c09aef38b'
         paper = researcher.get_paper(paper_id)
         self.catalogue.write_paper(paper)

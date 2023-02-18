@@ -64,6 +64,12 @@ class UrlBuilderForSinglePaper(UrlBuilder):
         return f'{self.BASE_URL}paper/{self.paper_id}'
 
 
+class UrlBuilderForPapers(UrlBuilder):
+
+    def get_url_stem(self) -> str:
+        return f'{self.BASE_URL}paper/batch'
+
+
 class UrlBuilderForPaperCitations(UrlBuilder):
     def __init__(self, paper_id: str):
         UrlBuilder.__init__(self)
