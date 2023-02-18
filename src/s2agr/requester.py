@@ -5,6 +5,7 @@ from typing import Optional
 import requests
 
 REQUEST_OK = 200
+BAD_REQUEST = 400
 
 
 class ThrottledRequesterException(Exception):
@@ -32,9 +33,9 @@ class ThrottledRequester(Requester):
     def get(self, url: str, parameters: Optional[str] = None) -> dict:
         self.throttle()
         response = requests.get(url)
-        if response.status_code == 400:
+        if response.status_code == BAD_REQUEST:
             raise ThrottledRequesterException(response.json()['error'])
-        if response.status_code != 200:
+        if response.status_code != REQUEST_OK:
             raise ThrottledRequesterException(response.reason)
         result = response.json()
         return result
