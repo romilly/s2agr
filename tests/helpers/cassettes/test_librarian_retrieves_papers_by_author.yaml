@@ -1,0 +1,119 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/author/6499892?fields=authorId,externalIds,url,name,aliases,affiliations,homepage,paperCount,citationCount,hIndex
+  response:
+    body:
+      string: '{"authorId": "6499892", "externalIds": {}, "url": "https://www.semanticscholar.org/author/6499892",
+        "name": "Eva Berlot", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 22, "citationCount": 227, "hIndex": 8}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 19 Feb 2023 09:32:15 GMT
+      Via:
+      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - fLxYLUzOIwN65G4GWaQAbrZmKfXpDeEd05KW-KP9IcyTge2M3anCyQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - AlHo7FK5PHcFoPg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '230'
+      x-amzn-Remapped-Date:
+      - Sun, 19 Feb 2023 09:32:15 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 34c81d69-e278-470d-83be-3b06f93d509f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/author/6499892/papers?fields=paperId&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"paperId": "3db561bdd3f350dd8315c6b2d38e0a01b9da8a42"},
+        {"paperId": "8ad2037f8f7bf44e51d7b23696e5a48fffcfb864"}, {"paperId": "0b780ce3126f29c5dca8e4a7deabe151d6d937dd"},
+        {"paperId": "0f2208d4612fd510bb5a2d6de31882045c1dc4e4"}, {"paperId": "212d6cfdda17d5b89d591bba229926ea949082f1"},
+        {"paperId": "3715d2742efb1fac0da1a99ef80463eb9bf66ac5"}, {"paperId": "623a94c59bf3012abb9da6ebf0452c142887b305"},
+        {"paperId": "809ca1338c5ddee7bd1160971b29e6aa6f845655"}, {"paperId": "93d282981ac0141ebfe2a5aed952013bcd158110"},
+        {"paperId": "9c567e7096881e4bd086d51946bd8a6f8bbc8aab"}, {"paperId": "312fe5e89fe50f0db54f80faf7f415ba851d8acd"},
+        {"paperId": "53f7f926b681906a35129cf34fb2dd280a3147ab"}, {"paperId": "4374afabbc81b5e91688f89055c77cdfa8bc6c0d"},
+        {"paperId": "72f5ffd3e661d7ca3edc854dc4f076a4f04cd1c3"}, {"paperId": "9ffea2427ccf5826550a5ff6db8dd8b055f16faf"},
+        {"paperId": "d17e03460f9796a42cc0cff5f81b1f3ae9c9123c"}, {"paperId": "50d255606b3f0a2afc54f649fe1ecf850efacefd"},
+        {"paperId": "09a1166d0da2346cd339f2f879e4ad50ac73eea7"}, {"paperId": "6c9ac973fd70272e58a61525d655a84feca39ad4"},
+        {"paperId": "bc635b0b5c48de09a5ddc5907f9f17b854966b5a"}, {"paperId": "e63c53bd145cbfe079173b32e1db515e95330b58"},
+        {"paperId": "ff7f313320f5e7ea88f9d19b779ea60bc7d33928"}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1278'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 19 Feb 2023 09:32:15 GMT
+      Via:
+      - 1.1 b6dd76b2674d0d05f01c7ffe053c33aa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - KxPCT0umVMEdS6T9KfSo2E2nxWa-8Na1PJ2NSxnGeCquzeOHhPwOZQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - AlHpAH9IvHcFcZQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '1278'
+      x-amzn-Remapped-Date:
+      - Sun, 19 Feb 2023 09:32:15 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - e0378937-0817-4852-af17-391d6c451707
+    status:
+      code: 200
+      message: OK
+version: 1

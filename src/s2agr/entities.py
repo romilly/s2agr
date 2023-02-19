@@ -79,6 +79,14 @@ class Paper(JsonEntity):
 
     def __init__(self, jason_dictionary: dict):
         JsonEntity.__init__(self, jason_dictionary )
+        if 'isOpenAccess' not in jason_dictionary:
+            self.is_open_access = False
+        if 'title' not in jason_dictionary:
+            self.title = None
+        if 'year' not in jason_dictionary:
+            self.year = None
+        if 'authors' not in jason_dictionary:
+            self.authors = []
         self.pdf_url = self.open_access_pdf['url'] if self.is_open_access else None
 
 

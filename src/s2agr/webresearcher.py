@@ -86,3 +86,8 @@ class WebResearcher(Researcher):
         url_for_papers = UrlBuilderForPapers().with_query(q().with_fields(*BASE_PAPER_FIELDS)).get_url()
         contents = self.requester.post(url_for_papers, {'ids' : list(paper_ids)})
         return (Paper(paper_json) for paper_json in contents)
+
+    def get_authored_papers_by(self, author_id):
+        paginator = Paginator(self.requester,
+                              url_builder=UrlBuilderForPapersByAuthor(author_id).with_query(q().with_fields('paperId')))
+        return (Paper(paper_json) for paper_json in paginator.contents())

@@ -66,13 +66,22 @@ class Librarian:
                 new_pids.append(pid)
         new_papers = self.researcher.get_papers(*new_pids)
         for paper in new_papers:
-            self.catalogue.write_paper(paper)
-            authors = (Author(ajd) for ajd in paper.authors)
-            for author in authors:
-                # self.catalogue.write_author(author)
-                self.catalogue.write_wrote(paper.paper_id, author.author_id)
+            self.add_paper_and_attributions(paper)
 
         return (self.catalogue.read_paper(pid) for pid in paper_ids)
+
+    def add_paper_and_attributions(self, paper):
+        self.catalogue.write_paper(paper)
+        authors = (Author(ajd) for ajd in paper.authors)
+        for author in authors:
+            self.catalogue.write_wrote(paper.paper_id, author.author_id)
+
+    def get_authored_papers_by(self, author_id: str):
+        papers = self.researcher.get_authored_papers_by(author_id)
+        for paper in papers:
+            if self.catalogue.knows_paper(paper.paper_id):
+                continue
+            self.add_paper_and_attributions(paper)
 
 
 

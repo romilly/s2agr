@@ -50,6 +50,12 @@ class S2AGTestCase(DatabaseTest):
         self.check_total_row_count('paper', 2)
         self.check_total_row_count('wrote', 25)
 
+    @test_vcr.use_cassette
+    def test_librarian_retrieves_papers_by_author(self):
+        self.librarian.get_author(self.aid)
+        self.librarian.get_authored_papers_by(self.aid)
+        self.check_total_row_count('paper', 22)
+
 
 if __name__ == '__main__':
     unittest.main()
