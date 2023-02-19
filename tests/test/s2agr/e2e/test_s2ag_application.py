@@ -46,7 +46,7 @@ class S2AGTestCase(DatabaseTest):
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_multiple_papers(self):
-        self.librarian.get_papers(sample_01_id(), sample_02_id())
+        self.librarian.get_papers(sample_01_id, sample_02_id)
         self.check_total_row_count('paper', 2)
 
 

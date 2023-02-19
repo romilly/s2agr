@@ -16,7 +16,7 @@ class ThrottledRequesterTestCase(unittest.TestCase):
     @test_vcr.use_cassette
     def test_exception_contains_api_error_details(self):
         requester = ThrottledRequester(0.01)
-        url = UrlBuilderForSinglePaper(sample_01_id()).with_query(q().with_fields('non-existent-field')).get_url()
+        url = UrlBuilderForSinglePaper(sample_01_id).with_query(q().with_fields('non-existent-field')).get_url()
         try:
             requester.get(url)
             self.fail('should have thrown an exception')

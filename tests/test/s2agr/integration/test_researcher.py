@@ -58,7 +58,7 @@ class ResearcherTestCase(unittest.TestCase):
 
     @test_vcr.use_cassette
     def test_can_retrieve_multiple_papers(self):
-        papers = self.researcher.get_papers(sample_01_id(), sample_02_id())
+        papers = self.researcher.get_papers(sample_01_id, sample_02_id)
         assert_that(len(list(papers)), equal_to(2))
 
 
