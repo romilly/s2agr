@@ -180,14 +180,6 @@ CREATE UNIQUE INDEX wrote_uindex ON public.wrote USING btree (author_id, paper_i
 
 
 --
--- Name: wrote wrote_author_author_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.wrote
-    ADD CONSTRAINT wrote_author_author_id_fk FOREIGN KEY (author_id) REFERENCES public.author(author_id);
-
-
---
 -- Name: wrote wrote_paper_paper_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -208,4 +200,5 @@ INSERT INTO public.schema_migrations (version) VALUES
     ('20230126104607'),
     ('20230127171102'),
     ('20230204140418'),
-    ('20230204165119');
+    ('20230204165119'),
+    ('20230219072621');

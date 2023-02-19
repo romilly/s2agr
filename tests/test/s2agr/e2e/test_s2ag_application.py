@@ -48,6 +48,7 @@ class S2AGTestCase(DatabaseTest):
     def test_librarian_retrieves_multiple_papers(self):
         self.librarian.get_papers(sample_01_id, sample_02_id)
         self.check_total_row_count('paper', 2)
+        self.check_total_row_count('wrote', 25)
 
 
 if __name__ == '__main__':

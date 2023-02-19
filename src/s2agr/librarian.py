@@ -67,6 +67,11 @@ class Librarian:
         new_papers = self.researcher.get_papers(*new_pids)
         for paper in new_papers:
             self.catalogue.write_paper(paper)
+            authors = (Author(ajd) for ajd in paper.authors)
+            for author in authors:
+                # self.catalogue.write_author(author)
+                self.catalogue.write_wrote(paper.paper_id, author.author_id)
+
         return (self.catalogue.read_paper(pid) for pid in paper_ids)
 
 
