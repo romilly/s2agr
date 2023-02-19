@@ -17,14 +17,14 @@ class Builder:
     def build(self) -> Librarian:
         if self.requester is None:
             self.requester = ThrottledRequester(delay=0.001)
+        if self.monitor is None:
+            self.monitor = MockMonitor()
         if self.researcher is None:
-            self.researcher = WebResearcher(self.requester)
+            self.researcher = WebResearcher(self.requester, self.monitor)
         if self.connection is None:
             self.connection = test_connection()
         if self.catalogue is None:
             self.catalogue = DatabaseCatalogue(self.connection)
-        if self.monitor is None:
-            self.monitor = MockMonitor()
         return Librarian(self.researcher, self.catalogue, self.monitor)
 
     def with_requester(self, requester: Requester):

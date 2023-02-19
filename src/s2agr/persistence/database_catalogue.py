@@ -26,6 +26,11 @@ def local_production_connection():
         get_connection_string('LOCAL_PROD_DB', env_loc))
 
 
+def production_connection():
+    return psycopg2.connect(
+        get_connection_string('PROD_DB', env_loc))
+
+
 def count_rows(cursor, id_col, table, value):
     # noinspection SyntaxError
     s = SQL("select count(*) from {table} where {field} = %s").format(

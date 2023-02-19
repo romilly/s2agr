@@ -8,9 +8,6 @@ from s2agr.requester import ThrottledRequesterException
 from s2agr.webresearcher import WebResearcher
 
 
-
-
-
 class Librarian:
     def __init__(self,
                  researcher: WebResearcher,
@@ -66,8 +63,11 @@ class Librarian:
                 new_pids.append(pid)
         new_papers = self.researcher.get_papers(*new_pids)
         for paper in new_papers:
-            self.add_paper_and_attributions(paper)
-
+            try:
+                self.add_paper_and_attributions(paper)
+            except psycopg2.Error as e:
+                self.monitor.exception('Database error handling paper %s' % paper.paper_id, e)
+                continue
         return (self.catalogue.read_paper(pid) for pid in paper_ids)
 
     def add_paper_and_attributions(self, paper):
@@ -81,7 +81,12 @@ class Librarian:
         for paper in papers:
             if self.catalogue.knows_paper(paper.paper_id):
                 continue
-            self.add_paper_and_attributions(paper)
+            try:
+                self.monitor.debug('adding paper %s' % paper.paper_id)
+                self.add_paper_and_attributions(paper)
+            except psycopg2.Error as e:
+                self.monitor.exception('Database error handling paper %s' % paper.paper_id, e)
+                continue
 
 
 

@@ -15,8 +15,14 @@ class Monitor(ABC):
     def warning(self, message):
         pass
 
+    def debug(self, param):
+        pass
+
 
 class MockMonitor(Monitor):
+    def debug(self, param):
+        pass
+
     def __init__(self):
         self.infos = []
         self.warnings = []
@@ -44,9 +50,10 @@ class PrintingMonitor(Monitor):
 
 
 class LoggingMonitor(Monitor):
-    def __init__(self):
+    def __init__(self, log_level=logging.INFO):
         import logging
-        logging.basicConfig(filename='production.log', encoding='utf-8', level=logging.INFO)
+        logging.basicConfig(filename='production.log', level=log_level)
+        logging.info('started')
 
     def exception(self, message, exception):
         logging.exception(message, exception)
@@ -56,4 +63,7 @@ class LoggingMonitor(Monitor):
 
     def info(self, message):
         logging.info(message)
+
+    def debug(self, message):
+        logging.debug(message)
 
