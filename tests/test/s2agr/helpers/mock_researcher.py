@@ -1,7 +1,7 @@
 import json
 
 from s2agr.entities import Paper
-from s2agr.webresearcher import Researcher
+from s2agr.researcher import Researcher
 
 
 class MockResearcher(Researcher):

@@ -29,27 +29,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 19 Feb 2023 09:32:15 GMT
+      - Tue, 21 Feb 2023 06:52:02 GMT
       Via:
-      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
+      - 1.1 b6dd76b2674d0d05f01c7ffe053c33aa.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - fLxYLUzOIwN65G4GWaQAbrZmKfXpDeEd05KW-KP9IcyTge2M3anCyQ==
+      - cKnwvXXPc8WQRCYhCrYw2qt7HeM-9CJwlmgjv9ED3GR_-IuwrZJbMw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AlHo7FK5PHcFoPg=
+      - ArWC6GXdPHcFy2A=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '230'
       x-amzn-Remapped-Date:
-      - Sun, 19 Feb 2023 09:32:15 GMT
+      - Tue, 21 Feb 2023 06:52:02 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 34c81d69-e278-470d-83be-3b06f93d509f
+      - 6ef8ce9e-49e0-4735-ae0a-6384efc915cd
     status:
       code: 200
       message: OK
@@ -65,21 +65,727 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://api.semanticscholar.org/graph/v1/author/6499892/papers?fields=paperId&offset=0&limit=1000
+    uri: https://api.semanticscholar.org/graph/v1/author/6499892/papers?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors&offset=0&limit=1000
   response:
     body:
-      string: '{"offset": 0, "data": [{"paperId": "3db561bdd3f350dd8315c6b2d38e0a01b9da8a42"},
-        {"paperId": "8ad2037f8f7bf44e51d7b23696e5a48fffcfb864"}, {"paperId": "0b780ce3126f29c5dca8e4a7deabe151d6d937dd"},
-        {"paperId": "0f2208d4612fd510bb5a2d6de31882045c1dc4e4"}, {"paperId": "212d6cfdda17d5b89d591bba229926ea949082f1"},
-        {"paperId": "3715d2742efb1fac0da1a99ef80463eb9bf66ac5"}, {"paperId": "623a94c59bf3012abb9da6ebf0452c142887b305"},
-        {"paperId": "809ca1338c5ddee7bd1160971b29e6aa6f845655"}, {"paperId": "93d282981ac0141ebfe2a5aed952013bcd158110"},
-        {"paperId": "9c567e7096881e4bd086d51946bd8a6f8bbc8aab"}, {"paperId": "312fe5e89fe50f0db54f80faf7f415ba851d8acd"},
-        {"paperId": "53f7f926b681906a35129cf34fb2dd280a3147ab"}, {"paperId": "4374afabbc81b5e91688f89055c77cdfa8bc6c0d"},
-        {"paperId": "72f5ffd3e661d7ca3edc854dc4f076a4f04cd1c3"}, {"paperId": "9ffea2427ccf5826550a5ff6db8dd8b055f16faf"},
-        {"paperId": "d17e03460f9796a42cc0cff5f81b1f3ae9c9123c"}, {"paperId": "50d255606b3f0a2afc54f649fe1ecf850efacefd"},
-        {"paperId": "09a1166d0da2346cd339f2f879e4ad50ac73eea7"}, {"paperId": "6c9ac973fd70272e58a61525d655a84feca39ad4"},
-        {"paperId": "bc635b0b5c48de09a5ddc5907f9f17b854966b5a"}, {"paperId": "e63c53bd145cbfe079173b32e1db515e95330b58"},
-        {"paperId": "ff7f313320f5e7ea88f9d19b779ea60bc7d33928"}]}
+      string: '{"offset": 0, "data": [{"paperId": "3db561bdd3f350dd8315c6b2d38e0a01b9da8a42",
+        "externalIds": {"DOI": "10.1016/j.neuron.2022.04.023", "CorpusId": 249245905,
+        "PubMed": "35654021"}, "publicationVenue": {"id": "7a61412a-9a9a-487d-9613-5a1fbd879c9d",
+        "name": "Neuron", "type": "journal", "issn": "0896-6273", "url": "https://www.cell.com/neuron/home",
+        "alternate_urls": ["http://www.cell.com/neuron/home", "http://www.sciencedirect.com/science/journal/08966273",
+        "http://www.neuron.org/"]}, "url": "https://www.semanticscholar.org/paper/3db561bdd3f350dd8315c6b2d38e0a01b9da8a42",
+        "title": "Flexible recoding of visual input for memory storage", "abstract":
+        null, "venue": "Neuron", "year": 2022, "referenceCount": 9, "citationCount":
+        0, "influentialCitationCount": 0, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": ["Medicine"], "s2FieldsOfStudy": [{"category": "Medicine",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"},
+        {"category": "Biology", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle"],
+        "publicationDate": "2022-06-01", "journal": {"volume": "110", "pages": "1747-1749",
+        "name": "Neuron"}, "citationStyles": {"bibtex": "@[''JournalArticle'']{Berlot2022FlexibleRO,\n
+        author = {Eva Berlot and F. P. Lange},\n booktitle = {Neuron},\n journal =
+        {Neuron},\n pages = {1747-1749},\n title = {Flexible recoding of visual input
+        for memory storage},\n volume = {110},\n year = {2022}\n}\n"}, "authors":
+        [{"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "8462179", "name":
+        "F. P. Lange"}]}, {"paperId": "8ad2037f8f7bf44e51d7b23696e5a48fffcfb864",
+        "externalIds": {"DOI": "10.1523/JNEUROSCI.0863-21.2021", "CorpusId": 236453837,
+        "PubMed": "34312223"}, "publicationVenue": {"id": "52edfc09-8d65-4876-8560-84530d7259b9",
+        "name": "Journal of Neuroscience", "type": "journal", "alternate_names": ["The
+        Journal of Neuroscience", "J Neurosci"], "issn": "0270-6474", "url": "https://www.jneurosci.org/",
+        "alternate_urls": ["http://www.jneurosci.org/"]}, "url": "https://www.semanticscholar.org/paper/8ad2037f8f7bf44e51d7b23696e5a48fffcfb864",
+        "title": "Combining Repetition Suppression and Pattern Analysis Provides New
+        Insights into the Role of M1 and Parietal Areas in Skilled Sequential Actions",
+        "abstract": "How does the brain change during learning? In functional magnetic
+        resonance imaging (fMRI) studies, both multivariate pattern analysis (MVPA)
+        and repetition suppression (RS) have been used to detect changes in neuronal
+        representations. In the context of motor sequence learning, the two techniques
+        have provided discrepant findings: pattern analysis showed that only premotor
+        and parietal regions, but not primary motor cortex (M1), develop a representation
+        of trained sequences. In contrast, RS suggested trained sequence representations
+        in all these regions. Here, we applied both analysis techniques to a five-week
+        finger sequence training study, in which participants executed each sequence
+        twice before switching to a different sequence. Both RS and pattern analysis
+        indicated learning-related changes for parietal areas, but only RS showed
+        a difference between trained and untrained sequences in M1. A more fine-grained
+        analysis, however, revealed that the RS effect in M1 reflects a fundamentally
+        different process than in parietal areas. On the first execution, M1 represents
+        especially the first finger of each sequence, likely reflecting preparatory
+        processes. This effect dramatically reduces during the second execution. In
+        contrast, parietal areas represent the identity of a sequence, and this representation
+        stays relatively stable on the second execution. These results suggest that
+        the RS effect does not reflect a trained sequence representation in M1, but
+        rather a preparatory signal for movement initiation. More generally, our study
+        demonstrates that across regions RS can reflect different representational
+        changes in the neuronal population code, emphasizing the importance of combining
+        pattern analysis and RS techniques. SIGNIFICANCE STATEMENT Previous studies
+        using pattern analysis have suggested that primary motor cortex (M1) does
+        not represent learnt sequential actions. However, a study using repetition
+        suppression (RS) has reported M1 changes during motor sequence learning. Combining
+        both techniques, we first replicate the discrepancy between them, with learning-related
+        changes in M1 in RS, but not pattern dissimilarities. We further analyzed
+        the representational changes with repetition, and found that the RS effects
+        differ across regions. M1''s activity represents the starting finger of the
+        sequence, an effect that vanishes with repetition. In contrast, activity patterns
+        in parietal areas exhibit sequence dependency, which persists with repetition.
+        These results demonstrate the importance of combining RS and pattern analysis
+        to understand the function of brain regions.", "venue": "Journal of Neuroscience",
+        "year": 2021, "referenceCount": 49, "citationCount": 1, "influentialCitationCount":
+        0, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.jneurosci.org/content/jneuro/41/36/7649.full.pdf",
+        "status": null}, "fieldsOfStudy": ["Medicine"], "s2FieldsOfStudy": [{"category":
+        "Medicine", "source": "external"}, {"category": "Biology", "source": "s2-fos-model"},
+        {"category": "Psychology", "source": "s2-fos-model"}], "publicationTypes":
+        ["JournalArticle"], "publicationDate": "2021-07-26", "journal": {"volume":
+        "41", "pages": "7649 - 7661", "name": "The Journal of Neuroscience"}, "citationStyles":
+        {"bibtex": "@[''JournalArticle'']{Berlot2021CombiningRS,\n author = {Eva Berlot
+        and Nicola J. Popp and Scott T. Grafton and J. Diedrichsen},\n booktitle =
+        {Journal of Neuroscience},\n journal = {The Journal of Neuroscience},\n pages
+        = {7649 - 7661},\n title = {Combining Repetition Suppression and Pattern Analysis
+        Provides New Insights into the Role of M1 and Parietal Areas in Skilled Sequential
+        Actions},\n volume = {41},\n year = {2021}\n}\n"}, "authors": [{"authorId":
+        "6499892", "name": "Eva Berlot"}, {"authorId": "51928953", "name": "Nicola
+        J. Popp"}, {"authorId": "3047772", "name": "Scott T. Grafton"}, {"authorId":
+        "2935706", "name": "J. Diedrichsen"}]}, {"paperId": "0b780ce3126f29c5dca8e4a7deabe151d6d937dd",
+        "externalIds": {"ArXiv": "2007.02789", "MAG": "3110415087", "DOI": "10.51628/001c.27664",
+        "CorpusId": 227163164}, "publicationVenue": {"id": "46b65ab6-82c2-40b8-969a-fafc9caea306",
+        "name": "Neurons, Behavior, Data analysis, and Theory", "type": "journal",
+        "alternate_names": ["Neuron Behav Data anal Theory"], "issn": "2690-2664",
+        "url": "https://nbdt.scholasticahq.com/"}, "url": "https://www.semanticscholar.org/paper/0b780ce3126f29c5dca8e4a7deabe151d6d937dd",
+        "title": "Comparing representational geometries using whitened unbiased-distance-matrix
+        similarity", "abstract": "Representational similarity analysis (RSA) tests
+        models of brain computation by investigating how neural activity patterns
+        reflect experimental conditions. Instead of predicting activity patterns directly,
+        the models predict the geometry of the representation, as defined by the representational
+        dissimilarity matrix (RDM), which captures to what extent experimental conditions
+        are associated with similar or dissimilar activity patterns. RSA therefore
+        first quantifies the representational geometry by calculating a dissimilarity
+        measure for each pair of conditions, and then compares the estimated representational
+        dissimilarities to those predicted by each model. Here we address two central
+        challenges of RSA: First, dissimilarity measures such as the Euclidean, Mahalanobis,
+        and correlation distance, are biased by measurement noise, which can lead
+        to incorrect inferences. Unbiased dissimilarity estimates can be obtained
+        by crossvalidation, at the price of increased variance. Second, the pairwise
+        dissimilarity estimates are not statistically independent, and ignoring this
+        dependency makes model comparison statistically suboptimal. We present an
+        analytical expression for the mean and (co)variance of both biased and unbiased
+        estimators of the squared Euclidean and Mahalanobis distance, allowing us
+        to quantify the bias-variance trade-off. We also use the analytical expression
+        of the covariance of the dissimilarity estimates to whiten the RDM estimation
+        errors. This results in a new criterion for RDM similarity, the whitened unbiased
+        RDM cosine similarity (WUC), which allows for near-optimal model selection
+        combined with robustness to correlated measurement noise.", "venue": "Neurons,
+        Behavior, Data analysis, and Theory", "year": 2020, "referenceCount": 37,
+        "citationCount": 15, "influentialCitationCount": 0, "isOpenAccess": true,
+        "openAccessPdf": {"url": "https://nbdt.scholasticahq.com/article/27664.pdf",
+        "status": null}, "fieldsOfStudy": ["Mathematics"], "s2FieldsOfStudy": [{"category":
+        "Mathematics", "source": "external"}, {"category": "Environmental Science",
+        "source": "s2-fos-model"}], "publicationTypes": null, "publicationDate": "2020-07-06",
+        "journal": {"name": "Neurons, Behavior, Data analysis, and Theory"}, "citationStyles":
+        {"bibtex": "@None{Diedrichsen2020ComparingRG,\n author = {J. Diedrichsen and
+        Eva Berlot and Marieke Mur and H. Sch\u00fctt and Mahdiyar Shahbazi and N.
+        Kriegeskorte},\n booktitle = {Neurons, Behavior, Data analysis, and Theory},\n
+        journal = {Neurons, Behavior, Data analysis, and Theory},\n title = {Comparing
+        representational geometries using whitened unbiased-distance-matrix similarity},\n
+        year = {2020}\n}\n"}, "authors": [{"authorId": "2935706", "name": "J. Diedrichsen"},
+        {"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "145527143", "name":
+        "Marieke Mur"}, {"authorId": "39648348", "name": "H. Sch\u00fctt"}, {"authorId":
+        "8573624", "name": "Mahdiyar Shahbazi"}, {"authorId": "3351205", "name": "N.
+        Kriegeskorte"}]}, {"paperId": "0f2208d4612fd510bb5a2d6de31882045c1dc4e4",
+        "externalIds": {"MAG": "3080604333", "DOI": "10.1101/2020.08.21.261453", "CorpusId":
+        221276690}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/0f2208d4612fd510bb5a2d6de31882045c1dc4e4",
+        "title": "The role of primary motor cortex in sequence learning: resolving
+        conflicting fMRI evidence from repetition suppression and pattern analysis",
+        "abstract": "Abstract How does the brain change during learning? Functional
+        magnetic resonance imaging studies have used both pattern analysis and repetition
+        suppression (RS) to detect changes in neuronal representations. In the context
+        of motor sequence learning, the two techniques have provided discrepant findings.
+        Specifically, pattern analysis showed that only premotor and parietal regions,
+        but not primary motor cortex (M1), develop a representation of trained sequences.
+        In contrast, RS suggested trained sequence representations in all these regions.
+        Here we applied both analysis techniques to data from a 5-week finger sequence
+        training study, in which participants executed each sequence twice before
+        switching to a different sequence. While we replicated both previously reported
+        findings in the same paradigm, a more fine-grained analysis revealed that
+        the RS effect in M1 and parietal areas reflect fundamentally different processes.
+        On the first execution, M1 represents especially the first finger of each
+        sequence, which might reflect preparatory processes, and this effect dramatically
+        reduces during the second execution. In contrast, parietal areas represent
+        the identity of a sequence, and this representation stays relatively stable
+        on the second execution, only reducing proportionally to the reduction in
+        overall activity. These results suggest that the RS effect in M1 does not
+        reflect trained sequence representation, but rather the altered communication
+        with higher-order areas. More generally, our study demonstrates that RS can
+        reflect different representational changes in the underlying neuronal population
+        code across regions, emphasizing the importance of combining pattern analysis
+        and RS techniques.", "venue": "", "year": 2020, "referenceCount": 56, "citationCount":
+        1, "influentialCitationCount": 0, "isOpenAccess": true, "openAccessPdf": {"url":
+        "https://www.biorxiv.org/content/biorxiv/early/2021/04/22/2020.08.21.261453.full.pdf",
+        "status": null}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Biology",
+        "source": "s2-fos-model"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": null, "publicationDate": "2020-08-21", "journal": {"volume":
+        "", "name": "bioRxiv"}, "citationStyles": {"bibtex": "@None{Berlot2020TheRO,\n
+        author = {Eva Berlot and Nicola J. Popp and Scott T. Grafton and J. Diedrichsen},\n
+        journal = {bioRxiv},\n title = {The role of primary motor cortex in sequence
+        learning: resolving conflicting fMRI evidence from repetition suppression
+        and pattern analysis},\n year = {2020}\n}\n"}, "authors": [{"authorId": "6499892",
+        "name": "Eva Berlot"}, {"authorId": "51928953", "name": "Nicola J. Popp"},
+        {"authorId": "3047772", "name": "Scott T. Grafton"}, {"authorId": "2935706",
+        "name": "J. Diedrichsen"}]}, {"paperId": "212d6cfdda17d5b89d591bba229926ea949082f1",
+        "externalIds": {"MAG": "3033743979", "DOI": "10.7554/elife.55241.sa2", "CorpusId":
+        225927299}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/212d6cfdda17d5b89d591bba229926ea949082f1",
+        "title": "Author response: A critical re-evaluation of fMRI signatures of
+        motor sequence learning", "abstract": null, "venue": "", "year": 2020, "referenceCount":
+        0, "citationCount": 0, "influentialCitationCount": 0, "isOpenAccess": false,
+        "openAccessPdf": null, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Biology",
+        "source": "s2-fos-model"}], "publicationTypes": null, "publicationDate": "2020-04-24",
+        "journal": {"volume": "", "name": "eLife"}, "citationStyles": {"bibtex": "@None{Berlot2020AuthorRA,\n
+        author = {Eva Berlot and Nicola J. Popp and J. Diedrichsen},\n journal = {eLife},\n
+        title = {Author response: A critical re-evaluation of fMRI signatures of motor
+        sequence learning},\n year = {2020}\n}\n"}, "authors": [{"authorId": "6499892",
+        "name": "Eva Berlot"}, {"authorId": "51928953", "name": "Nicola J. Popp"},
+        {"authorId": "2935706", "name": "J. Diedrichsen"}]}, {"paperId": "3715d2742efb1fac0da1a99ef80463eb9bf66ac5",
+        "externalIds": {"MAG": "3039618799", "CorpusId": 220364066}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/3715d2742efb1fac0da1a99ef80463eb9bf66ac5",
+        "title": "Comparing representational geometries using the unbiased distance
+        correlation", "abstract": "Representational similarity analysis (RSA) tests
+        models of brain computation by investigating how neural activity patterns
+        change in response to different experimental conditions. Instead of predicting
+        activity patterns directly, the models predict the geometry of the representation,
+        i.e. to what extent experimental conditions are associated with similar or
+        dissimilar activity patterns. RSA therefore first quantifies the representational
+        geometry by calculating a dissimilarity measure for all pairs of conditions,
+        and then compares the estimated representational dissimilarities to those
+        predicted by the model. Here we address two central challenges of RSA: First,
+        dissimilarity measures such as the Euclidean, Mahalanobis, and correlation
+        distance, are biased by measurement noise, which can lead to incorrect inferences.
+        Unbiased dissimilarity estimates can be obtained by crossvalidation, at the
+        price of increased variance. Second, the pairwise dissimilarity estimates
+        are not statistically independent. Ignoring the dependency makes model comparison
+        with RSA statistically suboptimal. We present an analytical expression for
+        the mean and (co-)variance of both biased and unbiased estimators of Euclidean
+        and Mahalanobis distance, allowing us to exactly quantify the bias-variance
+        trade-off. We then use the analytical expression of the co-variance of the
+        dissimilarity estimates to derive a simple method correcting for this covariance.
+        Combining unbiased distance estimates with this correction leads to a novel
+        criterion for comparing representational geometries, the unbiased distance
+        correlation, which, as we show, allows for near optimal model comparison.",
+        "venue": "", "year": 2020, "referenceCount": 27, "citationCount": 6, "influentialCitationCount":
+        0, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Mathematics"],
+        "s2FieldsOfStudy": [{"category": "Mathematics", "source": "external"}, {"category":
+        "Environmental Science", "source": "s2-fos-model"}], "publicationTypes": null,
+        "publicationDate": "2020-07-06", "journal": {"volume": "", "name": "arXiv:
+        Applications"}, "citationStyles": {"bibtex": "@None{Diedrichsen2020ComparingRG,\n
+        author = {J. Diedrichsen and Eva Berlot and Marieke Mur and H. Sch\u00fctt
+        and N. Kriegeskorte},\n journal = {arXiv: Applications},\n title = {Comparing
+        representational geometries using the unbiased distance correlation},\n year
+        = {2020}\n}\n"}, "authors": [{"authorId": "2935706", "name": "J. Diedrichsen"},
+        {"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "145527143", "name":
+        "Marieke Mur"}, {"authorId": "39648348", "name": "H. Sch\u00fctt"}, {"authorId":
+        "3351205", "name": "N. Kriegeskorte"}]}, {"paperId": "623a94c59bf3012abb9da6ebf0452c142887b305",
+        "externalIds": {"MAG": "2999502956", "DOI": "10.1101/2020.01.08.899229", "CorpusId":
+        213930250}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/623a94c59bf3012abb9da6ebf0452c142887b305",
+        "title": "fMRI signatures of motor sequence learning: A critical re-evaluation",
+        "abstract": "Despite numerous studies, there is little agreement about what
+        brain changes accompany motor sequence learning, partly because of a general
+        publication bias that favors novel results. We therefore decided to systematically
+        reinvestigate proposed functional magnetic resonance imaging (fMRI) correlates
+        of motor learning in a preregistered longitudinal study with four scanning
+        sessions over 5 weeks of training. Activation decreased more for trained than
+        untrained sequences in premotor and parietal areas, without any evidence of
+        learning-related activation increases. Premotor and parietal regions also
+        exhibited changes in the fine-grained, sequence-specific activation patterns
+        early in learning, which stabilized later. No changes were observed in the
+        primary motor cortex (M1). Overall, our study provides evidence that human
+        motor sequence learning occurs outside of M1. Furthermore, it shows that we
+        cannot expect to find activity increases as an indicator for learning, making
+        subtle changes in activity patterns across weeks the most promising fMRI correlate
+        of training-induced plasticity.", "venue": "", "year": 2020, "referenceCount":
+        85, "citationCount": 4, "influentialCitationCount": 0, "isOpenAccess": false,
+        "openAccessPdf": null, "fieldsOfStudy": ["Psychology"], "s2FieldsOfStudy":
+        [{"category": "Psychology", "source": "external"}, {"category": "Psychology",
+        "source": "s2-fos-model"}, {"category": "Biology", "source": "s2-fos-model"}],
+        "publicationTypes": null, "publicationDate": "2020-01-09", "journal": {"volume":
+        "", "name": "bioRxiv"}, "citationStyles": {"bibtex": "@None{Berlot2020fMRISO,\n
+        author = {Eva Berlot and Nicola J. Popp and J. Diedrichsen},\n journal = {bioRxiv},\n
+        title = {fMRI signatures of motor sequence learning: A critical re-evaluation},\n
+        year = {2020}\n}\n"}, "authors": [{"authorId": "6499892", "name": "Eva Berlot"},
+        {"authorId": "51928953", "name": "Nicola J. Popp"}, {"authorId": "2026408239",
+        "name": "J. Diedrichsen"}]}, {"paperId": "809ca1338c5ddee7bd1160971b29e6aa6f845655",
+        "externalIds": {"MAG": "2999914217", "PubMedCentral": "6970183", "DOI": "10.1016/j.nicl.2020.102166",
+        "CorpusId": 210139311, "PubMed": "31958686"}, "publicationVenue": null, "url":
+        "https://www.semanticscholar.org/paper/809ca1338c5ddee7bd1160971b29e6aa6f845655",
+        "title": "A 7 Tesla fMRI investigation of human tinnitus percept in cortical
+        and subcortical auditory areas", "abstract": null, "venue": "NeuroImage: Clinical",
+        "year": 2020, "referenceCount": 59, "citationCount": 23, "influentialCitationCount":
+        1, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Medicine"],
+        "s2FieldsOfStudy": [{"category": "Medicine", "source": "external"}, {"category":
+        "Medicine", "source": "s2-fos-model"}, {"category": "Biology", "source": "s2-fos-model"}],
+        "publicationTypes": ["JournalArticle"], "publicationDate": "2020-01-11", "journal":
+        {"volume": "25", "name": "NeuroImage : Clinical"}, "citationStyles": {"bibtex":
+        "@[''JournalArticle'']{Berlot2020A7T,\n author = {Eva Berlot and R. Arts and
+        J. Smit and E. George and O. F. Gulban and M. Moerel and R. Stokroos and E.
+        Formisano and Federico De Martino},\n booktitle = {NeuroImage: Clinical},\n
+        journal = {NeuroImage : Clinical},\n title = {A 7 Tesla fMRI investigation
+        of human tinnitus percept in cortical and subcortical auditory areas},\n volume
+        = {25},\n year = {2020}\n}\n"}, "authors": [{"authorId": "6499892", "name":
+        "Eva Berlot"}, {"authorId": "36401978", "name": "R. Arts"}, {"authorId": "39815623",
+        "name": "J. Smit"}, {"authorId": "31927441", "name": "E. George"}, {"authorId":
+        "15433600", "name": "O. F. Gulban"}, {"authorId": "1976196", "name": "M. Moerel"},
+        {"authorId": "2126115", "name": "R. Stokroos"}, {"authorId": "1762118", "name":
+        "E. Formisano"}, {"authorId": "1759599", "name": "Federico De Martino"}]},
+        {"paperId": "93d282981ac0141ebfe2a5aed952013bcd158110", "externalIds": {"MAG":
+        "3099211696", "DOI": "10.1101/2020.08.21.261453", "CorpusId": 221834757},
+        "publicationVenue": {"id": "027ffd21-ebb0-4af8-baf5-911124292fd0", "name":
+        "bioRxiv", "type": "journal", "url": "http://biorxiv.org/"}, "url": "https://www.semanticscholar.org/paper/93d282981ac0141ebfe2a5aed952013bcd158110",
+        "title": "Discrepancy between repetition suppression and pattern analysis
+        provides new insights into the role of M1 and parietal areas in sequence learning",
+        "abstract": "How does the brain change during skill learning? We previously
+        conducted a longitudinal fMRI motor sequence learning study and, using multivariate
+        techniques, found learning-related changes in premotor and parietal areas,
+        but not in the primary motor cortex (M1) (1). However, a study using repetition
+        suppression (RS) had previously suggested that M1 represents learned sequences.
+        Here we replicate this discrepancy in a single experiment, allowing us to
+        investigate the differences between RS and multivariate pattern analysis in
+        detail. We found that the RS effect in M1 and parietal areas reflect fundamentally
+        different processes. M1\u2019s activity represents the starting finger of
+        the sequence, an effect that vanishes with repetition. In contrast, activity
+        patterns in parietal areas exhibit sequence dependency, which persists with
+        repetition. These findings demonstrate that combining RS and pattern analysis
+        can provide novel functional insights, here specifically into the relative
+        contribution of cortical motor areas to sequence production.", "venue": "bioRxiv",
+        "year": 2020, "referenceCount": 59, "citationCount": 1, "influentialCitationCount":
+        0, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.biorxiv.org/content/biorxiv/early/2021/04/22/2020.08.21.261453.full.pdf",
+        "status": null}, "fieldsOfStudy": ["Biology"], "s2FieldsOfStudy": [{"category":
+        "Biology", "source": "external"}, {"category": "Biology", "source": "s2-fos-model"},
+        {"category": "Psychology", "source": "s2-fos-model"}], "publicationTypes":
+        null, "publicationDate": "2020-08-21", "journal": {"name": "bioRxiv"}, "citationStyles":
+        {"bibtex": "@None{Berlot2020DiscrepancyBR,\n author = {Eva Berlot and Nicola
+        J. Popp and Scott T. Grafton and J. Diedrichsen},\n booktitle = {bioRxiv},\n
+        journal = {bioRxiv},\n title = {Discrepancy between repetition suppression
+        and pattern analysis provides new insights into the role of M1 and parietal
+        areas in sequence learning},\n year = {2020}\n}\n"}, "authors": [{"authorId":
+        "6499892", "name": "Eva Berlot"}, {"authorId": "51928953", "name": "Nicola
+        J. Popp"}, {"authorId": "3047772", "name": "Scott T. Grafton"}, {"authorId":
+        "2935706", "name": "J. Diedrichsen"}]}, {"paperId": "9c567e7096881e4bd086d51946bd8a6f8bbc8aab",
+        "externalIds": {"MAG": "3025718980", "PubMedCentral": "7266617", "DOI": "10.7554/eLife.55241",
+        "CorpusId": 218619615, "PubMed": "32401193"}, "publicationVenue": {"id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+        "name": "bioRxiv", "type": "journal", "url": "http://biorxiv.org/"}, "url":
+        "https://www.semanticscholar.org/paper/9c567e7096881e4bd086d51946bd8a6f8bbc8aab",
+        "title": "A critical re-evaluation of fMRI signatures of motor sequence learning",
+        "abstract": "Despite numerous studies, there is little agreement about what
+        brain changes accompany motor sequence learning, partly because of a general
+        publication bias that favors novel results. We therefore decided to systematically
+        reinvestigate proposed functional magnetic resonance imaging correlates of
+        motor learning in a preregistered longitudinal study with four scanning sessions
+        over 5 weeks of training. Activation decreased more for trained than untrained
+        sequences in premotor and parietal areas, without any evidence of learning-related
+        activation increases. Premotor and parietal regions also exhibited changes
+        in the fine-grained, sequence-specific activation patterns early in learning,
+        which stabilized later. No changes were observed in the primary motor cortex
+        (M1). Overall, our study provides evidence that human motor sequence learning
+        occurs outside of M1. Furthermore, it shows that we cannot expect to find
+        activity increases as an indicator for learning, making subtle changes in
+        activity patterns across weeks the most promising fMRI correlate of training-induced
+        plasticity.", "venue": "bioRxiv", "year": 2020, "referenceCount": 124, "citationCount":
+        39, "influentialCitationCount": 3, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": ["Biology", "Psychology", "Medicine"], "s2FieldsOfStudy":
+        [{"category": "Biology", "source": "external"}, {"category": "Psychology",
+        "source": "external"}, {"category": "Medicine", "source": "external"}, {"category":
+        "Psychology", "source": "s2-fos-model"}, {"category": "Biology", "source":
+        "s2-fos-model"}], "publicationTypes": ["JournalArticle"], "publicationDate":
+        "2020-01-09", "journal": {"volume": "9", "name": "eLife"}, "citationStyles":
+        {"bibtex": "@[''JournalArticle'']{Berlot2020ACR,\n author = {Eva Berlot and
+        Nicola J. Popp and J. Diedrichsen},\n booktitle = {bioRxiv},\n journal = {eLife},\n
+        title = {A critical re-evaluation of fMRI signatures of motor sequence learning},\n
+        volume = {9},\n year = {2020}\n}\n"}, "authors": [{"authorId": "6499892",
+        "name": "Eva Berlot"}, {"authorId": "51928953", "name": "Nicola J. Popp"},
+        {"authorId": "2935706", "name": "J. Diedrichsen"}]}, {"paperId": "312fe5e89fe50f0db54f80faf7f415ba851d8acd",
+        "externalIds": {"MAG": "2902751791", "DOI": "10.1152/jn.00439.2018", "CorpusId":
+        54558605, "PubMed": "30517048"}, "publicationVenue": {"id": "d2b57141-ecff-4b3d-b490-7928e8aafc17",
+        "name": "Journal of Neurophysiology", "type": "journal", "alternate_names":
+        ["J Neurophysiol"], "issn": "0022-3077", "url": "https://www.physiology.org/journal/jn",
+        "alternate_urls": ["http://jn.physiology.org/"]}, "url": "https://www.semanticscholar.org/paper/312fe5e89fe50f0db54f80faf7f415ba851d8acd",
+        "title": "Ipsilateral finger representations in the sensorimotor cortex are
+        driven by active movement processes, not passive sensory input.", "abstract":
+        "Hand and finger movements are mostly controlled through crossed corticospinal
+        projections from the contralateral hemisphere. During unimanual movements,
+        activity in the contralateral hemisphere is increased while the ipsilateral
+        hemisphere is suppressed below resting baseline. Despite this suppression,
+        unimanual movements can be decoded from ipsilateral activity alone. This indicates
+        that ipsilateral activity patterns represent parameters of ongoing movement,
+        but the origin and functional relevance of these representations is unclear.
+        In this study, we asked whether ipsilateral representations are caused by
+        active movement or whether they are driven by sensory input. Participants
+        alternated between performing single finger presses and having fingers passively
+        stimulated while we recorded brain activity using high-field (7T) functional
+        imaging. We contrasted active and passive finger representations in sensorimotor
+        areas of ipsilateral and contralateral hemispheres. Finger representations
+        in the contralateral hemisphere were equally strong under passive and active
+        conditions, highlighting the importance of sensory information in feedback
+        control. In contrast, ipsilateral finger representations in the sensorimotor
+        cortex were stronger during active presses. Furthermore, the spatial distribution
+        of finger representations differed between hemispheres: the contralateral
+        hemisphere showed the strongest finger representations in Brodmann areas 3a
+        and 3b, whereas the ipsilateral hemisphere exhibited stronger representations
+        in premotor and parietal areas. Altogether, our results suggest that finger
+        representations in the two hemispheres have different origins: contralateral
+        representations are driven by both active movement and sensory stimulation,
+        whereas ipsilateral representations are mainly engaged during active movement.
+        NEW & NOTEWORTHY Movements of the human body are mostly controlled by contralateral
+        cortical regions. The function of ipsilateral activity during movements remains
+        elusive. Using high-field neuroimaging, we investigated how human contralateral
+        and ipsilateral hemispheres represent active and passive finger presses. We
+        found that representations in contralateral sensorimotor cortex are equally
+        strong during both conditions. Ipsilateral representations were mostly present
+        during active movement, suggesting that sensorimotor areas do not receive
+        direct sensory input from the ipsilateral hand.", "venue": "Journal of Neurophysiology",
+        "year": 2019, "referenceCount": 43, "citationCount": 39, "influentialCitationCount":
+        1, "isOpenAccess": true, "openAccessPdf": {"url": "https://journals.physiology.org/doi/pdf/10.1152/jn.00439.2018",
+        "status": null}, "fieldsOfStudy": ["Psychology", "Medicine"], "s2FieldsOfStudy":
+        [{"category": "Psychology", "source": "external"}, {"category": "Medicine",
+        "source": "external"}, {"category": "Biology", "source": "s2-fos-model"},
+        {"category": "Psychology", "source": "s2-fos-model"}], "publicationTypes":
+        ["JournalArticle"], "publicationDate": "2019-02-01", "journal": {"volume":
+        "121 2", "pages": "\n          418-426\n        ", "name": "Journal of neurophysiology"},
+        "citationStyles": {"bibtex": "@[''JournalArticle'']{Berlot2019IpsilateralFR,\n
+        author = {Eva Berlot and G. Prichard and J. O\u2019Reilly and N. Ejaz and
+        J. Diedrichsen},\n booktitle = {Journal of Neurophysiology},\n journal = {Journal
+        of neurophysiology},\n pages = {\n          418-426\n        },\n title =
+        {Ipsilateral finger representations in the sensorimotor cortex are driven
+        by active movement processes, not passive sensory input.},\n volume = {121
+        2},\n year = {2019}\n}\n"}, "authors": [{"authorId": "6499892", "name": "Eva
+        Berlot"}, {"authorId": "4362544", "name": "G. Prichard"}, {"authorId": "1398024294",
+        "name": "J. O\u2019Reilly"}, {"authorId": "46742033", "name": "N. Ejaz"},
+        {"authorId": "2935706", "name": "J. Diedrichsen"}]}, {"paperId": "53f7f926b681906a35129cf34fb2dd280a3147ab",
+        "externalIds": {"MAG": "2951040581", "CorpusId": 196176070}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/53f7f926b681906a35129cf34fb2dd280a3147ab",
+        "title": "BrainsCAN Computational Core Neuroimaging Wiki", "abstract": null,
+        "venue": "", "year": 2019, "referenceCount": 0, "citationCount": 0, "influentialCitationCount":
+        0, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Computer
+        Science"], "s2FieldsOfStudy": [{"category": "Computer Science", "source":
+        "external"}, {"category": "Biology", "source": "s2-fos-model"}], "publicationTypes":
+        null, "publicationDate": "2019-03-08", "journal": {"volume": "", "name": ""},
+        "citationStyles": {"bibtex": "@None{Witt2019BrainsCANCC,\n author = {S. Witt
+        and J. Diedrichsen and Ali R. Khan and Spencer A. Arbuckle and Eva Berlot
+        and Ladan Shahshahani and Sudesna Chakraborty and B. Stojanoski and S. V.
+        Hedger and C. Wedlake},\n title = {BrainsCAN Computational Core Neuroimaging
+        Wiki},\n year = {2019}\n}\n"}, "authors": [{"authorId": "2531731", "name":
+        "S. Witt"}, {"authorId": "2026408239", "name": "J. Diedrichsen"}, {"authorId":
+        "2134893113", "name": "Ali R. Khan"}, {"authorId": "33950120", "name": "Spencer
+        A. Arbuckle"}, {"authorId": "6499892", "name": "Eva Berlot"}, {"authorId":
+        "1394102402", "name": "Ladan Shahshahani"}, {"authorId": "4666941", "name":
+        "Sudesna Chakraborty"}, {"authorId": "6547892", "name": "B. Stojanoski"},
+        {"authorId": "46520343", "name": "S. V. Hedger"}, {"authorId": "2795447",
+        "name": "C. Wedlake"}]}, {"paperId": "4374afabbc81b5e91688f89055c77cdfa8bc6c0d",
+        "externalIds": {"MAG": "2789794689", "DOI": "10.1101/285809", "CorpusId":
+        91015386}, "publicationVenue": {"id": "027ffd21-ebb0-4af8-baf5-911124292fd0",
+        "name": "bioRxiv", "type": "journal", "url": "http://biorxiv.org/"}, "url":
+        "https://www.semanticscholar.org/paper/4374afabbc81b5e91688f89055c77cdfa8bc6c0d",
+        "title": "Ipsilateral finger representations are engaged in active movement,
+        but not sensory processing", "abstract": "Hand and finger movements are mostly
+        controlled through crossed corticospinal projections from the contralateral
+        hemisphere. During unimanual movements, activity in the contralateral hemisphere
+        is increased while the ipsilateral hemisphere is suppressed below resting
+        baseline. Despite this suppression, unimanual movements can be decoded from
+        ipsilateral activity alone. This indicates that ipsilateral activity patterns
+        represent parameters of ongoing movement, but the origin and functional relevance
+        of these representations is unclear. Here, we asked whether human ipsilateral
+        representations are caused by active movement, or whether they are driven
+        by sensory input. Participants alternated between performing single finger
+        presses and having fingers passively stimulated, while we recorded brain activity
+        using high-field (7T) functional imaging. We contrasted active and passive
+        finger representations in sensorimotor areas of ipsilateral and contralateral
+        hemispheres. Finger representations in the contralateral hemisphere were equally
+        strong under passive and active conditions, highlighting the importance of
+        sensory information in feedback control. In contrast, ipsilateral finger representations
+        were stronger during active presses. Furthermore, the spatial distribution
+        of finger representations differed between hemispheres: the contralateral
+        hemisphere showed the strongest finger representations in Brodmann area 3a
+        and 3b, while the ipsilateral hemisphere exhibited stronger representations
+        in premotor and parietal areas. This suggests that finger representations
+        in the two hemispheres have different origins \u2013 contralateral representations
+        are driven by both active movement and sensory stimulation, whereas ipsilateral
+        representations are mainly engaged during active movement. This suggests that
+        a possible contribution of the ipsilateral hemisphere lies in movement planning,
+        rather than in the dexterous feedback control of the movement. Significance
+        statement Movements of the human body are mostly controlled by contralateral
+        cortical regions. However, activity in ipsilateral sensorimotor regions is
+        also modulated during active movements. The origin and functional relevance
+        of these ipsilateral representations is unclear. Here we used high-field neuroimaging
+        to investigate how human contralateral and ipsilateral hemispheres represent
+        active finger presses and passive finger stimulation. We report that while
+        the contralateral hemisphere was equally strongly recruited during active
+        and passive conditions, the ipsilateral hemisphere was mostly recruited during
+        active movement. We propose that the ipsilateral hemisphere may play a role
+        in bilateral movement planning.", "venue": "bioRxiv", "year": 2018, "referenceCount":
+        40, "citationCount": 4, "influentialCitationCount": 0, "isOpenAccess": true,
+        "openAccessPdf": {"url": "https://journals.physiology.org/doi/pdf/10.1152/jn.00439.2018",
+        "status": null}, "fieldsOfStudy": ["Biology", "Psychology"], "s2FieldsOfStudy":
+        [{"category": "Biology", "source": "external"}, {"category": "Psychology",
+        "source": "external"}, {"category": "Biology", "source": "s2-fos-model"},
+        {"category": "Psychology", "source": "s2-fos-model"}], "publicationTypes":
+        null, "publicationDate": "2018-03-20", "journal": {"name": "bioRxiv"}, "citationStyles":
+        {"bibtex": "@None{Berlot2018IpsilateralFR,\n author = {Eva Berlot and G. Prichard
+        and J. O\u2019Reilly and N. Ejaz and J. Diedrichsen},\n booktitle = {bioRxiv},\n
+        journal = {bioRxiv},\n title = {Ipsilateral finger representations are engaged
+        in active movement, but not sensory processing},\n year = {2018}\n}\n"}, "authors":
+        [{"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "4362544", "name":
+        "G. Prichard"}, {"authorId": "1398024294", "name": "J. O\u2019Reilly"}, {"authorId":
+        "46742033", "name": "N. Ejaz"}, {"authorId": "2026408239", "name": "J. Diedrichsen"}]},
+        {"paperId": "72f5ffd3e661d7ca3edc854dc4f076a4f04cd1c3", "externalIds": {"MAG":
+        "2913749367", "DOI": "10.32470/CCN.2018.1243-0", "CorpusId": 91950916}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/72f5ffd3e661d7ca3edc854dc4f076a4f04cd1c3",
+        "title": "Repetition Suppression during Movement Execution Reflects Different
+        Mechanisms in the Striatum than in the Neocortex", "abstract": "Repetition
+        suppression (RS) provides an important tool to investigate brain representations.
+        Repetition of the same stimulus evokes a reduction in elicited brain activity.
+        While the reduction in activity is consistently observed across modalities
+        and species, it is unclear what mechanisms drive this effect. Several models
+        of RS have been proposed, which vary in their prediction of stimulus \u2018tuning\u2019
+        in the second repetition. Here we examined RS mechanisms in two motor cortical
+        areas and the striatum while participants executed motoric finger sequences,
+        twice in a row. We distinguished the RS models by investigating the changes
+        in the sequence-dependent fMRI activity patterns in concert with the changes
+        in overall activity. In the striatum, we observed that the tuning for individual
+        sequences is \u2018sharpened\u2019 on the second execution, whereas in the
+        cortex we found a \u2018fatigued\u2019 representation. This dissociation might
+        indicate different computational roles along the cortico-striatal circuitry,
+        with the striatum solving the selection problem, and signaling its novelty
+        to the cortex.", "venue": "", "year": 2018, "referenceCount": 4, "citationCount":
+        0, "influentialCitationCount": 0, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": ["Biology"], "s2FieldsOfStudy": [{"category": "Biology",
+        "source": "external"}, {"category": "Biology", "source": "s2-fos-model"},
+        {"category": "Psychology", "source": "s2-fos-model"}], "publicationTypes":
+        null, "publicationDate": null, "journal": {"volume": "", "name": ""}, "citationStyles":
+        {"bibtex": "@None{Berlot2018RepetitionSD,\n author = {Eva Berlot and Nicola
+        J. Popp and J. Diedrichsen},\n title = {Repetition Suppression during Movement
+        Execution Reflects Different Mechanisms in the Striatum than in the Neocortex},\n
+        year = {2018}\n}\n"}, "authors": [{"authorId": "6499892", "name": "Eva Berlot"},
+        {"authorId": "51928953", "name": "Nicola J. Popp"}, {"authorId": "2935706",
+        "name": "J. Diedrichsen"}]}, {"paperId": "9ffea2427ccf5826550a5ff6db8dd8b055f16faf",
+        "externalIds": {"MAG": "2800491819", "DOI": "10.1523/JNEUROSCI.2205-17.2018",
+        "CorpusId": 13984143, "PubMed": "29712781"}, "publicationVenue": {"id": "52edfc09-8d65-4876-8560-84530d7259b9",
+        "name": "Journal of Neuroscience", "type": "journal", "alternate_names": ["The
+        Journal of Neuroscience", "J Neurosci"], "issn": "0270-6474", "url": "https://www.jneurosci.org/",
+        "alternate_urls": ["http://www.jneurosci.org/"]}, "url": "https://www.semanticscholar.org/paper/9ffea2427ccf5826550a5ff6db8dd8b055f16faf",
+        "title": "Mapping Frequency-Specific Tone Predictions in the Human Auditory
+        Cortex at High Spatial Resolution", "abstract": "Auditory inputs reaching
+        our ears are often incomplete, but our brains nevertheless transform them
+        into rich and complete perceptual phenomena such as meaningful conversations
+        or pleasurable music. It has been hypothesized that our brains extract regularities
+        in inputs, which enables us to predict the upcoming stimuli, leading to efficient
+        sensory processing. However, it is unclear whether tone predictions are encoded
+        with similar specificity as perceived signals. Here, we used high-field fMRI
+        to investigate whether human auditory regions encode one of the most defining
+        characteristics of auditory perception: the frequency of predicted tones.
+        Two pairs of tone sequences were presented in ascending or descending directions,
+        with the last tone omitted in half of the trials. Every pair of incomplete
+        sequences contained identical sounds, but was associated with different expectations
+        about the last tone (a high- or low-frequency target). This allowed us to
+        disambiguate predictive signaling from sensory-driven processing. We recorded
+        fMRI responses from eight female participants during passive listening to
+        complete and incomplete sequences. Inspection of specificity and spatial patterns
+        of responses revealed that target frequencies were encoded similarly during
+        their presentations, as well as during omissions, suggesting frequency-specific
+        encoding of predicted tones in the auditory cortex (AC). Importantly, frequency
+        specificity of predictive signaling was observed already at the earliest levels
+        of auditory cortical hierarchy: in the primary AC. Our findings provide evidence
+        for content-specific predictive processing starting at the earliest cortical
+        levels. SIGNIFICANCE STATEMENT Given the abundance of sensory information
+        around us in any given moment, it has been proposed that our brain uses contextual
+        information to prioritize and form predictions about incoming signals. However,
+        there remains a surprising lack of understanding of the specificity and content
+        of such prediction signaling; for example, whether a predicted tone is encoded
+        with similar specificity as a perceived tone. Here, we show that early auditory
+        regions encode the frequency of a tone that is predicted yet omitted. Our
+        findings contribute to the understanding of how expectations shape sound processing
+        in the human auditory cortex and provide further insights into how contextual
+        information influences computations in neuronal circuits.", "venue": "Journal
+        of Neuroscience", "year": 2018, "referenceCount": 35, "citationCount": 15,
+        "influentialCitationCount": 0, "isOpenAccess": true, "openAccessPdf": {"url":
+        "https://www.jneurosci.org/content/jneuro/38/21/4934.full.pdf", "status":
+        null}, "fieldsOfStudy": ["Medicine", "Psychology"], "s2FieldsOfStudy": [{"category":
+        "Medicine", "source": "external"}, {"category": "Psychology", "source": "external"},
+        {"category": "Psychology", "source": "s2-fos-model"}, {"category": "Biology",
+        "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle"], "publicationDate":
+        "2018-04-30", "journal": {"volume": "38", "pages": "4934 - 4942", "name":
+        "The Journal of Neuroscience"}, "citationStyles": {"bibtex": "@[''JournalArticle'']{Berlot2018MappingFT,\n
+        author = {Eva Berlot and E. Formisano and Federico De Martino},\n booktitle
+        = {Journal of Neuroscience},\n journal = {The Journal of Neuroscience},\n
+        pages = {4934 - 4942},\n title = {Mapping Frequency-Specific Tone Predictions
+        in the Human Auditory Cortex at High Spatial Resolution},\n volume = {38},\n
+        year = {2018}\n}\n"}, "authors": [{"authorId": "6499892", "name": "Eva Berlot"},
+        {"authorId": "1762118", "name": "E. Formisano"}, {"authorId": "1759599", "name":
+        "Federico De Martino"}]}, {"paperId": "d17e03460f9796a42cc0cff5f81b1f3ae9c9123c",
+        "externalIds": {"MAG": "2769082952", "DOI": "10.1016/j.cobeha.2017.11.003",
+        "CorpusId": 46987771}, "publicationVenue": {"id": "68b547ba-0f44-4ad4-a095-b871d674a94f",
+        "name": "Current Opinion in Behavioral Sciences", "type": "journal", "alternate_names":
+        ["Curr Opin Behav Sci", "Curr opin behav sci", "Current opinion in behavioral
+        sciences"], "issn": "2352-1546", "url": "http://www.elsevier.com/locate/issn/23521546",
+        "alternate_urls": ["http://www.sciencedirect.com/science/journal/23521546"]},
+        "url": "https://www.semanticscholar.org/paper/d17e03460f9796a42cc0cff5f81b1f3ae9c9123c",
+        "title": "In search of the engram, 2017", "abstract": null, "venue": "Current
+        Opinion in Behavioral Sciences", "year": 2018, "referenceCount": 27, "citationCount":
+        19, "influentialCitationCount": 0, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": ["Psychology"], "s2FieldsOfStudy": [{"category": "Psychology",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"},
+        {"category": "Biology", "source": "s2-fos-model"}], "publicationTypes": ["Review"],
+        "publicationDate": "2018-04-01", "journal": {"volume": "20", "pages": "56-60",
+        "name": "Current Opinion in Behavioral Sciences"}, "citationStyles": {"bibtex":
+        "@[''Review'']{Berlot2018InSO,\n author = {Eva Berlot and Nicola J. Popp and
+        J. Diedrichsen},\n booktitle = {Current Opinion in Behavioral Sciences},\n
+        journal = {Current Opinion in Behavioral Sciences},\n pages = {56-60},\n title
+        = {In search of the engram, 2017},\n volume = {20},\n year = {2018}\n}\n"},
+        "authors": [{"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "51928953",
+        "name": "Nicola J. Popp"}, {"authorId": "2935706", "name": "J. Diedrichsen"}]},
+        {"paperId": "50d255606b3f0a2afc54f649fe1ecf850efacefd", "externalIds": {"MAG":
+        "2780825493", "CorpusId": 149124873}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/50d255606b3f0a2afc54f649fe1ecf850efacefd",
+        "title": "Neural correlates of long-term motor sequence learning", "abstract":
+        null, "venue": "", "year": 2017, "referenceCount": 0, "citationCount": 4,
+        "influentialCitationCount": 0, "isOpenAccess": false, "openAccessPdf": null,
+        "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy": [{"category": "Computer
+        Science", "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": null, "publicationDate": "2017-07-24", "journal": {"volume":
+        "", "name": ""}, "citationStyles": {"bibtex": "@None{Berlot2017NeuralCO,\n
+        author = {Eva Berlot and Nicola J. Popp and J. Diedrichsen},\n title = {Neural
+        correlates of long-term motor sequence learning},\n year = {2017}\n}\n"},
+        "authors": [{"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "51928953",
+        "name": "Nicola J. Popp"}, {"authorId": "2026408239", "name": "J. Diedrichsen"}]},
+        {"paperId": "09a1166d0da2346cd339f2f879e4ad50ac73eea7", "externalIds": {"MAG":
+        "2018809006", "DOI": "10.1016/j.neuropsychologia.2015.01.032", "CorpusId":
+        6292325, "PubMed": "25619847"}, "publicationVenue": {"id": "3779c0e7-59c0-47d3-8af7-8b17bf70e2eb",
+        "name": "Neuropsychologia", "type": "journal", "issn": "0028-3932", "url":
+        "http://www.elsevier.com/locate/neuropsychologia", "alternate_urls": ["http://www.elsevier.com/wps/find/journaldescription.cws_home/247/description",
+        "http://www.sciencedirect.com/science/journal/00283932"]}, "url": "https://www.semanticscholar.org/paper/09a1166d0da2346cd339f2f879e4ad50ac73eea7",
+        "title": "Vestibular contributions to a right-hemisphere network for bodily
+        awareness: Combining galvanic vestibular stimulation and the \u201cRubber
+        Hand Illusion\u201d", "abstract": null, "venue": "Neuropsychologia", "year":
+        2015, "referenceCount": 56, "citationCount": 24, "influentialCitationCount":
+        3, "isOpenAccess": true, "openAccessPdf": {"url": "https://eprints.bbk.ac.uk/id/eprint/45573/1/Ferre_NEUROPSYCHOLOGIA_2015.pdf",
+        "status": null}, "fieldsOfStudy": ["Medicine", "Psychology"], "s2FieldsOfStudy":
+        [{"category": "Medicine", "source": "external"}, {"category": "Psychology",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": ["JournalArticle"], "publicationDate": "2015-03-01", "journal":
+        {"volume": "69", "pages": "140-147", "name": "Neuropsychologia"}, "citationStyles":
+        {"bibtex": "@[''JournalArticle'']{Ferr\u00e82015VestibularCT,\n author = {E.
+        R. Ferr\u00e8 and Eva Berlot and P. Haggard},\n booktitle = {Neuropsychologia},\n
+        journal = {Neuropsychologia},\n pages = {140-147},\n title = {Vestibular contributions
+        to a right-hemisphere network for bodily awareness: Combining galvanic vestibular
+        stimulation and the \u201cRubber Hand Illusion\u201d},\n volume = {69},\n
+        year = {2015}\n}\n"}, "authors": [{"authorId": "2555989", "name": "E. R. Ferr\u00e8"},
+        {"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "145319592", "name":
+        "P. Haggard"}]}, {"paperId": "6c9ac973fd70272e58a61525d655a84feca39ad4", "externalIds":
+        {"PubMedCentral": "4170821", "MAG": "2157284349", "DOI": "10.1037/a0037650",
+        "CorpusId": 17252935, "PubMed": "25089534"}, "publicationVenue": {"id": "ba388b36-981e-4c1b-8048-464cdaa9c9fc",
+        "name": "Journal of experimental psychology. General", "type": "journal",
+        "alternate_names": ["J Exp Psychol Gen", "J exp psychol Gen", "Journal of
+        Experimental Psychology: General"], "issn": "0096-3445", "url": "http://www.apa.org/journals/xge.html",
+        "alternate_urls": ["http://content.apa.org/journals/xge", "http://www.apa.org/pubs/journals/xge/index.aspx"]},
+        "url": "https://www.semanticscholar.org/paper/6c9ac973fd70272e58a61525d655a84feca39ad4",
+        "title": "Moving Time: The Influence of Action on Duration Perception", "abstract":
+        "Perceiving the sensory consequences of action accurately is essential for
+        appropriate interaction with our physical and social environments. Prediction
+        mechanisms are considered necessary for fine-tuned sensory control of action,
+        yet paradoxically may distort perception. Here, we examine this paradox by
+        addressing how movement influences the perceived duration of sensory outcomes
+        congruent with action. Experiment 1 required participants to make judgments
+        about the duration of vibrations applied to a moving or stationary finger.
+        In Experiments 2 and 3, participants judged observed finger movements that
+        were congruent or incongruent with their own actions. In all experiments,
+        target events were perceived to be longer when congruent with movement. Interestingly,
+        this temporal dilation did not differ as a function of stimulus perspective
+        (1st or 3rd person) or spatial location. We propose that this bias may reflect
+        the operation of an adaptive mechanism for sensorimotor selection and control
+        that preactivates anticipated outcomes of action. The bias itself may have
+        surprising implications for both action control and perception of others:
+        we may be in contact with grasped objects for less time than we realize, and
+        others\u2019 reactions to us may be briefer than we believe.", "venue": "Journal
+        of experimental psychology. General", "year": 2014, "referenceCount": 39,
+        "citationCount": 30, "influentialCitationCount": 3, "isOpenAccess": false,
+        "openAccessPdf": null, "fieldsOfStudy": ["Medicine", "Psychology"], "s2FieldsOfStudy":
+        [{"category": "Medicine", "source": "external"}, {"category": "Psychology",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": ["JournalArticle"], "publicationDate": "2014-08-04", "journal":
+        {"volume": "143", "pages": "1787 - 1793", "name": "Journal of Experimental
+        Psychology. General"}, "citationStyles": {"bibtex": "@[''JournalArticle'']{Press2014MovingTT,\n
+        author = {Clare Press and Eva Berlot and G. Bird and R. Ivry and R. Cook},\n
+        booktitle = {Journal of experimental psychology. General},\n journal = {Journal
+        of Experimental Psychology. General},\n pages = {1787 - 1793},\n title = {Moving
+        Time: The Influence of Action on Duration Perception},\n volume = {143},\n
+        year = {2014}\n}\n"}, "authors": [{"authorId": "2334450", "name": "Clare Press"},
+        {"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "143702086", "name":
+        "G. Bird"}, {"authorId": "2182803", "name": "R. Ivry"}, {"authorId": "143871537",
+        "name": "R. Cook"}]}, {"paperId": "bc635b0b5c48de09a5ddc5907f9f17b854966b5a",
+        "externalIds": {"MAG": "2025282160", "DOI": "10.1167/14.10.844", "CorpusId":
+        144702795}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/bc635b0b5c48de09a5ddc5907f9f17b854966b5a",
+        "title": "Action distorts perceived duration of sensory consequences", "abstract":
+        null, "venue": "", "year": 2014, "referenceCount": 0, "citationCount": 1,
+        "influentialCitationCount": 1, "isOpenAccess": false, "openAccessPdf": null,
+        "fieldsOfStudy": ["Psychology"], "s2FieldsOfStudy": [{"category": "Psychology",
+        "source": "external"}], "publicationTypes": null, "publicationDate": "2014-08-03",
+        "journal": {"volume": "14", "pages": "844-844", "name": "Journal of Vision"},
+        "citationStyles": {"bibtex": "@None{Press2014ActionDP,\n author = {Clare Press
+        and Eva Berlot and G. Bird and R. Ivry and R. Cook},\n journal = {Journal
+        of Vision},\n pages = {844-844},\n title = {Action distorts perceived duration
+        of sensory consequences},\n volume = {14},\n year = {2014}\n}\n"}, "authors":
+        [{"authorId": "2334450", "name": "Clare Press"}, {"authorId": "6499892", "name":
+        "Eva Berlot"}, {"authorId": "143702086", "name": "G. Bird"}, {"authorId":
+        "2182803", "name": "R. Ivry"}, {"authorId": "143871537", "name": "R. Cook"}]},
+        {"paperId": "e63c53bd145cbfe079173b32e1db515e95330b58", "externalIds": {"MAG":
+        "2159377895", "DOI": "10.5334/JEPS.BG", "CorpusId": 146177025}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/e63c53bd145cbfe079173b32e1db515e95330b58",
+        "title": "On the Face of it: Exploring the Interaction Between Racial and
+        Arbitrary Group Recognition", "abstract": "The cross-race effect \u2013 enhanced
+        recognition of racial ingroup faces \u2013 has been justified to exist in
+        other categories, such as arbitrary groups. This study aimed to investigate
+        the effect of crossing racial (black/white) and arbitrary (blue/yellow) categories,
+        in addition to the role of facial expressions in this phenomenon. 120 Caucasian
+        students (from the UK, Macedonia, and Portugal) performed a discrimination
+        task (judging faces as new vs. previously seen). Using a within-subjects design,
+        reaction times and accuracy were measured. We hypothesized that (1) the arbitrary
+        group membership of faces would moderate the cross-race effect and (2) the
+        racial group membership of faces would moderate the usual recognition advantage
+        for happy faces.", "venue": "", "year": 2013, "referenceCount": 36, "citationCount":
+        0, "influentialCitationCount": 0, "isOpenAccess": true, "openAccessPdf": {"url":
+        "http://jeps.efpsa.org/articles/10.5334/jeps.bg/galley/95/download/", "status":
+        null}, "fieldsOfStudy": ["Psychology"], "s2FieldsOfStudy": [{"category": "Psychology",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": null, "publicationDate": "2013-09-15", "journal": {"volume":
+        "4", "pages": "16", "name": ""}, "citationStyles": {"bibtex": "@None{Berlot2013OnTF,\n
+        author = {Eva Berlot and R. Blakey and Evelien Demaerschalk and J. Mitova
+        and Sofia Petisca and Carrie Philp and Beatriz Lloret},\n pages = {16},\n
+        title = {On the Face of it: Exploring the Interaction Between Racial and Arbitrary
+        Group Recognition},\n volume = {4},\n year = {2013}\n}\n"}, "authors": [{"authorId":
+        "6499892", "name": "Eva Berlot"}, {"authorId": "49000876", "name": "R. Blakey"},
+        {"authorId": "2082739631", "name": "Evelien Demaerschalk"}, {"authorId": "114604159",
+        "name": "J. Mitova"}, {"authorId": "143702890", "name": "Sofia Petisca"},
+        {"authorId": "117624275", "name": "Carrie Philp"}, {"authorId": "116544384",
+        "name": "Beatriz Lloret"}]}, {"paperId": "ff7f313320f5e7ea88f9d19b779ea60bc7d33928",
+        "externalIds": {"MAG": "2186228743", "CorpusId": 111354724}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/ff7f313320f5e7ea88f9d19b779ea60bc7d33928",
+        "title": "The effect of glove size in rubber hand illusion on object size
+        estimations", "abstract": "Recent !ndings suggest that representation of one\u2019s
+        body is used as a reference for perception of external objects. Using the
+        rubber hand illusion, we manipulated participants\u2019 representation of
+        their hand size. Illusion was induced in 32 participants using a small, medium-sized
+        or large glove and participants then estimated ball diameters. Results indicated
+        that glove size modulated diameter estimates: viewing a large glove resulted
+        in underestimations of ball size, medium glove in accurate estimates, and
+        a small glove in overestimations; however, estimates in small and medium glove
+        condition did not di\"er signi!cantly. Results suggest that one\u2019s hand
+        size is implicitly assimilated to the size of the glove and that this assimilation
+        in turn in#uences subsequent size estimations. Further research is needed
+        to determine whether or one\u2019s hand size can be assimilated to the small
+        glove.", "venue": "", "year": 2013, "referenceCount": 10, "citationCount":
+        1, "influentialCitationCount": 1, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": ["Engineering"], "s2FieldsOfStudy": [{"category": "Engineering",
+        "source": "external"}, {"category": "Psychology", "source": "s2-fos-model"}],
+        "publicationTypes": null, "publicationDate": null, "journal": {"volume": "",
+        "name": ""}, "citationStyles": {"bibtex": "@None{Berlot2013TheEO,\n author
+        = {Eva Berlot and Neuro Genesis},\n title = {The effect of glove size in rubber
+        hand illusion on object size estimations},\n year = {2013}\n}\n"}, "authors":
+        [{"authorId": "6499892", "name": "Eva Berlot"}, {"authorId": "98326507", "name":
+        "Neuro Genesis"}]}]}
 
         '
     headers:
@@ -88,31 +794,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1278'
+      - '58189'
       Content-Type:
       - application/json
       Date:
-      - Sun, 19 Feb 2023 09:32:15 GMT
+      - Tue, 21 Feb 2023 06:52:03 GMT
       Via:
-      - 1.1 b6dd76b2674d0d05f01c7ffe053c33aa.cloudfront.net (CloudFront)
+      - 1.1 94bbde231de97266ba4561ecfe3eb74c.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - KxPCT0umVMEdS6T9KfSo2E2nxWa-8Na1PJ2NSxnGeCquzeOHhPwOZQ==
+      - 0wrJAna9ivUmxZst6iHHwbmJ1p_W1pNSed5-3uq3oolNGV5DVf_ahw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AlHpAH9IvHcFcZQ=
+      - ArWC_F6iPHcF-Qw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '1278'
+      - '58189'
       x-amzn-Remapped-Date:
-      - Sun, 19 Feb 2023 09:32:15 GMT
+      - Tue, 21 Feb 2023 06:52:03 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - e0378937-0817-4852-af17-391d6c451707
+      - 6fcde7de-aa65-4dde-a080-94cb3334303f
     status:
       code: 200
       message: OK

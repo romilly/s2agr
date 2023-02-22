@@ -4,7 +4,7 @@ import vcr
 
 from s2agr.citation import Citation
 from s2agr.requester import ThrottledRequester
-from s2agr.webresearcher import WebResearcher
+from s2agr.researcher import WebResearcher
 from test.s2agr.helpers.database_test import DatabaseTest
 
 test_vcr = vcr.VCR(

@@ -5,7 +5,7 @@ from s2agr.entities import Paper, Author
 from s2agr.persistence.catalogue import Catalogue
 from s2agr.persistence.database_catalogue import DatabaseCatalogueException
 from s2agr.requester import ThrottledRequesterException
-from s2agr.webresearcher import WebResearcher
+from s2agr.researcher import WebResearcher
 
 
 class Librarian:
@@ -17,30 +17,30 @@ class Librarian:
         self.catalogue = catalogue
         self.monitor = monitor
 
-    def get_paper(self, pid) -> Paper:
+    def get_paper(self, paper_id) -> Paper:
         try:
-            if self.catalogue.knows_paper(pid):
-                paper = self.catalogue.read_paper(pid)
+            if self.catalogue.knows_paper(paper_id):
+                paper = self.catalogue.read_paper(paper_id)
             else:
-                self.monitor.info('downloading paper %s' % pid)
-                paper = self.researcher.get_paper(pid)
+                self.monitor.info('downloading paper %s' % paper_id)
+                paper = self.researcher.get_paper(paper_id)
                 self.catalogue.write_paper(paper)
-                citations = self.researcher.get_citations_for(pid)
+                citations = self.researcher.get_citations_for(paper_id)
                 for citation in citations:
                     self.catalogue.write_citation(citation)
-                references = self.researcher.get_references_for(pid)
+                references = self.researcher.get_references_for(paper_id)
                 for reference in references:
                     self.catalogue.write_citation(reference)
                 authors = (Author(ajd) for ajd in paper.authors)
                 for author in authors:
                     self.catalogue.write_author(author)
-                    self.catalogue.write_wrote(paper.paper_id, author.author_id)
+                    self.catalogue.write_wrote(paper_id, author.author_id)
 
             return paper
         except ThrottledRequesterException as e:
-            self.monitor.exception('Could not retrieve paper %s' % pid, e)
+            self.monitor.exception('Could not retrieve paper %s' % paper_id, e)
         except DatabaseCatalogueException as e:
-            self.monitor.exception('Database error handling paper %s' % pid, e)
+            self.monitor.exception('Database error handling paper %s' % paper_id, e)
 
     def get_author(self, aid):
         try:
@@ -76,10 +76,10 @@ class Librarian:
         for author in authors:
             self.catalogue.write_wrote(paper.paper_id, author.author_id)
 
-    def get_authored_papers_by(self, author_id: str):
+    def get_authored_papers_by(self, author_id: str, lazy=True):
         papers = self.researcher.get_authored_papers_by(author_id)
         for paper in papers:
-            if self.catalogue.knows_paper(paper.paper_id):
+            if lazy and self.catalogue.knows_paper(paper.paper_id):
                 continue
             try:
                 self.monitor.debug('adding paper %s' % paper.paper_id)

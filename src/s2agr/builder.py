@@ -3,7 +3,7 @@ from s2agr.monitor import MockMonitor, Monitor
 from s2agr.persistence.catalogue import Catalogue
 from s2agr.persistence.database_catalogue import test_connection, DatabaseCatalogue
 from s2agr.requester import ThrottledRequester, Requester
-from s2agr.webresearcher import WebResearcher
+from s2agr.researcher import WebResearcher
 
 
 class Builder:
