@@ -76,6 +76,7 @@ class Paper(JsonEntity):
     citationStyles: Any
     authors: Any
     citations: List[dict]
+    references: List[dict]
 
     def __init__(self, jason_dictionary: dict):
         JsonEntity.__init__(self, jason_dictionary )

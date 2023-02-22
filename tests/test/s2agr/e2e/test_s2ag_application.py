@@ -54,7 +54,8 @@ class S2AGTestCase(DatabaseTest):
         self.librarian.get_author(author_01_id)
         self.librarian.get_authored_papers_by(author_01_id)
         self.check_total_row_count('paper', 22)
-        self.check_total_row_count('citation',224)
+        self.check_row_count('citation', 'cited_id', '8ad2037f8f7bf44e51d7b23696e5a48fffcfb864', 1)
+        self.check_row_count('citation', 'citing_id', '8ad2037f8f7bf44e51d7b23696e5a48fffcfb864', 49)
 
 
 if __name__ == '__main__':
