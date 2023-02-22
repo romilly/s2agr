@@ -1,0 +1,126 @@
+[
+  {
+    "paperId": "6ee3f7d085bde19a2f6b19c8b4979e828683c408",
+    "externalIds": {
+      "MAG": "3139028108",
+      "DOI": "10.1088/1755-1315/687/1/012187",
+      "CorpusId": 233855130
+    },
+    "publicationVenue": null,
+    "url": "https://www.semanticscholar.org/paper/6ee3f7d085bde19a2f6b19c8b4979e828683c408",
+    "title": "Design and Implementation of Memory Assistant Based on Ebbinghaus Forgetting Curve",
+    "abstract": "In view of the single stereotype of memorizing knowledge points with the help of traditional books and easy to distract attention in the process of memorizing with the help of mobile phones and computers, a mobile handheld device, memory assistant, is designed and developed based on Ebbinghaus forgetting law curve, embedded software and hardware development technology, and memory list cycle pushing intelligent algorithm designed by forgetting curve law as the core. The experiment shows that the device is convenient and flexible like electronic devices such as mobile phones and computers, and also has the characteristics of high efficiency and concentration of book memorizing, at the same time, scientific and reasonable learning plan can effectively improve the efficiency of users\u2019 Recitation and memory.",
+    "venue": "",
+    "year": 2021,
+    "referenceCount": 13,
+    "citationCount": 1,
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "openAccessPdf": null,
+    "fieldsOfStudy": [
+      "Physics",
+      "Computer Science"
+    ],
+    "s2FieldsOfStudy": [
+      {
+        "category": "Physics",
+        "source": "external"
+      },
+      {
+        "category": "Computer Science",
+        "source": "external"
+      },
+      {
+        "category": "Computer Science",
+        "source": "s2-fos-model"
+      }
+    ],
+    "publicationTypes": null,
+    "publicationDate": "2021-03-01",
+    "journal": {
+      "volume": "687",
+      "name": "IOP Conference Series: Earth and Environmental Science"
+    },
+    "citationStyles": {
+      "bibtex": "@None{Huang2021DesignAI,\n author = {Yanbiao Huang and Bo Fu and Yujing Lai and Yujie Yao},\n journal = {IOP Conference Series: Earth and Environmental Science},\n title = {Design and Implementation of Memory Assistant Based on Ebbinghaus Forgetting Curve},\n volume = {687},\n year = {2021}\n}\n"
+    },
+    "authors": [
+      {
+        "authorId": "98026919",
+        "name": "Yanbiao Huang"
+      },
+      {
+        "authorId": "2088543397",
+        "name": "Bo Fu"
+      },
+      {
+        "authorId": "69848964",
+        "name": "Yujing Lai"
+      },
+      {
+        "authorId": "2116473522",
+        "name": "Yujie Yao"
+      }
+    ],
+    "citations": [
+      {
+        "paperId": "34db713dff50fbaef28e243d32eefaf40d7cf4ee",
+        "title": "Early Experimental Psychology: How did Replication Work Before P-Hacking?"
+      }
+    ],
+    "references": [
+      {
+        "paperId": null,
+        "title": "The Influence of Mobile Phone Use on Teenagers\u2019 Self-control [D].Central China Normal University,2006"
+      },
+      {
+        "paperId": null,
+        "title": "Construction of Micro-lecture Library of Senior High Chinese From the Perspective of Fundamental Knowledge Points[J]"
+      },
+      {
+        "paperId": "01675eafba64c897460af65b5ace004cbf1421e9",
+        "title": "Integration of learning and forgetting processes with the SHERPA model."
+      },
+      {
+        "paperId": null,
+        "title": "Jianing.A Study of the Causes, Hazards and Prevention of Juvenile\u2019s Mobile Phone Addiction [J].Journal of Chengdu University of Technology (Science & Technology Edition),2014,22(02):74-78"
+      },
+      {
+        "paperId": null,
+        "title": "A Study of the Causes, Hazards and Prevention of Juvenile\u2019s Mobile Phone Addiction [J]"
+      },
+      {
+        "paperId": "219560bb8955db8d49142d1cdfbededefc68adcb",
+        "title": "Memory: A Contribution to Experimental Psychology"
+      },
+      {
+        "paperId": "2c851b6dd3b6f6df371f19d7ad2552471f97bac3",
+        "title": "A Mathematical Model of Forgetting and Amnesia"
+      },
+      {
+        "paperId": null,
+        "title": "The Influence of College Students\u2019 Computer Game Addition on Interpersonal Relationship and Sense of Loneliness[J]"
+      },
+      {
+        "paperId": null,
+        "title": "A New Concept in the Era of Information Explosion\u2014Big Data[J]"
+      },
+      {
+        "paperId": null,
+        "title": "Random Talk on Study of Human Memory [J]"
+      },
+      {
+        "paperId": null,
+        "title": "An Exploration of the Ways to Recite for Middle School Chinese[D].Jiangxi Normal University,2006"
+      },
+      {
+        "paperId": null,
+        "title": "Researches on Mnemonics: Scientific Memory Methods [D]. East China Normal University,2004"
+      },
+      {
+        "paperId": "31c9f3097b1a206fec6658ec1720c6f273f8f2a8",
+        "title": "Analysis of the Properties of Knowledge Points and Their Networks"
+      }
+    ]
+  }
+]

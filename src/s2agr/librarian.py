@@ -94,13 +94,13 @@ class Librarian:
         citations = (Citation(paper.paper_id, cj['paperId'], cj['title']) for cj in paper.citations)
         for citation in citations:
             if citation.citing_id is None:
-                self.monitor.warning('null paper id found in citations of %s' % paper.paper_id)
+                self.monitor.debug('null paper id found in citations of %s' % paper.paper_id)
                 continue
             self.catalogue.write_citation(citation)
         references = (Citation(cj['paperId'], paper.paper_id, paper.title) for cj in paper.references)
         for reference in references:
             if reference.cited_id is None:
-                self.monitor.warning('null paper id found in references of %s' % paper.paper_id)
+                self.monitor.debug('null paper id found in references of %s' % paper.paper_id)
                 continue
             self.catalogue.write_citation(reference)
 
