@@ -3,7 +3,8 @@ from typing import Set
 from abc import ABC, abstractmethod
 
 from s2agr.citation import CITATION_FIELDS, Citation
-from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS, BASE_PAPER_FIELDS
+from s2agr.entities import Paper, EXTENDED_PAPER_FIELDS, Author, AUTHOR_FIELDS, BASE_PAPER_FIELDS, \
+    PAPER_FIELDS_WITH_CITATIONS
 from s2agr.monitor import Monitor, MockMonitor
 from s2agr.paginator import Paginator
 
@@ -89,5 +90,5 @@ class WebResearcher(Researcher):
 
     def get_authored_papers_by(self, author_id):
         paginator = Paginator(self.requester,
-                              url_builder=UrlBuilderForPapersByAuthor(author_id).with_query(q().with_fields(*BASE_PAPER_FIELDS)))
+                              url_builder=UrlBuilderForPapersByAuthor(author_id).with_query(q().with_fields(*PAPER_FIELDS_WITH_CITATIONS)))
         return (Paper(paper_json) for paper_json in paginator.contents())
