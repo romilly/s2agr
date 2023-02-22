@@ -1,5 +1,6 @@
 import psycopg2
 
+from s2agr.citation import Citation
 from s2agr.monitor import Monitor
 from s2agr.entities import Paper, Author
 from s2agr.persistence.catalogue import Catalogue
@@ -84,9 +85,19 @@ class Librarian:
             try:
                 self.monitor.debug('adding paper %s' % paper.paper_id)
                 self.add_paper_and_attributions(paper)
+                self.add_citations_and_references(paper)
             except psycopg2.Error as e:
                 self.monitor.exception('Database error handling paper %s' % paper.paper_id, e)
                 continue
+
+    def add_citations_and_references(self, paper):
+        citations = (Citation(paper.paper_id, cj['paperId'], cj['title']) for cj in paper.citations)
+        for citation in citations:
+            if citation.citing_id is None:
+                self.monitor.warning('null paper id found in citations of %s' % paper.paper_id)
+                continue
+            self.catalogue.write_citation(citation)
+        # references = Citation(cj['paperId'], cj['title']) for cj in paper.ref
 
 
 

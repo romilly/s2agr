@@ -1,3 +1,5 @@
+from typing import Optional
+
 CITATION_FIELDS = [
     'paperId',
     'title',
@@ -6,7 +8,7 @@ CITATION_FIELDS = [
 
 
 class Citation:
-    def __init__(self, cited_id: str, citing_id, title: str, is_influential: bool):
+    def __init__(self, cited_id: str, citing_id, title: str, is_influential: Optional[bool] = None):
         self.cited_id = cited_id
         self.citing_id = citing_id
         self.title = title
