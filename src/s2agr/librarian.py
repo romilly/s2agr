@@ -75,6 +75,9 @@ class Librarian:
         self.catalogue.write_paper(paper)
         authors = (Author(ajd) for ajd in paper.authors)
         for author in authors:
+            if author.author_id is None:
+                self.monitor.debug('null author_id found in authors of %s' % paper.paper_id)
+                continue
             self.catalogue.write_wrote(paper.paper_id, author.author_id)
 
     def get_authored_papers_by(self, author_id: str, lazy=True):
