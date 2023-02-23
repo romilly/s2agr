@@ -1,4 +1,4 @@
-from typing import Set
+from typing import Set, List
 
 from abc import ABC, abstractmethod
 
@@ -92,3 +92,9 @@ class WebResearcher(Researcher):
         paginator = Paginator(self.requester,
                               url_builder=UrlBuilderForPapersByAuthor(author_id).with_query(q().with_fields(*PAPER_FIELDS_WITH_CITATIONS)))
         return (Paper(paper_json) for paper_json in paginator.contents())
+
+    def get_authors(self, *author_ids):
+        url_for_authors = UrlBuilderForAuthors().with_query(q().with_fields(*AUTHOR_FIELDS)).get_url()
+        ids = {'ids': list(author_ids)}
+        contents = self.requester.post(url_for_authors, ids)
+        return (Author(author_json) for author_json in contents)

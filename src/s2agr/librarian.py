@@ -107,6 +107,19 @@ class Librarian:
                 continue
             self.catalogue.write_citation(reference)
 
+    def get_authors(self, *author_ids):
+        new_ids = []
+        for author_id in author_ids:
+            if not self.catalogue.knows_author(author_id):
+                new_ids.append(author_id)
+        new_authors = list(self.researcher.get_authors(*new_ids))
+        for author in new_authors:
+            if author.author_id is None:
+                self.monitor.debug('null author_id found in authors of %s' % author.author_id)
+                continue
+            self.catalogue.write_author(author)
+
+
 
 
 

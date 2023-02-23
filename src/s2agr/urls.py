@@ -106,6 +106,11 @@ class UrlBuilderForPapersByAuthor(UrlBuilder):
         return f'{self.BASE_URL}author/{self.author_id}/papers'
 
 
+class UrlBuilderForAuthors(UrlBuilder):
+    def get_url_stem(self) -> str:
+        return f'{self.BASE_URL}author/batch'
+
+
 class Query:
     """
     A query object for use with UrlBuilders.

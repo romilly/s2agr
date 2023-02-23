@@ -21,4 +21,7 @@ paper_02_id = paper_02.paper_id
 author_01 = Author(json.loads(read('test/s2agr/data/samples/author_01.json')))
 author_01_id = author_01.author_id
 
+# Bo Fu
+author_02 = Author(json.loads(read('test/s2agr/data/samples/author_02.json')))
+author_02_id = author_02.author_id
 

@@ -5,7 +5,7 @@ from hamcrest import assert_that, starts_with
 
 from s2agr.builder import Builder
 from test.s2agr.helpers.database_test import DatabaseTest
-from test.s2agr.helpers.samples import paper_01_id, paper_02_id, author_01_id
+from test.s2agr.helpers.samples import paper_01_id, paper_02_id, author_01_id, author_02_id
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
@@ -57,6 +57,10 @@ class S2AGTestCase(DatabaseTest):
         self.check_row_count('citation', 'cited_id', '8ad2037f8f7bf44e51d7b23696e5a48fffcfb864', 1)
         self.check_row_count('citation', 'citing_id', '8ad2037f8f7bf44e51d7b23696e5a48fffcfb864', 49)
 
+    @test_vcr.use_cassette
+    def test_librarian_retrieves_multiple_authors(self):
+        self.librarian.get_authors(author_01_id, author_02_id)
+        self.check_total_row_count('author', 2)
 
 if __name__ == '__main__':
     unittest.main()

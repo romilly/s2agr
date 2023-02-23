@@ -1,0 +1,63 @@
+interactions:
+- request:
+    body: '{"ids": ["6499892", "2088543397"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '34'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/author/batch?fields=authorId,externalIds,url,name,aliases,affiliations,homepage,paperCount,citationCount,hIndex
+  response:
+    body:
+      string: '[{"authorId": "6499892", "externalIds": {}, "url": "https://www.semanticscholar.org/author/6499892",
+        "name": "Eva Berlot", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 22, "citationCount": 227, "hIndex": 8}, {"authorId": "2088543397",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/2088543397",
+        "name": "Bo Fu", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        1, "citationCount": 1, "hIndex": 1}]
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '461'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 23 Feb 2023 11:47:35 GMT
+      Via:
+      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - _R19spQIlJ6f0Xmpw69hHLMOl6iq1THahxBsevlF3RbaAKVVmj_ddQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - AynNxFqEvHcF2XA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '461'
+      x-amzn-Remapped-Date:
+      - Thu, 23 Feb 2023 11:47:35 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 3834c8e1-4eb4-46c5-8b25-dfd8bec5d41a
+    status:
+      code: 200
+      message: OK
+version: 1

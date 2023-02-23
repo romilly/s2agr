@@ -6,7 +6,7 @@ from hamcrest import assert_that, equal_to, greater_than
 from s2agr.requester import ThrottledRequester
 from s2agr.researcher import WebResearcher
 from s2agr.urls import q
-from test.s2agr.helpers.samples import paper_01_id, paper_02_id
+from test.s2agr.helpers.samples import paper_01_id, paper_02_id, author_01_id, author_02_id
 
 test_vcr = vcr.VCR(
     cassette_library_dir='helpers/cassettes',
@@ -60,6 +60,15 @@ class ResearcherTestCase(unittest.TestCase):
     def test_can_retrieve_multiple_papers(self):
         papers = self.researcher.get_papers(paper_01_id, paper_02_id)
         assert_that(len(list(papers)), equal_to(2))
+        test_vcr.use_cassette
+
+    @test_vcr.use_cassette
+    def test_can_retrieve_multiple_authors(self):
+        ids = (author_01_id, author_02_id)
+        authors = list(self.researcher.get_authors(*ids))
+        assert_that(len(authors), equal_to(2))
+
+
 
 
 if __name__ == '__main__':
