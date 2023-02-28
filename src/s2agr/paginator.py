@@ -15,7 +15,7 @@ class Paginator:
                 yield item
 
     def has_more_pages(self):
-        return self._offset >= 0
+        return self._offset >= 0 and 10000 > self._offset + self._limit
 
     def next_page_items(self):
         self.url_builder = self.url_builder.for_range(self._offset, self._limit)
