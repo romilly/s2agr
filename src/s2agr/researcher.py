@@ -84,6 +84,8 @@ class WebResearcher(Researcher):
         return contents
 
     def get_papers(self, *paper_ids):
+        if len(paper_ids) == 0:
+                return []
         url_for_papers = UrlBuilderForPapers().with_query(q().with_fields(*BASE_PAPER_FIELDS)).get_url()
         contents = self.requester.post(url_for_papers, {'ids' : list(paper_ids)})
         return (Paper(paper_json) for paper_json in contents)

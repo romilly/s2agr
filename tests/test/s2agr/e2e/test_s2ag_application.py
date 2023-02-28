@@ -37,7 +37,7 @@ class S2AGTestCase(DatabaseTest):
         self.check_row_count('author', 'author_id', author_01_id, 1)
 
     @test_vcr.use_cassette
-    def test_librarian_retrieves_known_author(self):
+    def test_librarian_updates_known_author(self):
         self.librarian.get_author(author_01_id)
         author = self.librarian.get_author(author_01_id)
         self.assertEqual(author.author_id, author_01_id)

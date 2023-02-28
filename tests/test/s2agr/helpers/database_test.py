@@ -46,10 +46,9 @@ class DatabaseTest(TestCase):
         assert_that(count, equal_to(expected_count))
 
     def check_total_row_count(self, table, expected_count):
-        self.cursor.execute(
-            SQL("select count(*) from ") +(Identifier(table)))
-        rs = self.cursor.fetchall()
-        assert_that(rs[0][0], equal_to(expected_count))
+        actual_count = self.catalogue.total_row_count_for(table)
+        assert_that(actual_count, equal_to(expected_count))
+
 
 
 

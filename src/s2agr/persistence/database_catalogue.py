@@ -72,7 +72,7 @@ class DatabaseCatalogue(Catalogue):
 
     def write_author(self, author):
         self._write_author(author.author_id,
-                           json.dumps((author.jason_dictionary)),
+                           json.dumps(author.jason_dictionary),
                            author.name
                            )
 
@@ -142,4 +142,16 @@ class DatabaseCatalogue(Catalogue):
         data = self.cursor.fetchall()
         return [row[0] for row in data]
 
-        pass
+    def query(self, sql, *parameters):
+        self.cursor.execute(sql, parameters)
+        data = self.cursor.fetchall()
+        return (row for row in data)
+
+    def total_row_count_for(self, table):
+        self.cursor.execute(
+            SQL("select count(*) from ") + (Identifier(table)))
+        actual_count = self.cursor.fetchall()[0][0]
+        return actual_count
+
+
+
