@@ -53,7 +53,8 @@ class DatabaseCatalogue(Catalogue):
     SELECT_SQL = "select s2ag_json_text from paper where paper_id = (%s)"
     PAPER_IDS_SQL = "select paper_id from paper"
     INSERT_CITATION_SQL = "INSERT into citation(citing_id, cited_id, is_influential)" \
-                          " VALUES(%s, %s, %s) ON CONFLICT DO NOTHING"
+                          " VALUES(%s, %s, %s) ON CONFLICT (citing_id, cited_id) DO" \
+                          " UPDATE SET is_influential = EXCLUDED.is_influential"
     INSERT_WROTE_SQL = "INSERT into wrote(paper_id, author_id) VALUES(%s, %s)" \
                        "ON CONFLICT DO NOTHING"
 
@@ -97,6 +98,7 @@ class DatabaseCatalogue(Catalogue):
             except Exception as e:
                 self.connection.rollback()
                 raise DatabaseCatalogueException from e
+
 
     def _write_paper(self,
                      paper_id: str,

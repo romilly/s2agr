@@ -26,6 +26,7 @@ class DatabaseCatalogueTestCase(DatabaseTest):
         self.check_row_count('paper', 'pdf_url','https://www.aclweb.org/anthology/N18-3011.pdf',1)
         self.catalogue.write_paper(paper)
 
+    @test_vcr.use_cassette
     def test_catalogue_updates_known_paper(self):
         researcher = WebResearcher(ThrottledRequester(delay=0.001))
         paper_id = '649def34f8be52c8b66281af98ae884c09aef38b'
@@ -43,12 +44,22 @@ class DatabaseCatalogueTestCase(DatabaseTest):
 
     def get_updated_timestamp(self, paper_id):
         return list(self.catalogue.query(
-            'select updated from paper where paper_id=(%s)', (paper_id,)))[0][0]
+            'select updated from paper where paper_id=(%s)', paper_id))[0][0]
 
     def test_catalogue_writes_citations(self):
         self.check_total_row_count('citation', 0)
         self.write_sample_citation()
         self.check_total_row_count('citation', 1)
+
+    def test_catalogue_updates_citation(self):
+        citation = Citation('whatever', 'dontcare', 'dummy', False)
+        self.catalogue.write_citation(citation)
+        citation.is_influential = True
+        self.catalogue.write_citation(citation)
+        is_influential = list(self.catalogue.query(
+            'select is_influential from citation where cited_id=(%s) and citing_id=(%s)',
+            'whatever', 'dontcare'))[0][0]
+        assert_that(is_influential)
 
     def write_sample_citation(self):
         citation = Citation('whatever','dontcare','dummy', False)
