@@ -20,23 +20,19 @@ class Librarian:
 
     def get_paper(self, paper_id) -> Paper:
         try:
-            if self.catalogue.knows_paper(paper_id):
-                paper = self.catalogue.read_paper(paper_id)
-            else:
-                self.monitor.info('downloading paper %s' % paper_id)
-                paper = self.researcher.get_paper(paper_id)
-                self.catalogue.write_paper(paper)
-                citations = self.researcher.get_citations_for(paper_id)
-                for citation in citations:
-                    self.catalogue.write_citation(citation)
-                references = self.researcher.get_references_for(paper_id)
-                for reference in references:
-                    self.catalogue.write_citation(reference)
-                authors = (Author(ajd) for ajd in paper.authors)
-                for author in authors:
-                    self.catalogue.write_author(author)
-                    self.catalogue.write_wrote(paper_id, author.author_id)
-
+            self.monitor.info('downloading paper %s' % paper_id)
+            paper = self.researcher.get_paper(paper_id)
+            self.catalogue.write_paper(paper)
+            citations = self.researcher.get_citations_for(paper_id)
+            for citation in citations:
+                self.catalogue.write_citation(citation)
+            references = self.researcher.get_references_for(paper_id)
+            for reference in references:
+                self.catalogue.write_citation(reference)
+            authors = (Author(ajd) for ajd in paper.authors)
+            for author in authors:
+                self.catalogue.write_author(author)
+                self.catalogue.write_wrote(paper_id, author.author_id)
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % paper_id, e)

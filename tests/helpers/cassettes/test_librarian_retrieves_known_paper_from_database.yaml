@@ -22,7 +22,7 @@ interactions:
         ["http://www.sciencedirect.com/science/journal/09609822"]}, "url": "https://www.semanticscholar.org/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a",
         "title": "Structured sampling of olfactory input by the fly mushroom body",
         "abstract": null, "venue": "Current Biology", "year": 2020, "referenceCount":
-        154, "citationCount": 34, "influentialCitationCount": 3, "isOpenAccess": true,
+        154, "citationCount": 35, "influentialCitationCount": 3, "isOpenAccess": true,
         "openAccessPdf": {"url": "http://www.cell.com/article/S0960982222009903/pdf",
         "status": "GREEN"}, "fieldsOfStudy": ["Biology", "Medicine"], "s2FieldsOfStudy":
         [{"category": "Biology", "source": "external"}, {"category": "Medicine", "source":
@@ -38,52 +38,51 @@ interactions:
         volume = {32},\n year = {2020}\n}\n"}, "authors": [{"authorId": "2115546389",
         "externalIds": {"DBLP": ["Zhihao Zheng"]}, "url": "https://www.semanticscholar.org/author/2115546389",
         "name": "Z. Zheng", "aliases": ["Z. Zheng", "Zhihao Zheng"], "affiliations":
-        [], "homepage": null, "paperCount": 9, "citationCount": 755, "hIndex": 5},
+        [], "homepage": null, "paperCount": 9, "citationCount": 771, "hIndex": 5},
         {"authorId": "2146311675", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2146311675",
         "name": "Feng Li", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 25, "citationCount": 1887, "hIndex": 15}, {"authorId": "41094461",
+        "paperCount": 25, "citationCount": 1921, "hIndex": 15}, {"authorId": "41094461",
         "externalIds": {}, "url": "https://www.semanticscholar.org/author/41094461",
         "name": "Corey B. Fisher", "aliases": ["Corey Fisher"], "affiliations": [],
-        "homepage": null, "paperCount": 3, "citationCount": 658, "hIndex": 3}, {"authorId":
+        "homepage": null, "paperCount": 3, "citationCount": 671, "hIndex": 3}, {"authorId":
         "47203047", "externalIds": {}, "url": "https://www.semanticscholar.org/author/47203047",
         "name": "I. Ali", "aliases": ["I Ali", "I. Ali", "Iqbal Ali", "Iqbal J. Ali"],
-        "affiliations": [], "homepage": null, "paperCount": 2, "citationCount": 594,
+        "affiliations": [], "homepage": null, "paperCount": 2, "citationCount": 607,
         "hIndex": 2}, {"authorId": "51104497", "externalIds": {}, "url": "https://www.semanticscholar.org/author/51104497",
         "name": "Nadiya Sharifi", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 4, "citationCount": 788, "hIndex": 4}, {"authorId": "1404327942",
+        null, "paperCount": 4, "citationCount": 803, "hIndex": 4}, {"authorId": "1404327942",
         "externalIds": {}, "url": "https://www.semanticscholar.org/author/1404327942",
         "name": "Steven A. Calle-Schuler", "aliases": ["Steven A Calle-schuler", "Steven
-        Calle-schuler"], "affiliations": [], "homepage": null, "paperCount": 6, "citationCount":
-        687, "hIndex": 5}, {"authorId": "2072740448", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2072740448",
+        Calle-schuler"], "affiliations": [], "homepage": null, "paperCount": 7, "citationCount":
+        700, "hIndex": 5}, {"authorId": "2072740448", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2072740448",
         "name": "Joseph Hsu", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 3, "citationCount": 121, "hIndex": 3}, {"authorId": "1649754303",
+        "paperCount": 3, "citationCount": 126, "hIndex": 3}, {"authorId": "1649754303",
         "externalIds": {}, "url": "https://www.semanticscholar.org/author/1649754303",
         "name": "Najla Masoodpanah", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 1, "citationCount": 32, "hIndex": 1}, {"authorId": "46354442",
+        null, "paperCount": 1, "citationCount": 35, "hIndex": 1}, {"authorId": "46354442",
         "externalIds": {}, "url": "https://www.semanticscholar.org/author/46354442",
         "name": "Lucia Kmecova", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 4, "citationCount": 644, "hIndex": 3}, {"authorId": "6930811",
+        null, "paperCount": 5, "citationCount": 657, "hIndex": 3}, {"authorId": "6930811",
         "externalIds": {}, "url": "https://www.semanticscholar.org/author/6930811",
         "name": "Tom Kazimiers", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 8, "citationCount": 444, "hIndex": 4}, {"authorId": "2083123459",
+        null, "paperCount": 8, "citationCount": 451, "hIndex": 4}, {"authorId": "2083123459",
         "externalIds": {"DBLP": ["Eric A. Perlman"]}, "url": "https://www.semanticscholar.org/author/2083123459",
         "name": "E. Perlman", "aliases": ["E. Perlman", "Eric A. Perlman", "Eric S.
         Perlman", "Eric Perlman"], "affiliations": [], "homepage": null, "paperCount":
-        28, "citationCount": 1393, "hIndex": 11}, {"authorId": "2056731754", "externalIds":
+        29, "citationCount": 1411, "hIndex": 11}, {"authorId": "2056731754", "externalIds":
         {}, "url": "https://www.semanticscholar.org/author/2056731754", "name": "Matthew
         Nichols", "aliases": ["Matthew A Nichols"], "affiliations": [], "homepage":
-        null, "paperCount": 5, "citationCount": 708, "hIndex": 4}, {"authorId": "1410187169",
+        null, "paperCount": 5, "citationCount": 724, "hIndex": 4}, {"authorId": "1410187169",
         "externalIds": {"DBLP": ["Peter Li"]}, "url": "https://www.semanticscholar.org/author/1410187169",
-        "name": "Peter H. Li", "aliases": ["Peter H Li", "Peter Hawley Li", "Peter
-        Li"], "affiliations": [], "homepage": null, "paperCount": 12, "citationCount":
-        1220, "hIndex": 10}, {"authorId": "35086944", "externalIds": {"DBLP": ["Viren
-        Jain"]}, "url": "https://www.semanticscholar.org/author/35086944", "name":
-        "Viren Jain", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        34, "citationCount": 4117, "hIndex": 20}, {"authorId": "35571193", "externalIds":
-        {"DBLP": ["Davi Bock", "Davi D. Bock"]}, "url": "https://www.semanticscholar.org/author/35571193",
+        "name": "Peter H. Li", "aliases": ["Peter H Li", "Peter Li"], "affiliations":
+        [], "homepage": null, "paperCount": 13, "citationCount": 1247, "hIndex": 10},
+        {"authorId": "35086944", "externalIds": {"DBLP": ["Viren Jain"]}, "url": "https://www.semanticscholar.org/author/35086944",
+        "name": "Viren Jain", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 37, "citationCount": 4192, "hIndex": 21}, {"authorId": "35571193",
+        "externalIds": {"DBLP": ["Davi Bock", "Davi D. Bock"]}, "url": "https://www.semanticscholar.org/author/35571193",
         "name": "D. Bock", "aliases": ["D.d. Bock", "Davi Bock", "Davi D Bock", "Davi
         D. Bock"], "affiliations": [], "homepage": null, "paperCount": 47, "citationCount":
-        3493, "hIndex": 26}]}
+        3529, "hIndex": 26}]}
 
         '
     headers:
@@ -92,31 +91,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '5791'
+      - '5772'
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:51 GMT
+      - Tue, 28 Feb 2023 10:26:24 GMT
       Via:
-      - 1.1 fbf20877e73563def3c2e6d94c9533e0.cloudfront.net (CloudFront)
+      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - awGoStkcm1q8Uw1UxGslqD90ghJtHmPv71bENX5ol_6C7CPn2p9nJg==
+      - VRB5TWXryWb-vsKrsGoYehLRBF3i7y1e_profbZ-_O4idoJzypkpoQ==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AhuoxHLNvHcFaOQ=
+      - BC6AmF3fvHcFacg=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '5791'
+      - '5772'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:51 GMT
+      - Tue, 28 Feb 2023 10:26:24 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - c6d3fdac-7a3c-4d40-91ca-18b47ff0bd2d
+      - 492f7c7a-cacf-454c-b6e2-7b8c1f796b86
     status:
       code: 200
       message: OK
@@ -136,16 +135,18 @@ interactions:
   response:
     body:
       string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
-        "cf4a19335995bc91d8414ed71d1b3e306a949669", "title": "Evolution of connectivity
-        architecture in the Drosophila mushroom body"}}, {"isInfluential": false,
-        "citingPaper": {"paperId": "0247a960c117ec432f8e52d8c96f3dd46bd742bd", "title":
-        "Hacking brain development to test models of sensory coding"}}, {"isInfluential":
+        "5f24090c18dff09a875e92e8b28364b2c2ed1abb", "title": "Restructuring of olfactory
+        representations in the fly brain around odor relationships in natural sources"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "cf4a19335995bc91d8414ed71d1b3e306a949669",
+        "title": "Evolution of connectivity architecture in the Drosophila mushroom
+        body"}}, {"isInfluential": false, "citingPaper": {"paperId": "0247a960c117ec432f8e52d8c96f3dd46bd742bd",
+        "title": "Hacking brain development to test models of sensory coding"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "6c32d89c783891ba23860a8999e8150812c99b73",
         "title": "Drosophila olfaction: past, present and future"}}, {"isInfluential":
         true, "citingPaper": {"paperId": "bd04c9a4e66dbb8ad2217c6f7ddce1fad1157919",
         "title": "The cellular architecture of memory modules in Drosophila supports
         stochastic input integration"}}, {"isInfluential": false, "citingPaper": {"paperId":
-        "b60e981fd5268a290dbf4e7d8346036396ecaf7d", "title": "Meta-Learning the Inductive
+        "732597e57b3de0a2884a2a6b39156c55c1897b42", "title": "Meta-Learning the Inductive
         Biases of Simple Neural Circuits"}}, {"isInfluential": false, "citingPaper":
         {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57", "title": "Structured
         cerebellar connectivity supports resilient pattern separation"}}, {"isInfluential":
@@ -227,31 +228,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '6801'
+      - '7016'
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:51 GMT
+      - Tue, 28 Feb 2023 10:26:24 GMT
       Via:
-      - 1.1 a8f77777c0752dad31367fbd24424a90.cloudfront.net (CloudFront)
+      - 1.1 4cdca468105142eb097ff10e9a208190.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - BEbi0e2378LTmqWG7u7hR62t4dWKxP9GNf1vN-A6dSHXUOK7AWimJA==
+      - 1veXJEWsbs3fY9JgzN_pGDWoTv_mRz-c6fm86XpCvngNThugy4fQRw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - Ahuo2EkzvHcFuLQ=
+      - BC6AsH5AvHcFo_g=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '6801'
+      - '7016'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:51 GMT
+      - Tue, 28 Feb 2023 10:26:24 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - e8935d5d-c85f-45b4-b2bd-782c2ce68605
+      - 27281533-65ed-4ce1-8432-d9df6b523bb4
     status:
       code: 200
       message: OK
@@ -622,27 +623,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:52 GMT
+      - Tue, 28 Feb 2023 10:26:25 GMT
       Via:
-      - 1.1 6a49fc180c17188af6d0e5ee90187854.cloudfront.net (CloudFront)
+      - 1.1 51a5a952c28afbcc082d59f6a902bb36.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - uVeHWi-fVA59ApHZ_kUb_MjbfV3uvr9e81jLB6atZzHHvB8R8BgNVw==
+      - FfrVfXiOiLBAXo9DfuBOQ5FpvJoVwTofSMGBfUVCct2Bow5OkHOcxw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - Ahuo8HtQvHcFVYw=
+      - BC6AxEwmPHcFtLw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '28335'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:52 GMT
+      - Tue, 28 Feb 2023 10:26:25 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 2202d950-8bd2-44a9-9374-8cc91c814c85
+      - 1a2d70d7-aa1a-4482-9217-e4212780b49b
     status:
       code: 200
       message: OK
@@ -679,7 +680,7 @@ interactions:
         of these tasks, and report empirical results for each task. The methods described
         in this paper are used to enable semantic features in www.semanticscholar.org.",
         "venue": "North American Chapter of the Association for Computational Linguistics",
-        "year": 2018, "referenceCount": 27, "citationCount": 292, "influentialCitationCount":
+        "year": 2018, "referenceCount": 27, "citationCount": 293, "influentialCitationCount":
         34, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
         "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
         [{"category": "Computer Science", "source": "external"}, {"category": "Computer
@@ -697,95 +698,96 @@ interactions:
         year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "externalIds":
         {"DBLP": ["Waleed Ammar"]}, "url": "https://www.semanticscholar.org/author/145585097",
         "name": "Waleed Ammar", "aliases": ["W Ashor Ammar", "W. Ammar", "Waleed A
-        Ammar", "Walid Ammar"], "affiliations": ["Google"], "homepage": null, "paperCount":
-        60, "citationCount": 3257, "hIndex": 23}, {"authorId": "3458736", "externalIds":
-        {"DBLP": ["Dirk Groeneveld"]}, "url": "https://www.semanticscholar.org/author/3458736",
-        "name": "Dirk Groeneveld", "aliases": null, "affiliations": [], "homepage":
-        null, "paperCount": 7, "citationCount": 491, "hIndex": 6}, {"authorId": "1857797",
-        "externalIds": {"DBLP": ["Chandra Bhagavatula", "Chandra Sekhar Bhagavatula"]},
-        "url": "https://www.semanticscholar.org/author/1857797", "name": "Chandra
-        Bhagavatula", "aliases": ["Chandra Sekhar Bhagavatula"], "affiliations": ["Allen
-        Institute for Artificial Intelligence"], "homepage": "https://www.chandrab.page/",
-        "paperCount": 56, "citationCount": 4057, "hIndex": 27}, {"authorId": "46181066",
-        "externalIds": {"DBLP": ["Islam Beltagy", "Iz Beltagy"]}, "url": "https://www.semanticscholar.org/author/46181066",
-        "name": "Iz Beltagy", "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute
+        Ammar", "Walid Ammar"], "affiliations": ["Allen Institute for Artificial Intelligence
+        (AI2)"], "homepage": null, "paperCount": 60, "citationCount": 3265, "hIndex":
+        23}, {"authorId": "3458736", "externalIds": {"DBLP": ["Dirk Groeneveld"]},
+        "url": "https://www.semanticscholar.org/author/3458736", "name": "Dirk Groeneveld",
+        "aliases": null, "affiliations": [], "homepage": null, "paperCount": 7, "citationCount":
+        495, "hIndex": 6}, {"authorId": "1857797", "externalIds": {"DBLP": ["Chandra
+        Bhagavatula", "Chandra Sekhar Bhagavatula"]}, "url": "https://www.semanticscholar.org/author/1857797",
+        "name": "Chandra Bhagavatula", "aliases": ["Chandra Sekhar Bhagavatula"],
+        "affiliations": ["Allen Institute for Artificial Intelligence"], "homepage":
+        "https://www.chandrab.page/", "paperCount": 56, "citationCount": 4093, "hIndex":
+        27}, {"authorId": "46181066", "externalIds": {"DBLP": ["Islam Beltagy", "Iz
+        Beltagy"]}, "url": "https://www.semanticscholar.org/author/46181066", "name":
+        "Iz Beltagy", "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute
         for Artificial Intelligence (AI2)"], "homepage": null, "paperCount": 48, "citationCount":
-        5890, "hIndex": 22}, {"authorId": "46230609", "externalIds": {"DBLP": ["Miles
+        5949, "hIndex": 22}, {"authorId": "46230609", "externalIds": {"DBLP": ["Miles
         Crawford"]}, "url": "https://www.semanticscholar.org/author/46230609", "name":
-        "Miles Crawford", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        3, "citationCount": 291, "hIndex": 1}, {"authorId": "145612610", "externalIds":
-        {"DBLP": ["Doug Downey"]}, "url": "https://www.semanticscholar.org/author/145612610",
+        "Miles Crawford", "aliases": ["M.m. Crawford"], "affiliations": [], "homepage":
+        null, "paperCount": 3, "citationCount": 292, "hIndex": 1}, {"authorId": "145612610",
+        "externalIds": {"DBLP": ["Doug Downey"]}, "url": "https://www.semanticscholar.org/author/145612610",
         "name": "Doug Downey", "aliases": ["Dagney Downey", "D Downey", "Doug C Downey",
         "Douglas C Downey", "Douglas C. Downey"], "affiliations": ["Allen Institute
         for Artificial Intelligence", "Northwestern University"], "homepage": "http://users.cs.northwestern.edu/~ddowney/",
-        "paperCount": 103, "citationCount": 7268, "hIndex": 30}, {"authorId": "38092776",
+        "paperCount": 105, "citationCount": 7304, "hIndex": 30}, {"authorId": "38092776",
         "externalIds": {"DBLP": ["Jason Dunkelberger"]}, "url": "https://www.semanticscholar.org/author/38092776",
         "name": "Jason Dunkelberger", "aliases": null, "affiliations": [], "homepage":
-        "https://dirkraft.github.io", "paperCount": 1, "citationCount": 291, "hIndex":
+        "https://dirkraft.github.io", "paperCount": 1, "citationCount": 292, "hIndex":
         1}, {"authorId": "143718836", "externalIds": {"DBLP": ["Ahmed Elgohary"]},
         "url": "https://www.semanticscholar.org/author/143718836", "name": "Ahmed
         Elgohary", "aliases": ["Ahmed Fouad Elgohary"], "affiliations": ["Microsoft"],
         "homepage": "http://cs.umd.edu/~elgohary", "paperCount": 29, "citationCount":
-        2595, "hIndex": 15}, {"authorId": "46411828", "externalIds": {"DBLP": ["Sergey
+        2601, "hIndex": 15}, {"authorId": "46411828", "externalIds": {"DBLP": ["Sergey
         Feldman"], "ORCID": "0000-0003-0386-0922"}, "url": "https://www.semanticscholar.org/author/46411828",
         "name": "Sergey Feldman", "aliases": null, "affiliations": ["Allen Institute
         for Artificial Intelligence", "Alongside.care"], "homepage": "https://www.data-cowboys.com/",
-        "paperCount": 26, "citationCount": 895, "hIndex": 12}, {"authorId": "4480314",
+        "paperCount": 26, "citationCount": 903, "hIndex": 12}, {"authorId": "4480314",
         "externalIds": {"DBLP": ["Vu A. Ha", "Vu Ha"]}, "url": "https://www.semanticscholar.org/author/4480314",
         "name": "Vu A. Ha", "aliases": ["Vu Ha"], "affiliations": ["The Allen Institute
         for Artificial Intelligence"], "homepage": "https://vha14.com", "paperCount":
-        21, "citationCount": 896, "hIndex": 11}, {"authorId": "143967880", "externalIds":
+        21, "citationCount": 899, "hIndex": 11}, {"authorId": "143967880", "externalIds":
         {"DBLP": ["Rodney Kinney"]}, "url": "https://www.semanticscholar.org/author/143967880",
         "name": "Rodney Michael Kinney", "aliases": ["R. Kinney", "R. M. Kinney",
         "Rodney Kinney"], "affiliations": ["Allen Institute for AI"], "homepage":
-        null, "paperCount": 14, "citationCount": 1202, "hIndex": 7}, {"authorId":
+        null, "paperCount": 14, "citationCount": 1206, "hIndex": 7}, {"authorId":
         "41018147", "externalIds": {"DBLP": ["Sebastian Kohlmeier"]}, "url": "https://www.semanticscholar.org/author/41018147",
         "name": "Sebastian Kohlmeier", "aliases": null, "affiliations": ["Allen Institute
         for AI", "Semantic Scholar"], "homepage": "www.semanticscholar.org", "paperCount":
-        7, "citationCount": 1039, "hIndex": 6}, {"authorId": "46258841", "externalIds":
+        7, "citationCount": 1042, "hIndex": 6}, {"authorId": "46258841", "externalIds":
         {"DBLP": ["Kyle Lo"]}, "url": "https://www.semanticscholar.org/author/46258841",
         "name": "Kyle Lo", "aliases": null, "affiliations": ["Allen Institute for
-        Artificial Intelligence"], "homepage": null, "paperCount": 56, "citationCount":
-        4931, "hIndex": 20}, {"authorId": "144240185", "externalIds": {"DBLP": ["Tyler
+        Artificial Intelligence"], "homepage": null, "paperCount": 58, "citationCount":
+        4982, "hIndex": 20}, {"authorId": "144240185", "externalIds": {"DBLP": ["Tyler
         Murray"], "ORCID": "0000-0003-0043-7192"}, "url": "https://www.semanticscholar.org/author/144240185",
         "name": "Tyler C. Murray", "aliases": ["Tyler Murray"], "affiliations": ["Allen
         Institute for Artificial Intelligence"], "homepage": "https://allenai.org",
-        "paperCount": 1, "citationCount": 291, "hIndex": 1}, {"authorId": "46256862",
+        "paperCount": 1, "citationCount": 292, "hIndex": 1}, {"authorId": "46256862",
         "externalIds": {"DBLP": ["Hsu-Han Ooi"]}, "url": "https://www.semanticscholar.org/author/46256862",
         "name": "Hsu-Han Ooi", "aliases": null, "affiliations": [], "homepage": null,
-        "paperCount": 1, "citationCount": 291, "hIndex": 1}, {"authorId": "39139825",
+        "paperCount": 1, "citationCount": 292, "hIndex": 1}, {"authorId": "39139825",
         "externalIds": {"DBLP": ["Matthew E. Peters"]}, "url": "https://www.semanticscholar.org/author/39139825",
         "name": "Matthew E. Peters", "aliases": ["M. Peters", "Matthew E Peters",
         "Matthew Peters"], "affiliations": ["Allen Institute for Artificial Intelligence"],
-        "homepage": null, "paperCount": 68, "citationCount": 16216, "hIndex": 28},
+        "homepage": null, "paperCount": 69, "citationCount": 16264, "hIndex": 28},
         {"authorId": "39561369", "externalIds": {"DBLP": ["Joanna L. Power", "Joanna
         Power"]}, "url": "https://www.semanticscholar.org/author/39561369", "name":
         "Joanna L. Power", "aliases": ["J L Power", "Joanna Power"], "affiliations":
         [], "homepage": "https://linkedin.com/in/jpower", "paperCount": 6, "citationCount":
-        397, "hIndex": 5}, {"authorId": "46181683", "externalIds": {"DBLP": ["Sam
+        398, "hIndex": 5}, {"authorId": "46181683", "externalIds": {"DBLP": ["Sam
         Skjonsberg"]}, "url": "https://www.semanticscholar.org/author/46181683", "name":
         "Sam Skjonsberg", "aliases": null, "affiliations": ["Allen Institute for AI"],
-        "homepage": "https://codeviking.net", "paperCount": 6, "citationCount": 335,
+        "homepage": "https://codeviking.net", "paperCount": 6, "citationCount": 340,
         "hIndex": 4}, {"authorId": "31860505", "externalIds": {"DBLP": ["Lucy L. Wang",
         "Lucy Lu Wang"], "ORCID": "0000-0001-8752-6635"}, "url": "https://www.semanticscholar.org/author/31860505",
         "name": "Lucy Lu Wang", "aliases": ["Lucy Lu Wang", "Lucy L. Wang"], "affiliations":
         ["University of Washington", "Allen Institute for AI"], "homepage": "https://llwang.net/",
-        "paperCount": 60, "citationCount": 2052, "hIndex": 19}, {"authorId": "46212260",
+        "paperCount": 61, "citationCount": 2063, "hIndex": 19}, {"authorId": "46212260",
         "externalIds": {"DBLP": ["Chris Wilhelm"]}, "url": "https://www.semanticscholar.org/author/46212260",
         "name": "Christopher Wilhelm", "aliases": ["C Wilhelm", "C. Wilhelm", "Chris
         Wilhelm", "Claus Wilhelm"], "affiliations": ["Allen Institute for Artificial
-        Intelligence"], "homepage": null, "paperCount": 15, "citationCount": 1070,
+        Intelligence"], "homepage": null, "paperCount": 15, "citationCount": 1072,
         "hIndex": 5}, {"authorId": "2112339497", "externalIds": {"DBLP": ["Zheng Yuan"]},
         "url": "https://www.semanticscholar.org/author/2112339497", "name": "Zheng
         Yuan", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
-        4, "citationCount": 310, "hIndex": 3}, {"authorId": "15292561", "externalIds":
+        4, "citationCount": 311, "hIndex": 3}, {"authorId": "15292561", "externalIds":
         {"DBLP": ["Madeleine van Zuylen"]}, "url": "https://www.semanticscholar.org/author/15292561",
         "name": "Madeleine van Zuylen", "aliases": ["Madeleine Van Zuylen"], "affiliations":
         ["Allen Institute for AI", "University of Notre Dame"], "homepage": null,
-        "paperCount": 13, "citationCount": 954, "hIndex": 10}, {"authorId": "1741101",
+        "paperCount": 13, "citationCount": 961, "hIndex": 10}, {"authorId": "1741101",
         "externalIds": {"DBLP": ["Oren Etzioni"]}, "url": "https://www.semanticscholar.org/author/1741101",
         "name": "Oren Etzioni", "aliases": ["O Et-zioni", "Oren Etzioni"], "affiliations":
-        [], "homepage": null, "paperCount": 274, "citationCount": 34675, "hIndex":
+        [], "homepage": null, "paperCount": 274, "citationCount": 34705, "hIndex":
         86}]}
 
         '
@@ -795,31 +797,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '10378'
+      - '10434'
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:53 GMT
+      - Tue, 28 Feb 2023 10:26:26 GMT
       Via:
-      - 1.1 ffac2ff159127c5a76d86e0366cb430a.cloudfront.net (CloudFront)
+      - 1.1 1ba2a752fe59ed728a048663debd3cb4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - SXSu-bOA9gwkn923uhhxcvRCipg_BRWDnyXZ6vLOl7H4qpvz8navKg==
+      - x5B5ad2VRDyTJre4AWLv8HNmCgtEM1issAc4fE4h_Jy9hB6EaHbjpg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AhupDGzqvHcF_sA=
+      - BC6A5Ho0PHcFyMQ=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '10378'
+      - '10434'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:53 GMT
+      - Tue, 28 Feb 2023 10:26:26 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - ab7466fe-e8e3-4740-b697-2ab2d89b039f
+      - db68be2b-74d1-414b-917a-a1ac5a60e773
     status:
       code: 200
       message: OK
@@ -851,6 +853,9 @@ interactions:
         "title": "MRT: Tracing the Evolution of Scientific Publications"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "f445f8a0ce442fe7db90dfb8226272189e649a2c",
         "title": "Logic Mill - A Knowledge Navigation System"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "b6fba18ca329347c330262edb71f56bde08c29e1",
+        "title": "The National Library of Medicine indexer assignment dataset: A new
+        large\u2010scale dataset for reviewer assignment research"}}, {"isInfluential":
         false, "citingPaper": {"paperId": "a80ea6789cda5a715ba9f29d82e0241f8aea970d",
         "title": "Automating Quality Assessment of Medical Evidence in Systematic
         Reviews."}}, {"isInfluential": false, "citingPaper": {"paperId": "cfcfe9fd697e98ad2508b4bf95dad16390f66938",
@@ -859,10 +864,7 @@ interactions:
         "title": "Multi-modal Molecule Structure-text Model for Text-based Retrieval
         and Editing"}}, {"isInfluential": false, "citingPaper": {"paperId": "054dd061a42086ab2758141655bebd7559b144fa",
         "title": "SciFoodNER: Food Named Entity Recognition for Scientific Text"}},
-        {"isInfluential": false, "citingPaper": {"paperId": "b6fba18ca329347c330262edb71f56bde08c29e1",
-        "title": "The National Library of Medicine indexer assignment dataset: A new
-        large\u2010scale dataset for reviewer assignment research"}}, {"isInfluential":
-        false, "citingPaper": {"paperId": "94e99c02b61f2d8b727f08e08924146705a614df",
+        {"isInfluential": false, "citingPaper": {"paperId": "94e99c02b61f2d8b727f08e08924146705a614df",
         "title": "Understanding knowledge role transitions: A perspective of knowledge
         codification"}}, {"isInfluential": false, "citingPaper": {"paperId": "25b77db5bfca92029532ca70ee659fdf88db8484",
         "title": "SMAuC - The Scientific Multi-Authorship Corpus"}}, {"isInfluential":
@@ -899,7 +901,7 @@ interactions:
         Articles"}}, {"isInfluential": false, "citingPaper": {"paperId": "2a49efd0657c7ace5a4e22ce9c484c94aab8a4b7",
         "title": "Performance Optimization for Semantic Communications: An Attention-Based
         Reinforcement Learning Approach"}}, {"isInfluential": false, "citingPaper":
-        {"paperId": "da2d3efdd74b1be17f5914461f9a1a6747a43fac", "title": "Scholarly
+        {"paperId": "a60f8498e85f01ec72120c153aa92387f8841a31", "title": "Scholarly
         knowledge graphs through structuring scholarly communication: a review"}},
         {"isInfluential": false, "citingPaper": {"paperId": "f339ab25cc1e784baa76896623dde732171b5634",
         "title": "API Deprecation: A Systematic Mapping Study"}}, {"isInfluential":
@@ -970,6 +972,9 @@ interactions:
         {"isInfluential": false, "citingPaper": {"paperId": "f2df1a1c2c157bf53233a6648deb5135746fec43",
         "title": "Assessment of contextualised representations in detecting outcome
         phrases in clinical trials"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "3d2925c3480e16be04a942bc19d905cff4bcaeb0", "title": "Grappling with the scale
+        of born-digital government publications: Toward pipelines for processing and
+        searching millions of PDFs"}}, {"isInfluential": false, "citingPaper": {"paperId":
         "8dc1e4bac2d0403ba4bec7bcb8abb7534c53ab1f", "title": "Automatic Related Work
         Generation: A Meta Study"}}, {"isInfluential": true, "citingPaper": {"paperId":
         "59c4df0f1dd75db4a5e25f4fb860040244949089", "title": "Improving the robustness
@@ -1510,31 +1515,31 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '55563'
+      - '55802'
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:53 GMT
+      - Tue, 28 Feb 2023 10:26:27 GMT
       Via:
-      - 1.1 cbee94ab34ec9eb1b560ab196c643b20.cloudfront.net (CloudFront)
+      - 1.1 95e5e67fa5d157cb509d06500fad3cc4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - XdFrUYA5w4gmOTyBKicoGjlpWerx2UPx1W9v0bN0_6pZaOMyE7bNoA==
+      - I0a0ykdw2Yr7CRZXWzqaaEYOQxbJwcEk2B0JkS4YqxuvgjZq14he4g==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AhupLHoRvHcF3aA=
+      - BC6A_HqTPHcFrNA=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
-      - '55563'
+      - '55802'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:53 GMT
+      - Tue, 28 Feb 2023 10:26:27 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 72a34a51-3e3a-43ea-a69a-237f2aaa71a8
+      - 0aaeeb66-277f-45d2-bd3e-db851f2217aa
     status:
       code: 200
       message: OK
@@ -1623,27 +1628,675 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 08:50:55 GMT
+      - Tue, 28 Feb 2023 10:26:28 GMT
       Via:
-      - 1.1 20859c946d4540573244991afc8ba6b0.cloudfront.net (CloudFront)
+      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - B3_zktELJda0IbrteqYXcQoH-wYjUXA-0jPgrF8Qrae33SXEJQiXkg==
+      - LKBN-Ly0mwEHHsesaD5uJBDR7Xk-qOLbuR2_MMG_ore9nA8UpWuAiw==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AhupXHDcvHcFkdg=
+      - BC6BRFeFvHcFRCw=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '4701'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 08:50:55 GMT
+      - Tue, 28 Feb 2023 10:26:28 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - cd018476-58a6-4c48-ae1a-1cf74ffc0eb4
+      - a969ba18-0572-4b7a-9644-736a0350989f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+  response:
+    body:
+      string: '{"paperId": "e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a", "externalIds":
+        {"MAG": "3016997274", "DOI": "10.1016/j.cub.2022.06.031", "CorpusId": 216071346,
+        "PubMed": "35797998"}, "publicationVenue": {"id": "9469269e-53d7-4955-b1a5-17a75bee7634",
+        "name": "Current Biology", "type": "journal", "alternate_names": ["Curr Biology"],
+        "issn": "0960-9822", "url": "http://www.current-biology.com/", "alternate_urls":
+        ["http://www.sciencedirect.com/science/journal/09609822"]}, "url": "https://www.semanticscholar.org/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a",
+        "title": "Structured sampling of olfactory input by the fly mushroom body",
+        "abstract": null, "venue": "Current Biology", "year": 2020, "referenceCount":
+        154, "citationCount": 35, "influentialCitationCount": 3, "isOpenAccess": true,
+        "openAccessPdf": {"url": "http://www.cell.com/article/S0960982222009903/pdf",
+        "status": "GREEN"}, "fieldsOfStudy": ["Biology", "Medicine"], "s2FieldsOfStudy":
+        [{"category": "Biology", "source": "external"}, {"category": "Medicine", "source":
+        "external"}, {"category": "Biology", "source": "s2-fos-model"}], "publicationTypes":
+        ["JournalArticle"], "publicationDate": "2020-04-18", "journal": {"name": "Current
+        Biology", "pages": "3334-3349.e6", "volume": "32"}, "citationStyles": {"bibtex":
+        "@[''JournalArticle'']{Zheng2020StructuredSO,\n author = {Z. Zheng and Feng
+        Li and Corey B. Fisher and I. Ali and Nadiya Sharifi and Steven A. Calle-Schuler
+        and Joseph Hsu and Najla Masoodpanah and Lucia Kmecova and Tom Kazimiers and
+        E. Perlman and Matthew Nichols and Peter H. Li and Viren Jain and D. Bock},\n
+        booktitle = {Current Biology},\n journal = {Current Biology},\n pages = {3334-3349.e6},\n
+        title = {Structured sampling of olfactory input by the fly mushroom body},\n
+        volume = {32},\n year = {2020}\n}\n"}, "authors": [{"authorId": "2115546389",
+        "externalIds": {"DBLP": ["Zhihao Zheng"]}, "url": "https://www.semanticscholar.org/author/2115546389",
+        "name": "Z. Zheng", "aliases": ["Z. Zheng", "Zhihao Zheng"], "affiliations":
+        [], "homepage": null, "paperCount": 9, "citationCount": 771, "hIndex": 5},
+        {"authorId": "2146311675", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2146311675",
+        "name": "Feng Li", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 25, "citationCount": 1921, "hIndex": 15}, {"authorId": "41094461",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/41094461",
+        "name": "Corey B. Fisher", "aliases": ["Corey Fisher"], "affiliations": [],
+        "homepage": null, "paperCount": 3, "citationCount": 671, "hIndex": 3}, {"authorId":
+        "47203047", "externalIds": {}, "url": "https://www.semanticscholar.org/author/47203047",
+        "name": "I. Ali", "aliases": ["I Ali", "I. Ali", "Iqbal Ali", "Iqbal J. Ali"],
+        "affiliations": [], "homepage": null, "paperCount": 2, "citationCount": 607,
+        "hIndex": 2}, {"authorId": "51104497", "externalIds": {}, "url": "https://www.semanticscholar.org/author/51104497",
+        "name": "Nadiya Sharifi", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 4, "citationCount": 803, "hIndex": 4}, {"authorId": "1404327942",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/1404327942",
+        "name": "Steven A. Calle-Schuler", "aliases": ["Steven A Calle-schuler", "Steven
+        Calle-schuler"], "affiliations": [], "homepage": null, "paperCount": 7, "citationCount":
+        700, "hIndex": 5}, {"authorId": "2072740448", "externalIds": {}, "url": "https://www.semanticscholar.org/author/2072740448",
+        "name": "Joseph Hsu", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 3, "citationCount": 126, "hIndex": 3}, {"authorId": "1649754303",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/1649754303",
+        "name": "Najla Masoodpanah", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 1, "citationCount": 35, "hIndex": 1}, {"authorId": "46354442",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/46354442",
+        "name": "Lucia Kmecova", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 5, "citationCount": 657, "hIndex": 3}, {"authorId": "6930811",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/6930811",
+        "name": "Tom Kazimiers", "aliases": null, "affiliations": [], "homepage":
+        null, "paperCount": 8, "citationCount": 451, "hIndex": 4}, {"authorId": "2083123459",
+        "externalIds": {"DBLP": ["Eric A. Perlman"]}, "url": "https://www.semanticscholar.org/author/2083123459",
+        "name": "E. Perlman", "aliases": ["E. Perlman", "Eric A. Perlman", "Eric S.
+        Perlman", "Eric Perlman"], "affiliations": [], "homepage": null, "paperCount":
+        29, "citationCount": 1411, "hIndex": 11}, {"authorId": "2056731754", "externalIds":
+        {}, "url": "https://www.semanticscholar.org/author/2056731754", "name": "Matthew
+        Nichols", "aliases": ["Matthew A Nichols"], "affiliations": [], "homepage":
+        null, "paperCount": 5, "citationCount": 724, "hIndex": 4}, {"authorId": "1410187169",
+        "externalIds": {"DBLP": ["Peter Li"]}, "url": "https://www.semanticscholar.org/author/1410187169",
+        "name": "Peter H. Li", "aliases": ["Peter H Li", "Peter Li"], "affiliations":
+        [], "homepage": null, "paperCount": 13, "citationCount": 1247, "hIndex": 10},
+        {"authorId": "35086944", "externalIds": {"DBLP": ["Viren Jain"]}, "url": "https://www.semanticscholar.org/author/35086944",
+        "name": "Viren Jain", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 37, "citationCount": 4192, "hIndex": 21}, {"authorId": "35571193",
+        "externalIds": {"DBLP": ["Davi Bock", "Davi D. Bock"]}, "url": "https://www.semanticscholar.org/author/35571193",
+        "name": "D. Bock", "aliases": ["D.d. Bock", "Davi Bock", "Davi D Bock", "Davi
+        D. Bock"], "affiliations": [], "homepage": null, "paperCount": 47, "citationCount":
+        3529, "hIndex": 26}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5772'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 28 Feb 2023 10:26:30 GMT
+      Via:
+      - 1.1 b9be9a01d0554440df2e552c48b859b4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Y2pu9PRYNip-qolrUMMTDArVJNFiLBMbyRQAPCjRLKzFHDycmZ6AOQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BC6BfF9TPHcF9tQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '5772'
+      x-amzn-Remapped-Date:
+      - Tue, 28 Feb 2023 10:26:30 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 870ef72e-4d96-493a-be76-10151fde3ee3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
+        "5f24090c18dff09a875e92e8b28364b2c2ed1abb", "title": "Restructuring of olfactory
+        representations in the fly brain around odor relationships in natural sources"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "cf4a19335995bc91d8414ed71d1b3e306a949669",
+        "title": "Evolution of connectivity architecture in the Drosophila mushroom
+        body"}}, {"isInfluential": false, "citingPaper": {"paperId": "0247a960c117ec432f8e52d8c96f3dd46bd742bd",
+        "title": "Hacking brain development to test models of sensory coding"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "6c32d89c783891ba23860a8999e8150812c99b73",
+        "title": "Drosophila olfaction: past, present and future"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "bd04c9a4e66dbb8ad2217c6f7ddce1fad1157919",
+        "title": "The cellular architecture of memory modules in Drosophila supports
+        stochastic input integration"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "732597e57b3de0a2884a2a6b39156c55c1897b42", "title": "Meta-Learning the Inductive
+        Biases of Simple Neural Circuits"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a813dc4e289a56ae23bcca5204433ce7d0447f57", "title": "Structured
+        cerebellar connectivity supports resilient pattern separation"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "7234495241b9d7393fb27182686eb065985fd647",
+        "title": "Multi-Layered Maps of Neuropil with Segmentation-Guided Contrastive
+        Learning"}}, {"isInfluential": false, "citingPaper": {"paperId": "5d06ad748e2502a85af763487f431cfd6750f1ac",
+        "title": "High-throughput sequencing of single neuron projections reveals
+        spatial organization in the olfactory cortex"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "062de529b091acf2d965a7c697715529b4ff9c88", "title":
+        "Olfactory responses of Drosophila are encoded in the organization of projection
+        neurons"}}, {"isInfluential": false, "citingPaper": {"paperId": "5e9de283947be7872688f88280edc2271c720e51",
+        "title": "Central organization of a high-dimensional odor space"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "1cd72757ee075e80c3cab9b0fbe2db732616b474",
+        "title": "Mushroom body input connections form independently of sensory activity
+        in Drosophila melanogaster\n"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "eaa1ad1f740fee4a03079af7764f8807bff9b6bf", "title": "Neural network organization
+        for courtship-song feature detection in Drosophila"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "a843d5608b4c8adb601c7b9814a167440acc2955", "title":
+        "The anterior paired lateral neuron normalizes odour-evoked activity in the
+        Drosophila mushroom body calyx."}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "7d1824c61645371a977706ce860a678e3741a53f", "title": "FlyWire:
+        online community for whole-brain connectomics"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "8648a09611db310d6040ffa0788e6c86d66038fa", "title":
+        "Structured connectivity in the cerebellum enables noise-resilient pattern
+        separation"}}, {"isInfluential": false, "citingPaper": {"paperId": "c5536ef56db86a7f89d6b9d0eb3db894481c3372",
+        "title": "Local olfactory interneurons provide the basis for neurochemical
+        regionalization of olfactory glomeruli in crustaceans"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "45485ccd24784a5217c16b3d5e44c6950aac94fb",
+        "title": "The anterior paired lateral neuron normalizes odour-evoked activity
+        at the mushroom body calyx"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "8b840ccad7a0c20d113ffba0cf3976f639fbcf4c", "title": "Genealogical relationships
+        of mushroom bodies, hemiellipsoid bodies, and their afferent pathways in the
+        brains of Pancrustacea: Recent progress and open questions."}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "277cb14663998a4a26724f42d5372ebeaec3403a",
+        "title": "Wiring logic of the early rodent olfactory system revealed by high-throughput
+        sequencing of single neuron projections"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "cf432fec8af0e5da8fc901b5364ef99aaba514d0", "title": "The relationship
+        between birth timing, circuit wiring, and physiological response properties
+        of cerebellar granule cells"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "16ab00313c9c4acba0d3ff643648d64993bad614", "title": "Connectivity patterns
+        that shape olfactory representation in a mushroom body network model"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "da6ce9df076a7fe81b6119ea05164a6917b59f56",
+        "title": "Compensatory variability in network parameters enhances memory performance
+        in the Drosophila mushroom body"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "65d77663124f850bc5a87efb286cffd2e31ba8c1", "title": "Can a Fruit
+        Fly Learn Word Embeddings?"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "5b3e09e4706b1344e368b04b50928ac6c9b8615d", "title": "Untangling the wires:
+        development of sparse, distributed connectivity in the mushroom body calyx"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "641ee65c532f9de8fc0ceb4796d9038abc4640d4",
+        "title": "Information flow, cell types and stereotypy in a full olfactory
+        connectome"}}, {"isInfluential": false, "citingPaper": {"paperId": "1e61fc3be517cbbf24641aac026c257fafc811b2",
+        "title": "The connectome of the adult Drosophila mushroom body provides insights
+        into function"}}, {"isInfluential": false, "citingPaper": {"paperId": "3149671f907078eac6835a05a99da756c493a15b",
+        "title": "FlyWire: Online community for whole-brain connectomics"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "9c30c9d49d1325e86604a90e69eeea08a0d079d4",
+        "title": "The connectome of the adult Drosophila mushroom body: implications
+        for function"}}, {"isInfluential": false, "citingPaper": {"paperId": "e731c97430438fb816e6506270a1673e5a3aba7f",
+        "title": "Synthesis of Conserved Odor Object Representations in a Random,
+        Divergent-Convergent Network"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "6e0b45b624112390eebf614b9679f88e05b338fb", "title": "Connectomics Analysis
+        Reveals First-, Second-, and Third-Order Thermosensory and Hygrosensory Neurons
+        in the Adult Drosophila Brain"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "184f3223e760445fbce4683b311113f985ee7334", "title": "Complete
+        Connectomic Reconstruction of Olfactory Projection Neurons in the Fly Brain"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "23653a9f071d20bac22948f1dd1ebd0564b09507",
+        "title": "Automated Reconstruction of a Serial-Section EM Drosophila Brain
+        with Flood-Filling Networks and Local Realignment"}}, {"isInfluential": true,
+        "citingPaper": {"paperId": "273e9e7a167153feb78603eb51b27e7857602795", "title":
+        "Olfactory responses of Drosophila 1 are encoded in the organization of 2
+        projection neurons 3"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "0345334de13a87f167927cdb0aeb9427bf4e6941", "title": "The anterior paired
+        lateral neuron 1 normalizes odour-evoked activity in 2 the Drosophila mushroom
+        body 3 calyx 4"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '7016'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 28 Feb 2023 10:26:30 GMT
+      Via:
+      - 1.1 1ba2a752fe59ed728a048663debd3cb4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - OgcTvcix7OmSRyVdENi362vDVuHo1-LykYmdxW3K40trRHl87InhcA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BC6BlGaBPHcF3hg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '7016'
+      x-amzn-Remapped-Date:
+      - Tue, 28 Feb 2023 10:26:30 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - fbce37cc-6d3d-40bf-8b0f-4faf31e55b16
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/e2e1aa8b8b1dfed9c65589d5293acbae4cbe061a/references?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
+        "53477b5d896237c36d7d5eef7659efa54cb2821d", "title": "Response competition
+        between neurons and antineurons in the mushroom body"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": null, "title": "Connectivity patterns shape
+        sensory representation in a cerebellumlike network"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "641ee65c532f9de8fc0ceb4796d9038abc4640d4", "title":
+        "Information flow, cell types and stereotypy in a full olfactory connectome"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "1e61fc3be517cbbf24641aac026c257fafc811b2",
+        "title": "The connectome of the adult Drosophila mushroom body provides insights
+        into function"}}, {"isInfluential": false, "citedPaper": {"paperId": "3149671f907078eac6835a05a99da756c493a15b",
+        "title": "FlyWire: Online community for whole-brain connectomics"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "3fc7bfb6a896a3159ddcf17b926d87c1beb32514",
+        "title": "Circuit reorganization in the Drosophila mushroom body calyx accompanies
+        memory consolidation"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "4489babe5a698a0257b3f256776b3a302ba3fa25", "title": "The natverse, a versatile
+        toolbox for combining and analysing neuroanatomical data"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "85ab16854285cadba3327a69bf9b528b05d060b9",
+        "title": "The Drosophila Mushroom Body: From Architecture to Algorithm in
+        a Learning Circuit."}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "485fe26cdf8b1ad829b8601986fe4295ac360a52", "title": "A connectome and analysis
+        of the adult Drosophila central brain"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "268389360a6698a8c1edd70ec272ff8e35c459b6", "title": "Localized
+        inhibition in the Drosophila mushroom body"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "184f3223e760445fbce4683b311113f985ee7334", "title": "Complete
+        Connectomic Reconstruction of Olfactory Projection Neurons in the Fly Brain"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "07ea608b82d9741ee585f5f5dcfd334b360c2b89",
+        "title": "Bio-Inspired Hashing for Unsupervised Similarity Search"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "4f702ef40e03c66391df6b005a68766d32e11430",
+        "title": "Toward nanoscale localization of memory engrams in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "f0d35b37fec26c3f1ed09253cbb9304fb62208d1",
+        "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "23653a9f071d20bac22948f1dd1ebd0564b09507",
+        "title": "Automated Reconstruction of a Serial-Section EM Drosophila Brain
+        with Flood-Filling Networks and Local Realignment"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "d71f0b19445609cd9693068b88d79856036a48a6", "title":
+        "Constraining computational models using electron microscopy wiring diagrams"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "d9b3f1302ee960ce8ff4a8e1652af5717bf0ac83",
+        "title": "Local synaptic inputs support opposing, network-specific odor representations
+        in a widely projecting modulatory neuron"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "e7ad3df89df40a984fd913bd466d33d908c8e736", "title": "Author response:
+        Local synaptic inputs support opposing, network-specific odor representations
+        in a widely projecting modulatory neuron"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "e1b599c0aa5f8ae3f763752ae35a6eabbbcfae85", "title": "Mechanisms
+        of Sensory Discrimination: Insights from Drosophila Olfaction."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "c4f5e38bd851485bc20cbb93e40ffacf52bcc045",
+        "title": "Re-evaluating Circuit Mechanisms Underlying Pattern Separation"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "9c1e8fda9bbfd4a55ff0526375ff1637499439f2",
+        "title": "Wild African Drosophila melanogaster Are Seasonal Specialists on
+        Marula Fruit"}}, {"isInfluential": false, "citedPaper": {"paperId": "d466ec9fe4fda46683bda444f1f36e05211f0502",
+        "title": "Measures and metrics"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "f36c0c7b904496417798fe972217f0dc5d63a3b3", "title": "Integration
+        of Parallel Opposing Memories Underlies Memory Extinction"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "25fe76eb138fc649f227dbbc94e192373bbcce40",
+        "title": "Olfactory Neurons and Brain Centers Directing Oviposition Decisions
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "841b1152f009c8bd0918d37b27e5f3d68a88c26f",
+        "title": "Structural aspects of plasticity in the nervous system of Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "a9f7edaabe58f56520422d58fb5234488ae90ce8",
+        "title": "Progress and remaining challenges in high-throughput volume electron
+        microscopy"}}, {"isInfluential": false, "citedPaper": {"paperId": "5938803962e2dd516d48fe0ab3ebb6199df863d8",
+        "title": "The Olfactory Logic behind Fruit Odor Preferences in Larval and
+        Adult Drosophila."}}, {"isInfluential": false, "citedPaper": {"paperId": "4afcc1474d4089a653cf8eb528e81a5a56030410",
+        "title": "Of what use is connectomics? A personal perspective on the Drosophila
+        connectome"}}, {"isInfluential": false, "citedPaper": {"paperId": "7b1a06e65d21323dafd099143d86802520abccf0",
+        "title": "Genetic Reagents for Making Split-GAL4 Lines in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "229cf8ddb9b5dbdf3b8bb60c9fbcf83759347810",
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila
+        melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId": "642d2aa15f0988359754696ed68fcd440feb4f24",
+        "title": "Fast Similarity Search via Optimal Sparse Lifting"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "620af242e36739c70e8a9ce6bcbf73b6bb3d463b",
+        "title": "A clustering neural network model of insect olfaction"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "108bb3aa53b61abd1b6614959190f8a9bf8771ab",
+        "title": "A Drosophila female pheromone elicits species-specific long-range
+        attraction via an olfactory channel with dual specificity for sex and food"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "d4697ad12ea937b4306455eb053a0a0abd247b6d",
+        "title": "Statistical Inference on Random Dot Product Graphs: a Survey"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "81f2088459fe65e4882d227ab11836c54f3fc790",
+        "title": "A neural algorithm for a fundamental computing problem"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "dae24b7452a5df7af335a9bb6ecf0396316f6c1c",
+        "title": "Origins of Cell-Type-Specific Olfactory Processing in the Drosophila
+        Mushroom Body Circuit"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "ef907e28459d7b7407561242f3baa621d706f04b", "title": "A connectome of a learning
+        and memory center in the adult Drosophila brain"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "79b26df5a0e98888333bd11e2500f552662a8e17", "title":
+        "Author response: A connectome of a learning and memory center in the adult
+        Drosophila brain"}}, {"isInfluential": false, "citedPaper": {"paperId": "13a2e6b25ac81e06dd890b6628921ee4d93efd45",
+        "title": "Olfactory coding from the periphery to higher brain centers in the
+        Drosophila brain"}}, {"isInfluential": false, "citedPaper": {"paperId": "9e41cbe6ae16fc554f535fce713a76085ccfbdf5",
+        "title": "The complete connectome of a learning and memory centre in an insect
+        brain"}}, {"isInfluential": true, "citedPaper": {"paperId": "24b82421b9337b1be267976733cefba7ab1ecca3",
+        "title": "Optimal Degrees of Synaptic Connectivity"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "04de37532fb4bb810656aebbf4e2afc5db588056", "title":
+        "A Simple Computational Model of the Bee Mushroom Body Can Explain Seemingly
+        Complex Forms of Olfactory Learning and Memory"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "01a147c91ec86931c050130c782e070f0b7741c7", "title":
+        "Spatial representation of odorant valence in an insect brain"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "4aca9871050b436541554f64bece2074d9bcf798",
+        "title": "The aerodynamics and control of free flight manoeuvres in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "f748089fd37004e59ac45b6ee59c107750b34f2f",
+        "title": "Convergence of multimodal sensory pathways to the mushroom body
+        calyx in Drosophila melanogaster"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "3303b7af3aa44367d5aecb6966fce17cd8dc04b4", "title": "Decoding
+        of Context-Dependent Olfactory Behavior in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "9a68168d760964ef34d0470fb3ca39e960333759",
+        "title": "Aversive Learning and Appetitive Motivation Toggle Feed-Forward
+        Inhibition in the Drosophila Mushroom Body"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "f0300da2fe189a5a2259c3ec90e5724e231ba896", "title": "Gap junction
+        networks in mushroom bodies participate in visual learning and memory in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "d5bd1a6a7241d4622caffcf3119e3c15184233c7",
+        "title": "Humidity Sensing in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "ad963ab1205d657f4a5d9c9fbdd5a7070e6cf251", "title": "Ionotropic
+        Chemosensory Receptors Mediate the Taste and Smell of Polyamines"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "4b22f2f0251f4cec6a1cab2c463386117a791433",
+        "title": "Memory-Relevant Mushroom Body Output Synapses Are Cholinergic"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "2dfbdebb8d9679ebbb84d44ed30f7330218eab54",
+        "title": "Sensitive red protein calcium indicators for imaging neural activity"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "ab2c027849e38411a28092436ae6a44a22c5ad9d",
+        "title": "Anatomy and function of an excitatory network in the visual cortex"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "deafc4e6e00765a26b934490d3e9f2aacd256767",
+        "title": "NBLAST: Rapid, Sensitive Comparison of Neuronal Structure and Construction
+        of Neuron Family Databases"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "4a7b34000df2e255f3e3afb378812c24208db270", "title": "Author response: Quantitative
+        neuroanatomy for connectomics in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "88d5f63af893be00ab021f918e944f58f5f04abe", "title": "Modular
+        Brain Networks."}}, {"isInfluential": false, "citedPaper": {"paperId": "31b64b29c1bb86ae34ebbbdb7816acc37fac853a",
+        "title": "Quantitative neuroanatomy for connectomics in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "7cbf3839bfaeb17942b7ab281b67b56ff3b58a24",
+        "title": "Olfactory learning skews mushroom body output pathways to steer
+        behavioral choice in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "ac6339efe85594d7bb4023d987e739138668666c", "title": "Drosophila
+        Avoids Parasitoids by Sensing Their Semiochemicals via a Dedicated Olfactory
+        Circuit"}}, {"isInfluential": false, "citedPaper": {"paperId": "50b26ff3c0eb8d8e1242a0b7a5f626363285bb9b",
+        "title": "The chemical ecology of the fly"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "98298328482d4b427a41487ba50ec7a5f223add4", "title": "Connecting
+        Neural Codes with Behavior in the Auditory System of Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "168f1c39148817700f914bd01e437b4add4ed4f9",
+        "title": "Plasticity-driven individualization of olfactory coding in mushroom
+        body output neurons"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "37288fe76a864233214b6a5e4cee29923e9c36b9", "title": "Saturated Reconstruction
+        of a Volume of Neocortex"}}, {"isInfluential": true, "citedPaper": {"paperId":
+        "6da2905bef6b50736660028ce5d11db3206095c1", "title": "What the fly\u2019s
+        nose tells the fly\u2019s brain"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "2503d8a85cef8547a4b8273e1319afed51cea99a", "title": "The vertical
+        lobe of cephalopods: an attractive brain structure for understanding the evolution
+        of advanced learning and memory systems"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "00d787c773dc308cb8715e6c678b66ac03efd8d3", "title": "Optimized
+        tools for multicolor stochastic labeling reveal diverse stereotyped cell arrangements
+        in the fly visual system"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "2f3845de0386afef27fe69ae7a0a297273f83e08", "title": "Pheromones mediating
+        copulation and attraction in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "dfab1a48f99580fffcca27ffcf7f7821132dee6c", "title": "Temperature
+        representation in the Drosophila brain"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "9d25bf55d11a3c930b941f08d7d2903255d08512", "title": "Olfactory
+        Proxy Detection of Dietary Antioxidants in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "6d6bf574d29a9bed85a3f24acdefad6151f12136",
+        "title": "Thermosensory processing in the Drosophila brain"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "7f2225f8523b4912ce49ced6cd2b20e7b7f13a60",
+        "title": "Automatic discovery of cell types and microcircuitry from neural
+        connectomics"}}, {"isInfluential": true, "citedPaper": {"paperId": "f99356aa445d95ac7f460bc6262bde51bc56fb33",
+        "title": "The neuronal architecture of the mushroom body provides a logic
+        for associative learning"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "8594b6b68a0149159ffc1916a877335886e93935", "title": "Generation of dense
+        statistical connectomes from sparse morphological data"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "887aacbc44a5a176e127eef3d5acfff83d10d6bd",
+        "title": "Functional neuroanatomy of Drosophila olfactory memory formation."}},
+        {"isInfluential": false, "citedPaper": {"paperId": "2f420d40bbef29f47005c1fc22c2aff98605f659",
+        "title": "Ward\u2019s Hierarchical Agglomerative Clustering Method: Which
+        Algorithms Implement Ward\u2019s Criterion?"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "edef67c13bf9a1d548b62b83a2c875cc85e363d3", "title": "Sparseness
+        and Expansion in Sensory Representations"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "17e50df11053f984940b9a42581576ad98b4512f", "title": "Pyramidal
+        Cells Make Specific Connections onto Smooth (GABAergic) Neurons in Mouse Visual
+        Cortex"}}, {"isInfluential": false, "citedPaper": {"paperId": "8bee4b5d734969f126b6509132a4b60a415bd77c",
+        "title": "FoxP influences the speed and accuracy of a perceptual decision
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "b6898985aa0e11749e3ee5492db936be4dc9e4fa",
+        "title": "Farnesol-Detecting Olfactory Neurons in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "f1acadfe336dea6a3bf9e634b277300ce6975e09",
+        "title": "Sparse, Decorrelated Odor Coding in the Mushroom Body Enhances Learned
+        Odor Discrimination"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "cb5488d55cf1bbacfa799315bf52d0b27a5c4762", "title": "The banana code\u2014natural
+        blend processing in the olfactory circuitry of Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "45e5f683cc182e722797819c021a8052fd952d2f",
+        "title": "Independent Optical Excitation of Distinct Neural Populations"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "f75be89150afddc39427b06e4e74f8e98c24f6a5",
+        "title": "Olfactory Preference for Egg Laying on Citrus Substrates in Drosophila"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "3a22b72fde01460bf10a39084f91b561d7fbeab6",
+        "title": "Integration of the olfactory code across dendritic claws of single
+        mushroom body neurons"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "49dd1b3c41da744ef845ce23c26a827d6f05a054", "title": "Shocking Revelations
+        and Saccharin Sweetness in the Study of Drosophila Olfactory Memory"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "1636c0e2814dde4aba5cb17b2f9847328b943710",
+        "title": "Imaging a Population Code for Odor Identity in the Drosophila Mushroom
+        Body"}}, {"isInfluential": false, "citedPaper": {"paperId": "12bc9f173f17e9eb5bd31e9a1c3d24761eda2d09",
+        "title": "From the connectome to brain function"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "c943afb901840397b72d78d81b65d78e8137121d", "title":
+        "The importance of mixed selectivity in complex cognitive tasks"}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "1b8a44a86673ce6984239009e9050e448fa68db2",
+        "title": "Random Convergence of Olfactory Inputs in the Drosophila Mushroom
+        Body"}}, {"isInfluential": false, "citedPaper": {"paperId": "e0e3062c106da7606f98847b3281534605086cee",
+        "title": "Dedicated olfactory neurons mediating attraction behavior to ammonia
+        and amines in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "e368e90c156daf9f718f5bd93a4dc58ea75628c4", "title": "The Sparseness of Mixed
+        Selectivity Neurons Controls the Generalization\u2013Discrimination Trade-Off"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "d3a897e5394ff839b8da376b1ae16e59a54e5fee",
+        "title": "Organization of antennal lobe\u2010associated neurons in adult Drosophila
+        melanogaster brain"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "2e5ba1710ac57ff572796f3f3baa8b961709ba3d", "title": "A Conserved Dedicated
+        Olfactory Circuit for Detecting Harmful Microbes in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "0bbba72496c1390dbb6cb2d4eba661f182971fe7",
+        "title": "Possible Principles Underlying the Transformations of Sensory Messages"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "076c88cc55332a5fe805833bec539c68db99ff5d",
+        "title": "Different classes of input and output neurons reveal new features
+        in microglomeruli of the adult Drosophila mushroom body calyx"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "e968bbfb799f4ffa3be9d918197cdfceaf2eb110",
+        "title": "The Mechanism of Orientation Selectivity in Primary Visual Cortex
+        without a Functional Map"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "84365f87b57628096c10f44b1a43fbe0c9acb243", "title": "Genetic Manipulation
+        of Genes and Cells in the Nervous System of the Fruit Fly"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "2148d17f3b12f5571ef936ee8140ed776d26690a",
+        "title": "An olfactory receptor for food-derived odours promotes male courtship
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "7b72edfcff567603853cae6cb399f905c904f012",
+        "title": "Complementary Function and Integrated Wiring of the Evolutionarily
+        Distinct Drosophila Olfactory Subsystems"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "1911ba9c4fc8c6cf514ead96a670888641a0b5e1", "title": "In search
+        of the structure of human olfactory space."}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "5367f3c59fed620384f42d52d31a2c25f426ee6f", "title": "Cellular-Resolution
+        Population Imaging Reveals Robust Sparse Coding in the Drosophila Mushroom
+        Body"}}, {"isInfluential": false, "citedPaper": {"paperId": "43b1171609d34ae727c8c788d7429a2b70f6bcef",
+        "title": "Are mushroom bodies cerebellum-like structures?"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "209dca498c21a5ae3e111e5cde13559e46937eda",
+        "title": "Presynapses in Kenyon Cell Dendrites in the Mushroom Body Calyx
+        of Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "70261b7edd81c39f69283da12262ba1177ec5006",
+        "title": "Visual Place Learning in Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "b138c83f21212116c1aa3eeeac62080ddf532989",
+        "title": "Acid sensing by the Drosophila olfactory system"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "f9ca1efa80fe4083ea56dd18b5d1634a4c2d3b2c",
+        "title": "Structural Long-Term Changes at Mushroom Body Input Synapses"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "465ed99cfaaf819d9029c8e9f30f39e5b4d29d76",
+        "title": "Ultrastructural Analysis of Hippocampal Neuropil from the Connectomics
+        Perspective"}}, {"isInfluential": false, "citedPaper": {"paperId": "4c75149ce2b4ab8e2b3138b94a33398d759d8632",
+        "title": "A New Process for Wine Production by Penetration of Yeast in Uncrushed
+        Frozen Grapes"}}, {"isInfluential": false, "citedPaper": {"paperId": "7a55fff87ca5da3cf09b1c89df2d3c8ac0199ed7",
+        "title": "The organisation of invertebrate brains: cells, synapses and circuits"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "4921047769202186ea96f4cf4f549979afe0e953",
+        "title": "Synaptic organization in the adult Drosophila mushroom body calyx"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "b4f9fe7365d106c82f6333cc4c4f37722642f977",
+        "title": "CATMAID: collaborative annotation toolkit for massive amounts of
+        image data"}}, {"isInfluential": false, "citedPaper": {"paperId": "f5e0769c1f98dca325d0964fa936578f5dbdd947",
+        "title": "Select Drosophila glomeruli mediate innate olfactory attraction
+        and aversion"}}, {"isInfluential": false, "citedPaper": {"paperId": "e9bd215a919554247b44d3bc33701d2d81a325b7",
+        "title": "Intracortical circuits of pyramidal neurons reflect their long-range
+        axonal targets"}}, {"isInfluential": false, "citedPaper": {"paperId": "dc0e80bd951a46e134da583d903d510739511980",
+        "title": "The Mushroom Body of Adult Drosophila Characterized by GAL4 Drivers"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "bb5e82669c9ab441d88e50ba5dc84b093ded9a6c",
+        "title": "The GABAergic anterior paired lateral neuron suppresses and is suppressed
+        by olfactory learning"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "f0c02b0ee122ba2f2d6b21bb98c3e2ed5fb754df", "title": "Testing Odor Response
+        Stereotypy in the Drosophila Mushroom Body"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "e5a343bb7d7b08115928bb85557b13635a77d91f", "title": "An internal
+        thermal sensor controlling temperature preference in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "28db2c766b0b0275338fd2515b05017fba46d701",
+        "title": "Neuronal assemblies of the Drosophila mushroom body"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "cc2b790265c30d6f7d31ebff3009d298236f66da",
+        "title": "Ome sweet ome: what can the genome tell us about the connectome?"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "416385583e465caed320bc0d6d9162db5f99abd3",
+        "title": "Lateral presynaptic inhibition mediates gain control in an olfactory
+        circuit"}}, {"isInfluential": false, "citedPaper": {"paperId": "58d7abb701448e84a9079d43c5c54a0b9a47cb8b",
+        "title": "Olfactory representations by Drosophila mushroom body neurons."}},
+        {"isInfluential": false, "citedPaper": {"paperId": "6339d11c4fb4e4c68603cd5ab6ab71b8ef978998",
+        "title": "The olfactory sensory map in Drosophila."}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "5244dbf21a49e3d050899f2ea72d02bb8344f504", "title":
+        "Sensory processing in the Drosophila antennal lobe increases reliability
+        and separability of ensemble odor representations"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "f9b49845535a9aa4f9690d645104d87d5fc20cc1", "title":
+        "Propagation of olfactory information in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "ea5a0fa4e666358eacb96decb9223a75036dd691",
+        "title": "Olfactory processing and behavior downstream from highly selective
+        receptor neurons"}}, {"isInfluential": false, "citedPaper": {"paperId": "b74e6e76b9b49ddf11cffde4fd63bbd7b6390bdb",
+        "title": "Receptors and Neurons for Fly Odors in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "5fe6735a8f8800fc0383442fe1e2696b0e7c11cd",
+        "title": "A single class of olfactory neurons mediates behavioural responses
+        to a Drosophila sex pheromone"}}, {"isInfluential": true, "citedPaper": {"paperId":
+        "4a8a7aaa8ee15b2f8558f09e4736572c547cf276", "title": "Comprehensive Maps of
+        Drosophila Higher Olfactory Centers: Spatially Segregated Fruit and Pheromone
+        Representation"}}, {"isInfluential": false, "citedPaper": {"paperId": "0d3ba5caba8de1a5306499a2f30ca07112d9b542",
+        "title": "A Map of Olfactory Representation in the Drosophila Mushroom Body"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "fa11be63acee1e7ec9d3b6d09e0fa4fa67be6866",
+        "title": "Coding of Odors by a Receptor Repertoire"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "1aa705cc720c429a4fb07ea3099098555955db01", "title":
+        "A single population of olfactory sensory neurons mediates an innate avoidance
+        behaviour in Drosophila"}}, {"isInfluential": true, "citedPaper": {"paperId":
+        "1e2c64508e037bfa89e03fb078f398d6f1be27d6", "title": "Integration of Chemosensory
+        Pathways in the Drosophila Second-Order Olfactory Centers"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "216155a0c71b8c7bec638279e7181706eff0018b",
+        "title": "Neuronal architecture of the antennal lobe in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "5f403a93e1eb92682e1f57b147cdcb63bcb5e50c",
+        "title": "Bemerkungen zur funktion der corpora pedunculata im gehirn der insekten
+        aus morphologischer sicht"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "ff733e2c49a49b932bcbbec4c3884e5eb4d48dce", "title": "Mushroom body memoir:
+        from maps to models"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "726fd2f376dd7b7e025fc602a612fe6053fc29d1", "title": "Spatial Representation
+        of the Glomerular Map in the Drosophila Protocerebrum"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "bd3b475388f2febbb3d47d9e7a1b7c82bbf5d998",
+        "title": "Synaptic organization of the mushroom body calyx in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "b0332f2afc2f8ff883bba90f2db935f9b9dafc77",
+        "title": "Fast optimal leaf ordering for hierarchical clustering"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "e8020b85160eda580566053404cb5c32ad19c62c",
+        "title": "Estimating the number of clusters in a data set via the gap statistic"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "453f6f41f1dcedf165eae0498e2b7aee62df5b43",
+        "title": "Development of the Drosophila mushroom bodies: sequential generation
+        of three distinct types of neurons from a neuroblast."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "f9985c19bd21ce1e5c706ad4ac078d11f31375d8",
+        "title": "Tripartite mushroom body architecture revealed by antigenic markers."}},
+        {"isInfluential": true, "citedPaper": {"paperId": "1527805e6d0b7db0fb7bec1641666160cce2ba4d",
+        "title": "The Drosophila mushroom body is a quadruple structure of clonal
+        units each of which contains a virtually identical set of neurones and glial
+        cells."}}, {"isInfluential": false, "citedPaper": {"paperId": "12338ce673664d75adfff73dfba460e22b2eaa87",
+        "title": "GABAergic synapses in the antennal lobe and mushroom body of the
+        locust olfactory system"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "62afe8cad6dcc0bde97ed9007a1f470754192a78", "title": "Associative odor learning
+        in Drosophila abolished by chemical ablation of mushroom bodies."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "965ea5946708f0b669403a377c48e78e9326be61",
+        "title": "Finding Groups in Data: An Introduction to Cluster Analysis"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "b0f423945dd91db60ee78e856c8f2626c7604c2c",
+        "title": "Neural reorganization during metamorphosis of the corpora pedunculata
+        in Drosophila melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "420c02bdc487338dbda64feb7491dcf9fb412f17", "title": "A Simple Coding Procedure
+        Enhances a Neuron''s Information Capacity"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "26ddc77f44fa8d06ba1c56800af5f3b6c0a0ca26", "title": "[On the
+        functional anatomy of the corpora pedunculata in insects (author''s transl)]."}},
+        {"isInfluential": false, "citedPaper": {"paperId": "baa317e95f76f9286c91b1cc8250665d6aaab7fa",
+        "title": "A Theory of Cerebellar Function"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "3c6f34131ad83fda26a3d8ca9892a6705fd40d11", "title": "A theory
+        of cerebellar cortex"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "ac8ab51a86f1a9ae74dd0e4576d1a019f5e654ed", "title": "Some methods for classification
+        and analysis of multivariate observations"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "47706e9fdfe6b7d33d09579e60d6c9732cfa90e7", "title": "Who belongs
+        in the family?"}}, {"isInfluential": false, "citedPaper": {"paperId": null,
+        "title": "A clustering neural network model 1089 of insect olfaction. Paper
+        presented at: Signals, Systems, and Computers"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": null, "title": "Elife 5"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '28335'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 28 Feb 2023 10:26:31 GMT
+      Via:
+      - 1.1 94bbde231de97266ba4561ecfe3eb74c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - GdvyVJaS9m_RtIU6L7D_kwBJ1Oz7K3wUljAHuXdXvL13ZiawG7F2JQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BC6BqG33PHcFjwA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '28335'
+      x-amzn-Remapped-Date:
+      - Tue, 28 Feb 2023 10:26:31 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - ddf30c20-68fc-4251-8733-2ea8c4ceff54
     status:
       code: 200
       message: OK
