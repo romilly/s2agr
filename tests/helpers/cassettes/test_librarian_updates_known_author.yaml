@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/author/6499892?fields=authorId,externalIds,url,name,aliases,affiliations,homepage,paperCount,citationCount,hIndex
+  response:
+    body:
+      string: '{"authorId": "6499892", "externalIds": {}, "url": "https://www.semanticscholar.org/author/6499892",
+        "name": "Eva Berlot", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 22, "citationCount": 227, "hIndex": 8}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 28 Feb 2023 10:03:32 GMT
+      Via:
+      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 890DKYloA7D2mcNW4xtDFa0l_1pk1O0Ya5fr_ZqWAF45kp7CU22mvA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BC2qNEyWvHcFaoA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '230'
+      x-amzn-Remapped-Date:
+      - Tue, 28 Feb 2023 10:03:32 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - cf9c6e2a-e7ef-4975-bbbe-687d90a853da
+    status:
+      code: 200
+      message: OK
+version: 1

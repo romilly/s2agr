@@ -43,8 +43,10 @@ def count_rows(cursor, id_col, table, value):
 
 
 class DatabaseCatalogue(Catalogue):
-    INSERT_PAPER_SQL = "INSERT into paper(paper_id, s2ag_json_text, title, pub_year, pdf_url)" \
-                       " VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING"
+    INSERT_PAPER_SQL = "INSERT into paper(s2ag_json_text, title, pub_year, pdf_url, paper_id)" \
+                       " VALUES (%s, %s, %s, %s, %s) ON CONFLICT (paper_id) DO"\
+                       " UPDATE SET (s2ag_json_text, title, pub_year, pdf_url, updated)" \
+                       " = (EXCLUDED.s2ag_json_text, EXCLUDED.title, EXCLUDED.pub_year, EXCLUDED.pdf_url, DEFAULT)"
     INSERT_AUTHOR_SQL = "INSERT into author(author_id, s2ag_json_text, author_name)" \
                         " VALUES (%s, %s, %s) ON CONFLICT DO NOTHING"
     COUNT_SQL = "select count(paper_id) from paper where paper_id = (%s)"
@@ -96,14 +98,15 @@ class DatabaseCatalogue(Catalogue):
                 self.connection.rollback()
                 raise DatabaseCatalogueException from e
 
-    def _write_paper(self, paper_id: str,
+    def _write_paper(self,
+                     paper_id: str,
                      paper_json_text: str,
                      title=None,
                      year=None,
                      pdf_url=None,
                      ):
         with self.connection.cursor() as cursor:
-            cursor.execute(self.INSERT_PAPER_SQL, (paper_id, paper_json_text, title, year, pdf_url))
+            cursor.execute(self.INSERT_PAPER_SQL, (paper_json_text, title, year, pdf_url, paper_id))
             self.connection.commit()
 
     def _write_author(self, author_id: str,
