@@ -4,6 +4,9 @@ from s2agr.persistence.catalogue import Catalogue
 
 
 class MockCatalogue(Catalogue):
+    def query(self, sql, values):
+        return []
+
     def __init__(self):
         self._papers = {}
 

@@ -47,8 +47,15 @@ class Catalogue(ABC):
     def write_wrote(self, paper_id, author_id):
         pass
 
+    @abstractmethod
+    def query(self, sql, values):
+        pass
+
 
 class NullCatalogue(Catalogue):
+    def query(self, sql, values):
+        return []
+
     def write_wrote(self, paper_id, author_id):
         pass
 

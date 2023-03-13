@@ -1,7 +1,7 @@
 import unittest
 
 import vcr
-from hamcrest import assert_that, starts_with
+from hamcrest import assert_that, starts_with, equal_to, contains_inanyorder
 
 from s2agr.builder import Builder
 from test.s2agr.helpers.database_test import DatabaseTest
@@ -69,3 +69,14 @@ class S2AGTestCase(DatabaseTest):
         self.check_row_count('citation', 'cited_id', paper_id, 6)
         self.check_row_count('citation', 'citing_id', paper_id, 3)
         self.check_row_count('citation', 'is_influential', True, 3)
+
+    @test_vcr.use_cassette
+    def test_librarian_finds_influential_citations(self):
+        paper_id = '63f79cc7423d3032f2be2a380f2f47e429948902'
+        ic = self.librarian.find_influential_citations_for(paper_id)
+        expected_ids =['5027b38c67f7cac3b4b277056be703ad74e864f4',
+                       '0f8cb4a6c794ee18d5f9177782cf07d000adffca',
+                       '8240d155f3b3a04e4de38a903bb001d84fb3b492',]
+        assert_that(ic, contains_inanyorder(*expected_ids))
+
+
