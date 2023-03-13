@@ -20,13 +20,14 @@ class Monitor(ABC):
 
 
 class MockMonitor(Monitor):
-    def debug(self, param):
-        pass
 
     def __init__(self):
         self.infos = []
         self.warnings = []
         self.exceptions = []
+        self.debugs = []
+    def debug(self, message):
+        self.debugs.append(message)
 
     def info(self, message):
         self.infos.append(message)

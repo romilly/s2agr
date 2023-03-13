@@ -121,7 +121,32 @@ class Librarian:
         in_citer_rows = list(self.catalogue.query(sql, paper_id))
         return [row[0] for row in in_citer_rows]
 
+    def get_papers_safely(self, *paper_ids):
+        # handle multiple retrieval coping with server errors for some papers
+        problem_ids = self.check_ids(paper_ids)
+        for problem_id in problem_ids:
+            self.monitor.debug(f'problem retrieving {problem_id}')
+        return (self.catalogue.read_paper(paper_id) for paper_id in paper_ids)
 
+    def check_ids(self, ids, problems: set = None) -> set:
+            # print('trying ', len(ids))
+            if problems is None:
+                problems = set()
+            else:
+                problems = problems
+            if len(ids) == 0:
+                return problems
+            try:
+                self.get_papers(*ids)
+                # print('got ', len(ids))
+                return problems
+            except:
+                if len(ids) == 1:
+                    problems.add(ids[0])
+                    self.get_paper(ids[0])
+                    return problems
+                split = len(ids) // 2
+                return self.check_ids(ids[:split]).union(self.check_ids(ids[split:]))
 
 
 

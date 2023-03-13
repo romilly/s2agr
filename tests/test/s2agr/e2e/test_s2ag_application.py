@@ -1,7 +1,8 @@
 import unittest
 
 import vcr
-from hamcrest import assert_that, starts_with, equal_to, contains_inanyorder
+from hamcrest import assert_that, starts_with, equal_to, contains_inanyorder, contains_exactly, contains_string, \
+    greater_than
 
 from s2agr.builder import Builder
 from test.s2agr.helpers.database_test import DatabaseTest
@@ -76,7 +77,20 @@ class S2AGTestCase(DatabaseTest):
         ic = self.librarian.find_influential_citations_for(paper_id)
         expected_ids =['5027b38c67f7cac3b4b277056be703ad74e864f4',
                        '0f8cb4a6c794ee18d5f9177782cf07d000adffca',
-                       '8240d155f3b3a04e4de38a903bb001d84fb3b492',]
+                       '8240d155f3b3a04e4de38a903bb001d84fb3b492']
         assert_that(ic, contains_inanyorder(*expected_ids))
+
+    @test_vcr.use_cassette
+    def test_librarian_retrieving_multiple_papers_handles_problem_ids(self):
+        ids = ['5027b38c67f7cac3b4b277056be703ad74e864f4', # OK
+               '0f8cb4a6c794ee18d5f9177782cf07d000adffca', # OK
+               '6d26a7d1d6de855db5b632766835a9f010f64938', # Problem
+               ]
+        self.librarian.get_papers_safely(*ids)
+        self.check_total_row_count('paper', 3)
+        debugs = self.librarian.monitor.debugs
+        assert_that(len(debugs), greater_than(0))
+        assert_that(debugs[0],
+                    contains_string('6d26a7d1d6de855db5b632766835a9f010f64938'))
 
 

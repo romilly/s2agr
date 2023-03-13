@@ -1,0 +1,593 @@
+interactions:
+- request:
+    body: '{"ids": ["5027b38c67f7cac3b4b277056be703ad74e864f4", "0f8cb4a6c794ee18d5f9177782cf07d000adffca",
+      "6d26a7d1d6de855db5b632766835a9f010f64938", "8240d155f3b3a04e4de38a903bb001d84fb3b492"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '185'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '{"message": "Internal Server Error"}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:18 GMT
+      Via:
+      - 1.1 800675e91c111e7a276d8d8cb01627b8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - OyfYD3DVIFUrL8wMpXvMQ9rBOooZrwrQn8jp2eo3xX1gHEYM_Wmlzw==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - BuOgSGi8PHcF39A=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '37'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:18 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 15a5cea2-bba6-4d53-b26c-f78506504bf2
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: '{"ids": ["5027b38c67f7cac3b4b277056be703ad74e864f4", "0f8cb4a6c794ee18d5f9177782cf07d000adffca"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '[{"paperId": "5027b38c67f7cac3b4b277056be703ad74e864f4", "externalIds":
+        {"ACL": "2020.eval4nlp-1.3", "MAG": "3098683121", "DOI": "10.18653/v1/2020.eval4nlp-1.3",
+        "CorpusId": 226283632}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/5027b38c67f7cac3b4b277056be703ad74e864f4",
+        "title": "Item Response Theory for Efficient Human Evaluation of Chatbots",
+        "abstract": "Conversational agent quality is currently assessed using human
+        evaluation, and often requires an exorbitant number of comparisons to achieve
+        statistical significance. In this paper, we introduce Item Response Theory
+        (IRT) for chatbot evaluation, using a paired comparison in which annotators
+        judge which system responds better to the next turn of a conversation. IRT
+        is widely used in educational testing for simultaneously assessing the ability
+        of test takers and the quality of test questions. It is similarly well suited
+        for chatbot evaluation since it allows the assessment of both models and the
+        prompts used to evaluate them. We use IRT to efficiently assess chatbots,
+        and show that different examples from the evaluation set are better suited
+        for comparing high-quality (nearer to human performance) than low-quality
+        systems. Finally, we use IRT to reduce the number of evaluation examples assessed
+        by human annotators while retaining discriminative power.", "venue": "EVAL4NLP",
+        "year": 2020, "referenceCount": 63, "citationCount": 13, "influentialCitationCount":
+        0, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/2020.eval4nlp-1.3.pdf",
+        "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Computer
+        Science", "source": "s2-fos-model"}], "publicationTypes": null, "publicationDate":
+        "2020-11-01", "journal": {"name": "Proceedings of the First Workshop on Evaluation
+        and Comparison of NLP Systems"}, "citationStyles": {"bibtex": "@None{Sedoc2020ItemRT,\n
+        author = {Jo\u00e3o Sedoc and L. Ungar},\n booktitle = {EVAL4NLP},\n journal
+        = {Proceedings of the First Workshop on Evaluation and Comparison of NLP Systems},\n
+        title = {Item Response Theory for Efficient Human Evaluation of Chatbots},\n
+        year = {2020}\n}\n"}, "authors": [{"authorId": "2662374", "name": "Jo\u00e3o
+        Sedoc"}, {"authorId": "1412391493", "name": "L. Ungar"}]}, {"paperId": "0f8cb4a6c794ee18d5f9177782cf07d000adffca",
+        "externalIds": {"ArXiv": "2010.12741", "DBLP": "journals/corr/abs-2010-12741",
+        "MAG": "3094313828", "CorpusId": 225067695}, "publicationVenue": null, "url":
+        "https://www.semanticscholar.org/paper/0f8cb4a6c794ee18d5f9177782cf07d000adffca",
+        "title": "An Evaluation Protocol for Generative Conversational Systems", "abstract":
+        "There is a multitude of novel generative models for open-domain conversational
+        systems; however, there is no systematic evaluation of different systems.
+        Systematic comparisons require consistency in experimental design, evaluation
+        sets, conversational systems and their outputs, and statistical analysis.
+        We lay out a protocol for the evaluation of conversational models using head-to-head
+        pairwise comparison. We analyze ten recent models that claim state-of-the-art
+        performance using a paired head-to-head performance (win-loss-tie) on five
+        evaluation datasets. Our findings show that DialoGPT and Blender are superior
+        systems using Bradley-Terry model and TrueSkill ranking methods. These findings
+        demonstrate the feasibility of our protocol to evaluate conversational agents
+        and evaluation sets. Finally, we make all code and evaluations publicly available
+        for researchers to compare their model to other state-of-the-art dialog models.",
+        "venue": "ArXiv", "year": 2020, "referenceCount": 52, "citationCount": 4,
+        "influentialCitationCount": 1, "isOpenAccess": false, "openAccessPdf": null,
+        "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy": [{"category": "Computer
+        Science", "source": "external"}, {"category": "Computer Science", "source":
+        "s2-fos-model"}], "publicationTypes": ["JournalArticle"], "publicationDate":
+        "2020-10-24", "journal": {"name": "ArXiv", "volume": "abs/2010.12741"}, "citationStyles":
+        {"bibtex": "@[''JournalArticle'']{Lee2020AnEP,\n author = {Seolhwa Lee and
+        Heuiseok Lim and Jo\u00e3o Sedoc},\n booktitle = {ArXiv},\n journal = {ArXiv},\n
+        title = {An Evaluation Protocol for Generative Conversational Systems},\n
+        volume = {abs/2010.12741},\n year = {2020}\n}\n"}, "authors": [{"authorId":
+        "8568587", "name": "Seolhwa Lee"}, {"authorId": "31312182", "name": "Heuiseok
+        Lim"}, {"authorId": "2662374", "name": "Jo\u00e3o Sedoc"}]}]
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4601'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:19 GMT
+      Via:
+      - 1.1 8cbc26e2bd6bdffe912d067e513f8b2c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - aM2tIB4-NPBG0hT7EVi4EtsigQlhf06LRhVFS407dZjNRNEdRoB-pA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BuOgYEu2PHcF7ZA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '4601'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:19 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - eb88c836-9c8e-4fd0-8984-d3baaf73d156
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ids": ["6d26a7d1d6de855db5b632766835a9f010f64938", "8240d155f3b3a04e4de38a903bb001d84fb3b492"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '{"message": "Internal Server Error"}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:19 GMT
+      Via:
+      - 1.1 20859c946d4540573244991afc8ba6b0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 3azP0gSiobj2TPvGLq9P7ozevsfbnd_DPvFeh5WtoO0ZqpHSHmpRTg==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - BuOgeGbqPHcFa2A=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '37'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:19 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 45c3a81b-6213-4e89-b7a7-70b70292a10c
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: '{"ids": ["6d26a7d1d6de855db5b632766835a9f010f64938"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '53'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '{"message": "Internal Server Error"}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:20 GMT
+      Via:
+      - 1.1 cd8f4ac94836dc54b056844b56c2bb70.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 9si8qmsrdXF8HjTU_Hd4uzXNk3RkwDAyd8VDCm4NmdZIS_tM2txUSQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Error from cloudfront
+      x-amz-apigw-id:
+      - BuOgjEjTPHcF4Ig=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '37'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:20 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - db406a87-a146-4587-ad3b-a94f107ea0b3
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/6d26a7d1d6de855db5b632766835a9f010f64938?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+  response:
+    body:
+      string: '{"paperId": "6d26a7d1d6de855db5b632766835a9f010f64938", "externalIds":
+        {"DOI": "10.1117/12.2659999", "CorpusId": 254180852}, "publicationVenue":
+        null, "url": "https://www.semanticscholar.org/paper/6d26a7d1d6de855db5b632766835a9f010f64938",
+        "title": "A study of violent criminal behaviour analysis based on deep learning",
+        "abstract": "We propose a deep learning model-based algorithm for the analysis
+        of abnormal behaviour of violent crime video targets, for violent crime videos,
+        to determine whether there are abnormalities in the targets. 2D-net, 3D-net
+        and MIL are used to construct the model. A sparse sampling strategy is used
+        to extract features and a continuous MIL is used to achieve the final classification.
+        The model achieves satisfactory results on the UCF_Crimes dataset and performs
+        well in comparison with similar algorithms in the field.", "venue": "Conference
+        on Artificial Intelligence and Intelligent Information Processing", "year":
+        2022, "referenceCount": 16, "citationCount": 0, "influentialCitationCount":
+        0, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Engineering"],
+        "s2FieldsOfStudy": [{"category": "Engineering", "source": "external"}, {"category":
+        "Computer Science", "source": "s2-fos-model"}], "publicationTypes": ["Conference"],
+        "publicationDate": "2022-11-30", "journal": {"pages": "124560K - 124560K-6",
+        "volume": "12456"}, "citationStyles": {"bibtex": "@[''Conference'']{Chen2022ASO,\n
+        author = {Fuqiang Chen},\n booktitle = {Conference on Artificial Intelligence
+        and Intelligent Information Processing},\n pages = {124560K - 124560K-6},\n
+        title = {A study of violent criminal behaviour analysis based on deep learning},\n
+        volume = {12456},\n year = {2022}\n}\n"}, "authors": [{"authorId": "36396159",
+        "externalIds": {"DBLP": ["Fuqiang Chen"]}, "url": "https://www.semanticscholar.org/author/36396159",
+        "name": "Fuqiang Chen", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 10, "citationCount": 203, "hIndex": 5}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1990'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:20 GMT
+      Via:
+      - 1.1 2a26979912b4df664806cdd3e6310264.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Nu2Oq06cxgOVhTI90yInIeEl_vnMQlvhl0V-4m2iQEfmGC1Y_JEVLQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BuOgoHphPHcFfwQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '1990'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:20 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - d7bd4d95-7fc5-4d07-bece-6a302314375b
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/6d26a7d1d6de855db5b632766835a9f010f64938/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": []}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '26'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:21 GMT
+      Via:
+      - 1.1 98e10af2ccdf5261bf103646169a4112.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - TAA3BY-Cnurd5pe5lkSZfuAMpMRHjfF0nAo9Yj7FjLOBAyqlaWALuQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BuOgwHwYvHcFgsg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '26'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:21 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 93258559-7bba-44b1-a394-7dd3cc9c1676
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/6d26a7d1d6de855db5b632766835a9f010f64938/references?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": true, "citedPaper": {"paperId":
+        "ba4a4d31d2af23eefadbf19e5efd5a7d4fd89143", "title": "Less is More: CLIPBERT
+        for Video-and-Language Learning via Sparse Sampling"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "425fc8829ff30c4795776a92076b6d6ba8714f51",
+        "title": "C-MIL: Continuation Multiple Instance Learning for Weakly Supervised
+        Object Detection"}}, {"isInfluential": true, "citedPaper": {"paperId": "11663c4130486e1ea088906b19b72925f7d80213",
+        "title": "Not\u2010so\u2010supervised: A survey of semi\u2010supervised, multi\u2010instance,
+        and transfer learning in medical image analysis"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": null, "title": "Intelligen tembedded video monitoring
+        system for homesurveillance [C]//Internaional Conferenceon Inventive Computation
+        Technologies.IEEE,2017:1-4"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "4d376d6978dad0374edfa6709c9556b42d3594d3", "title": "Batch Normalization:
+        Accelerating Deep Network Training by Reducing Internal Covariate Shift"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "4f490cdd43843b3acafdc2490d5f70cfacb9c726",
+        "title": "Effective 3D action recognition using EigenJoints"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "2cee43afc7aad6a8f7c4a6d566b60ebc79d57e7a",
+        "title": "Towards Understanding Action Recognition"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "d721f4d64b8e722222c876f0a0f226ed49476347", "title":
+        "Action Recognition with Improved Trajectories"}}, {"isInfluential": true,
+        "citedPaper": {"paperId": "abd1c342495432171beb7ca8fd9551ef13cbd0ff", "title":
+        "ImageNet classification with deep convolutional neural networks"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "117d576d72515e900e6fc5a4a0e7f1d0142a8924",
+        "title": "An Efficient Dense and Scale-Invariant Spatio-Temporal Interest
+        Point Detector"}}, {"isInfluential": false, "citedPaper": {"paperId": "a101d461c5b8e509367b70b9f60d2ffefe2d8454",
+        "title": "Recognizing human actions in videos acquired by uncalibrated moving
+        cameras"}}, {"isInfluential": false, "citedPaper": {"paperId": "9f1707caad72573633c2307fa26ec093e8f4bb03",
+        "title": "Behavior recognition via sparse spatio-temporal features"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "f90d79809325d2b78e35a79ecb372407f81b3993",
+        "title": "Space-time interest points"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "3ececd283f1ca8721b7fe1dff6e9268e36f441eb", "title": "Real-time
+        human motion analysis by image skeletonization"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": null, "title": "A review of advances in pose estimation
+        in sports video analysis"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        null, "title": "Research on the development of smart home based on the Internet
+        of Things"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2819'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:21 GMT
+      Via:
+      - 1.1 f08d6273dc5cb518c4c1c81c2bc6d722.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BsYFyg4K6Ldwd8q0W94o0eqs4PAKjduIwh6Vae_WtbxPQxY-NhpFTQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BuOgyHAFvHcFp_A=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '2819'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:21 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 13aba235-2e31-490c-b000-324eeafe85dd
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ids": ["8240d155f3b3a04e4de38a903bb001d84fb3b492"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '53'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.2
+    method: POST
+    uri: https://api.semanticscholar.org/graph/v1/paper/batch?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors
+  response:
+    body:
+      string: '[{"paperId": "8240d155f3b3a04e4de38a903bb001d84fb3b492", "externalIds":
+        {"MAG": "2940857995", "DOI": "10.14419/IJET.V7I4.44.26973", "CorpusId": 145025838},
+        "publicationVenue": {"id": "6dc36a30-cc99-4370-b330-e671558d5446", "name":
+        "International journal of engineering and technology", "type": "journal",
+        "alternate_names": ["Int J Eng Technol", "Int j eng technol", "International
+        journal of engineering & technology", "Int j eng  technol", "International
+        Journal of Engineering and Technologies", "Int J Eng  Technol", "International
+        Journal of Engineering & Technology", "International Journal of Engineering
+        and Technology"], "issn": "2564-6184", "alternate_issns": ["0975-4024", "2077-1185",
+        "2227-524X", "2049-3444", "2297-623X", "1812-7711", "1793-8236"], "url": "http://dergipark.gov.tr/ijente",
+        "alternate_urls": ["http://www.enggjournals.com/ijet/", "https://www.sciencepubco.com/index.php/ijet",
+        "http://www.enggjournals.com/ijet/index.html", "http://www.iet-journals.org/",
+        "http://www.ijetch.org/", "http://gscience.gurpukur.com/index.php?cPath=5",
+        "https://www.scipress.com/ETET.5", "https://www.scipress.com/IJET"]}, "url":
+        "https://www.semanticscholar.org/paper/8240d155f3b3a04e4de38a903bb001d84fb3b492",
+        "title": "N-Gram Accuracy Analysis in the Method of Chatbot Response", "abstract":
+        "Chatbot is a computer program designed to simulate interactive conversations
+        or communication to users. In this study, chatbot was created as a customer
+        service that functions as a public health service in Malang. This application
+        is expected to facilitate the public to find the desired information. The
+        method for user input in this application used N-Gram. N-gram consists of
+        unigram, bigram and trigram. Testing of this application is carried out on
+        \u00a03 N-gram methods, so that the results of the tests\u00a0 have been done
+        obtain the results for unigram 0.436, bigram 0.28, and trigram 0.26. From
+        these results it can be seen that trigrams are faster in answering questions.",
+        "venue": "International journal of engineering and technology", "year": 2018,
+        "referenceCount": 9, "citationCount": 7, "influentialCitationCount": 0, "isOpenAccess":
+        true, "openAccessPdf": {"url": "https://www.sciencepubco.com/index.php/ijet/article/download/26973/13893",
+        "status": "BRONZE"}, "fieldsOfStudy": ["Mathematics"], "s2FieldsOfStudy":
+        [{"category": "Mathematics", "source": "external"}, {"category": "Computer
+        Science", "source": "s2-fos-model"}], "publicationTypes": null, "publicationDate":
+        "2018-12-01", "journal": {"name": "International Journal of Engineering &
+        Technology"}, "citationStyles": {"bibtex": "@None{Hormansyah2018N-GramAA,\n
+        author = {Dhebys Suryani Hormansyah and E. L. Amalia and Luqman Affandi and
+        D. Wibowo and Indinabilah Aulia},\n booktitle = {International journal of
+        engineering and technology},\n journal = {International Journal of Engineering
+        & Technology},\n title = {N-Gram Accuracy Analysis in the Method of Chatbot
+        Response},\n year = {2018}\n}\n"}, "authors": [{"authorId": null, "name":
+        "Dhebys Suryani Hormansyah"}, {"authorId": "2073481727", "name": "E. L. Amalia"},
+        {"authorId": "2075974004", "name": "Luqman Affandi"}, {"authorId": "2067505615",
+        "name": "D. Wibowo"}, {"authorId": "117657696", "name": "Indinabilah Aulia"}]}]
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3268'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 13:53:22 GMT
+      Via:
+      - 1.1 20859c946d4540573244991afc8ba6b0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - YlNTilFEqakGcY5kvc03df1x8vsMipHtH49yJJyWY7EXMEglGr4KYA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - BuOg3GJPvHcF8UQ=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '3268'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 13:53:22 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 0d5090f7-167b-4e10-986d-66093e0728cc
+    status:
+      code: 200
+      message: OK
+version: 1
