@@ -61,10 +61,6 @@ class DatabaseCatalogueTestCase(DatabaseTest):
             'whatever', 'dontcare'))[0][0]
         assert_that(is_influential)
 
-    def write_sample_citation(self):
-        citation = Citation('whatever','dontcare','dummy', False)
-        self.catalogue.write_citation(citation)
-
     def test_catalogue_ignores_duplicated_citations(self):
         self.write_sample_citation()
         self.check_total_row_count('citation', 1)
@@ -72,6 +68,9 @@ class DatabaseCatalogueTestCase(DatabaseTest):
         self.check_total_row_count('citation', 1)
 
 
+    def write_sample_citation(self):
+        citation = Citation('whatever','dontcare','dummy', False)
+        self.catalogue.write_citation(citation)
 
 if __name__ == '__main__':
     unittest.main()

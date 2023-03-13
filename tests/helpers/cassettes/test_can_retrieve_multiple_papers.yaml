@@ -54,7 +54,7 @@ interactions:
         of these tasks, and report empirical results for each task. The methods described
         in this paper are used to enable semantic features in www.semanticscholar.org.",
         "venue": "North American Chapter of the Association for Computational Linguistics",
-        "year": 2018, "referenceCount": 27, "citationCount": 292, "influentialCitationCount":
+        "year": 2018, "referenceCount": 27, "citationCount": 293, "influentialCitationCount":
         34, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
         "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
         [{"category": "Computer Science", "source": "external"}, {"category": "Computer
@@ -97,27 +97,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 18 Feb 2023 16:33:15 GMT
+      - Fri, 03 Mar 2023 08:54:46 GMT
       Via:
-      - 1.1 41d0ebcbc3faecee108d3cf72e708158.cloudfront.net (CloudFront)
+      - 1.1 2bdf303ca8bff8095bc652af90ed892a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 918na0KhNT9J92QI6SyM9Y8DfZVpott57wU2vImW_PtmxiysYAAxMw==
+      - 2e4isO6MmQiJdapYWC7UisXMzBJDcEtUAZd4ph-Kbq4yEUYEqDOQFg==
       X-Amz-Cf-Pop:
       - LHR62-C5
       X-Cache:
       - Miss from cloudfront
       x-amz-apigw-id:
-      - AiyX0HvGPHcFYpA=
+      - BMlZiEl_PHcFcQg=
       x-amzn-Remapped-Connection:
       - keep-alive
       x-amzn-Remapped-Content-Length:
       - '5418'
       x-amzn-Remapped-Date:
-      - Sat, 18 Feb 2023 16:33:15 GMT
+      - Fri, 03 Mar 2023 08:54:46 GMT
       x-amzn-Remapped-Server:
       - gunicorn
       x-amzn-RequestId:
-      - 10fff7c0-ae1e-4c49-bc3c-c137d1172be2
+      - 59bddb22-7ae6-4c2b-b916-0bf87ebf4c26
     status:
       code: 200
       message: OK

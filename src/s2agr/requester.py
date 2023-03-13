@@ -50,5 +50,6 @@ class ThrottledRequester(Requester):
         self.throttle()
         response = requests.post(url, json=ids)
         if response.status_code != REQUEST_OK:
+            print(response.json())
             raise ThrottledRequesterException(response.reason)
         return response.json()

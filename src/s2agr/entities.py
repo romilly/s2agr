@@ -43,6 +43,7 @@ BASE_PAPER_FIELDS = [
 EXTENDED_PAPER_FIELDS = BASE_PAPER_FIELDS + [f'authors.{subfield}' for subfield in AUTHOR_FIELDS]
 PAPER_FIELDS_WITH_CITATIONS = BASE_PAPER_FIELDS + ['citations', 'references']
 
+
 def snake(name: str) -> str:
     return CC_RE.sub('_', name).lower()
 

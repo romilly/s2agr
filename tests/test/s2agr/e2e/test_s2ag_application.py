@@ -62,5 +62,10 @@ class S2AGTestCase(DatabaseTest):
         self.librarian.get_authors(author_01_id, author_02_id)
         self.check_total_row_count('author', 2)
 
-if __name__ == '__main__':
-    unittest.main()
+    @test_vcr.use_cassette
+    def test_librarian_knows_citing_papers(self):
+        paper_id = '63f79cc7423d3032f2be2a380f2f47e429948902'
+        self.librarian.get_paper(paper_id)
+        self.check_row_count('citation', 'cited_id', paper_id, 6)
+        self.check_row_count('citation', 'citing_id', paper_id, 3)
+        self.check_row_count('citation', 'is_influential', True, 3)

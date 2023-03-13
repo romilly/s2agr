@@ -1,0 +1,234 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/63f79cc7423d3032f2be2a380f2f47e429948902?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+  response:
+    body:
+      string: '{"paperId": "63f79cc7423d3032f2be2a380f2f47e429948902", "externalIds":
+        {"CorpusId": 195803037}, "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/63f79cc7423d3032f2be2a380f2f47e429948902",
+        "title": "A Dataset of Topic-Oriented Human-to-Chatbot Dialogues", "abstract":
+        "This document contains the description of dataset collected during the first
+        round of Conversational Intelligence Challenge (ConvAI) which took place in
+        July 2017. During this evaluation round we collected over 2,500 dialogues
+        from 10 chatbots and 500 volunteers. Here we provide the analysis of dataset
+        statistics and outline some possible improvements for future data collection
+        experiments.", "venue": "", "year": 2018, "referenceCount": 3, "citationCount":
+        6, "influentialCitationCount": 3, "isOpenAccess": false, "openAccessPdf":
+        null, "fieldsOfStudy": null, "s2FieldsOfStudy": [{"category": "Computer Science",
+        "source": "s2-fos-model"}], "publicationTypes": null, "publicationDate": null,
+        "journal": null, "citationStyles": {"bibtex": "@None{Logacheva2018ADO,\n author
+        = {V. Logacheva and M. Burtsev and Valentin Malykh and V. Poluliakh and Alexander
+        I. Rudnicky and Iulian Serban and R. Lowe and Shrimai Prabhumoye and A. Black
+        and Yoshua Bengio},\n title = {A Dataset of Topic-Oriented Human-to-Chatbot
+        Dialogues},\n year = {2018}\n}\n"}, "authors": [{"authorId": "145089549",
+        "externalIds": {"DBLP": ["Varvara Logacheva"]}, "url": "https://www.semanticscholar.org/author/145089549",
+        "name": "V. Logacheva", "aliases": ["V K Logacheva", "V. K. Logacheva", "Varvara
+        K. Logacheva", "Varvara Logacheva"], "affiliations": [], "homepage": null,
+        "paperCount": 62, "citationCount": 1994, "hIndex": 13}, {"authorId": "3359236",
+        "externalIds": {"DBLP": ["Mikhail Burtsev", "Mikhail S. Burtsev"]}, "url":
+        "https://www.semanticscholar.org/author/3359236", "name": "M. Burtsev", "aliases":
+        ["M S Burtsev", "M.s. Burtsev", "M. S. Burtsev", "Mikhail S. Burtsev", "Mikhail
+        Burtsev"], "affiliations": [], "homepage": null, "paperCount": 84, "citationCount":
+        951, "hIndex": 13}, {"authorId": "47815719", "externalIds": {"DBLP": ["Valentin
+        Malykh"]}, "url": "https://www.semanticscholar.org/author/47815719", "name":
+        "Valentin Malykh", "aliases": ["V. D. Malykh", "V. Malykh"], "affiliations":
+        ["Huawei", "Kazan Federal University"], "homepage": "https://val.maly.hk",
+        "paperCount": 46, "citationCount": 728, "hIndex": 11}, {"authorId": "102139303",
+        "externalIds": {}, "url": "https://www.semanticscholar.org/author/102139303",
+        "name": "V. Poluliakh", "aliases": ["V. Poluliakh", "Vadim Poluliakh"], "affiliations":
+        [], "homepage": null, "paperCount": 1, "citationCount": 6, "hIndex": 1}, {"authorId":
+        "1783635", "externalIds": {"DBLP": ["Alexander I Rudnicky", "Alexander I.
+        Rudnicky", "Alexander Rudnicky"]}, "url": "https://www.semanticscholar.org/author/1783635",
+        "name": "Alexander I. Rudnicky", "aliases": ["Alexander I Rudnicky", "Alex
+        Rudnicky", "Alexander Rudnicky", "A I Rudnicky", "A. Rudnicky"], "affiliations":
+        [], "homepage": null, "paperCount": 260, "citationCount": 7298, "hIndex":
+        42}, {"authorId": "35224828", "externalIds": {"DBLP": ["Iulian Serban", "Iulian
+        Vlad Serban"]}, "url": "https://www.semanticscholar.org/author/35224828",
+        "name": "Iulian Serban", "aliases": ["Iulian V. Serban", "Iulian Vlad Serban"],
+        "affiliations": [], "homepage": null, "paperCount": 43, "citationCount": 8704,
+        "hIndex": 17}, {"authorId": "2053999085", "externalIds": {"DBLP": ["Ryan Lowe",
+        "Ryan Thomas Lowe"]}, "url": "https://www.semanticscholar.org/author/2053999085",
+        "name": "R. Lowe", "aliases": ["Ryan Lowe", "Ryan Thomas Lowe"], "affiliations":
+        [], "homepage": null, "paperCount": 5, "citationCount": 190, "hIndex": 4},
+        {"authorId": "9358910", "externalIds": {"DBLP": ["Shrimai Prabhumoye"]}, "url":
+        "https://www.semanticscholar.org/author/9358910", "name": "Shrimai Prabhumoye",
+        "aliases": null, "affiliations": [], "homepage": null, "paperCount": 37, "citationCount":
+        1346, "hIndex": 14}, {"authorId": "1690706", "externalIds": {"DBLP": ["Alan
+        W. Black"]}, "url": "https://www.semanticscholar.org/author/1690706", "name":
+        "A. Black", "aliases": ["A. W. Black", "A.w. Black", "Alan W Black", "Alan
+        Black", "Alan W. Black"], "affiliations": [], "homepage": null, "paperCount":
+        420, "citationCount": 20538, "hIndex": 64}, {"authorId": "1751762", "externalIds":
+        {"DBLP": ["Yoshua Bengio"]}, "url": "https://www.semanticscholar.org/author/1751762",
+        "name": "Yoshua Bengio", "aliases": ["Y. Bengio", "Yoshua Bengio", "Yoshua.
+        Bengio"], "affiliations": [], "homepage": null, "paperCount": 844, "citationCount":
+        445062, "hIndex": 193}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4622'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 10:52:01 GMT
+      Via:
+      - 1.1 ce084a1179392e1921b98c60a4590284.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - iV1s4qA_wNPChk8wkMJy4-Z_tq80lzfK_kSV01jZrO9QsUJaEPSGzw==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - Btz8sGwoPHcFx5Q=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '4622'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 10:52:01 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - d046a0bd-3278-49dd-bc8c-31df40264374
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/63f79cc7423d3032f2be2a380f2f47e429948902/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
+        "c3fdfe92202a0e334a87324a03d61ca545663460", "title": "Language Model Transformers
+        as Evaluators for Open-domain Dialogues"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "5027b38c67f7cac3b4b277056be703ad74e864f4", "title": "Item Response
+        Theory for Efficient Human Evaluation of Chatbots"}}, {"isInfluential": true,
+        "citingPaper": {"paperId": "0f8cb4a6c794ee18d5f9177782cf07d000adffca", "title":
+        "An Evaluation Protocol for Generative Conversational Systems"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "b6650aa754e76bbdc68cd3f782da6ebc1f294f5e",
+        "title": "Predictive Engagement: An Efficient Metric For Automatic Evaluation
+        of Open-Domain Dialogue Systems"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a4125bbefd70f10b79312eadb7bbe86986dbb066", "title": "DREAM technical
+        report for the Alexa Prize 2019"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "8240d155f3b3a04e4de38a903bb001d84fb3b492", "title": "N-Gram Accuracy
+        Analysis in the Method of Chatbot Response"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1081'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 10:52:01 GMT
+      Via:
+      - 1.1 f25763791d7f1173b560742bb9507144.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Rrq5V8ATm0uFgXjLFAD72aB89qecof7_ufGJSFwS-DlAYy3B3LvAJg==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - Btz8yEAqPHcFjMw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '1081'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 10:52:01 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 9b089aa4-9282-422d-aba3-709a405c6805
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/63f79cc7423d3032f2be2a380f2f47e429948902/references?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
+        "339c6e6d46836c173fb6a23b493c724896d4cc70", "title": "Towards an Automatic
+        Turing Test: Learning to Evaluate Dialogue Responses"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "05dd7254b632376973f3a1b4d39485da17814df5",
+        "title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "52b0669065b583abbe5325bad8ce9decb7ecb052",
+        "title": "Chatbot Evaluation and Database Expansion via Crowdsourcing"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '545'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Mar 2023 10:52:02 GMT
+      Via:
+      - 1.1 dda4ba712503a8dd1f45a1bc065e62fe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - TCkWtZyGyOn0SMfXaT_10pKpxY4N3ooE3j3w4p6XIjlsx9Eyz2nWQA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - Btz86GLKvHcFkOw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '545'
+      x-amzn-Remapped-Date:
+      - Mon, 13 Mar 2023 10:52:02 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - f8b4053b-92ac-4b2d-8d7d-b8ca8403fba6
+    status:
+      code: 200
+      message: OK
+version: 1

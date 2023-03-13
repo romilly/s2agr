@@ -60,7 +60,6 @@ class ResearcherTestCase(unittest.TestCase):
     def test_can_retrieve_multiple_papers(self):
         papers = self.researcher.get_papers(paper_01_id, paper_02_id)
         assert_that(len(list(papers)), equal_to(2))
-        test_vcr.use_cassette
 
     @test_vcr.use_cassette
     def test_can_retrieve_multiple_authors(self):
