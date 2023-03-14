@@ -4,6 +4,9 @@ from s2agr.persistence.catalogue import Catalogue
 
 
 class MockCatalogue(Catalogue):
+    def set_paper_as_linked(self, paper_id):
+        pass
+
     def query(self, sql, values):
         return []
 

@@ -51,8 +51,15 @@ class Catalogue(ABC):
     def query(self, sql, values):
         pass
 
+    @abstractmethod
+    def set_paper_as_linked(self, paper_id):
+        pass
+
 
 class NullCatalogue(Catalogue):
+    def set_paper_as_linked(self, paper_id):
+        pass
+
     def query(self, sql, values):
         return []
 

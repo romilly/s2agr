@@ -43,6 +43,7 @@ def count_rows(cursor, id_col, table, value):
 
 
 class DatabaseCatalogue(Catalogue):
+
     INSERT_PAPER_SQL = "INSERT into paper(s2ag_json_text, title, pub_year, pdf_url, paper_id)" \
                        " VALUES (%s, %s, %s, %s, %s) ON CONFLICT (paper_id) DO"\
                        " UPDATE SET (s2ag_json_text, title, pub_year, pdf_url, updated)" \
@@ -57,11 +58,19 @@ class DatabaseCatalogue(Catalogue):
                           " UPDATE SET is_influential = EXCLUDED.is_influential"
     INSERT_WROTE_SQL = "INSERT into wrote(paper_id, author_id) VALUES(%s, %s)" \
                        "ON CONFLICT DO NOTHING"
+    SET_PAPER_AS_LINKED_SQL = "UPDATE paper set got_linked_papers = true WHERE paper_id = (%s)"
 
     def __init__(self, connection=None):
         self.connection = connection
         self.cursor = self.connection.cursor()
-
+    def set_paper_as_linked(self, paper_id):
+        with self.connection.cursor() as cursor:
+            try:
+                cursor.execute(self.SET_PAPER_AS_LINKED_SQL, (paper_id,))
+                self.connection.commit()
+            except Exception as e:
+                self.connection.rollback()
+                raise DatabaseCatalogueException from e
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
 

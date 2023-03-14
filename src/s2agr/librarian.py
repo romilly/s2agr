@@ -148,6 +148,11 @@ class Librarian:
                 split = len(ids) // 2
                 return self.check_ids(ids[:split]).union(self.check_ids(ids[split:]))
 
+    def add_influential_citations_for(self, paper_id):
+        paper_ids = self.find_influential_citations_for(paper_id)
+        self.get_papers_safely(*paper_ids)
+        self.catalogue.set_paper_as_linked(paper_id)
+
 
 
 

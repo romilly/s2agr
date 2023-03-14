@@ -94,3 +94,10 @@ class S2AGTestCase(DatabaseTest):
                     contains_string('6d26a7d1d6de855db5b632766835a9f010f64938'))
 
 
+    @test_vcr.use_cassette
+    def test_librarian_adds_influential_citations(self):
+        paper_id = '63f79cc7423d3032f2be2a380f2f47e429948902'
+        self.librarian.get_paper(paper_id)
+        self.check_row_count('paper','got_linked_papers',False, 1)
+        self.librarian.add_influential_citations_for(paper_id)
+        self.check_row_count('paper','got_linked_papers',True, 1)

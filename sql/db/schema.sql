@@ -53,7 +53,8 @@ CREATE TABLE public.paper (
     pdf_url character varying,
     can_get_pdf boolean,
     local_pdf_location character varying,
-    notes character varying
+    notes character varying,
+    got_linked_papers boolean DEFAULT false NOT NULL
 );
 
 
@@ -138,6 +139,13 @@ CREATE INDEX citing_index ON public.citation USING btree (citing_id);
 
 
 --
+-- Name: linked; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX linked ON public.paper USING btree (got_linked_papers);
+
+
+--
 -- Name: paper_key_paper_index; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -201,4 +209,5 @@ INSERT INTO public.schema_migrations (version) VALUES
     ('20230127171102'),
     ('20230204140418'),
     ('20230204165119'),
-    ('20230219072621');
+    ('20230219072621'),
+    ('20230314102058');
