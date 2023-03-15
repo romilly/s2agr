@@ -172,6 +172,4 @@ class DatabaseCatalogue(Catalogue):
 
     def find_influential_citations_for(self, paper_id):
         self.cursor.execute(self.SELECT_INFLUENTIAL_CITATIONS_SQL, (paper_id,))
-        citer_rows = self.cursor.fetchall()
-        return (row[0] for row in citer_rows)
-
+        return (row[0] for row in (self.cursor.fetchall()))
