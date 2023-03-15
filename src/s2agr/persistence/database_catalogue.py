@@ -44,6 +44,7 @@ def count_rows(cursor, id_col, table, value):
 
 class DatabaseCatalogue(Catalogue):
 
+
     INSERT_PAPER_SQL = "INSERT into paper(s2ag_json_text, title, pub_year, pdf_url, paper_id)" \
                        " VALUES (%s, %s, %s, %s, %s) ON CONFLICT (paper_id) DO"\
                        " UPDATE SET (s2ag_json_text, title, pub_year, pdf_url, updated)" \
@@ -59,10 +60,12 @@ class DatabaseCatalogue(Catalogue):
     INSERT_WROTE_SQL = "INSERT into wrote(paper_id, author_id) VALUES(%s, %s)" \
                        "ON CONFLICT DO NOTHING"
     SET_PAPER_AS_LINKED_SQL = "UPDATE paper set got_linked_papers = true WHERE paper_id = (%s)"
+    SELECT_INFLUENTIAL_CITATIONS_SQL = 'select citing_id from citation where cited_id = (%s) and is_influential'
 
     def __init__(self, connection=None):
         self.connection = connection
         self.cursor = self.connection.cursor()
+
     def set_paper_as_linked(self, paper_id):
         with self.connection.cursor() as cursor:
             try:
@@ -71,6 +74,7 @@ class DatabaseCatalogue(Catalogue):
             except Exception as e:
                 self.connection.rollback()
                 raise DatabaseCatalogueException from e
+
     def set_pdf_location(self, paper_id: str, pdf_location: str):
         pass
 
@@ -107,7 +111,6 @@ class DatabaseCatalogue(Catalogue):
             except Exception as e:
                 self.connection.rollback()
                 raise DatabaseCatalogueException from e
-
 
     def _write_paper(self,
                      paper_id: str,
@@ -167,5 +170,8 @@ class DatabaseCatalogue(Catalogue):
         actual_count = self.cursor.fetchall()[0][0]
         return actual_count
 
-
+    def find_influential_citations_for(self, paper_id):
+        self.cursor.execute(self.SELECT_INFLUENTIAL_CITATIONS_SQL, (paper_id,))
+        citer_rows = self.cursor.fetchall()
+        return (row[0] for row in citer_rows)
 

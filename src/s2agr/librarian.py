@@ -117,9 +117,7 @@ class Librarian:
 
     def find_influential_citations_for(self, paper_id):
         self.get_paper(paper_id)
-        sql = 'select citing_id from citation where cited_id = (%s) and is_influential'
-        in_citer_rows = list(self.catalogue.query(sql, paper_id))
-        return [row[0] for row in in_citer_rows]
+        return self.catalogue.find_influential_citations_for(paper_id)
 
     def get_papers_safely(self, *paper_ids):
         # handle multiple retrieval coping with server errors for some papers

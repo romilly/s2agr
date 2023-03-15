@@ -55,8 +55,15 @@ class Catalogue(ABC):
     def set_paper_as_linked(self, paper_id):
         pass
 
+    @abstractmethod
+    def find_influential_citations_for(self, paper_id):
+        pass
+
 
 class NullCatalogue(Catalogue):
+    def find_influential_citations_for(self, paper_id):
+        return []
+
     def set_paper_as_linked(self, paper_id):
         pass
 
