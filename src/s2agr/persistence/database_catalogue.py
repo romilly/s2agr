@@ -45,6 +45,16 @@ def count_rows(cursor, id_col, table, value):
 class DatabaseCatalogue(Catalogue):
 
 
+    FIND_PAPERS_TO_RESEACH_SQL = """
+    select paper_id, title, pub_year, (s2ag_json_text->>'influentialCitationCount')::integer as iccount,
+       (s2ag_json_text->>'referenceCount')::integer as rcount,
+       (s2ag_json_text->>'citationCount')::integer as ccount
+    from paper
+    where got_linked_papers = false
+    order by iccount desc, rcount desc, pub_year desc
+    limit (%s)
+    """
+
     INSERT_PAPER_SQL = "INSERT into paper(s2ag_json_text, title, pub_year, pdf_url, paper_id)" \
                        " VALUES (%s, %s, %s, %s, %s) ON CONFLICT (paper_id) DO"\
                        " UPDATE SET (s2ag_json_text, title, pub_year, pdf_url, updated)" \
@@ -173,3 +183,8 @@ class DatabaseCatalogue(Catalogue):
     def find_influential_citations_for(self, paper_id):
         self.cursor.execute(self.SELECT_INFLUENTIAL_CITATIONS_SQL, (paper_id,))
         return (row[0] for row in (self.cursor.fetchall()))
+
+    def find_papers_to_research(self, limit=10):
+        self.cursor.execute(self.FIND_PAPERS_TO_RESEACH_SQL, (limit,))
+        rows = self.cursor.fetchall()
+        return (row[0] for row in rows)

@@ -59,6 +59,9 @@ class Catalogue(ABC):
     def find_influential_citations_for(self, paper_id):
         pass
 
+    def find_papers_to_research(self, limit=10):
+        pass
+
 
 class NullCatalogue(Catalogue):
     def find_influential_citations_for(self, paper_id):

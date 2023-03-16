@@ -127,7 +127,6 @@ class Librarian:
         return (self.catalogue.read_paper(paper_id) for paper_id in paper_ids)
 
     def check_ids(self, ids, problems: set = None) -> set:
-            # print('trying ', len(ids))
             if problems is None:
                 problems = set()
             else:
@@ -147,9 +146,15 @@ class Librarian:
                 return self.check_ids(ids[:split]).union(self.check_ids(ids[split:]))
 
     def add_influential_citations_for(self, paper_id):
+        self.monitor.debug(f'adding influential citations for {paper_id}')
         paper_ids = self.find_influential_citations_for(paper_id)
         self.get_papers_safely(*paper_ids)
         self.catalogue.set_paper_as_linked(paper_id)
+
+    def find_papers_to_reseach(self, limit=10):
+        self.monitor.debug(f'finding next {limit} papers to research')
+        return list(self.catalogue.find_papers_to_research(limit=10))
+
 
 
 

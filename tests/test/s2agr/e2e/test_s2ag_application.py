@@ -101,3 +101,11 @@ class S2AGTestCase(DatabaseTest):
         self.check_row_count('paper','got_linked_papers',False, 1)
         self.librarian.add_influential_citations_for(paper_id)
         self.check_row_count('paper','got_linked_papers',True, 1)
+
+    @test_vcr.use_cassette
+    def test_librarian_finds_papers_to_reseach(self):
+        self.librarian.get_paper(paper_01_id)
+        self.librarian.get_paper(paper_02_id)
+        paper_ids =  self.librarian.find_papers_to_reseach()
+        assert_that(paper_ids, equal_to([paper_01_id, paper_02_id]))
+

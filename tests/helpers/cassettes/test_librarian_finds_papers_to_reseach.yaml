@@ -1,0 +1,1558 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+  response:
+    body:
+      string: '{"paperId": "649def34f8be52c8b66281af98ae884c09aef38b", "externalIds":
+        {"DBLP": "conf/naacl/AmmarGBBCDDEFHK18", "MAG": "2952867657", "ACL": "N18-3011",
+        "ArXiv": "1805.02262", "DOI": "10.18653/v1/N18-3011", "CorpusId": 19170988},
+        "publicationVenue": {"id": "01103732-3808-4930-b8e4-7e9e68d5c68d", "name":
+        "North American Chapter of the Association for Computational Linguistics",
+        "type": "conference", "alternate_names": ["North Am Chapter Assoc Comput Linguistics",
+        "NAACL"], "url": "https://www.aclweb.org/portal/naacl"}, "url": "https://www.semanticscholar.org/paper/649def34f8be52c8b66281af98ae884c09aef38b",
+        "title": "Construction of the Literature Graph in Semantic Scholar", "abstract":
+        "We describe a deployed scalable system for organizing published scientific
+        literature into a heterogeneous graph to facilitate algorithmic manipulation
+        and discovery. The resulting literature graph consists of more than 280M nodes,
+        representing papers, authors, entities and various interactions between them
+        (e.g., authorships, citations, entity mentions). We reduce literature graph
+        construction into familiar NLP tasks (e.g., entity extraction and linking),
+        point out research challenges due to differences from standard formulations
+        of these tasks, and report empirical results for each task. The methods described
+        in this paper are used to enable semantic features in www.semanticscholar.org.",
+        "venue": "North American Chapter of the Association for Computational Linguistics",
+        "year": 2018, "referenceCount": 27, "citationCount": 296, "influentialCitationCount":
+        35, "isOpenAccess": true, "openAccessPdf": {"url": "https://www.aclweb.org/anthology/N18-3011.pdf",
+        "status": "HYBRID"}, "fieldsOfStudy": ["Computer Science"], "s2FieldsOfStudy":
+        [{"category": "Computer Science", "source": "external"}, {"category": "Computer
+        Science", "source": "s2-fos-model"}], "publicationTypes": ["JournalArticle",
+        "Conference"], "publicationDate": "2018-05-06", "journal": {"pages": "84-91"},
+        "citationStyles": {"bibtex": "@[''JournalArticle'', ''Conference'']{Ammar2018ConstructionOT,\n
+        author = {Waleed Ammar and Dirk Groeneveld and Chandra Bhagavatula and Iz
+        Beltagy and Miles Crawford and Doug Downey and Jason Dunkelberger and Ahmed
+        Elgohary and Sergey Feldman and Vu A. Ha and Rodney Michael Kinney and Sebastian
+        Kohlmeier and Kyle Lo and Tyler C. Murray and Hsu-Han Ooi and Matthew E. Peters
+        and Joanna L. Power and Sam Skjonsberg and Lucy Lu Wang and Christopher Wilhelm
+        and Zheng Yuan and Madeleine van Zuylen and Oren Etzioni},\n booktitle = {North
+        American Chapter of the Association for Computational Linguistics},\n pages
+        = {84-91},\n title = {Construction of the Literature Graph in Semantic Scholar},\n
+        year = {2018}\n}\n"}, "authors": [{"authorId": "145585097", "externalIds":
+        {"DBLP": ["Waleed Ammar"]}, "url": "https://www.semanticscholar.org/author/145585097",
+        "name": "Waleed Ammar", "aliases": ["W Ashor Ammar", "W. Ammar", "Waleed A
+        Ammar", "Walid Ammar"], "affiliations": ["Allen Institute for Artificial Intelligence
+        (AI2)"], "homepage": null, "paperCount": 60, "citationCount": 3291, "hIndex":
+        23}, {"authorId": "3458736", "externalIds": {"DBLP": ["Dirk Groeneveld"]},
+        "url": "https://www.semanticscholar.org/author/3458736", "name": "Dirk Groeneveld",
+        "aliases": null, "affiliations": [], "homepage": null, "paperCount": 7, "citationCount":
+        505, "hIndex": 6}, {"authorId": "1857797", "externalIds": {"DBLP": ["Chandra
+        Bhagavatula", "Chandra Sekhar Bhagavatula"]}, "url": "https://www.semanticscholar.org/author/1857797",
+        "name": "Chandra Bhagavatula", "aliases": ["Chandra Sekhar Bhagavatula"],
+        "affiliations": ["Allen Institute for Artificial Intelligence"], "homepage":
+        "https://www.chandrab.page/", "paperCount": 56, "citationCount": 4171, "hIndex":
+        27}, {"authorId": "46181066", "externalIds": {"DBLP": ["Islam Beltagy", "Iz
+        Beltagy"]}, "url": "https://www.semanticscholar.org/author/46181066", "name":
+        "Iz Beltagy", "aliases": ["I. Beltagy"], "affiliations": ["Allen Institute
+        for Artificial Intelligence (AI2)"], "homepage": null, "paperCount": 48, "citationCount":
+        6096, "hIndex": 23}, {"authorId": "46230609", "externalIds": {"DBLP": ["Miles
+        Crawford"]}, "url": "https://www.semanticscholar.org/author/46230609", "name":
+        "Miles Crawford", "aliases": ["M.m. Crawford"], "affiliations": [], "homepage":
+        null, "paperCount": 4, "citationCount": 304, "hIndex": 2}, {"authorId": "145612610",
+        "externalIds": {"DBLP": ["Doug Downey"]}, "url": "https://www.semanticscholar.org/author/145612610",
+        "name": "Doug Downey", "aliases": ["Dagney Downey", "D Downey", "Doug C Downey",
+        "Douglas C Downey", "Douglas C. Downey"], "affiliations": ["Allen Institute
+        for Artificial Intelligence", "Northwestern University"], "homepage": "http://users.cs.northwestern.edu/~ddowney/",
+        "paperCount": 105, "citationCount": 7357, "hIndex": 30}, {"authorId": "38092776",
+        "externalIds": {"DBLP": ["Jason Dunkelberger"]}, "url": "https://www.semanticscholar.org/author/38092776",
+        "name": "Jason Dunkelberger", "aliases": null, "affiliations": [], "homepage":
+        "https://dirkraft.github.io", "paperCount": 2, "citationCount": 297, "hIndex":
+        1}, {"authorId": "143718836", "externalIds": {"DBLP": ["Ahmed Elgohary"]},
+        "url": "https://www.semanticscholar.org/author/143718836", "name": "Ahmed
+        Elgohary", "aliases": null, "affiliations": ["Microsoft"], "homepage": "http://cs.umd.edu/~elgohary",
+        "paperCount": 28, "citationCount": 2615, "hIndex": 16}, {"authorId": "46411828",
+        "externalIds": {"DBLP": ["Sergey Feldman"], "ORCID": "0000-0003-0386-0922"},
+        "url": "https://www.semanticscholar.org/author/46411828", "name": "Sergey
+        Feldman", "aliases": null, "affiliations": ["Allen Institute for Artificial
+        Intelligence", "Alongside.care"], "homepage": "https://www.data-cowboys.com/",
+        "paperCount": 26, "citationCount": 912, "hIndex": 12}, {"authorId": "4480314",
+        "externalIds": {"DBLP": ["Vu A. Ha", "Vu Ha"]}, "url": "https://www.semanticscholar.org/author/4480314",
+        "name": "Vu A. Ha", "aliases": ["Vu Ha"], "affiliations": ["The Allen Institute
+        for Artificial Intelligence"], "homepage": "https://vha14.com", "paperCount":
+        21, "citationCount": 903, "hIndex": 11}, {"authorId": "143967880", "externalIds":
+        {"DBLP": ["Rodney Kinney"]}, "url": "https://www.semanticscholar.org/author/143967880",
+        "name": "Rodney Michael Kinney", "aliases": ["R. Kinney", "R. M. Kinney",
+        "Rodney Kinney"], "affiliations": ["Allen Institute for AI"], "homepage":
+        null, "paperCount": 14, "citationCount": 1227, "hIndex": 7}, {"authorId":
+        "41018147", "externalIds": {"DBLP": ["Sebastian Kohlmeier"]}, "url": "https://www.semanticscholar.org/author/41018147",
+        "name": "Sebastian Kohlmeier", "aliases": null, "affiliations": ["Allen Institute
+        for AI", "Semantic Scholar"], "homepage": "www.semanticscholar.org", "paperCount":
+        7, "citationCount": 1060, "hIndex": 6}, {"authorId": "46258841", "externalIds":
+        {"DBLP": ["Kyle Lo"]}, "url": "https://www.semanticscholar.org/author/46258841",
+        "name": "Kyle Lo", "aliases": null, "affiliations": ["Allen Institute for
+        Artificial Intelligence"], "homepage": null, "paperCount": 59, "citationCount":
+        5117, "hIndex": 20}, {"authorId": "144240185", "externalIds": {"DBLP": ["Tyler
+        Murray"], "ORCID": "0000-0003-0043-7192"}, "url": "https://www.semanticscholar.org/author/144240185",
+        "name": "Tyler C. Murray", "aliases": ["Tyler Murray"], "affiliations": ["Allen
+        Institute for Artificial Intelligence"], "homepage": "https://allenai.org",
+        "paperCount": 1, "citationCount": 296, "hIndex": 1}, {"authorId": "46256862",
+        "externalIds": {"DBLP": ["Hsu-Han Ooi"]}, "url": "https://www.semanticscholar.org/author/46256862",
+        "name": "Hsu-Han Ooi", "aliases": null, "affiliations": [], "homepage": null,
+        "paperCount": 1, "citationCount": 296, "hIndex": 1}, {"authorId": "39139825",
+        "externalIds": {"DBLP": ["Matthew E. Peters"]}, "url": "https://www.semanticscholar.org/author/39139825",
+        "name": "Matthew E. Peters", "aliases": ["M. Peters", "Matthew E Peters",
+        "Matthew Peters"], "affiliations": ["Allen Institute for Artificial Intelligence"],
+        "homepage": null, "paperCount": 70, "citationCount": 16434, "hIndex": 28},
+        {"authorId": "39561369", "externalIds": {"DBLP": ["Joanna L. Power", "Joanna
+        Power"]}, "url": "https://www.semanticscholar.org/author/39561369", "name":
+        "Joanna L. Power", "aliases": ["J L Power", "Joanna Power"], "affiliations":
+        [], "homepage": "https://linkedin.com/in/jpower", "paperCount": 6, "citationCount":
+        402, "hIndex": 5}, {"authorId": "46181683", "externalIds": {"DBLP": ["Sam
+        Skjonsberg"]}, "url": "https://www.semanticscholar.org/author/46181683", "name":
+        "Sam Skjonsberg", "aliases": null, "affiliations": ["Allen Institute for AI"],
+        "homepage": "https://codeviking.net", "paperCount": 6, "citationCount": 346,
+        "hIndex": 4}, {"authorId": "31860505", "externalIds": {"DBLP": ["Lucy L. Wang",
+        "Lucy Lu Wang"], "ORCID": "0000-0001-8752-6635"}, "url": "https://www.semanticscholar.org/author/31860505",
+        "name": "Lucy Lu Wang", "aliases": ["Lucy Lu Wang", "Lucy L. Wang"], "affiliations":
+        ["University of Washington", "Allen Institute for AI"], "homepage": "https://llwang.net/",
+        "paperCount": 61, "citationCount": 2098, "hIndex": 19}, {"authorId": "46212260",
+        "externalIds": {"DBLP": ["Chris Wilhelm"]}, "url": "https://www.semanticscholar.org/author/46212260",
+        "name": "Christopher Wilhelm", "aliases": ["C Wilhelm", "C. Wilhelm", "Chris
+        Wilhelm", "Claus Wilhelm"], "affiliations": ["Allen Institute for Artificial
+        Intelligence"], "homepage": null, "paperCount": 15, "citationCount": 1088,
+        "hIndex": 5}, {"authorId": "2112339497", "externalIds": {"DBLP": ["Zheng Yuan"]},
+        "url": "https://www.semanticscholar.org/author/2112339497", "name": "Zheng
+        Yuan", "aliases": null, "affiliations": [], "homepage": null, "paperCount":
+        4, "citationCount": 315, "hIndex": 3}, {"authorId": "15292561", "externalIds":
+        {"DBLP": ["Madeleine van Zuylen"]}, "url": "https://www.semanticscholar.org/author/15292561",
+        "name": "Madeleine van Zuylen", "aliases": ["Madeleine Van Zuylen"], "affiliations":
+        ["Allen Institute for AI", "University of Notre Dame"], "homepage": null,
+        "paperCount": 13, "citationCount": 975, "hIndex": 10}, {"authorId": "1741101",
+        "externalIds": {"DBLP": ["Oren Etzioni"]}, "url": "https://www.semanticscholar.org/author/1741101",
+        "name": "Oren Etzioni", "aliases": ["O Et-zioni", "Oren Etzioni"], "affiliations":
+        [], "homepage": null, "paperCount": 274, "citationCount": 34785, "hIndex":
+        86}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '10414'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:45:59 GMT
+      Via:
+      - 1.1 1679d4f06b5f1d02b9d3d9343e40b5cc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - YUV_KZSXIaHItp9NxSrl_vGQ_VuosSmvD7CXk_PQ1RhIQvjomNuy0Q==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhLEx-PHcFRBw=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '10414'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:45:59 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 5ebea1de-a17d-43cc-9e7c-b103c1b5a601
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
+        "4245c6eb4f59ad5faf9ed9dbc2f0bea8dc393a6a", "title": "Disparity in the Evolving
+        COVID-19 Collaboration Network (preprint)"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "e7dcdfb7734d59b97f825cce8b3105a2d9b14d10", "title": "The Effect
+        of Metadata on Scientific Literature Tagging: A Cross-Field Cross-Model Study"}},
+        {"isInfluential": true, "citingPaper": {"paperId": "1a37f43db8108af003bc9af181460ddaacf9e815",
+        "title": "Convolutional Learning on Simplicial Complexes"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "cb92a7f9d9dbcf9145e32fdfa0e70e2a6b828eb1",
+        "title": "The Semantic Scholar Open Data Platform"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "1712eaa82a2e3d081538a17e06416330fac0a0d8", "title":
+        "Energy Efficient Semantic Communication over Wireless Networks with Rate
+        Splitting"}}, {"isInfluential": false, "citingPaper": {"paperId": "b74aec118f2b62ae05b04f1b66ab79c2e5b873c0",
+        "title": "MRT: Tracing the Evolution of Scientific Publications"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "f445f8a0ce442fe7db90dfb8226272189e649a2c",
+        "title": "Logic Mill - A Knowledge Navigation System"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "b6fba18ca329347c330262edb71f56bde08c29e1",
+        "title": "The National Library of Medicine indexer assignment dataset: A new
+        large\u2010scale dataset for reviewer assignment research"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "a80ea6789cda5a715ba9f29d82e0241f8aea970d",
+        "title": "Automating Quality Assessment of Medical Evidence in Systematic
+        Reviews."}}, {"isInfluential": false, "citingPaper": {"paperId": "47effa64fdf759a9adfb98c10aa56747fdff7a9e",
+        "title": "Integrating Conversational Agents and Knowledge Graphs Within the
+        Scholarly Domain"}}, {"isInfluential": false, "citingPaper": {"paperId": "cfcfe9fd697e98ad2508b4bf95dad16390f66938",
+        "title": "Chaining and the temporal dynamics of scientists\u2019 publishing
+        behaviour"}}, {"isInfluential": false, "citingPaper": {"paperId": "958bb3831589246fe5b6b58cf99e3b65c58d027f",
+        "title": "Multi-modal Molecule Structure-text Model for Text-based Retrieval
+        and Editing"}}, {"isInfluential": true, "citingPaper": {"paperId": "cc71b982828fd38f581c0257502d9b36744f0005",
+        "title": "Named Entity Recognition Using Transfer Learning with the Fusion
+        of Pre-trained SciBERT Language Model and Bi-directional Long Short Term Memory"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "054dd061a42086ab2758141655bebd7559b144fa",
+        "title": "SciFoodNER: Food Named Entity Recognition for Scientific Text"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "94e99c02b61f2d8b727f08e08924146705a614df",
+        "title": "Understanding knowledge role transitions: A perspective of knowledge
+        codification"}}, {"isInfluential": false, "citingPaper": {"paperId": "25b77db5bfca92029532ca70ee659fdf88db8484",
+        "title": "SMAuC - The Scientific Multi-Authorship Corpus"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "7e0fda71cc2e561385c0a2e29f5a81654a11157f",
+        "title": "VarMAE: Pre-training of Variational Masked Autoencoder for Domain-adaptive
+        Language Understanding"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "4a236906f5bed6385c7b3bf3f10a0099e41d4566", "title": "Semantic-Native Communication:
+        A Simplicial Complex Perspective"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "97394fd6876dd10a0bdf233beb8216f16e074bee", "title": "Visual Exploration
+        of Literature with Argo Scholar"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "42b2fd8a0ab69281022de528c591c665f5f2ad3b", "title": "A Multi-Domain
+        Benchmark for Personalized Search Evaluation"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "e92b2ada3a8112426946f3acd8991dbc74d4b311", "title":
+        "KnowledgeShovel: An AI-in-the-Loop Document Annotation System for Scientific
+        Knowledge Base Construction"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "7a71bc2accc8423b69d136d82a2bc584b74e80a3", "title": "Communities as Vague
+        Operators: Epistemological Questions for a Critical Heuristics of Community
+        Detection Algorithms"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "00f4e66a3eb2fa02063d83da1e5afe19242a282e", "title": "Clustering Semantic
+        Predicates in the Open Research Knowledge Graph"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "1b2139b38e6a9ded0c161a6bbed39a5cf09c03f0", "title":
+        "A Dataset of Alt Texts from HCI Publications: Analyses and Uses Towards Producing
+        More Descriptive Alt Texts of Data Visualizations in Scientific Papers"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "dfbe1fcd18742d71d2807506120aab24485491c8",
+        "title": "Constructing marine expert management knowledge graph based on Trellisnet-CRF"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "c05a9797e5ead09d0885efa9f1b464d319f80709",
+        "title": "Drug-Drug Interaction Extraction from Biomedical Text using Relation
+        BioBERT with BLSTM"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "33b7a611db06806a9e1d22ce5bb8bbeb2604b5f3", "title": "What evidence exists
+        on the impact of sustainability initiatives on smallholder engagement in sustainable
+        palm oil practices in Southeast Asia: a systematic map protocol"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "c1e0f6d36328cbdd03b7a8f111a518b8e3525e0f",
+        "title": "A Knowledge Graph Approach towards Re-structuring of Scientific
+        Articles"}}, {"isInfluential": false, "citingPaper": {"paperId": "2a49efd0657c7ace5a4e22ce9c484c94aab8a4b7",
+        "title": "Performance Optimization for Semantic Communications: An Attention-Based
+        Reinforcement Learning Approach"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a60f8498e85f01ec72120c153aa92387f8841a31", "title": "Scholarly
+        knowledge graphs through structuring scholarly communication: a review"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "f339ab25cc1e784baa76896623dde732171b5634",
+        "title": "API Deprecation: A Systematic Mapping Study"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "06418696aa6a8438b1920edf516d576a9d9b7baa",
+        "title": "The decentralized evolution of decentralization across fields: from
+        Governance to Blockchain"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "4f451ba06c4c9effd6c4ac0bae222495501a6200", "title": "Innovations in Neural
+        Data-to-text Generation"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "22568312b44961be20c453bfcbef53a78d7020be", "title": "Themes in Academic Literature:
+        Prejudice and Social Justice"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "782876a0eb86ea73808bb9e1423a34fa4dca28ef", "title": "Extractive Search for
+        Analysis of Biomedical Texts"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "6c7abf617c0591be96a09776092271c72f49ff2f", "title": "Complementary artificial
+        intelligence designed to augment human discovery"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "6ffc29d76c8c31988b5563ac08942bcf28de7bf3", "title":
+        "Institutional Collaboration Recommendation: An expertise-based framework
+        using NLP and Network Analysis"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a4d581724fb604d13719b73f87a0457f007a43a4", "title": "Generating
+        a Structured Summary of Numerous Academic Papers: Dataset and Method"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "4a497123488f5790548406bd10384ae7b89c4315",
+        "title": "Dynamic Spanning Trees for Connectivity Queries on Fully-dynamic
+        Undirected Graphs"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "b222b76c91ce699852a1cdf16670de1bf10afdb3", "title": "Groundwater Rise and
+        Associated Flooding in Coastal Settlements Due To Sea\u2010Level Rise: A Review
+        of Processes and Methods"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "3347bb7b0b95f1ebec61997983ce94d6896e8ea2", "title": "Research Topic Flows
+        in Co-Authorship Networks"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "192041215f6a1573fbbbbe323ee4275157fb6a3d", "title": "A Scoping Review of
+        Species Distribution Modeling Methods for Tick Vectors"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "686d9ee744fa013cc21cdd86acd864c936e9e456",
+        "title": "Large language models are few-shot clinical information extractors"}},
+        {"isInfluential": true, "citingPaper": {"paperId": "844e2bc8c85ae33c69e8307ea0c0fba4f15be07b",
+        "title": "Overview of STEM Science as Process, Method, Material, and Data
+        Named Entities"}}, {"isInfluential": false, "citingPaper": {"paperId": "6cb77f85207c680ac442275138d2458a8505256b",
+        "title": "ScholarBERT: Bigger is Not Always Better"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "f3aea1550dd58193eb14c1e1d485b90f4c8d130c", "title":
+        "SchenQL: A query language for bibliographic data with aggregations and domain-specific
+        functions"}}, {"isInfluential": false, "citingPaper": {"paperId": "cb3192a6c28230190b7fdb7081e1ae94f059a736",
+        "title": "Scim: Intelligent Skimming Support for Scientific Papers"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "88b8569f4c5ea548e8eac6cb68896251e85ca879",
+        "title": "OpenAlex: A fully-open index of scholarly works, authors, venues,
+        institutions, and concepts"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "607d657df1523b537308dc8936cb7472c07ec8f4", "title": "Medical Coding with
+        Biomedical Transformer Ensembles and Zero/Few-shot Learning"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "c27c09cad5885ce508a12b5eac186e6a2b1d33fa",
+        "title": "Further divided gender gaps in research productivity and collaboration
+        during the COVID-19 pandemic: Evidence from coronavirus-related literature"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "7ecb5b8c5456a4a6b1129527b1d96d2997d3ee5b",
+        "title": "Mapping Research Trajectories"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "56d1907288cbccf3dd502c0ebf071f124066f7b9", "title": "Dynamic
+        Gaussian Embedding of Authors"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "eabccc3e2c6c17daea60e089ff6b42819a3d186c", "title": "GraphCite:
+        Citation Intent Classification in Scientific Publications via Graph Embeddings"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "4050bb6746789eb8900cac992bd994550d5e0ec2",
+        "title": "From Books to Knowledge Graphs"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "6d8b9829512f66a1fb92326dc4f6e2b314363625", "title": "S2AMP: A
+        High-Coverage Dataset of Scholarly Mentorship Inferred from Publications"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "5d1b955e38073fc13c82ba46801e300dc1a70a9b",
+        "title": "BioAct: Biomedical Knowledge Base Construction using Active Learning"}},
+        {"isInfluential": true, "citingPaper": {"paperId": "0db5207510819b9956849eb84bfe8703f8f3688d",
+        "title": "BioBART: Pretraining and Evaluation of A Biomedical Generative Language
+        Model"}}, {"isInfluential": false, "citingPaper": {"paperId": "b5aa72becfb20fae00a15a8169e0a4d873cf6013",
+        "title": "Validation of scientific topic models using graph analysis and corpus
+        metadata"}}, {"isInfluential": false, "citingPaper": {"paperId": "bf0ba3559ecfa02175a15217d3b61afe10f09de7",
+        "title": "An empirical study of the design choices for local citation recommendation
+        systems"}}, {"isInfluential": false, "citingPaper": {"paperId": "f11512e1213e756a4ed319e11fb4518b9fa17ccb",
+        "title": "The evolution of scientific literature as metastable knowledge states"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "f2df1a1c2c157bf53233a6648deb5135746fec43",
+        "title": "Assessment of contextualised representations in detecting outcome
+        phrases in clinical trials"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "3d2925c3480e16be04a942bc19d905cff4bcaeb0", "title": "Grappling with the scale
+        of born-digital government publications: Toward pipelines for processing and
+        searching millions of PDFs"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "8dc1e4bac2d0403ba4bec7bcb8abb7534c53ab1f", "title": "Automatic Related Work
+        Generation: A Meta Study"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "59c4df0f1dd75db4a5e25f4fb860040244949089", "title": "Improving the robustness
+        and accuracy of biomedical language models through adversarial training"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "17d7fd18123e12efbb9c255c8b986a5e84578b07",
+        "title": "Time Waits for No One! Analysis and Challenges of Temporal Misalignment"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "1346d703959399ba404f251290d0352f0631d242",
+        "title": "Cross-lingual citations in English papers: a large-scale analysis
+        of prevalence, usage, and impact"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "4bfa4a1a29376f287992c2f02582110750a904bb", "title": "Investigation
+        of improving the pre-training and fine-tuning of BERT model for biomedical
+        relation extraction"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "3ea8767b852253e2636b6e57925be7fcc1d739df", "title": "Systematic Inequalities
+        in Language Technology Performance across the World\u2019s Languages"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "96b8611c3e8d887362df292522debe2c3cfa1def",
+        "title": "Masader: Metadata Sourcing for Arabic Text and Speech Data Resources"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "b146be9e80c66a6e062a1525693311fac65ae19e",
+        "title": "MatSciBERT: A materials domain language model for text mining and
+        information extraction"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "86bca4f379e5e626430193f6bc5731be027d043d", "title": "LG4AV: Combining Language
+        Models and Graph Neural Networks for Author Verification"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "61e06615f6cee5ed1ba7d22b801925b69a45653b",
+        "title": "The Values Encoded in Machine Learning Research"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "f95620883ce631dcca296d6301ab094555a9b1c4",
+        "title": "VILA: Improving Structured Content Extraction from Scientific PDFs
+        Using Visual Layout Groups"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "dbcfccf5de3b80117085e1e1f25d9d297ed24dd7", "title": "OAG-BERT: Towards a
+        Unified Backbone Language Model for Academic Knowledge Services"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "a155b53e05976d7d8801eeeb1a74dfd82639d543",
+        "title": "Analysing the requirements for an Open Research Knowledge Graph:
+        use cases, quality requirements, and construction strategies"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "e877fcfdddaeddd46f7f1afd70eb2e1c7a4bdfae",
+        "title": "Longitudinal Citation Prediction using Temporal Graph Neural Networks"}},
+        {"isInfluential": true, "citingPaper": {"paperId": "95f4666c569ca863fa4ff2ab1447eaad7664b98b",
+        "title": "REDI: Towards knowledge graph-powered scholarly information management
+        and research networking"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "a0f3de926b682a53705f833ae273395678e80231", "title": "What use can and should
+        ACL researchers make of the Cambridge Grammar of the English Language?"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "94bcb719c1e656b2308f0aeafe24ba82390ff631",
+        "title": "NLPSharedTasks: A Corpus of Shared Task Overview Papers in Natural
+        Language Processing Domains"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "464b1322ee1e91752f2c6c280058bbc0406f614a", "title": "Open Research Online
+        Trans4E: Link Prediction on Scholarly Knowledge Graphs"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "dd9e10ce452aaae707835a97b5dcd1decae1825f",
+        "title": "Benchmark for Research Theme Classification of Scholarly Documents"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "c649eb00d0ab538ce2ad6f738832e57cb316cb6b",
+        "title": "Abstractive Approaches To Multidocument Summarization Of Medical
+        Literature Reviews"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "f416d4abeee8fb5b3fcd12fb13912b5e879b16ea", "title": "Exploring the limits
+        of a base BART for multi-document summarization in the medical domain"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "6181dc0cfe0cb4e91c15900a99488267fe856df0",
+        "title": "Multi-objective Representation Learning for Scientific Document
+        Retrieval"}}, {"isInfluential": false, "citingPaper": {"paperId": "9843d4771366606368bc7e01065763af86f0c1aa",
+        "title": "Overview of the Third Workshop on Scholarly Document Processing"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "9ed3652b3351fff5e7a36a8f12cf3fcc9c30d823",
+        "title": "CitRet: A Hybrid Model for Cited Text Span Retrieval"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "adf0ddcb8f924771db30bfba326b56d2633dbf46",
+        "title": "Open Research Online The AIDA Dashboard: a Web Application for Assessing
+        and Comparing Scienti\ufb01c Conferences"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2444de29193576f5c2b3444df81ce177dcbf14ba", "title": "Investigating
+        Natural Language Interactions in Communities"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "b0fd71fa6be58f995aead66fa002a7ed3733f089", "title":
+        "Going Beyond the Paradigm of Knowledge Graph Embedding Models"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "6b40adbd16948d7aa6d92571b27aa510ef8ed462",
+        "title": "ProcessBERT: A Pre-trained Language Model for Judging Equivalence
+        of Variable Definitions in Process Models*"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "1e88bbd27896449115841393040fbbe77a486477", "title": "Leveraging
+        Knowledge Graph Technologies to Assess Journals and Conferences at Springer
+        Nature"}}, {"isInfluential": false, "citingPaper": {"paperId": "9b05db2352c046b3b29bd9bf258cda8895d96d31",
+        "title": "ConfliBERT: A Pre-trained Language Model for Political Conflict
+        and Violence"}}, {"isInfluential": false, "citingPaper": {"paperId": "e6f4006f8bc9867cbc33b0765e7831147ce5162e",
+        "title": "Cross-Domain Detection of GPT-2-Generated Technical Text"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "0df8db983bb491dca3dfd0deba6a7a74b23e08ad",
+        "title": "A Programming Interface for Creating Data According to the SPAR
+        Ontologies and the OpenCitations Data Model"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "d1ca07561b24afe8b1bd18dd1c239dbbbd221964", "title": "Scim: Intelligent
+        Faceted Highlights for Interactive, Multi-Pass Skimming of Scientific Papers"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "b55a065d747be3954f930ab3a7370ea23b6a39b7",
+        "title": "The AIDA Dashboard: a Web Application for Assessing and Comparing
+        Scientific Conferences"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "33059ea93b05ca18d1e9b0612901d22305c80910", "title": "Pipeline for retrieval
+        of COVID-19 immune signatures"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "d7b9197e5cfff70f7797993ab6ad249ae9512b8c", "title": "Cross-lingual
+        citations in English papers: a large-scale analysis of prevalence, usage,
+        and impact"}}, {"isInfluential": false, "citingPaper": {"paperId": "f6150ecb06e4abab36c4bb030dc914b576ee4170",
+        "title": "Building an Accessible, Usable, Scalable, and Sustainable Service
+        for Scholarly Big Data"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "90d1c18f33ca7e8c44cff2c115f0ddf7faa94907", "title": "Search results diversification
+        for effective fair ranking in academic search"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "886a5ca5b6aeae63cef6e4eed468d9338c35fbcb", "title":
+        "Grappling with the scale of born-digital government publications: Toward
+        pipelines for processing and searching millions of PDFs"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "12476eb0e9ea7cb313776228ccbf7657a1765887",
+        "title": "Performance Optimization for Semantic Communications: An Attention-based
+        Learning Approach"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "1980f7230a4c1871cedc856ce836b8d1f62d10e8", "title": "CoBERT: Scientific Collaboration
+        Prediction via Sequential Recommendation"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "8306606fd04eddcdd527b03c728901ab632a084b", "title": "Triple Classification
+        for Scholarly Knowledge Graph Completion"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "b820e740cce5af181a47aa3f3e111447e21c3e24", "title": "x-index:
+        Identifying core competency and thematic research strengths of institutions
+        using an NLP and network based ranking framework"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "0905b384bc98e40c5a9ca20027f5fab3fbc455b4", "title":
+        "New trends in scientific knowledge graphs and research impact assessment"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "67dcf28decf748534e1c0d22315d2d3aae54d7d4",
+        "title": "AIDA: A knowledge graph about research dynamics in academia and
+        industry"}}, {"isInfluential": false, "citingPaper": {"paperId": "ee7cc3bf1f963f9eda26f43d5dc8265f6535f004",
+        "title": "Evaluating BERT-based scientific relation classifiers for scholarly
+        knowledge graph construction on digital library collections"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "2f886811cf7cde2f0d9a19d821f46146f24e6e4a",
+        "title": "Analysis of Language Embeddings for Classification of Unstructured
+        Pathology Reports"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "cf84b177667efdb167dc944b39cafa1c7978c2b7", "title": "The Mont Blanc of Twitter:
+        Identifying Hierarchies of Outstanding Peaks in Social Networks"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "582616fe83a85f095a16778c28297723e25b0ea7",
+        "title": "SciA11y: Converting Scientific Papers to Accessible HTML"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "fdea5396e8a945692a3449d9aae4dc7136cbd2a7",
+        "title": "Modelling trend life cycles in scientific research using the Logistic
+        and Gompertz equations"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "fbd10a298b4bee915f99224342bf0088cceb015d", "title": "Efficient Self-Supervised
+        Metric Information Retrieval: A Bibliography Based Method Applied to COVID
+        Literature"}}, {"isInfluential": false, "citingPaper": {"paperId": "5cc3379090fefad86d2d3e874364ba7babbcbca4",
+        "title": "Towards Explainable Scientific Venue Recommendations"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "de9d0eb23b53034604bae487c127f4785ef779f5",
+        "title": "Using BERT to identify drug-target interactions from whole PubMed"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "6fbcb1b9dddff9641cb764f9f6c3ebfa516ce976",
+        "title": "Pattern-based Acquisition of Scientific Entities from Scholarly
+        Article Titles"}}, {"isInfluential": false, "citingPaper": {"paperId": "d30e218ba0980d76cfd83e04739591e17f3933fe",
+        "title": "Estimating Graph Dimension with Cross-validated Eigenvalues"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "beabb3d31625fbbdba7e720d4d5baa6aac5d7b16",
+        "title": "Ambalytics: A Scalable and Distributed System Architecture Concept
+        for Bibliometric Network Analyses"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "bf37e581f9d2447bf732b8502c8aff5141a88f06", "title": "ESRA: Explainable
+        Scientific Research Assistant"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "14857af0e19e2ccf9321de65d8950d5bc7c4dbbb", "title": "Analysing the requirements
+        for an Open Research Knowledge Graph: use cases, quality requirements, and
+        construction strategies"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "0bee172e0d361aaed77f9677f59df944675f99b7", "title": "Hierarchical Attention
+        Transformer Networks for Long Document Classification"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "3ad0a7051db98a083aa3b9e962769ecf2cde4d44",
+        "title": "Leveraging Domain Agnostic and Specific Knowledge for Acronym Disambiguation"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "23c8ff06cc2dbd01388f60779583a0ebdae2fb14",
+        "title": "TweetPap: A Dataset to Study the Social Media Discourse of Scientific
+        Papers"}}, {"isInfluential": false, "citingPaper": {"paperId": "d4e4a545160d8a6eba5338463168f51e8cbe411e",
+        "title": "Linguistically Informed Masking for Representation Learning in the
+        Patent Domain"}}, {"isInfluential": false, "citingPaper": {"paperId": "d385a1b2db39a87f32095beee907fbcb67fb0b9f",
+        "title": "Graphsurge"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "d2a3b3646a3d4cf1eccabbb8b980533e0836a3f5", "title": "Meta-research on COVID-19:
+        An overview of the early trends"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "87e367d76e5c63c834bf77b4f6ea8bce6cdb5553", "title": "End-to-End
+        NLP Knowledge Graph Construction"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "f70d4f4dd51b43444d0d612e54711bef0fb4fa14", "title": "Trans4E:
+        Link Prediction on Scholarly Knowledge Graphs"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "69285c9040c1356272752499b7e1e53ef25ac008", "title":
+        "Beyond Paragraphs: NLP for Long Sequences"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "8c19883bc33282985af977fd3f3cc4b6ac5b15d3", "title": "Determining
+        the Credibility of Science Communication"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "90614889fe7dcd3c56849e94a7dbf455d11c1834", "title": "An Explanatory
+        Query-Based Framework for Exploring Academic Expertise"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "91ad9c6345723717b9cf77727482195834620060",
+        "title": "CiteWorth: Cite-Worthiness Detection for Improved Scientific Document
+        Understanding"}}, {"isInfluential": false, "citingPaper": {"paperId": "97dc4d4620c2b2d12d6b07a4127f3fddcf126b94",
+        "title": "Learning to Classify Morals and Conventions: Artificial Intelligence
+        in Terms of the Economics of Convention"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "f9f19505a45a76c39e394cccea050d20e425de17", "title": "A Measure
+        of Research Taste"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "c4358134954d8e62939c3a8b9ba8e953d951f73b", "title": "Including Signed Languages
+        in Natural Language Processing"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "a83902f8b3aadfda633968a840ca1738bedef837", "title": "Modeling
+        Graph Structure via Relative Position for Text Generation from Knowledge Graphs"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "4fb435fe5c3c84721e07653bafda3caadf2ebffb",
+        "title": "A survey of domains in workflow scheduling in computing infrastructures:
+        Community and keyword analysis, emerging trends, and taxonomies"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "3d59ad3f87f80bb3382ec91bb9ec636515547ab1",
+        "title": "What Makes a Scientific Paper be Accepted for Publication?"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "1b78ca26e161bc824e75cf5b3d582a3561a1a16e",
+        "title": "Crowdsourcing Scholarly Discourse Annotations"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "d25121da56c9050137800c69520111b30201d1ed",
+        "title": "MS\u02c62: Multi-Document Summarization of Medical Studies"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "c15854c9cb2df5e58380b3aefbdd2b0bc55ebca4",
+        "title": "On the Impact of Knowledge-based Linguistic Annotations in the Quality
+        of Scientific Embeddings"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "88d3229660f8f67e0bfd9689b0cf9ef08ad92106", "title": "Paragraph-level Simplification
+        of Medical Texts"}}, {"isInfluential": false, "citingPaper": {"paperId": "d331de3b6bebb0f9af1fddf1b730ec057a7026d4",
+        "title": "Relational World Knowledge Representation in Contextual Language
+        Models: A Review"}}, {"isInfluential": false, "citingPaper": {"paperId": "76e31cac217d8af2dc91b6dbe5265c8066fffa46",
+        "title": "Accelerating science with human versus alien artificial intelligences"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "54a516aedb5668a67070f70a9f895c8d7391a86d",
+        "title": "Topic-aware Neural Linguistic Steganography Based on Knowledge Graphs"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "10247d86d6b9ea3218d73b1e64ea7ed4b1121752",
+        "title": "Improving University Faculty Evaluations via multi-view Knowledge
+        Graph"}}, {"isInfluential": false, "citingPaper": {"paperId": "879eaab2275a364549809560b42f0fef357ebbce",
+        "title": "BERT: A Review of Applications in Natural Language Processing and
+        Understanding"}}, {"isInfluential": false, "citingPaper": {"paperId": "9fd46013a7188a76da0d610fc54d8879200cce17",
+        "title": "Proximity dimensions and the emergence of collaboration: a HypTrails
+        study on German AI research"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "c3b19870cbd320ad554498139e474644768576b6", "title": "A bibliometric analysis
+        of citation diversity in accessibility and HCI research"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "50068fbea4d1cafcf4c99873ab272c701c08dfcb",
+        "title": "OAG-BERT: Pre-train Heterogeneous Entity-augmented Academic Language
+        Models"}}, {"isInfluential": true, "citingPaper": {"paperId": "04eb972bda6e775d5a15ee49541afca3e3cc93db",
+        "title": "Boosting Low-Resource Biomedical QA via Entity-Aware Masking Strategies"}},
+        {"isInfluential": true, "citingPaper": {"paperId": "69b184f62c97513b03deed96a1443f79b34af0d7",
+        "title": "Making Paper Reviewing Robust to Bid Manipulation Attacks"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "5ea19f443aa86001147caf5b874c75e2d407a246",
+        "title": "Classifying Scientific Publications with BERT - Is Self-Attention
+        a Feature Selection Method?"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "dd4fce116399fc3becba6ede2afbe48958b32506", "title": "Deep dynamic neural
+        networks for temporal language modeling in author communities"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "2d7d78b95c48b09359fd86ab0108328d69101719",
+        "title": "Searching relevant papers for software engineering secondary studies:
+        Semantic Scholar coverage and identification role"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "e4f0fac0f64945b5b2d91d45541b5b2ebbf993c5", "title":
+        "Automatization and self-maintenance of the O-GlcNAcome catalog: a smart scientific
+        database"}}, {"isInfluential": false, "citingPaper": {"paperId": "f8d11695f7f9d7325b9043f3b39fc623eeff9d4d",
+        "title": "Self-Supervised Learning for Visual Summary Identification in Scientific
+        Publications"}}, {"isInfluential": true, "citingPaper": {"paperId": "c562d4c311a603ea768b9f002b4fccda617e4543",
+        "title": "Using drug descriptions and molecular structures for drug\u2013drug
+        interaction extraction from literature"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "2c3211e0fc4a02a05e4874c9daf36fd2c75456d7", "title": "Topic space
+        trajectories"}}, {"isInfluential": false, "citingPaper": {"paperId": "03dc6ccb0b04d5eb6439c33c185bdd1fe892b76e",
+        "title": "Machine Knowledge: Creation and Curation of Comprehensive Knowledge
+        Bases"}}, {"isInfluential": false, "citingPaper": {"paperId": "19af8292ff3cc10aad6f190490f0d34691658179",
+        "title": "Investigating Pretrained Language Models for Graph-to-Text Generation"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "097bd00d48281dfb987cc2277b34f7706c2aa0ef",
+        "title": "Graphsurge: Graph Analytics on View Collections Using Differential
+        Computation"}}, {"isInfluential": false, "citingPaper": {"paperId": "15e1af8533cd810e976d36845b53f5f54744608a",
+        "title": "Multilevel Graph-Based Decision Making in Big Scholarly Data: An
+        Approach to Identify Expert Reviewer, Finding Quality Impact Factor, Ranking
+        Journals and Researchers"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "fb3dc58cb17c54b997e6301cbde7773f77427833", "title": "Parameter-Efficient
+        Domain Knowledge Integration from Multiple Sources for Biomedical Pre-trained
+        Language Models"}}, {"isInfluential": false, "citingPaper": {"paperId": "2a3bfb2fe1e2065de6ac0b66b28b0dcdb5d233e3",
+        "title": "Geography of eco-innovations vis-a\u0300-vis geography of sustainability
+        transitions: Two sides of the same coin?"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "77994c9c7ec19a07173b88fb45a8900b6616dd03", "title": "TADPOLE:
+        Task ADapted Pre-Training via AnOmaLy DEtection"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "5456edaf6daf86cde1b38a8dbbee9ccae12070f9", "title":
+        "Generative Adversarial Networks based on Mixed-Attentions for Citation Intent
+        Classification in Scientific Publications"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "44e34bddc5f0bf794b40271f958159970ff973ef", "title": "Generalized
+        Supervised Attention for Text Generation"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "959927c3bdc254d0c02583d47f35654d53c4d6ef", "title": "Taming Pre-trained
+        Language Models with N-gram Representations for Low-Resource Domain Adaptation"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "20c8536a38acfa10c7af21063e3f7725632d2879",
+        "title": "Improving On-line Scientific Resource Profiling by Exploiting Resource
+        Citation Information in the Literature"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "6407b8cc05e839d59ea0b7a7eceb61ee3e5fc46f", "title": "Incorporating
+        Visual Layout Structures for Scientific Text Classification"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "ee6564e2e0f47c6ac131b093f057ca75907958c9",
+        "title": "BioELECTRA:Pretrained Biomedical text Encoder using Discriminators"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "56fbb4152b4535230827eb2bd23c618045855c26",
+        "title": "Improving the Accessibility of Scientific Documents: Current State,
+        User Needs, and a System Solution to Enhance Scientific PDF Accessibility
+        for Blind and Low Vision Users"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "8147e139813920cc42acfff9f07165ec40c3c03b", "title": "Under optimistic
+        projection models , gender parity is forecast to be reached after 2100"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "f03f38647a616a3471183f587f2b3684a9a3057f",
+        "title": "Using Transfer Learning for Detecting Drug Mentions in Tweets"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "dcaf764feb4bfe9ce5a51546af2ba9d91cb1e912",
+        "title": "Discovery of Research Trends in Computer Science Education on Ethics
+        Using Topic Modeling"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "cf479ea1cba51b7083702a918001fbc667bdff1c", "title": "Mining Author Identifiers
+        for PubMed by Linking to Open Bibliographic Databases"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "3fd81526f7160d2dba1d943ef7a0862bb7fa0531",
+        "title": "Open4Business(O4B): An Open Access Dataset for Summarizing Business
+        Documents"}}, {"isInfluential": false, "citingPaper": {"paperId": "ce1715982ba4ae45ed235e11142238485b0db9fe",
+        "title": "Analysis and Evaluation of COVID-19 Web Applications for Health
+        Professionals: Challenges and Opportunities"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "0f5843cd34c3d12a07769cee510a007d94dd44c1", "title": "University
+        of Washington at TREC 2020 Fairness Ranking Track"}}, {"isInfluential": true,
+        "citingPaper": {"paperId": "2f014ed269c77bdf1286bb540278199fb45adea1", "title":
+        "Tab2Know: Building a Knowledge Base from Tables in Scientific Papers"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "823fe97a65f34abbc60f33179751b808ce60919f",
+        "title": "Where to Submit? Helping Researchers to Choose the Right Venue"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "76ad0d37bd3845431b3ca9d07f8db74c82752298",
+        "title": "Pretrained Language Models for Biomedical and Clinical Tasks: Understanding
+        and Extending the State-of-the-Art"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "59da4f7d85967d922b5d674779ffcee06f186c73", "title": "Investigation
+        of BERT Model on Biomedical Relation Extraction Based on Revised Fine-tuning
+        Mechanism"}}, {"isInfluential": false, "citingPaper": {"paperId": "42044639a2fe3d53daed715a4dd4bc4536361058",
+        "title": "A New Neural Search and Insights Platform for Navigating and Organizing
+        AI Research"}}, {"isInfluential": false, "citingPaper": {"paperId": "fc5f304e56b1724dfd6b09845b1edf4efe592341",
+        "title": "Biomedical Question Answering: A Survey of Methods and Datasets"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "0285f5112a3bcc4c8f8d6ec1732e921495aed067",
+        "title": "Multimodal Knowledge Graph for Deep Learning Papers and Code"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "8af3de56807c32172b06982cf785c9c8b14d117a",
+        "title": "TweetBERT: A Pretrained Language Representation Model for Twitter
+        Text Analysis"}}, {"isInfluential": false, "citingPaper": {"paperId": "9c3c76a0f0c289fa814038ce44fee39a7fba7be7",
+        "title": "Effective distributed representations for academic expert search"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "b9ece2558147a1ec16be1257f5b3b84b34e2d608",
+        "title": "Improving Access to Scientific Literature with Knowledge Graphs"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "32f84107d956e24dbe02a9b80d38239237ff1096",
+        "title": "ReviewRobot: Explainable Paper Review Generation based on Knowledge
+        Synthesis"}}, {"isInfluential": false, "citingPaper": {"paperId": "e663f431579bdde874795c4e0ae6b58249de695f",
+        "title": "PARADE: A New Dataset for Paraphrase Identification Requiring Computer
+        Science Domain Knowledge"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "3b2664a15b46e95eecb9573f21c36892037b0264", "title": "Infusing Disease Knowledge
+        into BERT for Health Question Answering, Medical Inference and Disease Name
+        Recognition"}}, {"isInfluential": true, "citingPaper": {"paperId": "284fd250280c07b64a1a1c69abf098f02d632e8a",
+        "title": "Simplicial Neural Networks"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2e747fb6aec192e89ac8b3fc98f56f4a55f8bb71", "title": "A narrowing
+        of AI research?"}}, {"isInfluential": false, "citingPaper": {"paperId": "4532329a2dcb3fa3f4c623906166a049eca830a4",
+        "title": "Open Information Extraction for Knowledge Graph Construction"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "0f897cad22f8485a0ac0c3f34b5130eed0eb4fc9",
+        "title": "An Improved Mask Approach Based on Pointer Network for Domain Adaptation
+        of BERT"}}, {"isInfluential": false, "citingPaper": {"paperId": "f945c65983d746aa66482e86e338a2388bdeff76",
+        "title": "Using Graphlet Spectrograms for Temporal Pattern Analysis of Virus-Research
+        Collaboration Networks"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "b336492cc1a8de095a57fe0684f142816f32d045", "title": "A Black-Box Fork-Join
+        Latency Prediction Model for Data-Intensive Applications"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "0e7233e912acd3cb7890c67a6a4640280f9f966e",
+        "title": "Integrating Knowledge Graphs for Analysing Academia and Industry
+        Dynamics"}}, {"isInfluential": false, "citingPaper": {"paperId": "2e5b7cc1eaef2f22e3e52778f8444ab7c76e16d1",
+        "title": "Author Contributed Representation for Scholarly Network"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "b0dddc7f5cdce8783bd4a5080feaf41caa27068d",
+        "title": "Elsevier OA CC-By Corpus"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "cc1e9e8d298384337625949171847ff8401044cc", "title": "ADBIS, TPDL
+        and EDA 2020 Common Workshops and Doctoral Consortium: International Workshops:
+        DOING, MADEISD, SKG, BBIGAP, SIMPDA, AIMinScience 2020 and Doctoral Consortium,
+        Lyon, France, August 25\u201327, 2020, Proceedings"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "25df3ad90556815045b9497a8e794ec58f1f8cc9", "title":
+        "Visualising Large Document Collections by Jointly Modeling Text and Network
+        Structure"}}, {"isInfluential": true, "citingPaper": {"paperId": "3f04900ff0b01b2912625967407cc53188212893",
+        "title": "A Micro Perspective of Research Dynamics Through \u201cCitations
+        of Citations\u201d Topic Analysis"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "e39a0dfe48da9a51defb80fb4b839418e2981b8d", "title": "COVID-19
+        Knowledge Graph: Accelerating Information Retrieval and Discovery for Scientific
+        Literature"}}, {"isInfluential": false, "citingPaper": {"paperId": "8969a2ed070181aed57d37d0682b938bd8623f45",
+        "title": "Building a PubMed knowledge graph"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2d62dea4e7d97b5cb69174504371503b57c93bf1", "title": "NLPContributions:
+        An Annotation Scheme for Machine Reading of Scholarly Contributions in Natural
+        Language Processing Literature"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "856b12bc3b99db662e93def08e49db73c1df5e79", "title": "Modeling
+        Graph Structure via Relative Position for Better Text Generation from Knowledge
+        Graphs"}}, {"isInfluential": false, "citingPaper": {"paperId": "82af9bb84594d4fce17a5fb88888f8bdade0cd58",
+        "title": "High-Precision Extraction of Emerging Concepts from Scientific Literature"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "33f894591e5e7d2d0de996905cfcae2eb05d360f",
+        "title": "Constructing and evaluating automated literature review systems"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "e8b8ef7629a16435945b40cb01b15cf1e537adcf",
+        "title": "Constructing and evaluating automated literature review systems"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "1fb1c749be01442d669b98b41cb2aadb58671f58",
+        "title": "ReviewerNet: A visualization platform for the selection of academic
+        reviewers"}}, {"isInfluential": false, "citingPaper": {"paperId": "36e087d57302c2c7138fae2394876db244f06864",
+        "title": "The OpenCitations Data Model"}}, {"isInfluential": true, "citingPaper":
+        {"paperId": "0df9d9ab06e8418dc23967f81a44629273765ccf", "title": "Requirements
+        Analysis for an Open Research Knowledge Graph"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "10853ea84c7d4aeda17a4002370ff56048fd7e61", "title":
+        "Building a PubMed knowledge graph"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "751f5b6b7a34fec42191e527c76e81589516685f", "title": "Cited text
+        span identification for scientific summarisation using pre-trained encoders"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "5b928047a634f26d7a1871d173058a6fe578fa60",
+        "title": "Cited text span identification for scientific summarisation using
+        pre-trained encoders"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "97e05d10a4530984d54cbd86b36574d70afbdced", "title": "Embedding-Based Recommendations
+        on Scholarly Knowledge Graphs"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "17d63c3b79872832dd28dba7412a437b17730b2b", "title": "A Survey and Annotated
+        Bibliography of Workflow Scheduling in Computing Infrastructures: Community,
+        Keyword, and Article Reviews - Extended Technical Report"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "a3e4ceb42cbcd2c807d53aff90a8cb1f5ee3f031",
+        "title": "SPECTER: Document-level Representation Learning using Citation-informed
+        Transformers"}}, {"isInfluential": false, "citingPaper": {"paperId": "57dc1eec85b7c0490ce00d4f02c660b7c0b06f05",
+        "title": "Improving Scholarly Knowledge Representation: Evaluating BERT-based
+        Models for Scientific Relation Classification"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "1c2f8d2a68bcc6c9d6c79a26e4c6f70be445660d", "title":
+        "SciWING\u2013 A Software Toolkit for Scientific Document Processing"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "271a21ae3caa4bc4f246acb3a01a6d56453d77c2",
+        "title": "TRENDNERT: A Benchmark for Trend and Downtrend Detection in a Scientific
+        Domain"}}, {"isInfluential": false, "citingPaper": {"paperId": "021e2ed2adba030f5d02e60722ffcd4674f02653",
+        "title": "Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy
+        Link Prediction"}}, {"isInfluential": false, "citingPaper": {"paperId": "bbd158ee7f7026ecf18750a0b265b3c01cbc0e6c",
+        "title": "Improving the Utility of Knowledge Graph Embeddings with Calibration"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "76cfdaa82cd4c074cb4a1c7f49ade8573ae054ab",
+        "title": "Explanation-Based Tuning of Opaque Machine Learners with Application
+        to Paper Recommendation"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "87cb930ac1d07b0f759627b3a50cfa08a3d51892", "title": "LIMEADE: From AI Explanations
+        to Advice Taking"}}, {"isInfluential": false, "citingPaper": {"paperId": "87cb930ac1d07b0f759627b3a50cfa08a3d51892",
+        "title": "LIMEADE: From AI Explanations to Advice Taking"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "4559600f2ba644d41a7580362d3fcfd5c363b814",
+        "title": "The STEM-ECR Dataset: Grounding Scientific Entity References in
+        STEM Scholarly Content to Authoritative Encyclopedic and Lexicographic Sources"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "92d58d5a303be4587785489c7ecd3490950ccbe0",
+        "title": "GASP! Generating Abstracts of Scientific Papers from Abstracts of
+        Cited Papers"}}, {"isInfluential": false, "citingPaper": {"paperId": "6d129c35f032cc6480a8f774a1f3dd45a96c4724",
+        "title": "Characterizing the Dynamics of Academic Affiliations: A Network
+        Science Approach"}}, {"isInfluential": false, "citingPaper": {"paperId": "5f2440c0b18a8e0d5b0a994087e752c19f82bbc7",
+        "title": "Aspect-Based Academic Search Using Domain-Specific KB"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "3d733e63d44bddd235a41e47cf0718ff5e70b8e1",
+        "title": "Navigation-based candidate expansion and pretrained language models
+        for citation recommendation"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "3c6978ed377ace2b921748f40b0d7431ebbfeb7c", "title": "Domain-Independent Extraction
+        of Scientific Concepts from Research Articles"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "f216bc6460be4477674656e0a9682c1e9d3b2157", "title":
+        "Hydro-graph: A knowledge graph for hydrogen research trends and relations"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "bb6adeeb3a21479cc45490a5c2ff6d8dd5e77603",
+        "title": "Knowledge-based Biomedical Data Science 2019"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "c9d24ac34cb9d3cc015f926a2a77b4571162311c",
+        "title": "The Workflow Trace Archive: Open-Access Data From Public and Private
+        Computing Infrastructures"}}, {"isInfluential": true, "citingPaper": {"paperId":
+        "50fe89d2109f1f186e5e91aa8a7853d92a85daee", "title": "Evaluating Pretrained
+        Transformer Models for Citation Recommendation"}}, {"isInfluential": true,
+        "citingPaper": {"paperId": "1955c6821a5dd94baaa3fe96f4e50c071f6fa87e", "title":
+        "ScholarLensViz: A Visualization Framework for Transparency in Semantic User
+        Profiles"}}, {"isInfluential": true, "citingPaper": {"paperId": "3faccd2f58466e1767957dda6faa6c29b393cef4",
+        "title": "The Semantic Web: 17th International Conference, ESWC 2020, Heraklion,
+        Crete, Greece, May 31\u2013June 4, 2020, Proceedings"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "8e3a0f13c8a15c083e12d8dd7b04a7c20a824f7e",
+        "title": "PRETRAINED LANGUAGE MODELS FOR CITATION RECOMMENDATION"}}, {"isInfluential":
+        true, "citingPaper": {"paperId": "ed6fd27098368d64534d27082743d7c3622f522e",
+        "title": "19-Chen Xiaoli.indd"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "5c5751d45e298cea054f32b392c12c61027d2fe7", "title": "S2ORC: The
+        Semantic Scholar Open Research Corpus"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "0a1d68fd1aeff6dabda9a15668fba8f3c0fd94b4", "title": "UvA-DARE
+        (Digital Academic The OpenCitations Data Model"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "f91ac07cc5716c25304ebe4385ec3b41b67f57b9", "title":
+        "University of Glasgow Terrier Team at the TREC 2020 Fair Ranking Track"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "738349f595421b70f80a8d8fed7f70e55fa5f475",
+        "title": "The University of Maryland at the TREC 2020 Fair Ranking Track"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "9519b72e2bf6906af33b431a0ea58a8c1e4c48b1",
+        "title": "Graph To Coherent Text: Passage Generation from Knowledge Graphs
+        by Exploiting Edge Representations in Sentential Contexts"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "5f68c2fc47408d10013c36664495b1a489087053",
+        "title": "Digital Libraries at Times of Massive Societal Transition: 22nd
+        International Conference on Asia-Pacific Digital Libraries, ICADL 2020, Kyoto,
+        Japan, November 30 \u2013 December 1, 2020, Proceedings"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "4d515133e301691863dc81e5c73046b2eab0f3f7",
+        "title": "PreFace: Faceted Retrieval of Prerequisites Using Domain-Specific
+        Knowledge Bases"}}, {"isInfluential": false, "citingPaper": {"paperId": "d05ebd2299bc8007edf9422eb2f7b4466e3cf4f4",
+        "title": "Database and Expert Systems Applications: DEXA 2020 International
+        Workshops BIOKDD, IWCFS and MLKgraphs, Bratislava, Slovakia, September 14\u201317,
+        2020, Proceedings"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "a997d6e253f08a3e589432c611d6d2a3097d7629", "title": "Research Exchange-A
+        Collaborative Paper Annotation Tool"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "1dd19753c01476612db6f668967ded7b859deb83", "title": "A Practical
+        Guide to Hybrid Natural Language Processing: Combining Neural Models and Knowledge
+        Graphs for NLP"}}, {"isInfluential": false, "citingPaper": {"paperId": "cdede45f350038a46bac239d6ff8c548ac2945ee",
+        "title": "Self-supervised context-aware COVID-19 document exploration through
+        atlas grounding"}}, {"isInfluential": false, "citingPaper": {"paperId": "7737b2f4f956e2517087a4be04cd9e1af70961ea",
+        "title": "Large-scale semantic exploration of scientific literature using
+        topic-based hashing algorithms"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2f105cb440bc5cf7260071f407c39bbde89dd265", "title": "Exploratory
+        Search for Scientific Articles"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "d230862f33946a3572ff7df78bfc0aaa726cd787", "title": "GORC: A
+        large contextual citation graph of academic papers"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "0542eafef8abab8e4d0ec467d2e163da7e609130", "title":
+        "Epistemic stance and the construction of knowledge in science writing: A
+        diachronic corpus study"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "558adccd5dc482be3a17169ba1a921ea4b74101d", "title": "Fine-Grained Object
+        Detection over Scientific Document Images with Region Embeddings"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "5d058aadc2e938f421d0acae6dcdad3be35bc8fd",
+        "title": "Conflict and Cooperation: AI Research and Development in terms of
+        the Economy of Conventions"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "e822040837cdb5831e6dfcc25aeb5bd5bd23c9a9", "title": "Look, Read and Enrich
+        - Learning from Scientific Figures and their Captions"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "515ae2953e7312dc410b94f561a4296f8e1cbdc0",
+        "title": "Learning Dynamic Author Representations with Temporal Language Models"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "a550ad9d7f47b65f7788287a23717a4f7c5b75c7",
+        "title": "Pretrained Language Models for Sequential Sentence Classification"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "c5db7a49d55f8b542daae60f3d14546115b1498b",
+        "title": "Sentence-Level Content Planning and Style Specification for Neural
+        Text Generation"}}, {"isInfluential": false, "citingPaper": {"paperId": "dcd627cf71af44b1a140d5b3e7503cb3251bee58",
+        "title": "Sieg at MEDIQA 2019: Multi-task Neural Ensemble for Biomedical Inference
+        and Entailment"}}, {"isInfluential": false, "citingPaper": {"paperId": "115617d09807325bd18c42deedd6cab435f90563",
+        "title": "Identification of Tasks, Datasets, Evaluation Metrics, and Numeric
+        Scores for Scientific Leaderboards Construction"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "066abf7409baf051b1c70cf3464c80040a8021c7", "title":
+        "On Applying Metamorphic Testing: An Empirical Study on Academic Search Engines"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "2f586042d52af9fd9986d8e087665a96187aa8e7",
+        "title": "Venue Analytics: A Simple Alternative to Citation-Based Metrics"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "781402fae3a7a44b90855eeba8e96a872347fd4b",
+        "title": "Soft Marginal TransE for Scholarly Knowledge Graph Completion"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "dd246382988ec1607297bde5f4f4cea75a3f9f6d",
+        "title": "CorFish: Coordinating Emphasis Across Multiple Views Using Spatial
+        Distortion"}}, {"isInfluential": false, "citingPaper": {"paperId": "cb15c1c51e8a7da42d5b2ebac955bf1cd9dd4022",
+        "title": "Text Generation from Knowledge Graphs with Graph Transformers"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "87078d95bee341a1767034d9432fb34937ecf65a",
+        "title": "SciBERT: Pretrained Contextualized Embeddings for Scientific Text"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "827c34613ea75eb817c1d9a945ecb673bb566d85",
+        "title": "ReviewerNet: Visualizing Citation and Authorship Relations for Finding
+        Reviewers"}}, {"isInfluential": false, "citingPaper": {"paperId": "156d217b0a911af97fa1b5a71dc909ccef7a8028",
+        "title": "SciBERT: A Pretrained Language Model for Scientific Text"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "de28ec1d7bd38c8fc4e8ac59b6133800818b4e29",
+        "title": "ScispaCy: Fast and Robust Models for Biomedical Natural Language
+        Processing"}}, {"isInfluential": false, "citingPaper": {"paperId": "0cc1befaf72ca96c2a5034d004132da1b7bbc58b",
+        "title": "GrapAL: Connecting the Dots in Scientific Literature"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "4c6dfe48b8b136e6bb44c92e1fa006d3d7bf71ed",
+        "title": "GrapAL: Querying Semantic Scholar''s Literature Graph"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "733f32fe7d7e0b53fb7e9d35dbc6f47b96ebff37",
+        "title": "Open Research Knowledge Graph: Next Generation Infrastructure for
+        Semantic Scholarly Knowledge"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "a97a18b630032b42c1a1c19db64f3fbf09a1c30b", "title": "Open Research Knowledge
+        Graph: Towards Machine Actionability in Scholarly Communication"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "dee6eaa08574ad6c480c03d58dab37a788b5ee3f",
+        "title": "Exploring the Importance of Entities in Semantic Ranking"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "7f2667e5f5c327381e20ee4c88b6a0ec89d7857a",
+        "title": "Growing Attributed Networks through Local Processes"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "103c127a86e6ef2df41430cffddcfe260505bfaf",
+        "title": "Systematic analysis of testing-related publications concerning comparability
+        and reproducibility"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "18c8348008226d8a5438734da35ad76e3c3f640c", "title": "Story Generation from
+        Knowledge Graphs"}}, {"isInfluential": false, "citingPaper": {"paperId": "89ce63af706dcbda6c4c8ae3012d66d00bfced18",
+        "title": "University of Glasgow Terrier Team and Naver Labs Europe at TREC
+        2019 Fair Ranking Track"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "58f1e659b9dedeb7704e736aebaf6f6e245559fe", "title": "Fair ranking in academic
+        search - Notebook for the TREC 2019 Fair Ranking Track"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "e0aaff524db88a3b89d2a736aa297081f13af0c8",
+        "title": "A Visualization Tool for Scholarly Data"}}, {"isInfluential": false,
+        "citingPaper": {"paperId": "9bbe5de594c53275e3123417c5636243677649ae", "title":
+        "Learning Embeddings from Scientific Corpora using Lexical, Grammatical and
+        Semantic Information"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        null, "title": "OutputNeighbor Attention Maps ClassificationInput Document
+        Neighbor Target Neighbor Resnet-50 Backbone Embeddings Attention LayerGenerate
+        Proposals"}}, {"isInfluential": false, "citingPaper": {"paperId": "d95c203e194a29825e0cd635abd87d1030e776f9",
+        "title": "Scalable, Semi-Supervised Extraction of Structured Information from
+        Scientific Literature"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "7ff0d6253469c02245c1bd321e97a96813b612d4", "title": "NaCTeM-UoM @ CL-SciSumm
+        2019"}}, {"isInfluential": false, "citingPaper": {"paperId": "3bd8093a09fc99562662ce40b24f20e7f1536754",
+        "title": "DOES THE INFORMATION-SEEKING BEHAVIOR OF SCIENTISTS CORRESPOND TO
+        EXPLORATORY SEARCH ?"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "b21b927c251c415b601b6d7f785a42cc5c292635", "title": "Multi-Task Identification
+        of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction"}},
+        {"isInfluential": false, "citingPaper": {"paperId": "d449ec41cd3222f9f8b325adfacc8f4b9e7b95d3",
+        "title": "Ontology alignment in the biomedical domain using entity definitions
+        and context"}}, {"isInfluential": false, "citingPaper": {"paperId": "0b32918213f6d18c1bc83585a14cfbc6b9039a16",
+        "title": "\u0418\u0421\u0421\u041b\u0415\u0414\u041e\u0412\u0410\u0422\u0415\u041b\u042c\u0421\u041a\u0418\u0419
+        \u041f\u041e\u0418\u0421\u041a \u041d\u0410\u0423\u0427\u041d\u042b\u0425
+        \u0421\u0422\u0410\u0422\u0415\u0419"}}, {"isInfluential": false, "citingPaper":
+        {"paperId": "2fcbe1e3692b4f5faad41926b781f802f0c1be12", "title": "Detecting
+        the Landscapes and Hotspots of Scientometrics : A Full-Text Citation Analysis
+        based on Semantic Technology"}}, {"isInfluential": false, "citingPaper": {"paperId":
+        "88761dffd173cd0e75e88c02d68f866f8cc43c14", "title": "Knowledge-based biomedical
+        Data Science"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '56427'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:46:00 GMT
+      Via:
+      - 1.1 f7d577dfe2817079490d95ef03bbf5fa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hBbOFmx5B-g2kJ9dcxLQJNwyv_fch6VWmV8w44kLlkbakfaAj5FrcA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhRHAIPHcFQ1Q=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '56427'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:46:00 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 51dea5fe-5003-4ee1-897c-216b4556a5f0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/649def34f8be52c8b66281af98ae884c09aef38b/references?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
+        "1fec9d41d372267b4474f18cbeadd806c8b67adb", "title": "Extracting Scientific
+        Figures with Distantly Supervised Neural Networks"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "921b2958cac4138d188fd5047aa12bbcf37ac867", "title":
+        "Content-Based Citation Recommendation"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "2264e14e35dc5a3db93437bc408a03171af8c59d", "title": "The AI2
+        system at SemEval-2017 Task 10 (ScienceIE): semi-supervised end-to-end entity
+        and relation extraction"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "74a69228157b3fa1c7adc14e7715039e54f4b067", "title": "MetaMap Lite: an evaluation
+        of a new Java implementation of MetaMap"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "6bed23ebd9998e85bad446b9a56ea53f463d0f8a", "title": "Learning
+        to Predict Citation-Based Impact Measures"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "32ce5467ff884d2f90a233f4d9606c6e18b1a9d6", "title": "Learning
+        a Neural Semantic Parser from User Feedback"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "a26accf878216be4388ad9a0474e658aa03d33e2", "title": "SemEval
+        2017 Task 10: ScienceIE - Extracting Keyphrases and Relations from Scientific
+        Publications"}}, {"isInfluential": false, "citedPaper": {"paperId": "b30481dd5467a187b7e1a5a2dd326d97cafd95ac",
+        "title": "Explicit Semantic Ranking for Academic Search via Knowledge Graph
+        Embedding"}}, {"isInfluential": false, "citedPaper": {"paperId": "0bb4cadc80c0afaf29c57518dc9c06f8fcfa5f38",
+        "title": "Semi-supervised sequence tagging with bidirectional language models"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "1f6c303718a69f0a74b8dd85ba5dfaf4df08e18d",
+        "title": "Swanson linking revisited: Accelerating literature-based discovery
+        across domains using a conceptual influence graph"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "61322ec6cfc54fe9723d4637239b8fb9938dc501", "title":
+        "BioCreative V CDR task corpus: a resource for chemical disease relation extraction"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "24158c9fc293c8a998ac552b1188404a877da292",
+        "title": "Neural Architectures for Named Entity Recognition"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "8ffcad9346c4978a211566fde6807d6fb4bfa5ed",
+        "title": "TabEL: Entity Linking in Web Tables"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "c6b53dd64d79a59f49f261baac8d2581a29ca06a", "title":
+        "Design Challenges for Entity Linking"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "1c7be3fc28296a97607d426f9168ad4836407e4b", "title": "Identifying
+        Meaningful Citations"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "d755a7e943009af26e0a5b617ef60c29c1d4f4e0", "title": "CHEMDNER: The drugs
+        and chemical names extraction challenge"}}, {"isInfluential": true, "citedPaper":
+        {"paperId": "dfb25cf7efec9a7c114f6327e4b06a306cce5cb6", "title": "CiteSeerX:
+        AI in a Digital Library Search Engine"}}, {"isInfluential": true, "citedPaper":
+        {"paperId": "f37e1b62a767a307c046404ca96bc140b3e68cb5", "title": "GloVe: Global
+        Vectors for Word Representation"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "43bfbc53482a83e2141d044493ccbb65a472be55", "title": "Clinical
+        review: Efficacy of antimicrobial-impregnated catheters in external ventricular
+        drainage - a systematic review and meta-analysis"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "e23020fdab3e46254468f694c159d7d6a3a9fb55", "title":
+        "Search needs a shake-up"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "bc1022b031dc6c7019696492e8116598097a8c12", "title": "Natural Language Processing
+        (Almost) from Scratch"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "ecfaab27ac62f6a63146b6d75ae9f9d232abd31b", "title": "Exploiting MeSH indexing
+        in MEDLINE to generate a data set for word sense disambiguation"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "b18fbdff9b5feac766bd9cde9b266de274d8c4b2",
+        "title": "TAGME: on-the-fly annotation of short text fragments (by wikipedia
+        entities)"}}, {"isInfluential": false, "citedPaper": {"paperId": "d84b57362e2010f6f65357267df7e0157af30684",
+        "title": "Distant supervision for relation extraction without labeled data"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "9f62067945d991cd78a62cf647de17f01d1b54d3",
+        "title": "Frustratingly Easy Domain Adaptation"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "9125de5b8dd7f3a18ef2c5d94c17e552826c006f", "title":
+        "Author Disambiguation using Error-driven Machine Learning with a Ranking
+        Loss Function"}}, {"isInfluential": false, "citedPaper": {"paperId": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+        "title": "Long Short-Term Memory"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4701'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:46:01 GMT
+      Via:
+      - 1.1 ce084a1179392e1921b98c60a4590284.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - h09kwxvJaMndDYDEvECkgne_f3soLVzC1pcBFiDscOV4n7tCvi5FNA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhfEJ_vHcF2Tg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '4701'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:46:01 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 80a41ebc-5c00-451b-9af6-9a3ab2dd0016
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/d23508ee81467dff9435d42d1d4633e178e59992?fields=paperId,externalIds,url,title,abstract,venue,year,referenceCount,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf,fieldsOfStudy,s2FieldsOfStudy,publicationVenue,publicationTypes,publicationDate,journal,citationStyles,authors,authors.authorId,authors.externalIds,authors.url,authors.name,authors.aliases,authors.affiliations,authors.homepage,authors.paperCount,authors.citationCount,authors.hIndex
+  response:
+    body:
+      string: '{"paperId": "d23508ee81467dff9435d42d1d4633e178e59992", "externalIds":
+        {"DOI": "10.1007/s00018-021-03820-y", "CorpusId": 233201568, "PubMed": "33837450"},
+        "publicationVenue": null, "url": "https://www.semanticscholar.org/paper/d23508ee81467dff9435d42d1d4633e178e59992",
+        "title": "Molecular and neural mechanisms regulating sexual motivation of
+        virgin female Drosophila", "abstract": null, "venue": "Cellular and Molecular
+        Life Sciences", "year": 2021, "referenceCount": 157, "citationCount": 3, "influentialCitationCount":
+        0, "isOpenAccess": false, "openAccessPdf": null, "fieldsOfStudy": ["Medicine"],
+        "s2FieldsOfStudy": [{"category": "Medicine", "source": "external"}, {"category":
+        "Biology", "source": "s2-fos-model"}, {"category": "Psychology", "source":
+        "s2-fos-model"}], "publicationTypes": ["Review", "JournalArticle"], "publicationDate":
+        "2021-04-10", "journal": {"name": "Cellular and Molecular Life Sciences",
+        "pages": "4805 - 4819", "volume": "78"}, "citationStyles": {"bibtex": "@[''Review'',
+        ''JournalArticle'']{Ishimoto2021MolecularAN,\n author = {H. Ishimoto and A.
+        Kamikouchi},\n booktitle = {Cellular and Molecular Life Sciences},\n journal
+        = {Cellular and Molecular Life Sciences},\n pages = {4805 - 4819},\n title
+        = {Molecular and neural mechanisms regulating sexual motivation of virgin
+        female Drosophila},\n volume = {78},\n year = {2021}\n}\n"}, "authors": [{"authorId":
+        "48446534", "externalIds": {}, "url": "https://www.semanticscholar.org/author/48446534",
+        "name": "H. Ishimoto", "aliases": ["H Ishimoto", "H. Ishimoto", "Hiroshi Ishimoto"],
+        "affiliations": [], "homepage": null, "paperCount": 43, "citationCount": 1630,
+        "hIndex": 23}, {"authorId": "5683768", "externalIds": {}, "url": "https://www.semanticscholar.org/author/5683768",
+        "name": "A. Kamikouchi", "aliases": ["A Kamikouchi", "Azusa Kamikouchi"],
+        "affiliations": [], "homepage": null, "paperCount": 68, "citationCount": 3167,
+        "hIndex": 22}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1926'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:46:01 GMT
+      Via:
+      - 1.1 b02c5108645d71e94b66c369c35c449a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 65sJqpeG6FW0Jnyber2qdzvRQ11szX1AbNZHNvyfVaBV9fRbJu4zpg==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhlFY1vHcF4Mg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '1926'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:46:01 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - 635b29b6-be24-495e-9c75-7d71db305e5b
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/d23508ee81467dff9435d42d1d4633e178e59992/citations?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citingPaper": {"paperId":
+        "9088b5478fc706f368d2d1fd5661aba9384d782b", "title": "Endocrine cybernetics:
+        neuropeptides as molecular switches in behavioural decisions"}}, {"isInfluential":
+        false, "citingPaper": {"paperId": "1dd4b9b27250e20172260db7fbb4392ff5fec872",
+        "title": "Interorgan communication through peripherally derived peptide hormones
+        in Drosophila"}}, {"isInfluential": false, "citingPaper": {"paperId": "1ff4ab59f46afb6ad6c79f9c25852e5da09a1125",
+        "title": "Sound production in Drosophila melanogaster: Behaviour and neurobiology"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '595'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:46:02 GMT
+      Via:
+      - 1.1 cd8f4ac94836dc54b056844b56c2bb70.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Faxufm6Uod16S6O29v99RUpJeRAOyXm_XILlgDLCUQCp5jmeb9-jVA==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhqGxbPHcFvfA=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '595'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:46:02 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - e60ee3eb-fe28-4008-8efb-276428b5301e
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.semanticscholar.org/graph/v1/paper/d23508ee81467dff9435d42d1d4633e178e59992/references?fields=paperId,title,isInfluential&offset=0&limit=1000
+  response:
+    body:
+      string: '{"offset": 0, "data": [{"isInfluential": false, "citedPaper": {"paperId":
+        "eaa1ad1f740fee4a03079af7764f8807bff9b6bf", "title": "Neural network organization
+        for courtship-song feature detection in Drosophila"}}, {"isInfluential": true,
+        "citedPaper": {"paperId": "df1696050c10fffb86668e9443d39cf72fbddf88", "title":
+        "Cell types and neuronal circuitry underlying female aggression in Drosophila"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "18631091bf4810ea8be4f11d3b963fa8c3852b34",
+        "title": "Circuit and Behavioral Mechanisms of Sexual Rejection by Drosophila
+        Females"}}, {"isInfluential": true, "citedPaper": {"paperId": "88dd3be5a605d426e002140e4b599f5c100f2d82",
+        "title": "A neural circuit encoding mating states tunes defensive behavior
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "03bab488904e97d0741294ee37d28906f3a9cfe3",
+        "title": "Neural circuit mechanisms of sexual receptivity in Drosophila females"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "3e5d9123813e36295aa6262e8b78d8a273e21c00",
+        "title": "Ovipositor Extrusion Promotes the Transition from Courtship to Copulation
+        and Signals Female Acceptance in Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "e505b7fc9794194184d6670d797815524a46fa49",
+        "title": "A Feedforward Circuit Regulates Action Selection of Pre-mating Courtship
+        Behavior in Female Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "fff099c1bd69cea711740997595fa403be45aecf", "title": "A small number of cholinergic
+        neurons mediate hyperaggression in female Drosophila"}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "74a83c4e65434a602eb3e746c76ac95a151fe113",
+        "title": "Auditory activity is diverse and widespread throughout the central
+        brain of Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "c78d150d0a918a657ab957a9b3ee46a90f1ca178", "title": "Shared Song Detector
+        Neurons in Drosophila Male and Female Brains Drive Sex-Specific Behaviors"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "9ab224e65bd0d26e69ca3a76eb54e41481757677",
+        "title": "Sex differences in Drosophila behavior: Qualitative and Quantitative
+        Dimorphism."}}, {"isInfluential": false, "citedPaper": {"paperId": "16a125bf643d4a168ef1e660c9130909fe3ca33b",
+        "title": "Deciphering Drosophila female innate behaviors"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "8031a95c410b5f2327e65590a5863662ace0588b",
+        "title": "The developmental environment modulates mating\u2010induced aggression
+        and fighting success in adult female Drosophila"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "57e3dd4f9668db927b12c01ca2b9036fd406c637", "title":
+        "Neuronal Constituents and Putative Interactions Within the Drosophila Ellipsoid
+        Body Neuropil"}}, {"isInfluential": false, "citedPaper": {"paperId": "334a3cfdcf9d4fd0c9a063a41a73fe071030e539",
+        "title": "A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "87f8235045c555c4f7b0fc76e4a0f7f1a92b1fae",
+        "title": "Visual Projection Neurons Mediating Directed Courtship in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "d64fee077e5d1ac4fe03e1fd7f945bf9ab2f0087",
+        "title": "Light is required for proper female mate choice between winged and
+        wingless males in Drosophila."}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "a788281b6572d744856751608bd13a5dec9ec467", "title": "GABAergic Local Interneurons
+        Shape Female Fruit Fly Response to Mating Songs"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "c03b83a99dec480947a602bb778f6e1f5766e0fa", "title":
+        "Odorant binding protein 69a connects social interaction to modulation of
+        social responsiveness in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "6725d911064aa8c0746f1de433071e4dad232a85", "title": "Auditory
+        experience controls the maturation of song discrimination and sexual response
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "229cf8ddb9b5dbdf3b8bb60c9fbcf83759347810",
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila
+        melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId": "6bbda35676c4981f6a5ea23ea65fd9170e56946f",
+        "title": "The functional organization of descending sensory-motor pathways
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "48dbd55f6350f70bef167055c467857c0deff3ea",
+        "title": "Female-specific myoinhibitory peptide neurons regulate mating receptivity
+        in Drosophila melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "58c3e765bf2098ca454637f60ea7a697edc178b3", "title": "Electrical synapses
+        mediate synergism between pheromone and food odors in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "2fcb6d1046275405b0c017aae4000e6dd9e08c10",
+        "title": "Characterization of a set of abdominal neuroendocrine cells that
+        regulate stress physiology using colocalized diuretic peptides in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "053084c0d02df0902c94aee5458db6ec372eb607",
+        "title": "Mapping the Neural Substrates of Behavior"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "74a2f08a8e25ea86eba868eaa315db14e0953e29",
+        "title": "The laminar organization of the Drosophila ellipsoid body is semaphorin-dependent
+        and prevents the formation of ectopic synaptic connections"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "131173d2f1f45517f9e7a0fb4b5584f04596e3cf",
+        "title": "Visual Input to the Drosophila Central Complex by Developmentally
+        and Functionally Distinct Neuronal Populations"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "8362e624c57226aa01911e7f751e5126601da41e", "title":
+        "Sperm and sex peptide stimulate aggression in female Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "caa76fc150b2cd7ac55a832fe3f4af461e9d24a4",
+        "title": "apterous Brain Neurons Control Receptivity to Male Courtship in
+        Drosophila Melanogaster Females"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "26d9bd021d400bd7b88fdc5d711f4c001cd3cd63", "title": "Visual projection
+        neurons in the Drosophila lobula link feature detection to distinct behavioral
+        programs"}}, {"isInfluential": false, "citedPaper": {"paperId": "59d0c6be4562bea877afb8c18865b75650930434",
+        "title": "A Defensive Kicking Behavior in Response to Mechanical Stimuli Mediated
+        by Drosophila Wing Margin Bristles"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "ca01704e49d6f21cb659da940a3db9b3e8efb088", "title": "Drosophila
+        SLC5A11 Mediates Hunger by Regulating K+ Channel Activity"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "20e80d7b3c54bfe1283fd4433ecb4eacfd8edd57",
+        "title": "Drosophila SLC5A11 Mediates Hunger by Regulating K+ Channel Activity"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "fff44bef54c331094ebb1a1583fda9e28e4ea929",
+        "title": "Drosophila melanogaster females restore their attractiveness after
+        mating by removing male anti-aphrodisiac pheromones"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "f32afb8950a08354f872184d961cf19a0177f5c8",
+        "title": "The insect central complex"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "7644057f13b7f7942d95940a27dd9c1f743c7a06", "title": "Sleep Drive
+        Is Encoded by Neural Plastic Changes in a Dedicated Circuit"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "02e710cd1475c09a4128007bc14b7fb29f9109ca",
+        "title": "Sexual circuitry in Drosophila\n"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "07bee4eb8b350f3657ef6ee918c0019e3aa43acc", "title": "The corticotropin-releasing
+        factor-like diuretic hormone 44 (DH44) and kinin neuropeptides modulate desiccation
+        and starvation tolerance in Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "d5714e7050d9d96a4b50a2285559dc0346eef75c",
+        "title": "Sensorimotor Transformations Underlying Variability in Song Intensity
+        during Drosophila Courtship"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "fe8a0f655e44f7d9004cd55cc523c032f810dbe3", "title": "Neural mechanisms of
+        mother\u2013infant bonding and pair bonding: Similarities, differences, and
+        broader implications"}}, {"isInfluential": true, "citedPaper": {"paperId":
+        "059ea7820e040015a35b46e198f06c7affcc0032", "title": "The nutritional and
+        hedonic value of food modulate sexual receptivity in Drosophila melanogaster
+        females"}}, {"isInfluential": false, "citedPaper": {"paperId": "849677d7c1a6f414c655be50fd2db7a334989d7b",
+        "title": "Evolutionarily conserved mechanisms for the selection and maintenance
+        of behavioural activity"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "56874a13d982739dea9b805b0fd97c2a47b9803f", "title": "Female Choice or Male
+        Sex Drive? The Advantages of Male Body Size during Mating in Drosophila Melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "989f5e8d55244d17b8da80780120fa65ad9343b8",
+        "title": "Central neural circuitry mediating courtship song perception in
+        male Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "e353d1a20c217ad15bc3e6f913545e0d8ee5fa26",
+        "title": "Aggression in Drosophila."}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "1ce9cf91744b163da205f93632f0cf090dc70069", "title": "Feeding
+        regulates sex pheromone attraction and courtship in Drosophila females"}},
+        {"isInfluential": true, "citedPaper": {"paperId": "d13fb8a912541a09739ee24ab98d28932efba31d",
+        "title": "Drosophila Ovipositor Extension in Mating Behavior and Egg Deposition
+        Involves Distinct Sets of Brain Interneurons"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "a2d130060603acd98947a62714e37b0d58295f09", "title":
+        "A Neuronal Pathway that Controls Sperm Ejection and Storage in Female Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "f6cb569ae1e6605aa885d36de4308877ece8af1c",
+        "title": "Love makes smell blind: mating suppresses pheromone attraction in
+        Drosophila females via Or65a olfactory neurons"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "fa714a995097b33050285f2a23de33c974239e33", "title":
+        "How Food Controls Aggression in Drosophila"}}, {"isInfluential": true, "citedPaper":
+        {"paperId": "e38dcb0157dce99487cc55eeae17033471333a9c", "title": "Abdominal-B
+        Neurons Control Drosophila Virgin Female Receptivity"}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "ebdc7c4abf91d776b42090e0c33f82eaf4eafe78",
+        "title": "Central Brain Neurons Expressing doublesex Regulate Female Receptivity
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "925fdacb34a75338bcd269e26ba0dd8a97f8d0fc",
+        "title": "Ascending SAG Neurons Control Sexual Receptivity of Drosophila Females"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "23b298bb216cfcc7a0ec5ab0693cc48355a98787",
+        "title": "Neural Pathways for the Detection and Discrimination of Conspecific
+        Song in D. melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "b9b0c65752352487b791ae7acbd7bb13eceb3db4", "title": "Cell types and coincident
+        synapses in the ellipsoid body of Drosophila"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "a05a4d05bb713ac99e0d09725fac6fc18a4f5a42", "title":
+        "Dynamic sensory cues shape song structure in Drosophila"}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "99585a88d6e0fd97e5716ef210ceb748646acc73",
+        "title": "Drosophila Pheromone-Sensing Neurons Expressing the ppk25 Ion Channel
+        Subunit Stimulate Male Courtship and Female Receptivity"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "3a277bdb0a340e9d1821f1f704b085af6c7aca04",
+        "title": "Dopamine Neurons Control Striatal Cholinergic Neurons via Regionally
+        Heterogeneous Dopamine and Glutamate Signaling"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "c27df6e98c7fda45ce2aa36cec53bcf532f7fb8b", "title":
+        "An epigenetic switch of the brain sex as a basis of gendered behavior in
+        Drosophila."}}, {"isInfluential": false, "citedPaper": {"paperId": null, "title":
+        "Dopa - mine"}}, {"isInfluential": false, "citedPaper": {"paperId": "d2fecc5ddad30afe0dce2280ad3cc701ae5cf59a",
+        "title": "A Bidirectional Circuit Switch Reroutes Pheromone Signals in Male
+        and Female Brains"}}, {"isInfluential": false, "citedPaper": {"paperId": "53ef79abce6797456a206bfee71f08d0dc47c4de",
+        "title": "Regulation of onset of female mating and sex pheromone production
+        by juvenile hormone in Drosophila melanogaster"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "524cbbe88e8355dfb97fc2c9274603d1c3ec7491", "title":
+        "Feature detection and orientation tuning in the Drosophila central complex"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "2f442439eb7a0d78dd01bf9465825669ee1aa3fd",
+        "title": "Genes and circuits of courtship behaviour in Drosophila males"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "36e39868e10208c539c9628b28f63f21e979200b",
+        "title": "Neural control of sexually dimorphic behaviors"}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "b0f1c0c9d4522bd693f83c0f185598154b3fd514",
+        "title": "Select interneuron clusters determine female sexual receptivity
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "ff2e2a3b610806fb954e20d6cc05273340801108",
+        "title": "Deep Homology of Arthropod Central Complex and Vertebrate Basal
+        Ganglia"}}, {"isInfluential": false, "citedPaper": {"paperId": "74b9cb65caea00ba43bfe225d3221d46e30fa52a",
+        "title": "Ligands for Pheromone-Sensing Neurons Are Not Conformationally Activated
+        Odorant Binding Proteins"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "054737108a4d65b93e85f546f3f7fdb24d3042d7", "title": "Taste-independent nutrient
+        selection is mediated by a brain-specific Na+/solute cotransporter in Drosophila"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "1e68efc0c71184d104d9416b1b89a242a4ce266f",
+        "title": "Who is he and what is he to you? Recognition in Drosophila melanogaster\n"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "0dc1dd6d096a728546d270c4a90401224241d8be",
+        "title": "Courtship behavior in Drosophila melanogaster: towards a \u2018courtship
+        connectome\u2019"}}, {"isInfluential": false, "citedPaper": {"paperId": "b6c152e127f370e4173a1cfd88a370f2c4a5aec6",
+        "title": "Multi-channel acoustic recording and automated analysis of Drosophila
+        courtship songs"}}, {"isInfluential": false, "citedPaper": {"paperId": "755b1384b213812f35342997ca0ea927532b1901",
+        "title": "Dopaminergic neurons inhibit striatal output via non-canonical release
+        of GABA"}}, {"isInfluential": false, "citedPaper": {"paperId": "d6a36254600a765f6e061730741197ea57ea32b0",
+        "title": "Neural Circuitry Underlying Drosophila Female Postmating Behavioral
+        Responses"}}, {"isInfluential": false, "citedPaper": {"paperId": "2bff2f57c9c79729c03fd3b1fe2de77dfae7969e",
+        "title": "Auditory circuit in the Drosophila brain"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "78f1f959b04c4517200863bc8ba9d574236f735b", "title":
+        "Arthropod Brains: Evolution, Functional Elegance, and Historical Significance"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "e13cf29a527853ea54984d186c65b9df0778c82b",
+        "title": "Genetics and neurobiology of aggression in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "70261b7edd81c39f69283da12262ba1177ec5006",
+        "title": "Visual Place Learning in Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "a06413a6589e83ea8d107b2d77730c5b2f08aa6d",
+        "title": "Courtship of Drosophila, with a special interest in courtship songs
+        (\u751f\u7269\u9032\u5316\u7814\u7a76\u306e\u30e2\u30c7\u30eb\u751f\u7269\u7fa4\u3068\u3057\u3066\u306e\u30b7\u30e7\u30a6\u30b8\u30e7\u30a6\u30d0\u30a8)"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "7e646459d14c758005042f9ca33d6fec9a9c0c4d",
+        "title": "Hierarchical chemosensory regulation of male-male social interactions
+        in Drosophila"}}, {"isInfluential": false, "citedPaper": {"paperId": "2dabfeb7796d47de78e9c8baecfa640a0fee4e7d",
+        "title": "A dimorphic pheromone circuit in Drosophila from sensory input to
+        descending output"}}, {"isInfluential": false, "citedPaper": {"paperId": "4c9c165e4c9cac89ffbe413a9951d7f25890e0dd",
+        "title": "Drosophila female courtship and mating behaviors: sensory signals,
+        genes, neural structures and evolution"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "3b0e175e97effee39279f7bc39fc92af6b1cc0e5", "title": "Refinement
+        of Tools for Targeted Gene Expression in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "66b4ecec14044bddb5af8e8ff257bad18ecb9dc0",
+        "title": "Sexual Dimorphism in the Fly Brain"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "697b9a3c4e60b30bdf95e7d924f3857870917399", "title":
+        "Cellular Organization of the Neural Circuit that Drives Drosophila Courtship
+        Behavior"}}, {"isInfluential": false, "citedPaper": {"paperId": "4d3488ebe2e0ea28c9aec43e0bafa34efb2a7c76",
+        "title": "Insulin signalling regulates remating in female Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "124679231299e83232c6d286b8dfe647ce2a27ea",
+        "title": "Glutamatergic Signaling by Mesolimbic Dopamine Neurons in the Nucleus
+        Accumbens"}}, {"isInfluential": false, "citedPaper": {"paperId": "f180a1beb8fed7d7111a09257e69c7f8def9db9e",
+        "title": "Sex and the Single Cell. II. There Is a Time and Place for Sex"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "5509f0a406e01a88c8fb7f8593e62946cbcf359f",
+        "title": "Drosophila Cuticular Hydrocarbons Revisited: Mating Status Alters
+        Cuticular Profiles"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "94b220094e6be3b3752cbc4cbc0a555de1f70a9c", "title": "Control of Sexual Differentiation
+        and Behavior by the doublesex gene in Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "8febf031c48208d3906e56a6755db29f4c6549e9",
+        "title": "Pathways of sexual desire."}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "c0e80942e27a37397e6388da65aa378247403a75", "title": "Dopamine
+        Regulation of Social Choice in a Monogamous Rodent Species"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "39956e4983d187b84b364c34af98219cb502da3d",
+        "title": "Differential roles of the fan-shaped body and the ellipsoid body
+        in Drosophila visual pattern memory."}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "879e7b769cb08032547d68e32c676d6f4f6406dc", "title": "\n Fruitless,
+        doublesex and the genetics of social behavior in Drosophila melanogaster\n"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "7f3419bf3bb82c5547821b80218b0c49a4dc46aa",
+        "title": "The neural basis of Drosophila gravity-sensing and hearing"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "9a013169d9b556e09851a172e0445b504c89c414",
+        "title": "Distinct sensory representations of wind and near-field sound in
+        the Drosophila brain"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "d12556659036f0c109c878b89dddcdba5b71b88f", "title": "Sensory Neurons in the
+        Drosophila Genital Tract Regulate Female Reproductive Behavior"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "401d08a2b9540a9d9b7a19cc98d50dd14cfb18a6",
+        "title": "Control of the Postmating Behavioral Switch in Drosophila Females
+        by Internal Sensory Neurons"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "1d8aeacdb8e7e233e509db2a1f148cb6e33312df", "title": "Sensory Integration
+        Regulating Male Courtship Behavior in Drosophila"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "3635759d8789bd357e1ab9139950bb3ae60a8d87", "title":
+        "Wired for Sex: The Neurobiology of Drosophila Mating Decisions"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "d1b6594e6664476d53c3a334d08fefbc782e74e9",
+        "title": "Suppression of male courtship by a Drosophila pheromone receptor"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "811d7877ab877531d68c0f576e4fc5ab737adaa4",
+        "title": "Divergence in Multiple Courtship Song Traits between Drosophila
+        santomea and D. yakuba"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "2e09abb80a630ee4c843e43e923121d1b5107446", "title": "Activation of Pheromone-Sensitive
+        Neurons Is Mediated by Conformational Activation of Pheromone-Binding Protein"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "a611eb399358b5a79d90ea26d4c31d65f4dc5f92",
+        "title": "Analysis of a spatial orientation memory in Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "6c460c1b07ed16bc6581faf4c3bcc8a31bc37943",
+        "title": "The Drosophila pheromone cVA activates a sexually dimorphic neural
+        circuit"}}, {"isInfluential": false, "citedPaper": {"paperId": "3be6e015914f053d9958caf074744f0eac0b212e",
+        "title": "Drosophila Egg-Laying Site Selection as a System to Study Simple
+        Decision-Making Processes"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "86dc5d77b128ef1823bf6738f3061096b468ade1", "title": "Visual pattern memory
+        requires foraging function in the central complex of Drosophila."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "3b071ba7d5a68ded4ebb3b5125f24275ccedd59b",
+        "title": "A receptor that mediates the post-mating switch in Drosophila reproductive
+        behaviour"}}, {"isInfluential": false, "citedPaper": {"paperId": "14ae1aac52ab8955ad6ae2d5f065aeb5472cc4d9",
+        "title": "A Database of Wing Diversity in the Hawaiian Drosophila"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "b946c027cb3b2e6c172e9f25ffb136e55e905d26",
+        "title": "The Scent of Drosophila Sex"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "b74e6e76b9b49ddf11cffde4fd63bbd7b6390bdb", "title": "Receptors
+        and Neurons for Fly Odors in Drosophila"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "5fe6735a8f8800fc0383442fe1e2696b0e7c11cd", "title": "A single
+        class of olfactory neurons mediates behavioural responses to a Drosophila
+        sex pheromone"}}, {"isInfluential": false, "citedPaper": {"paperId": "bfcedf8556abe2be0cd0272e188ed9a507a5df00",
+        "title": "The neural and genetic substrates of sexual behavior in Drosophila."}},
+        {"isInfluential": false, "citedPaper": {"paperId": "3d778a3909cf077ddac20913a19fe89efb0245ca",
+        "title": "Comprehensive classification of the auditory sensory projections
+        in the brain of the fruit fly Drosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "4053dd47f9fef8c70bdee0a7ca353517ba92586d",
+        "title": "Courtship behaviour of Drosophila melanogaster revisited"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "612639edc7309660245bdbc586f4e887414ecbca",
+        "title": "Nucleus accumbens dopamine differentially mediates the formation
+        and maintenance of monogamous pair bonds"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": null, "title": "Dissection of a neuronal network required for
+        wing expansion using a novel split Gal4 system"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "4b75b2faed7014f0f38de1d7eac4366ad0b786de", "title":
+        "A Drosophila male pheromone affects female sexual receptivity"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "dd78abc9e29c1d0da039b7943981ea32988daba2",
+        "title": "Cuticular Hydrocarbons: Their Evolution and Roles\nin Drosophila
+        Pheromonal Communication"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "c0ee4b38bb0d5c4bbc74ee905d189441db427a7b", "title": "The Role of Male Courtship
+        Song in Species Recognition in Drosophila montana"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "c7de8c202d0472d02f727cdd902dd65fab3aa987", "title":
+        "A visual stimulus in the courtship ofDrosophila suzukii"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "18e82566d694d18e5aa3439c8343a2e9048a39b1",
+        "title": "Revisited roles of Drosophila female pheromones."}}, {"isInfluential":
+        true, "citedPaper": {"paperId": "37e3ca6c11b0bf92fd046dee05ff61014f41c989",
+        "title": "The role of courtship song in sexual selection and species recognition
+        by female Drosophila melanogaster\n"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "ef06b4e419061ab80c6ebe19317bf952bbb0044e", "title": "Dopamine
+        Excites Nucleus Accumbens Neurons through the Differential Modulation of Glutamate
+        and GABA Release"}}, {"isInfluential": false, "citedPaper": {"paperId": "2ea733882d7f34ac3458dbf678baa6fcb073b175",
+        "title": "Gender-selective patterns of aggressive behavior in Drosophila melanogaster."}},
+        {"isInfluential": false, "citedPaper": {"paperId": "2dbf6cce7625b9cb24f75a7527b54a2a57c33ac3",
+        "title": "Neuronal architecture of the central complex in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "917673b9821b248d3f5c7e6e3b32fce39a88d000",
+        "title": "Retrograde regulation of synaptic vesicle endocytosis and recycling"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "0052013415cc8a4f55cbc67fe6caaf8dbdb61c28",
+        "title": "Sex-peptides: seminal peptides of the Drosophila male"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "25ca201519b7a3743addcd5b908e252a533e064b",
+        "title": "Sex-peptide is the molecular basis of the sperm effect in Drosophila
+        melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId": "745f8dd6eeb9d012a7c64b802d4bc6375595ff1c",
+        "title": "Aggressive behaviours of female Drosophila melanogaster are influenced
+        by their social experience and food resources"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "81608a5d9709a96a283aad22825ba1b68f04f1c9", "title":
+        "Mutations in the Novel Membrane Protein Spinster Interfere with Programmed
+        Cell Death and Cause Neural Degeneration inDrosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "da3786d2ca227548b7058cab9cb6ad760b0dff29",
+        "title": "Function of the mating plug in Drosophila hibisci Bock"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "3b739ce180b02c8c2061c53e1868eae757503f3e",
+        "title": "COURTSHIP SONG RECOGNITION IN THE DROSOPHILA MELANOGASTER COMPLEX:
+        HETEROSPECIFIC SONGS MAKE FEMALES RECEPTIVE IN D. MELANOGASTER, BUT NOT IN
+        D. SECHELLIA"}}, {"isInfluential": false, "citedPaper": {"paperId": "d20cad3234d4f686a99f4957a9a961d8551e7dfa",
+        "title": "Genetic analysis of the Drosophila ellipsoid body neuropil: organization
+        and development of the central complex."}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "de9c4d8231a4c8f1bef31e5866417da7fce972d3", "title": "Defense
+        of Oviposition Sites by Female Oriental Fruit Flies (Diptera: Tephritidae)"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "7bda4a36d0fd194701cea87a45aa3ef7e03e15bc",
+        "title": "A mating plug and male mate choice inDrosophila hibisciBock"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "878ca2c3b053e481b751f7e7c155e49c7000e775",
+        "title": "Enhanced Mate Refusal in Female Drosophila Induced by a Mutation
+        in the spinster Locus."}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "807f3e168f7b98eeaf322bb82e12312041544843", "title": "Simultaneous influence
+        on male courtship of stimulatory and inhibitory pheromones produced by live
+        sex-mosaic Drosophila melanogaster"}}, {"isInfluential": false, "citedPaper":
+        {"paperId": "fa25543695c026777d3c93428fcaebd436b437c4", "title": "The mating
+        of a fly."}}, {"isInfluential": false, "citedPaper": {"paperId": "1bee2537d4d24ac0a3aadbfa4523c73beb135f82",
+        "title": "Female sexual receptivity is defective in juvenile hormone-deficient
+        mutants of theapterous gene ofDrosophila melanogaster"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "7182dbfc9ab93b013035135ce7788e85c73ace4d",
+        "title": "Male size and mating success in Drosophila melanogaster: the roles
+        of male and female behaviour"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "480a8fcee8116e4703b7dd99af36532eb7cfd8d8", "title": "Evidence against an
+        antiaphrodisiac role for cis-vaccenyl acetate in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "466eb01c832ec5c3a1e666d1798155cb2d61e5bb",
+        "title": "Inhibition of courtship and mating of Drosophila melanogaster by
+        the male-produced lipid, cis-vaccenyl acetate"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "148d712923dd8ca917945ac962ca23e7c611ace8", "title":
+        "Lifetime mating success of male fruitflies (Drosophila melanogaster) is related
+        to their size"}}, {"isInfluential": false, "citedPaper": {"paperId": "77f62d6ff56a942de122265bcc4df1fe9dd84e60",
+        "title": "The role of female movement in the sexual behavior ofDrosophila
+        melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId": "3e7e5cc84da4c5364d50149cec9c54ed9a64942e",
+        "title": "Chemical Ecology and Biochemistry of Insect Hydrocarbons"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "bd2a1c29886a9f202f856e465a37eb95f3cc9bd7",
+        "title": "The chemical basis for sex recognition in Drosophila melanogaster"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "fb54944a0c044c08cb909e7af196357a15a8c1e6",
+        "title": "Multivariate analysis of Drosophila courtship."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": null, "title": "An anti-aphrodisiac produced
+        by Drosophila-melanogaster males and transferred to females during copulation"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "dec0af4af2f18d2b0ec6c80e429b160582bb655b",
+        "title": "Rejection Responses By Female Drosophila Melanogaster : Their Ontogeny,
+        Causality and Effects Upon the Behaviour of the Courting Male"}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "6ebfababfeee1a962e93cfe19a4fd89b08975ef2",
+        "title": "Pulse interval as a critical parameter in the courtship song of
+        Drosophila melanogaster"}}, {"isInfluential": false, "citedPaper": {"paperId":
+        "eef4a7a079f53790e6b0d0db1065540f329cee1a", "title": "Antennae and Sexual
+        Receptivity in Drosophila melanogaster Females"}}, {"isInfluential": false,
+        "citedPaper": {"paperId": "9f15a944622237baeb1db96b9294e26fc7ab5d21", "title":
+        "The control of sexual receptivity in female Drosophila."}}, {"isInfluential":
+        false, "citedPaper": {"paperId": "b7f14646eabccf7355fb907393923ddb317914a2",
+        "title": "Nature of the Sound Produced by Drosophila melanogaster during Courtship"}},
+        {"isInfluential": false, "citedPaper": {"paperId": "7b028c7e87140ee89eb96b28a5e7c874bba9e919",
+        "title": "Experiments on sex recognition and the problem of sexual selection
+        in Drosoophilia."}}, {"isInfluential": false, "citedPaper": {"paperId": "8ed5336d53b83f088a79bb8fa3ec5bd35c6f031f",
+        "title": "MATING BEHAVIOR WITHIN THE GENUS DROSOPHILA ( DIPTERA )"}}]}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30115'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 15 Mar 2023 12:46:03 GMT
+      Via:
+      - 1.1 ffac2ff159127c5a76d86e0366cb430a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - QPiAoKbV56hnaqPPIzBf-x3LXP2NKxK3p0Fagtj10D0RiNFGmOOWpw==
+      X-Amz-Cf-Pop:
+      - LHR62-C5
+      X-Cache:
+      - Miss from cloudfront
+      x-amz-apigw-id:
+      - B0qhvFq4vHcF1tg=
+      x-amzn-Remapped-Connection:
+      - keep-alive
+      x-amzn-Remapped-Content-Length:
+      - '30115'
+      x-amzn-Remapped-Date:
+      - Wed, 15 Mar 2023 12:46:03 GMT
+      x-amzn-Remapped-Server:
+      - gunicorn
+      x-amzn-RequestId:
+      - d3314fd9-2ee1-491e-852e-62662cc14ef8
+    status:
+      code: 200
+      message: OK
+version: 1
