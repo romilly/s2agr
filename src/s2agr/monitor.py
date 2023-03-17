@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import logging
+from datetime import date
 
 
 class Monitor(ABC):
@@ -26,6 +27,7 @@ class MockMonitor(Monitor):
         self.warnings = []
         self.exceptions = []
         self.debugs = []
+
     def debug(self, message):
         self.debugs.append(message)
 
@@ -52,8 +54,9 @@ class PrintingMonitor(Monitor):
 
 class LoggingMonitor(Monitor):
     def __init__(self, log_level=logging.INFO):
-        import logging
-        logging.basicConfig(filename='production.log', level=log_level)
+        filename = f'{date.today().isoformat()}.log'
+        log_format = '%(asctime)s - %(levelname)-7s - %(message)s'
+        logging.basicConfig(filename=filename, level=log_level, format=log_format)
         logging.info('started')
 
     def exception(self, message, exception):

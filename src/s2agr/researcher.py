@@ -34,8 +34,9 @@ class WebResearcher(Researcher):
         self.requester = requester
 
     def _get_paper_json(self, pid: str) -> dict:
+        url = self.url_for_paper(pid)
         return self.requester.get(
-            self.url_for_paper(pid))
+            url)
 
     @staticmethod
     def url_for_paper(pid: str) -> str:

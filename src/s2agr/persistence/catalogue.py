@@ -94,7 +94,6 @@ class NullCatalogue(Catalogue):
     def write_paper(self, paper: Paper):
         pass
 
-
     def close(self):
         pass
 

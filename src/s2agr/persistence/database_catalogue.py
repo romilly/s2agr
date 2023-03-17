@@ -44,7 +44,6 @@ def count_rows(cursor, id_col, table, value):
 
 class DatabaseCatalogue(Catalogue):
 
-
     FIND_PAPERS_TO_RESEACH_SQL = """
     select paper_id, title, pub_year, (s2ag_json_text->>'influentialCitationCount')::integer as iccount,
        (s2ag_json_text->>'referenceCount')::integer as rcount,

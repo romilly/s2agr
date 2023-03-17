@@ -17,7 +17,7 @@ test_vcr = vcr.VCR(
 class S2AGTestCase(DatabaseTest):
     def setUp(self) -> None:
         DatabaseTest.setUp(self)
-        self.librarian = Builder().build()
+        self.librarian = Builder().build_for_test()
 
     @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_paper(self):
