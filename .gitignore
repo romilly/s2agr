@@ -97,7 +97,8 @@ coverage.xml
 *.pot
 
 # Django stuff:
-**/*.log # well, not just Django, all log files :) RJC
+# well, not just Django, all log files :) RJC
+**/*.log
 local_settings.py
 
 # Flask stuff:
