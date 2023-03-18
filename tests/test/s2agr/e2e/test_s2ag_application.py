@@ -88,9 +88,9 @@ class S2AGTestCase(DatabaseTest):
                ]
         self.librarian.get_papers_safely(*ids)
         self.check_total_row_count('paper', 3)
-        debugs = self.librarian.monitor.debugs
-        assert_that(len(debugs), greater_than(0))
-        assert_that(debugs[0],
+        warnings = self.librarian.monitor.warnings
+        assert_that(len(warnings), greater_than(0))
+        assert_that(warnings[0],
                     contains_string('6d26a7d1d6de855db5b632766835a9f010f64938'))
 
 

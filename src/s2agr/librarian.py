@@ -30,14 +30,12 @@ class Librarian:
             for reference in references:
                 self.catalogue.write_citation(reference)
             authors = (Author(ajd) for ajd in paper.authors)
-            for author in authors:
-                self.catalogue.write_author(author)
-                self.catalogue.write_wrote(paper_id, author.author_id)
+            self.write_authors(authors, paper)
             return paper
         except ThrottledRequesterException as e:
             self.monitor.exception('Could not retrieve paper %s' % paper_id, e)
         except DatabaseCatalogueException as e:
-            self.monitor.exception('Database error handling paper %s' % paper_id, e)
+            self.monitor.warning('Database error handling paper %s: %s' % (paper_id, e))
 
     def get_author(self, aid):
         try:
@@ -70,10 +68,14 @@ class Librarian:
     def add_paper_and_attributions(self, paper):
         self.catalogue.write_paper(paper)
         authors = (Author(ajd) for ajd in paper.authors)
+        self.write_authors(authors, paper)
+
+    def write_authors(self, authors, paper):
         for author in authors:
             if author.author_id is None:
                 self.monitor.debug('null author_id found in authors of %s' % paper.paper_id)
                 continue
+            self.catalogue.write_author(author)
             self.catalogue.write_wrote(paper.paper_id, author.author_id)
 
     def get_authored_papers_by(self, author_id: str, lazy=True):
@@ -121,9 +123,10 @@ class Librarian:
 
     def get_papers_safely(self, *paper_ids):
         # handle multiple retrieval coping with server errors for some papers
+        self.monitor.info('bulk downloading %d papers' % len(paper_ids))
         problem_ids = self.check_ids(paper_ids)
         for problem_id in problem_ids:
-            self.monitor.debug(f'problem retrieving {problem_id}')
+            self.monitor.warning(f'problem retrieving {problem_id}')
         return (self.catalogue.read_paper(paper_id) for paper_id in paper_ids)
 
     def check_ids(self, ids, problems: set = None) -> set:

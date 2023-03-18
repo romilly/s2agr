@@ -136,9 +136,13 @@ class DatabaseCatalogue(Catalogue):
                       author_json_text: str,
                       name: str):
         with self.connection.cursor() as cursor:
-            cursor.execute(self.INSERT_AUTHOR_SQL, (author_id,
+            try:
+                cursor.execute(self.INSERT_AUTHOR_SQL, (author_id,
                                                     author_json_text,
                                                     name))
+            except Exception as e:
+                self.connection.rollback()
+                raise DatabaseCatalogueException from e
             self.connection.commit()
 
     def read_json(self, table: str, id_col: str, item_id: str):
