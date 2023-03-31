@@ -52,10 +52,7 @@ class Librarian:
             self.monitor.exception('Database error handling author %s' % aid, e)
 
     def get_papers(self, *paper_ids):
-        new_pids = []
-        for pid in paper_ids:
-            if not self.catalogue.knows_paper(pid):
-                new_pids.append(pid)
+        new_pids = [pid for pid in paper_ids if not self.catalogue.knows_paper(pid)]
         new_papers = self.researcher.get_papers(*new_pids)
         for paper in new_papers:
             try:
@@ -130,23 +127,22 @@ class Librarian:
         return (self.catalogue.read_paper(paper_id) for paper_id in paper_ids)
 
     def check_ids(self, ids, problems: set = None) -> set:
-            if problems is None:
-                problems = set()
-            else:
-                problems = problems
-            if len(ids) == 0:
+        if problems is None:
+            problems = set()
+        else:
+            problems = problems
+        if len(ids) == 0:
+            return problems
+        try:
+            self.get_papers(*ids)
+            return problems
+        except ThrottledRequesterException:
+            if len(ids) == 1:
+                problems.add(ids[0])
+                self.get_paper(ids[0])
                 return problems
-            try:
-                self.get_papers(*ids)
-                # print('got ', len(ids))
-                return problems
-            except:
-                if len(ids) == 1:
-                    problems.add(ids[0])
-                    self.get_paper(ids[0])
-                    return problems
-                split = len(ids) // 2
-                return self.check_ids(ids[:split]).union(self.check_ids(ids[split:]))
+            split = len(ids) // 2
+            return self.check_ids(ids[:split]).union(self.check_ids(ids[split:]))
 
     def add_influential_citations_for(self, paper_id):
         self.monitor.info(f'adding influential citations for {paper_id}')
@@ -154,15 +150,6 @@ class Librarian:
         self.get_papers_safely(*paper_ids)
         self.catalogue.set_paper_as_linked(paper_id)
 
-    def find_papers_to_reseach(self, limit=10):
+    def find_papers_to_research(self, limit=10):
         self.monitor.info(f'finding next {limit} papers to research')
         return list(self.catalogue.find_papers_to_research(limit))
-
-
-
-
-
-
-
-
-

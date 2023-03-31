@@ -106,6 +106,6 @@ class S2AGTestCase(DatabaseTest):
     def test_librarian_finds_papers_to_reseach(self):
         self.librarian.get_paper(paper_01_id)
         self.librarian.get_paper(paper_02_id)
-        paper_ids =  self.librarian.find_papers_to_reseach()
+        paper_ids =  self.librarian.find_papers_to_research()
         assert_that(paper_ids, equal_to([paper_01_id, paper_02_id]))
 

@@ -1,0 +1,59 @@
+{
+  "paperId": "55677a9eb759dac6220d88cee2f1718f02a181be",
+  "externalIds": {
+    "MAG": "2114994015",
+    "DOI": "10.3102/00346543067001088",
+    "CorpusId": 10026908
+  },
+  "publicationVenue": null,
+  "url": "https://www.semanticscholar.org/paper/55677a9eb759dac6220d88cee2f1718f02a181be",
+  "title": "The Development of Epistemological Theories: Beliefs About Knowledge and Knowing and Their Relation to Learning",
+  "abstract": "There have been a number of research programs that have investigated students\u2019 thinking and beliefs about the nature of knowledge and knowing, including definitions of knowledge, how knowledge is constructed, and how knowledge is evaluated. However, these different research programs have pursued varying definitions and conceptual frameworks and used quite different methodologies to examine students\u2019 epistemological beliefs and thinking. In the first section of this article, we provide a critical and comprehensive review of these different research programs. In the second part of this article, we identify nine crucial theoretical and methodological issues that need to be resolved in future research on epistemological theories. As these issues are addressed in future research, there will be more consensus regarding the nature of epistemological theories, and their relation to cognition, motivation, and learning will be made more explicit.",
+  "venue": "",
+  "year": 1997,
+  "referenceCount": 153,
+  "citationCount": 2942,
+  "influentialCitationCount": 390,
+  "isOpenAccess": false,
+  "openAccessPdf": null,
+  "fieldsOfStudy": [
+    "Psychology"
+  ],
+  "s2FieldsOfStudy": [
+    {
+      "category": "Psychology",
+      "source": "external"
+    },
+    {
+      "category": "Philosophy",
+      "source": "s2-fos-model"
+    },
+    {
+      "category": "Education",
+      "source": "s2-fos-model"
+    }
+  ],
+  "publicationTypes": [
+    "JournalArticle",
+    "Review"
+  ],
+  "publicationDate": "1997-03-01",
+  "journal": {
+    "name": "Review of Educational Research",
+    "pages": "140 - 88",
+    "volume": "67"
+  },
+  "citationStyles": {
+    "bibtex": "@['JournalArticle', 'Review']{Hofer1997TheDO,\n author = {B. Hofer and P. Pintrich},\n journal = {Review of Educational Research},\n pages = {140 - 88},\n title = {The Development of Epistemological Theories: Beliefs About Knowledge and Knowing and Their Relation to Learning},\n volume = {67},\n year = {1997}\n}\n"
+  },
+  "authors": [
+    {
+      "authorId": "46749083",
+      "name": "B. Hofer"
+    },
+    {
+      "authorId": "6817062",
+      "name": "P. Pintrich"
+    }
+  ]
+}
