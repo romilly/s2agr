@@ -6,6 +6,7 @@ from psycopg2.sql import SQL, Identifier
 
 from s2agr.citation import Citation
 from s2agr.entities import Paper, Author
+from s2agr.monitor import MockMonitor
 from s2agr.persistence.catalogue import Catalogue
 from s2agr.persistence.parser import get_connection_string
 
@@ -71,9 +72,10 @@ class DatabaseCatalogue(Catalogue):
     SET_PAPER_AS_LINKED_SQL = "UPDATE paper set got_linked_papers = true WHERE paper_id = (%s)"
     SELECT_INFLUENTIAL_CITATIONS_SQL = 'select citing_id from citation where cited_id = (%s) and is_influential'
 
-    def __init__(self, connection=None):
+    def __init__(self, connection=None, monitor = MockMonitor()):
         self.connection = connection
         self.cursor = self.connection.cursor()
+        self.monitor = monitor
 
     def set_paper_as_linked(self, paper_id):
         with self.connection.cursor() as cursor:
@@ -94,6 +96,7 @@ class DatabaseCatalogue(Catalogue):
                           paper.year,
                           paper.pdf_url,
                           )
+        self.monitor.debug(f'Wrote {paper.paper_id}')
 
     def write_author(self, author):
         self._write_author(author.author_id,

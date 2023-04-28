@@ -24,7 +24,8 @@ class Requester(ABC):
 
 
 class ThrottledRequester(Requester):
-    STANDARD_THROTTLING_DELAY = 3.1
+    # STANDARD_THROTTLING_DELAY = 3.1
+    STANDARD_THROTTLING_DELAY = 0.08
 
     def __init__(self, delay=STANDARD_THROTTLING_DELAY):
         self.delay = delay

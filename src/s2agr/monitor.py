@@ -20,6 +20,18 @@ class Monitor(ABC):
         pass
 
 
+class NullMonitor(Monitor):
+
+    def info(self, message):
+        pass
+
+    def exception(self, message, exception):
+        pass
+
+    def warning(self, message):
+        pass
+
+
 class MockMonitor(Monitor):
 
     def __init__(self):
