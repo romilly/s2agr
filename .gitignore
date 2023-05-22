@@ -141,3 +141,4 @@ ENV/
 test/test/data/generated
 
 src/secrets/
+/data/downloads/
