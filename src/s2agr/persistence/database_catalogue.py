@@ -18,8 +18,9 @@ class DatabaseCatalogueException(Exception):
 
 
 def test_connection():
+    string = get_connection_string('TEST_DB', env_loc)
     return psycopg2.connect(
-        get_connection_string('TEST_DB', env_loc))
+        string)
 
 
 def local_production_connection():

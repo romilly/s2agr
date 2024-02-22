@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from hamcrest import assert_that, equal_to
+from hamcrest import assert_that, equal_to, less_than, is_not
 from psycopg2.sql import SQL, Identifier
 
 
@@ -41,9 +41,12 @@ class DatabaseTest(TestCase):
             self.cursor.execute(SQL("delete from ")+Identifier(table))
         self.connection.commit()
 
-    def check_row_count(self, table, id_col, value, expected_count):
+    def check_row_count(self, table, id_col, value, expected_count, at_least=False):
         count = count_rows(self.cursor, id_col, table, value)
-        assert_that(count, equal_to(expected_count))
+        if at_least:
+            assert_that(count, is_not(less_than(expected_count)))
+        else:
+            assert_that(count, equal_to(expected_count))
 
     def check_total_row_count(self, table, expected_count):
         actual_count = self.catalogue.total_row_count_for(table)
