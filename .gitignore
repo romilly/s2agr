@@ -140,7 +140,8 @@ ENV/
 
 test/test/data/generated
 
-src/secrets/
+
 /data/downloads/
 
 Link.md
+/src/my_secrets/
