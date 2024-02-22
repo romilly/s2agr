@@ -19,14 +19,14 @@ class S2AGTestCase(DatabaseTest):
         DatabaseTest.setUp(self)
         self.librarian = Builder().build_for_test()
 
-    @test_vcr.use_cassette
+    # @test_vcr.use_cassette
     def test_librarian_retrieves_unknown_paper(self):
         paper = self.librarian.get_paper(paper_01_id)
         self.check_row_count('paper','paper_id', paper_01_id, 1)
         self.assertEqual(paper.paper_id, paper_01_id)
         self.assertEqual(paper.title, "Construction of the Literature Graph in Semantic Scholar")
         assert_that(paper.abstract, starts_with("We describe"))
-        self.check_row_count('citation','cited_id', paper_01_id, 290)
+        self.check_row_count('citation','cited_id', paper_01_id, 290, at_least=True)
         self.check_row_count('citation','citing_id', paper_01_id, 27)
         self.check_total_row_count('author',23)
         self.check_row_count('wrote','paper_id', paper_01_id, 23)

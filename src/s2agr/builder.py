@@ -29,7 +29,7 @@ class Builder:
 
     def build_for_test(self):
         return self.\
-            with_requester(ThrottledRequester(delay=0.001)).\
+            with_requester(ThrottledRequester()).\
             with_monitor(MockMonitor()).\
             with_connection(test_connection()).\
             build()
